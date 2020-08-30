@@ -1,0 +1,326 @@
+:root {
+    --blue: #226bcf;
+    --black: #3a3a3a;
+    --grey: #797979;
+    --light-grey: #bebebe;
+}
+body {
+    margin: 0 auto;
+    padding: 0;
+    font-size: 18px;
+    font-family: Effra;
+}
+h1, h2, h3, h4 {
+    color: var(--blue);
+}
+a, a:hover {
+    text-decoration: none;
+    color: var(--black);
+}
+@font-face {
+    font-family: Effra;
+    src: url(../assets/fonts/iCielEffra-Regular.otf);
+}
+@font-face {
+    font-family: Roboto;
+    src: url(../assets/fonts/RobotoCondensed-Regular.ttf);
+}
+@font-face {
+    font-family: Roboto;
+    src: url(../assets/fonts/Roboto-Bold.ttf);
+    font-weight: bold;
+}
+@font-face {
+    font-family: Roboto;
+    src: url(../assets/fonts/Roboto-BoldItalic.ttf);
+    font-weight: bold;
+    font-style: italic;
+}
+textarea:focus, input:focus{
+    outline: none;
+}
+.font-effra {
+    font-family: Effra;
+}
+.font-eroboto {
+    font-family: Roboto;
+}
+.h-50 {
+    height: 50%;
+}
+.py-10 {
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+.w-70 {
+    width: 70%;
+}
+.w-80 {
+    width: 70%;
+}
+.w-90 {
+    width: 90%;
+}
+.text-black {
+    color: var(--black) !important;
+}
+.text-blue {
+    color: var(--blue) !important;
+}
+.text-light-grey {
+    color: var(--light-grey) !important;
+}
+.reverse {
+    transform: rotate(180deg);
+}
+.space-5 {
+    width: 100%;
+    height: 5rem;
+}
+.btn-primary {
+    background-color: var(--blue);
+    padding: 1px 15px;
+}
+.custom-tooltip {
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
+}
+.tooltip-container {
+    position: relative;
+}
+.mail.custom-tooltip {
+    display: block;
+    width: 325px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.show-tooltip {
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    background-color: #e5e5e5;
+    display: none;
+    border-radius: 5px;
+    padding: 0 10px;
+}
+.custom-tooltip:hover + .show-tooltip {
+    display: block;
+}
+.required {
+    color: red;
+}
+.arrow-container {
+    min-width: 60px;
+    position: relative;
+}
+.arrow-container.arrow-right .arrow-text {
+    position: absolute;
+    left: 0;
+    transform: translateX(-100%);
+    width: 7em;
+}
+.signup-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 40px;
+}
+.signup-header img {
+}
+.signup-header>div {
+    display: inline-block;
+    height: 120px;
+}
+.signup-header .arrow-container {
+    display: flex;
+    align-items: center;
+}
+.signup-header a {
+    display: inline-flex;
+}
+.register-form .form-body {
+    margin: 0 auto;
+    width: 50%;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+}
+.form-body .label, .form-body .register-button {
+    line-height: 2.2em;
+}
+.form-body input {
+    border: none;
+    border-bottom: 1px solid var(--black);
+}
+.form-body .register-button a {
+    color: var(--blue);
+}
+.register-info {
+    margin: 0 auto;
+}
+.form-body.register-info-form.grid-container {
+    grid-template-columns: 1fr 3fr;
+    grid-column-gap: 30px;
+}
+.register-info-form-1-2 {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+.register-info-form-2-1 {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 30px;
+}
+.register-info-form-2-1 .input {
+    position: relative;
+    margin: 0 auto;
+    border: 1px solid var(--black);
+    border-radius: 5px;
+}
+.input-text-above-first-name input, .input-text-above-last-name input {
+    padding-left: 20px;
+    padding-right: 20px
+}
+.input-text-above-first-name:before {
+    content: 'Họ và đệm';
+    background: white;
+    position: absolute;
+    top: 0;
+    padding: 0 10px;
+    margin-left: 10px;
+    transform: translateY(-50%);
+}
+.input-text-above-last-name:before {
+    content: 'Tên';
+    background: white;
+    position: absolute;
+    top: 0;
+    padding: 0 10px;
+    margin-left: 10px;
+    transform: translateY(-50%);
+}
+.gender-input {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+.gender-input input {
+    margin-top: 0.4em;
+}
+.date-group input::-webkit-outer-spin-button,
+.date-group input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.date-group input[type=number] {
+  -moz-appearance: textfield;
+}
+.date-group .date-input, .date-group .month-input {
+    width: 2em;
+    margin-right: 0.3em;
+    margin-left: 0.5em;
+    text-align: center;
+}
+.date-group .year-input {
+    width: 3em;
+    margin-right: 0.3em;
+    margin-left: 0.5em;
+    text-align: center;
+}
+
+/* change radio input*/
+.full-fill-radio-input {
+    display: block;
+    position: relative;
+    padding-left: 25px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    margin-bottom: 0;
+}
+.full-fill-radio-input input[type=radio] {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+.checkmark {
+    position: absolute;
+    top: 0.25em;
+    left: 0;
+    height: 0.8em;
+    width: 0.8em;
+    background-color: white;
+    border: 1px solid var(--black);
+    border-radius: 50%;
+}
+.full-fill-radio-input input:checked ~ .checkmark {
+    background-color: var(--blue);
+    border: 1px solid var(--blue);
+}
+.extra-large h1 {
+    font-size: 3.1rem;
+}
+.extra-large h3 {
+    font-size: 2rem;
+}
+.login-form .form-body {
+    margin: 0 auto;
+    width: 50%;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+.login-form .button-container {
+    display: grid;
+    width: 50%;
+    margin: 0 auto;
+    grid-template-columns: repeat(2, 1fr);
+}
+.function-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.function-icon {
+    border: 2px solid white;
+    cursor: pointer;
+    border-radius: 10px;
+    margin: 0 3rem;
+    transition-property: border;
+    transition-duration: 0.3s;
+    -webkit-box-shadow: 0 0 10px var(--light-grey);
+    box-shadow: 0 0 10px var(--light-grey);
+}
+.function-icon:hover {
+    border: 2px solid var(--grey);
+}
+.function-icon span.hg-icon {
+    width: 6rem;
+    height: 6rem;
+}
+.function-icon.disabledbutton {
+    cursor: unset;
+}
+.function-icon.disabledbutton:hover {
+    border: 2px solid white;
+}
+.disabledbutton h5 {
+    color: var(--light-grey);
+}
+
+::placeholder {
+    color: var(--light-grey);
+    opacity: 1; /* Firefox */
+    font-size: 0.9em;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: var(--light-grey);
+    font-size: 0.9em;
+}
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: var(--light-grey);
+    font-size: 0.9em;
+}
+input[type=radio]:checked~.custom-control-label.green::before {
+  background-color: green;
+}

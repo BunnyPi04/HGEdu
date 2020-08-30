@@ -1,0 +1,63 @@
+span {
+    width: 50px;
+    height: 50px;
+}
+.hg-icon {
+    background-size: 100%;
+    overflow: hidden;
+    display: inline-block;
+}
+.icon-teacher {
+    background-image: url('../assets/images/app/129.png');
+}
+.icon-teacher.icon-active {
+    background-image: url('../assets/images/app/39.png');
+}
+.icon-teacher.disable {
+    background-image: url('../assets/images/app/39.png');
+}
+.icon-student {
+    background-image: url('../assets/images/app/44.png');
+}
+.icon-student.icon-active {
+    background-image: url('../assets/images/app/45.png');
+}
+.icon-student.disable {
+    background-image: url('../assets/images/app/46.png');
+}
+.icon-parent {
+    background-image: url('../assets/images/app/28.png');
+}
+.icon-parent.icon-active {
+    background-image: url('../assets/images/app/27.png');
+}
+.icon-parent.disable {
+    background-image: url('../assets/images/app/26.png');
+}
+.icon-mod {
+    background-image: url('../assets/images/app/35.png');
+}
+.icon-mod.icon-active {
+    background-image: url('../assets/images/app/36.png');
+}
+.icon-mod.disable {
+    background-image: url('../assets/images/app/35-1.png');
+}
+.icon-folder {
+    background-image: url('../assets/images/app/49.png');
+}
+.icon-folder.icon-active {
+    background-image: url('../assets/images/app/48.png');
+}
+.icon-folder.green {
+    background-image: url('../assets/images/app/47.png');
+}
+.icon-file {
+    background-image: url('../assets/images/app/16.png');
+}
+.icon-file.icon-active {
+    background-image: url('../assets/images/app/15.png');
+}
+.icon-file.red {
+    background-image: url('../assets/images/app/17.png');
+}
