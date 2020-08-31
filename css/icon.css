@@ -119,3 +119,24 @@ span {
 .icon-search.icon-active {
     background-image: url('../assets/images/app/125.png');
 }
+.icon-account {
+    background-image: url('../assets/images/app/28.png');
+}
+.icon-account.icon-active {
+    background-image: url('../assets/images/app/27.png');
+}
+.icon-vip {
+    background-image: url('../assets/images/app/157.png');
+}
+.icon-vip.icon-active {
+    background-image: url('../assets/images/app/158.png');
+}
+.icon-lock {
+    background-image: url('../assets/images/app/150.png');
+}
+.icon-lock.icon-active {
+    background-image: url('../assets/images/app/151.png');
+}
+.icon-load {
+    background-image: url('../assets/images/app/152.png');
+}

@@ -384,7 +384,91 @@ textarea:focus, input:focus{
 .mn-content-search {
     border: 2px solid var(--border-light-grey);
 }
-
+.mn-tab .nav-tabs .nav-link.active {
+    color: var(--blue);
+    background-color: transparent;
+    border: none;
+}
+.mn-tab .nav-tabs .nav-link {
+    color: var(--light-grey);
+    border: none;
+    transition-duration: 0.3s;
+    transition-property: all;
+    position: relative;
+    overflow: hidden;
+    padding-left: 45px;
+    line-height: 2.5rem;
+}
+.mn-tab .nav-tabs .nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 3px;
+    height: 2px;
+    width: 100%;
+    background-color: var(--blue);
+    transition: 0.3s all;
+    left: -100%;
+}
+.mn-tab .nav-tabs .nav-link:hover {
+    color: var(--blue);
+}
+.mn-tab .nav-tabs .nav-link:hover::after {
+    left: 0;
+    transform: translateX(0%);
+}
+.mn-tab .nav-tabs .nav-link .hg-icon {
+    height: 2rem;
+    width: 2rem;
+    position: absolute;
+    left: 5px;
+    bottom: 1rem;
+}
+.mn-content .tab-pane#list2, .mn-content .tab-pane#list1 {
+    display: none;
+}
+.mn-content .tab-pane#list2.active, .mn-content .tab-pane#list1.active {
+    display: block;
+}
+.mn-tab .nav-link.active .hg-icon.icon-account {
+    background-image: url('../assets/images/app/27.png');
+}
+.mn-tab .nav-link.active .hg-icon.icon-vip {
+    background-image: url('../assets/images/app/158.png');
+}
+.account-list .list-item {
+    height: 60px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 4fr 2fr 5fr;
+    margin-bottom: 10px;
+    padding: 0 25px;
+    align-items: center;
+}
+.list-item .list-avatar {
+    height: 50px;
+}
+.list-item .hg-icon {
+    height: 30px;
+    width: 30px;
+    margin-left: 20px;
+}
+.account-list .list-item:not(.header) {
+    background-color: white;
+    border-radius: 15px;
+    -webkit-box-shadow: 0 0 10px var(--light-grey);
+    box-shadow: 0 0 10px var(--light-grey);
+}
+.list-item__user-name {
+    font-size: 1.5rem;
+    content: var(--blue);
+    font-weight: bold;
+}
+.list-item__id {
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    font-size: 1.5rem;
+}
 ::placeholder {
     color: var(--light-grey);
     opacity: 1; /* Firefox */
