@@ -6,6 +6,7 @@ span {
     background-size: 100%;
     overflow: hidden;
     display: inline-block;
+    background-repeat: no-repeat;
 }
 .icon-teacher {
     background-image: url('../assets/images/app/129.png');
@@ -60,4 +61,61 @@ span {
 }
 .icon-file.red {
     background-image: url('../assets/images/app/17.png');
+}
+.icon-nav {
+    background-image: url('../assets/images/app/67.png');
+}
+.icon-nav.icon-active {
+    background-image: url('../assets/images/app/66.png');
+}
+.icon-user {
+    background-image: url('../assets/images/app/112.png');
+}
+.icon-user.icon-active {
+    background-image: url('../assets/images/app/113.png');
+}
+.icon-user.disable {
+    background-image: url('../assets/images/app/111.png');
+}
+.icon-home {
+    background-image: url('../assets/images/app/5.png');
+}
+.icon-home.icon-active {
+    background-image: url('../assets/images/app/6.png');
+}
+.icon-contact {
+    background-image: url('../assets/images/app/161.png');
+}
+.icon-contact.icon-active {
+    background-image: url('../assets/images/app/162.png');
+}
+.icon-qr {
+    background-image: url('../assets/images/app/165.png');
+}
+.icon-qr.icon-active {
+    background-image: url('../assets/images/app/166.png');
+}
+.icon-library {
+    background-image: url('../assets/images/app/168.png');
+}
+.icon-library.icon-active {
+    background-image: url('../assets/images/app/167.png');
+}
+.icon-chat-bubble {
+    background-image: url('../assets/images/app/168.png');
+}
+.icon-chat-bubble.icon-active {
+    background-image: url('../assets/images/app/167.png');
+}
+.icon-guide {
+    background-image: url('../assets/images/app/164.png');
+}
+.icon-guide.icon-active {
+    background-image: url('../assets/images/app/163.png');
+}
+.icon-search {
+    background-image: url('../assets/images/app/124.png');
+}
+.icon-search.icon-active {
+    background-image: url('../assets/images/app/125.png');
 }
