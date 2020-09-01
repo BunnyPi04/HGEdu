@@ -140,3 +140,12 @@ span {
 .icon-load {
     background-image: url('../assets/images/app/152.png');
 }
+.icon-close.icon-red {
+    background-image: url('../assets/images/app/85.png');
+}
+.icon-close {
+    background-image: url('../assets/images/app/86.png');
+}
+.icon-add-round {
+    background-image: url('../assets/images/app/130.png');
+}
