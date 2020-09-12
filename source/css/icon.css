@@ -1,0 +1,412 @@
+span {
+    width: 50px;
+    height: 50px;
+}
+.hg-icon {
+    background-size: 100%;
+    overflow: hidden;
+    display: inline-block;
+    background-repeat: no-repeat;
+}
+.icon-teacher {
+    background-image: url('../images/app/129.png');
+}
+.icon-teacher.icon-active {
+    background-image: url('../images/app/39.png');
+}
+.icon-teacher.disable {
+    background-image: url('../images/app/39.png');
+}
+.icon-student {
+    background-image: url('../images/app/44.png');
+}
+.icon-student.icon-active {
+    background-image: url('../images/app/45.png');
+}
+.icon-student.disable {
+    background-image: url('../images/app/46.png');
+}
+.icon-parent {
+    background-image: url('../images/app/28.png');
+}
+.icon-parent.icon-active {
+    background-image: url('../images/app/27.png');
+}
+.icon-parent.disable {
+    background-image: url('../images/app/26.png');
+}
+.active .icon-parent {
+    background-image: url('../images/app/27.png');
+}
+.icon-mod {
+    background-image: url('../images/app/35.png');
+}
+.icon-mod.icon-active {
+    background-image: url('../images/app/36.png');
+}
+.icon-mod.disable {
+    background-image: url('../images/app/35-1.png');
+}
+.icon-folder {
+    background-image: url('../images/app/49.png');
+}
+.icon-folder.icon-active {
+    background-image: url('../images/app/48.png');
+}
+.icon-folder.green, .icon-folder.icon-green {
+    background-image: url('../images/app/47.png');
+}
+.icon-file {
+    background-image: url('../images/app/16.png');
+}
+.icon-file.icon-active {
+    background-image: url('../images/app/15.png');
+}
+.icon-file.red, .icon-file.icon-red {
+    background-image: url('../images/app/17.png');
+}
+.icon-file.disable {
+    background-image: url('../images/app/137.png');
+}
+.icon-nav {
+    background-image: url('../images/app/67.png');
+}
+.icon-nav.icon-active {
+    background-image: url('../images/app/66.png');
+}
+.icon-user {
+    background-image: url('../images/app/112.png');
+}
+.icon-user.icon-active {
+    background-image: url('../images/app/113.png');
+}
+.icon-user.disable {
+    background-image: url('../images/app/111.png');
+}
+.icon-home {
+    background-image: url('../images/app/5.png');
+}
+.icon-home.icon-active {
+    background-image: url('../images/app/6.png');
+}
+.icon-contact {
+    background-image: url('../images/app/161.png');
+}
+.icon-contact.icon-active {
+    background-image: url('../images/app/162.png');
+}
+.icon-qr {
+    background-image: url('../images/app/165.png');
+}
+.icon-qr.icon-active {
+    background-image: url('../images/app/166.png');
+}
+.icon-library {
+    background-image: url('../images/app/168.png');
+}
+.icon-library.icon-active {
+    background-image: url('../images/app/167.png');
+}
+.icon-chat-bubble {
+    background-image: url('../images/app/168.png');
+}
+.icon-chat-bubble.icon-active {
+    background-image: url('../images/app/167.png');
+}
+.icon-guide {
+    background-image: url('../images/app/164.png');
+}
+.icon-guide.icon-active {
+    background-image: url('../images/app/163.png');
+}
+.icon-search {
+    background-image: url('../images/app/124.png');
+}
+.icon-search.icon-active {
+    background-image: url('../images/app/125.png');
+}
+.icon-account {
+    background-image: url('../images/app/28.png');
+}
+.icon-account.icon-active {
+    background-image: url('../images/app/27.png');
+}
+.icon-vip {
+    background-image: url('../images/app/157.png');
+}
+.icon-vip.icon-active {
+    background-image: url('../images/app/158.png');
+}
+.icon-lock {
+    background-image: url('../images/app/150.png');
+}
+.icon-lock.icon-active {
+    background-image: url('../images/app/151.png');
+}
+.icon-load {
+    background-image: url('../images/app/152.png');
+}
+.icon-close.icon-red {
+    background-image: url('../images/app/85.png');
+}
+.icon-close {
+    background-image: url('../images/app/86.png');
+}
+.icon-add-round {
+    background-image: url('../images/app/130.png');
+}
+.icon-mail {
+    background-image: url('../images/app/25.png');
+}
+.icon-mail.disable {
+    background-image: url('../images/app/23.png');
+}
+.icon-mail.icon-active, .active .icon-mail {
+    background-image: url('../images/app/24.png');
+}
+.icon-paper-4 {
+    background-image: url('../images/app/13.png');
+}
+.icon-paper-4.icon-active {
+    background-image: url('../images/app/12.png');
+}
+.icon-contact-book {
+    background-image: url('../images/app/19.png');
+}
+.icon-contact-book.icon-active {
+    background-image: url('../images/app/18.png');
+}
+.icon-plane {
+    background-image: url('../images/app/59.png');
+}
+.icon-plane.icon-active {
+    background-image: url('../images/app/58.png');
+}
+.icon-group {
+    background-image: url('../images/app/54.png');
+}
+.icon-group.icon-active {
+    background-image: url('../images/app/53.png');
+}
+.icon-edit {
+    background-image: url('../images/app/82.png');
+}
+.icon-edit.icon-active {
+    background-image: url('../images/app/81.png');
+}
+.icon-bell {
+    background-image: url('../images/app/96.png');
+}
+.icon-bell.icon-active {
+    background-image: url('../images/app/97.png');
+}
+.icon-plan {
+    background-image: url('../images/app/40.png');
+}
+.icon-plan.icon-active {
+    background-image: url('../images/app/42.png');
+}
+.icon-plan.icon-red {
+    background-image: url('../images/app/43.png');
+}
+.icon-plan.icon-green {
+    background-image: url('../images/app/41.png');
+}
+.icon-class {
+    background-image: url('../images/app/115.png');
+}
+.icon-class.icon-active {
+    background-image: url('../images/app/114.png');
+}
+.icon-class.disable {
+    background-image: url('../images/app/126.png');
+}
+.icon-pencil.icon-active {
+    background-image: url('../images/app/57.png');
+}
+.icon-math {
+    background-image: url('../images/app/142.png');
+}
+.icon-teacher {
+    background-image: url('../images/app/44.png');
+}
+.icon-teacher.icon-active {
+    background-image: url('../images/app/45.png');
+}
+.icon-teacher.disable {
+    background-image: url('../images/app/46.png');
+}
+.icon-colleague {
+    background-image: url('../images/app/129.png');
+}
+.icon-colleague.icon-active {
+    background-image: url('../images/app/39.png');
+}
+.icon-colleague.disable {
+    background-image: url('../images/app/38.png');
+}
+.icon-add-contact {
+    background-image: url('../images/app/132.png');
+}
+.icon-open-arrow {
+    background-image: url('../images/app/7.png');
+}
+.icon-card-red {
+    background-image: url('../images/app/103.png');
+}
+.icon-card-blue {
+    background-image: url('../images/app/105.png');
+}
+.icon-card-basic {
+    background-image: url('../images/app/104.png');
+}
+.icon-card-tab {
+    background-image: url('../images/app/102.png');
+}
+.active .icon-card-tab {
+    background-image: url('../images/app/106.png');
+}
+.icon-door {
+    background-image: url('../images/app/101.png');
+}
+.icon-calendar {
+    background-image: url('../images/app/98.png');
+}
+.icon-calendar.icon-active {
+    background-image: url('../images/app/100.png');
+}
+.icon-calendar.disable {
+    background-image: url('../images/app/99.png');
+}
+.active .icon-calendar {
+    background-image: url('../images/app/100.png');
+}
+.icon-clock {
+    background-image: url('../images/app/107.png');
+}
+.icon-info {
+    background-image: url('../images/app/78.png');
+}
+.icon-info.icon-active {
+    background-image: url('../images/app/79.png');
+}
+.icon-info.icon-red {
+    background-image: url('../images/app/77.png');
+}
+.icon-schedule.disable {
+    background-image: url('../images/app/29.png');
+}
+.icon-schedule, .active .icon-schedule, .icon-schedule.icon-active {
+    background-image: url('../images/app/30.png');
+}
+.icon-board.disable {
+    background-image: url('../images/app/110.png');
+}
+.icon-board {
+    background-image: url('../images/app/109.png');
+}
+.active .icon-board, .icon-board.icon-active {
+    background-image: url('../images/app/108.png');
+}
+.icon-back {
+    background-image: url('../images/app/127.png');
+}
+.icon-back.icon-active, .icon-back-blue {
+    background-image: url('../images/app/128.png');
+}
+.icon-plus {
+    background-image: url('../images/app/87.png');
+}
+.icon-plus.icon-white {
+    background-image: url('../images/app/88.png');
+}
+.icon-time-clock {
+    background-image: url('../images/app/70.png');
+}
+.icon-paper {
+    background-image: url('../images/app/171.png');
+}
+.icon-paper.icon-active {
+    background-image: url('../images/app/170.png');
+}
+.icon-add-contact-2 {
+    background-image: url('../images/app/122.png');
+}
+.icon-add-contact-2.icon-green {
+    background-image: url('../images/app/120.png');
+}
+.icon-add-contact-2.icon-white {
+    background-image: url('../images/app/121.png');
+}
+.icon-send-2 {
+    background-image: url('../images/app/60.png');
+}
+.icon-send-2.icon-active {
+    background-image: url('../images/app/61.png');
+}
+.icon-bubble-chat-1 {
+    background-image: url('../images/app/93.png');
+}
+.icon-bubble-chat-2 {
+    background-image: url('../images/app/94.png');
+}
+.icon-fx {
+    background-image: url('../images/app/76.png');
+}
+.icon-content {
+    background-image: url('../images/app/72.png');
+}
+.icon-paper-2 {
+    background-image: url('../images/app/34.png');
+}
+.icon-paper-2.icon-active {
+    background-image: url('../images/app/33.png');
+}
+.icon-download {
+    background-image: url('../images/app/74.png');
+}
+.icon-download.icon-active {
+    background-image: url('../images/app/75.png');
+}
+.icon-download.disable {
+    background-image: url('../images/app/73.png');
+}
+.icon-add-folder {
+    background-image: url('../images/app/9.png');
+}
+.icon-add-folder.disable {
+    background-image: url('../images/app/8.png');
+}
+.icon-add-folder.icon-active {
+    background-image: url('../images/app/10.png');
+}
+.icon-add-file {
+    background-image: url('../images/app/21.png');
+}
+.icon-add-file.disable {
+    background-image: url('../images/app/22.png');
+}
+.icon-add-file.icon-active {
+    background-image: url('../images/app/20.png');
+}
+.icon-trash {
+    background-image: url('../images/app/55.png');
+}
+.icon-paper-3 {
+    background-image: url('../images/app/71.png');
+}
+.icon-paper-3.disable {
+    background-image: url('../images/app/71.png');
+}
+.icon-paper-3.icon-active {
+    background-image: url('../images/app/72.png');
+}
+.icon-image {
+    background-image: url('../images/app/32.png');
+}
+.icon-image.icon-active {
+    background-image: url('../images/app/31.png');
+}
+.icon-question {
+    background-image: url('../images/app/14.png');
+}

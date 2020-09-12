@@ -1,0 +1,86 @@
+.treeview {
+    line-height: 28px;
+    font-weight: 500;
+    font-size: 15px;
+    padding-top: 20px;
+}
+.treeview,
+.treeview ul,
+.treeview ul li {
+    width: 100%;
+    float: left;
+    list-style: none;
+    padding-left: 15px;
+}
+.treeview li.extend {
+    display: flex;
+}
+.treeview li.extend:checked ~ :before {
+    transform: rotate(180deg);
+}
+.treeview .folder {
+    position: relative;
+}
+.treeview .folder span.hg-icon {
+    width: 23px;
+    height: 23px;
+    margin-left: 24px;
+}
+.treeview .folder:before,
+.treeview .file:before,
+.treeview .external:before {
+    font-family:'FontAwesome';
+    float: left;
+    margin-right: 6px;
+}
+.treeview .folder:before {
+    content: '';
+    background-image: url('../images/app/7.png');
+    position: absolute;
+    left: 0;
+    font-size: 17px;
+    width: 15px;
+    height: 15px;
+    background-position: top left;
+    background-size: cover;
+    top: 5px;
+}
+.treeview .external:before {
+    font-size: 90%;
+    content: "";
+}
+.treeview .extend .folder > ul {
+    display: none;
+    padding-left: 12px;
+}
+.treeview .extend label {
+    float: left;
+}
+.treeview .extend input {
+    display: none;
+}
+.treeview .extend input[type=checkbox] + span.hg-icon:before {
+    content: "";
+    background-image: url('../images/app/48.png');
+    color: #111;
+    float: left;
+    font-size: 14px;
+    margin-left: 1px;
+    margin-top: 7px;
+    cursor: pointer;
+}
+.treeview .extend input[type=checkbox]:checked + span.hg-icon:before {
+    background-image: url('../images/app/7.png');
+    content: '';
+}
+.treeview .extend input[type=checkbox]:checked ~ ul {
+    display: block;
+}
+label:has( > input[type=checkbox]:checked):before {
+    transform: rotate(180deg);
+}
+.tree-view__folder-title {
+    vertical-align: super;
+    padding-left: 10px;
+}
+.tree-view li:has(> .extend)
