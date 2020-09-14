@@ -12,7 +12,7 @@
         <!-- Start side bar -->
         <div class="sidebar">
             <div class="sidebar-logo">
-                <a href=""><img src="../../assets/images/app/169.png"></a>
+                <a class="p-0" href=""><img src="../../assets/images/app/169.png"></a>
             </div>
             <div class="sidebar-function-icon">
                 <a class="mb-3" href=""><span class="hg-icon icon-nav"></span></a>
@@ -591,16 +591,264 @@
                             </div>
                         </div>
 
-                        <div class="modal-body p-0 pb-3 create-question-popup_body">
+                        <div class="modal-body p-0 pb-3 px-3 create-question-popup_body">
                             <div class="tab-pane fade active show in" id="cau-hoi-don" role="tabpanel"> <!-- Tab câu hỏi đơn -->
-                                câu hỏi đơn
+                                <div class="w-100 create-question-popup_question-id border-b-grey py-3">
+                                    ID<span class="required">*</span>: <input class="border-0" type="text" placeholder="Nhập">
+                                </div>
+                                <div class="w-100 border-b-grey py-3">
+                                    <div class="px-2 my-3 mx-2">
+                                        <span class="hg-icon icon-content mr-2"></span>
+                                        <span class="library-header__title super-align">Nội dung<span class="required">*</span></span>
+                                    </div>
+                                    <div class="modal-text-area__area col-12 p-0">
+                                        <div class="fx function px-5">
+                                            <span class="hg-icon icon-image icon-active mr-4"></span>
+                                            <span class="hg-icon icon-fx mr-4"></span>
+                                            <span>
+                                                <div class="custom-control custom-switch dinline-block">
+                                                    <input type="checkbox" class="custom-control-input" id="customSwitch1" checked="">
+                                                    <label class="custom-control-label" for="customSwitch1">Tự động chuyển từ khóa viết tắt</label>
+                                                </div>
+                                            </span>
+                                        </div>
+                                        <textarea class="w-100"></textarea>
+                                    </div>
+                                    <span class="error-message px-2">Nội dung không được quá 2000 ký tự</span>
+                                    <div class="px-2 my-3 mx-2 flex-space-between">
+                                        <div class="float-left">
+                                            <span class="hg-icon icon-content mr-2"></span>
+                                            <span class="library-header__title super-align">Đáp án<span class="required">*</span></span>
+                                        </div>
+                                        <div class="float-right">
+                                            <div class="custom-control custom-switch dinline-block">
+                                                <input type="checkbox" class="custom-control-input" id="customSwitch3">
+                                                <label class="library-header__title custom-control-label text-blue" for="customSwitch3">Chức năng khóa đảo đáp án</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-text-area__area col-12 p-0">
+                                        <div class="fx function px-5">
+                                            <span class="hg-icon icon-image icon-active mr-4"></span>
+                                            <span class="hg-icon icon-fx mr-4"></span>
+                                            <span>
+                                                <div class="custom-control custom-switch dinline-block">
+                                                    <input type="checkbox" class="custom-control-input" id="customSwitch2" checked="">
+                                                    <label class="custom-control-label" for="customSwitch2">Tự động chuyển từ khóa viết tắt</label>
+                                                </div>
+                                            </span>
+                                        </div>
+                                        <textarea class="w-100"></textarea>
+                                    </div>
+                                    <span class="error-message px-2">Nội dung không được quá 2000 ký tự</span>
+                                    <div class="answer mb-3 px-2">
+                                        <div class="px-2 my-3 mx-2">
+                                            <span class="hg-icon icon-info icon-active mr-2"></span>
+                                            <span class="library-header__title super-align">Đáp án<span class="required">*</span></span>
+                                        </div>
+                                        <div class="answer-item full-fill-radio-input">
+                                            <div class="text-center">
+                                                <div class="">
+                                                    <span class="checkmark"></span>
+                                                </div>
+                                            </div>
+                                            <div class="question-group-item__header--title">
+                                                <label class="float-left">
+                                                    Tôi đi mua sắm dưới phố với hiện tại mới của mình, một thế giới tràn ngập âm thanh. Tất cả việc tôi làm là tập trung vào một
+                                                    <input class="float-left mx-2" type="radio" name="answer" value="1" checked="">
+                                                    <span class="checkmark"></span>
+                                                </label>
+                                                <div class="action text-right">
+                                                    <span class="hg-icon icon-edit mr-4"></span>
+                                                    <span class="hg-icon icon-close icon-red"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="answer-item full-fill-radio-input">
+                                            <div class="text-center">
+                                                <div class="">
+                                                    <span class="checkmark"></span>
+                                                </div>
+                                            </div>
+                                            <div class="question-group-item__header--title">
+                                                <label class="float-left">Đáp án này gần đúng
+                                                    <input class="float-left mx-2" type="radio" name="answer" value="0">
+                                                    <span class="checkmark"></span>
+                                                </label>
+                                                <div class="action text-right">
+                                                    <span class="hg-icon icon-edit mr-4"></span>
+                                                    <span class="hg-icon icon-close icon-red"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="answer-item full-fill-radio-input">
+                                            <div class="text-center">
+                                                <div class="">
+                                                    <span class="checkmark"></span>
+                                                </div>
+                                            </div>
+                                            <div class="question-group-item__header--title">
+                                                <label class="float-left">Đáp án này ko đúng
+                                                    <input class="float-left mx-2" type="radio" name="answer" value="2">
+                                                    <span class="checkmark"></span>
+                                                </label>
+                                                <div class="action text-right">
+                                                    <span class="hg-icon icon-edit mr-4"></span>
+                                                    <span class="hg-icon icon-close icon-red"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="answer-item full-fill-radio-input">
+                                            <div class="text-center">
+                                                <div class="">
+                                                    <span class="checkmark"></span>
+                                                </div>
+                                            </div>
+                                            <div class="question-group-item__header--title">
+                                                <label class="float-left">Đáp án này chả đúng
+                                                    <input class="float-left mx-2" type="radio" name="answer" value="2">
+                                                    <span class="checkmark"></span>
+                                                </label>
+                                                <div class="action text-right">
+                                                    <span class="hg-icon icon-edit mr-4"></span>
+                                                    <span class="hg-icon icon-close icon-red"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-text-area__area col-12 p-0">
+                                        <div class="fx function px-5">
+                                            <span class="hg-icon icon-image icon-active mr-4"></span>
+                                            <span class="hg-icon icon-fx mr-4"></span>
+                                            <span>
+                                                <div class="custom-control custom-switch dinline-block">
+                                                    <input type="checkbox" class="custom-control-input" id="customSwitch2" checked="">
+                                                    <label class="custom-control-label" for="customSwitch2">Tự động chuyển từ khóa viết tắt</label>
+                                                </div>
+                                            </span>
+                                        </div>
+                                        <textarea class="w-100"></textarea>
+                                    </div>
+                                    <div class="px-2 answer-select-group-3 my-3">
+                                        <div class="select-box">
+                                            <div class="select-box__current" tabindex="1">
+                                                <div class="select-box__value">
+                                                    <input class="select-box__input" type="radio" id="attr1" value="1" name="attribute1" checked="checked"/>
+                                                    <p class="select-box__input-text">Kiến thức đặc thù</p>
+                                                </div>
+                                                <div class="select-box__value">
+                                                    <input class="select-box__input" type="radio" id="attr2" value="2" name="attribute1"/>
+                                                    <p class="select-box__input-text">Senior</p>
+                                                </div>
+                                                <div class="select-box__value">
+                                                    <input class="select-box__input" type="radio" id="attr3" value="3" name="attribute1"/>
+                                                    <p class="select-box__input-text">Middle</p>
+                                                </div>
+                                                <span class="hg-icon icon-open-arrow select-box__icon"></span>
+                                            </div>
+                                            <ul class="select-box__list">
+                                                <li>
+                                                    <label class="select-box__option" for="attr1" aria-hidden="aria-hidden">Kiến thức đặc thù</label>
+                                                </li>
+                                                <li>
+                                                    <label class="select-box__option" for="attr2" aria-hidden="aria-hidden">Senior</label>
+                                                </li>
+                                                <li>
+                                                    <label class="select-box__option" for="attr3" aria-hidden="aria-hidden">Middle</label>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="select-box">
+                                            <div class="select-box__current" tabindex="1">
+                                                <div class="select-box__value">
+                                                    <input class="select-box__input" type="radio" id="diff1" value="1" name="difficult1" checked="checked"/>
+                                                    <p class="select-box__input-text">Khó</p>
+                                                </div>
+                                                <div class="select-box__value">
+                                                    <input class="select-box__input" type="radio" id="diff2" value="2" name="difficult1"/>
+                                                    <p class="select-box__input-text">Trung bình</p>
+                                                </div>
+                                                <div class="select-box__value">
+                                                    <input class="select-box__input" type="radio" id="diff3" value="3" name="difficult1"/>
+                                                    <p class="select-box__input-text">Dễ</p>
+                                                </div>
+                                                <span class="hg-icon icon-open-arrow select-box__icon"></span>
+                                            </div>
+                                            <ul class="select-box__list">
+                                                <li>
+                                                    <label class="select-box__option" for="diff1" aria-hidden="aria-hidden">Khó</label>
+                                                </li>
+                                                <li>
+                                                    <label class="select-box__option" for="diff2" aria-hidden="aria-hidden">Trung bình</label>
+                                                </li>
+                                                <li>
+                                                    <label class="select-box__option" for="diff3" aria-hidden="aria-hidden">Dễ</label>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="select-box">
+                                            <div class="select-box__current" tabindex="1">
+                                                <div class="select-box__value">
+                                                    <input class="select-box__input" type="radio" id="level1" value="1" name="level1" checked="checked"/>
+                                                    <p class="select-box__input-text">Khó</p>
+                                                </div>
+                                                <div class="select-box__value">
+                                                    <input class="select-box__input" type="radio" id="level2" value="2" name="level1"/>
+                                                    <p class="select-box__input-text">Trung bình</p>
+                                                </div>
+                                                <div class="select-box__value">
+                                                    <input class="select-box__input" type="radio" id="level3" value="3" name="level1"/>
+                                                    <p class="select-box__input-text">Dễ</p>
+                                                </div>
+                                                <span class="hg-icon icon-open-arrow select-box__icon"></span>
+                                            </div>
+                                            <ul class="select-box__list">
+                                                <li>
+                                                    <label class="select-box__option" for="level1" aria-hidden="aria-hidden">Khó</label>
+                                                </li>
+                                                <li>
+                                                    <label class="select-box__option" for="level2" aria-hidden="aria-hidden">Trung bình</label>
+                                                </li>
+                                                <li>
+                                                    <label class="select-box__option" for="level3" aria-hidden="aria-hidden">Dễ</label>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="px-2 mt-3">
+                                        <input class="w-100" type="text" placeholder="Form câu hỏi">
+                                    </div>
+                                    <div class="px-2 mt-3">
+                                        <input class="w-100" type="text" placeholder="Kiến thức đặc thù">
+                                    </div>
+                                    <div class="px-2 my-3 mx-2">
+                                        <span class="hg-icon icon-paper-3 icon-active mr-2"></span>
+                                        <span class="library-header__title super-align">Lời giải</span>
+                                    </div>
+                                    <div class="modal-text-area__area col-12 mb-3 px-2">
+                                        <div class="fx function px-5">
+                                            <span class="hg-icon icon-image icon-active mr-5"></span>
+                                            <span class="hg-icon icon-fx mr-5"></span>
+                                            <span>
+                                                <div class="custom-control custom-switch dinline-block">
+                                                    <input type="checkbox" class="custom-control-input" id="customSwitch1" checked="">
+                                                    <label class="custom-control-label" for="customSwitch1">Tự động chuyển từ khóa viết tắt</label>
+                                                </div>
+                                            </span>
+                                        </div>
+                                        <textarea class="w-100"></textarea>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="tab-pane fade" id="cau-hoi-chum" role="tabpanel"> <!-- Tab câu hỏi đơn -->
+
+
+
+                            <div class="tab-pane fade" id="cau-hoi-chum" role="tabpanel"> <!-- Tab câu hỏi chùm -->
                                 <div class="w-100 create-question-popup_question-id border-b-grey py-3">
                                     ID<span class="required">*</span>: 154821584
                                 </div>
                                 <div class="w-100 border-b-grey py-3">
-                                    <div class="px-2 mb-3">
+                                    <div class="px-2 mb-3 mx-2">
                                         <span class="hg-icon icon-content mr-2"></span>
                                         <span class="library-header__title super-align">Nội dung chùm<span class="required">*</span></span>
                                     </div>
@@ -617,16 +865,309 @@
                                         </div>
                                         <textarea class="w-100"></textarea>
                                     </div>
-                                    <span class="error-message">Nội dung không được quá 2000 ký tự</span>
+                                    <span class="error-message px-2">Nội dung không được quá 2000 ký tự</span>                                    
                                 </div>
-                                <div class="w-100 py-3">
+                                <div class="w-100 py-3 px-2">
                                     <div class="px-2 mb-3">
                                         <span class="hg-icon icon-question mr-2"></span>
                                         <span class="library-header__title super-align">Chùm câu hỏi<span class="required">*</span></span>
                                     </div>
                                     <div class="px-4">
-                                        <span class="hg-icon icon-plus icon-green m-0"></span> 
-                                        <span class="text-green">Thêm câu hỏi</span>
+                                        <span class="hg-icon icon-plus icon-green m-0"></span>
+                                        <span class="text-green font-15">Thêm câu hỏi</span>
+                                    </div>
+                                    <div class="question-group-item panel-group" id="accordion">
+                                        <!-- item 1 -->
+                                        <div class="question-group-item__container panel panel-default">
+                                            <div class="panel-heading">
+                                                <div class="question-group-item__header">
+                                                    <div class="text-center">
+                                                        <span class="hg-icon icon-close icon-red"></span> 
+                                                    </div>
+                                                    <div class="question-group-item__header--title">
+                                                        <span>Câu hỏi 1</span>
+                                                    </div>
+                                                    <div class="panel-title text-right">
+                                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+                                                            <span class="hg-icon icon-open-arrow"></span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div id="collapse1" class="panel-collapse collapse in">
+                                                <div class="panel-body">
+                                                    <div class="px-2 mb-3 mx-2">
+                                                        <span class="hg-icon icon-question mr-2"></span>
+                                                        <span class="library-header__title super-align">Câu hỏi<span class="required">*</span></span>
+                                                    </div>
+                                                    <div class="modal-text-area__area col-12 mb-3 px-2">
+                                                        <div class="fx function px-5">
+                                                            <span class="hg-icon icon-image icon-active mr-5"></span>
+                                                            <span class="hg-icon icon-fx mr-5"></span>
+                                                            <span>
+                                                                <div class="custom-control custom-switch dinline-block">
+                                                                    <input type="checkbox" class="custom-control-input" id="customSwitch1" checked="">
+                                                                    <label class="custom-control-label" for="customSwitch1">Tự động chuyển từ khóa viết tắt</label>
+                                                                </div>
+                                                            </span>
+                                                        </div>
+                                                        <textarea class="w-100"></textarea>
+                                                    </div>
+                                                    <span class="error-message px-2">Nội dung không được quá 2000 ký tự</span>
+                                                    <div class="answer mb-3 px-2">
+                                                        <div class="px-2 my-3 mx-2">
+                                                            <span class="hg-icon icon-info icon-active mr-2"></span>
+                                                            <span class="library-header__title super-align">Đáp án<span class="required">*</span></span>
+                                                        </div>
+                                                        <div class="answer-item full-fill-radio-input">
+                                                            <div class="text-center">
+                                                                <div class="">
+                                                                    <span class="checkmark"></span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="question-group-item__header--title">
+                                                                <label class="float-left">
+                                                                    Tôi đi mua sắm dưới phố với hiện tại mới của mình, một thế giới tràn ngập âm thanh. Tất cả việc tôi làm là tập trung vào một
+                                                                    <input class="float-left mx-2" type="radio" name="answer" value="1" checked="">
+                                                                    <span class="checkmark"></span>
+                                                                </label>
+                                                                <div class="action text-right">
+                                                                    <span class="hg-icon icon-edit mr-4"></span>
+                                                                    <span class="hg-icon icon-close icon-red"></span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="answer-item full-fill-radio-input">
+                                                            <div class="text-center">
+                                                                <div class="">
+                                                                    <span class="checkmark"></span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="question-group-item__header--title">
+                                                                <label class="float-left">Đáp án này gần đúng
+                                                                    <input class="float-left mx-2" type="radio" name="answer" value="0">
+                                                                    <span class="checkmark"></span>
+                                                                </label>
+                                                                <div class="action text-right">
+                                                                    <span class="hg-icon icon-edit mr-4"></span>
+                                                                    <span class="hg-icon icon-close icon-red"></span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="answer-item full-fill-radio-input">
+                                                            <div class="text-center">
+                                                                <div class="">
+                                                                    <span class="checkmark"></span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="question-group-item__header--title">
+                                                                <label class="float-left">Đáp án này ko đúng
+                                                                    <input class="float-left mx-2" type="radio" name="answer" value="2">
+                                                                    <span class="checkmark"></span>
+                                                                </label>
+                                                                <div class="action text-right">
+                                                                    <span class="hg-icon icon-edit mr-4"></span>
+                                                                    <span class="hg-icon icon-close icon-red"></span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="answer-item full-fill-radio-input">
+                                                            <div class="text-center">
+                                                                <div class="">
+                                                                    <span class="checkmark"></span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="question-group-item__header--title">
+                                                                <label class="float-left">Đáp án này chả đúng
+                                                                    <input class="float-left mx-2" type="radio" name="answer" value="2">
+                                                                    <span class="checkmark"></span>
+                                                                </label>
+                                                                <div class="action text-right">
+                                                                    <span class="hg-icon icon-edit mr-4"></span>
+                                                                    <span class="hg-icon icon-close icon-red"></span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="modal-text-area__area col-12 mb-3 px-2">
+                                                        <div class="fx function px-5">
+                                                            <span class="hg-icon icon-image icon-active mr-5"></span>
+                                                            <span class="hg-icon icon-fx mr-5"></span>
+                                                            <span>
+                                                                <div class="custom-control custom-switch dinline-block">
+                                                                    <input type="checkbox" class="custom-control-input" id="customSwitch1" checked="">
+                                                                    <label class="custom-control-label" for="customSwitch1">Tự động chuyển từ khóa viết tắt</label>
+                                                                </div>
+                                                            </span>
+                                                        </div>
+                                                        <textarea class="w-100"></textarea>
+                                                    </div>
+                                                    <div class="px-2 mb-3 mx-2">
+                                                        <span class="hg-icon icon-info icon-active mr-2"></span>
+                                                        <span class="library-header__title super-align">Thông tin</span>
+                                                    </div>
+                                                    <div class="px-2 answer-select-group-3">
+                                                        <div class="select-box">
+                                                            <div class="select-box__current" tabindex="1">
+                                                                <div class="select-box__value">
+                                                                    <input class="select-box__input" type="radio" id="attr1" value="1" name="attribute" checked="checked"/>
+                                                                    <p class="select-box__input-text">Kiến thức đặc thù</p>
+                                                                </div>
+                                                                <div class="select-box__value">
+                                                                    <input class="select-box__input" type="radio" id="attr2" value="2" name="attribute"/>
+                                                                    <p class="select-box__input-text">Senior</p>
+                                                                </div>
+                                                                <div class="select-box__value">
+                                                                    <input class="select-box__input" type="radio" id="attr3" value="3" name="attribute"/>
+                                                                    <p class="select-box__input-text">Middle</p>
+                                                                </div>
+                                                                <span class="hg-icon icon-open-arrow select-box__icon"></span>
+                                                            </div>
+                                                            <ul class="select-box__list">
+                                                                <li>
+                                                                    <label class="select-box__option" for="attr1" aria-hidden="aria-hidden">Kiến thức đặc thù</label>
+                                                                </li>
+                                                                <li>
+                                                                    <label class="select-box__option" for="attr2" aria-hidden="aria-hidden">Senior</label>
+                                                                </li>
+                                                                <li>
+                                                                    <label class="select-box__option" for="attr3" aria-hidden="aria-hidden">Middle</label>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="select-box">
+                                                            <div class="select-box__current" tabindex="1">
+                                                                <div class="select-box__value">
+                                                                    <input class="select-box__input" type="radio" id="diff1" value="1" name="difficult" checked="checked"/>
+                                                                    <p class="select-box__input-text">Khó</p>
+                                                                </div>
+                                                                <div class="select-box__value">
+                                                                    <input class="select-box__input" type="radio" id="diff2" value="2" name="difficult"/>
+                                                                    <p class="select-box__input-text">Trung bình</p>
+                                                                </div>
+                                                                <div class="select-box__value">
+                                                                    <input class="select-box__input" type="radio" id="diff3" value="3" name="difficult"/>
+                                                                    <p class="select-box__input-text">Dễ</p>
+                                                                </div>
+                                                                <span class="hg-icon icon-open-arrow select-box__icon"></span>
+                                                            </div>
+                                                            <ul class="select-box__list">
+                                                                <li>
+                                                                    <label class="select-box__option" for="diff1" aria-hidden="aria-hidden">Khó</label>
+                                                                </li>
+                                                                <li>
+                                                                    <label class="select-box__option" for="diff2" aria-hidden="aria-hidden">Trung bình</label>
+                                                                </li>
+                                                                <li>
+                                                                    <label class="select-box__option" for="diff3" aria-hidden="aria-hidden">Dễ</label>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="select-box">
+                                                            <div class="select-box__current" tabindex="1">
+                                                                <div class="select-box__value">
+                                                                    <input class="select-box__input" type="radio" id="level1" value="1" name="level" checked="checked"/>
+                                                                    <p class="select-box__input-text">Khó</p>
+                                                                </div>
+                                                                <div class="select-box__value">
+                                                                    <input class="select-box__input" type="radio" id="level2" value="2" name="level"/>
+                                                                    <p class="select-box__input-text">Trung bình</p>
+                                                                </div>
+                                                                <div class="select-box__value">
+                                                                    <input class="select-box__input" type="radio" id="level3" value="3" name="level"/>
+                                                                    <p class="select-box__input-text">Dễ</p>
+                                                                </div>
+                                                                <span class="hg-icon icon-open-arrow select-box__icon"></span>
+                                                            </div>
+                                                            <ul class="select-box__list">
+                                                                <li>
+                                                                    <label class="select-box__option" for="level1" aria-hidden="aria-hidden">Khó</label>
+                                                                </li>
+                                                                <li>
+                                                                    <label class="select-box__option" for="level2" aria-hidden="aria-hidden">Trung bình</label>
+                                                                </li>
+                                                                <li>
+                                                                    <label class="select-box__option" for="level3" aria-hidden="aria-hidden">Dễ</label>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="px-2 mt-3">
+                                                        <input class="w-100" type="text" placeholder="Form câu hỏi">
+                                                    </div>
+                                                    <div class="px-2 mt-3">
+                                                        <input class="w-100" type="text" placeholder="Kiến thức đặc thù">
+                                                    </div>
+                                                    <div class="px-2 my-3 mx-2">
+                                                        <span class="hg-icon icon-paper-3 icon-active mr-2"></span>
+                                                        <span class="library-header__title super-align">Lời giải</span>
+                                                    </div>
+                                                    <div class="modal-text-area__area col-12 mb-3 px-2">
+                                                        <div class="fx function px-5">
+                                                            <span class="hg-icon icon-image icon-active mr-5"></span>
+                                                            <span class="hg-icon icon-fx mr-5"></span>
+                                                            <span>
+                                                                <div class="custom-control custom-switch dinline-block">
+                                                                    <input type="checkbox" class="custom-control-input" id="customSwitch1" checked="">
+                                                                    <label class="custom-control-label" for="customSwitch1">Tự động chuyển từ khóa viết tắt</label>
+                                                                </div>
+                                                            </span>
+                                                        </div>
+                                                        <textarea class="w-100"></textarea>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- item 2 -->
+                                        <div class="question-group-item__container panel panel-default">
+                                            <div class="panel-heading">
+                                                <div class="question-group-item__header">
+                                                    <div class="text-center">
+                                                        <span class="hg-icon icon-close icon-red"></span> 
+                                                    </div>
+                                                    <div class="question-group-item__header--title">
+                                                        <span>Câu hỏi 2</span>
+                                                    </div>
+                                                    <div class="panel-title text-right">
+                                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
+                                                            <span class="hg-icon icon-open-arrow"></span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div id="collapse2" class="panel-collapse collapse">
+                                                <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                                                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- item 3 -->
+                                        <div class="question-group-item__container panel panel-default">
+                                            <div class="panel-heading">
+                                                <div class="question-group-item__header">
+                                                    <div class="text-center">
+                                                        <span class="hg-icon icon-close icon-red"></span> 
+                                                    </div>
+                                                    <div class="question-group-item__header--title">
+                                                        <span>Câu hỏi 3</span>
+                                                    </div>
+                                                    <div class="panel-title text-right">
+                                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
+                                                            <span class="hg-icon icon-open-arrow"></span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div id="collapse3" class="panel-collapse collapse">
+                                                <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                                                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>

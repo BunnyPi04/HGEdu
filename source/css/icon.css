@@ -227,13 +227,13 @@ span {
 .icon-math {
     background-image: url('../images/app/142.png');
 }
-.icon-teacher {
+.icon-teacher-2 {
     background-image: url('../images/app/44.png');
 }
-.icon-teacher.icon-active {
+.icon-teacher-2.icon-active {
     background-image: url('../images/app/45.png');
 }
-.icon-teacher.disable {
+.icon-teacher-2.disable {
     background-image: url('../images/app/46.png');
 }
 .icon-colleague {
@@ -409,4 +409,31 @@ span {
 }
 .icon-question {
     background-image: url('../images/app/14.png');
+}
+.icon-physical {
+    background-image: url('../images/app/141.png');
+}
+.icon-math {
+    background-image: url('../images/app/142.png');
+}
+.icon-chemistry {
+    background-image: url('../images/app/143.png');
+}
+.icon-history {
+    background-image: url('../images/app/144.png');
+}
+.icon-language {
+    background-image: url('../images/app/139.png');
+}
+.icon-biology {
+    background-image: url('../images/app/140.png');
+}
+.icon-civic-education {
+    background-image: url('../images/app/145.png');
+}
+.icon-other-subject {
+    background-image: url('../images/app/147.png');
+}
+.icon-geography {
+    background-image: url('../images/app/146.png');
 }

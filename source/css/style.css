@@ -8,6 +8,7 @@
     --red: #e82020;
     --light-grey: #bebebe;
     --bg-grey: #f6f6f6;
+    --bg-dark-grey: #f2f2f2;
     --border-light-grey: #eeeeef;
     --border-grey: #f3f3f3;
 }
@@ -63,7 +64,7 @@ textarea:focus, input:focus {
     width: 70%;
 }
 .w-80 {
-    width: 70%;
+    width: 80%;
 }
 .w-90 {
     width: 90%;
@@ -93,6 +94,12 @@ textarea:focus, input:focus {
     width: 100%;
     height: 5rem;
 }
+.font-15 {
+    font-size: 1.5rem;
+}
+.m-0-auto {
+    margin: 0 auto;
+}
 .cursor-pointer {
     cursor: pointer
 }
@@ -105,6 +112,10 @@ textarea:focus, input:focus {
 }
 .border-b-grey {
     border-bottom: 1px solid var(--light-grey)
+}
+.flex-space-between {
+    display: flex;
+    justify-content: space-between;
 }
 .custom-tooltip {
     display: -webkit-box;
@@ -321,7 +332,7 @@ textarea:focus, input:focus {
     -webkit-box-shadow: 0 0 10px var(--light-grey);
     box-shadow: 0 0 10px var(--light-grey);
 }
-.function-icon:hover {
+.function-icon:hover, .function-icon.active {
     border: 2px solid var(--grey);
 }
 .function-icon span.hg-icon {
@@ -1688,14 +1699,16 @@ label[for="file-input"] {
     height: 8px;
     top: 50%;
     transform: translateY(-50%);
+    background-color: var(--light-grey);
 }
 .custom-switch .custom-control-label::after {
-    background-color: var(--green);
+    background-color: var(--bg-dark-grey);
     left: calc(-2.25rem);
     width: 1.3rem;
     height: 1.3rem;
     border-radius: 50%;
     top: 0.2rem;
+    box-shadow: 0px 1px 1px var(--light-grey);
 }
 .custom-control-input:checked~.custom-control-label::before {
     border-color: var(--light-green);
@@ -1707,6 +1720,181 @@ label[for="file-input"] {
 .create-question-popup_body textarea {
     border: none;
     box-shadow: 0px 3px 10px var(--light-grey);
+}
+.question-group-item__header {
+    display: grid;
+    grid-template-columns: 50px auto 50px;
+    font-size: 1.5rem;
+}
+.question-group-item__header span {
+    vertical-align: middle;
+}
+.question-group-item__container {
+    border-radius: 5px;
+    box-shadow: 0px 3px 10px var(--light-grey);
+    padding: 10px;
+    margin: 10px;
+}
+.modal-text-area__area textarea {
+    padding-top: 55px;
+}
+.modal-body {
+    max-height: 80vh;
+    overflow: auto;
+}
+.answer-item .checkmark {
+    top: 50%;
+    transform: translateY(-50%);
+    left: 17px;
+}
+.answer-item {
+    border-radius: 5px;
+    box-shadow: 0px 1px 10px var(--light-grey);
+    padding: 5px 10px 5px 60px;
+    position: relative;
+    margin-bottom: 10px;
+    display: flex;
+}
+.answer-item::before {
+    content: '';
+    position: absolute;
+    height: 75%;
+    width: 1px;
+    background-color: var(--light-grey);
+    left: 45px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.answer-item .action {
+/*    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 17px;
+    display: flex;*/
+    display: flex;
+    float: right;
+    position: relative;
+    height: 100%;
+    align-items: center;
+    padding-right: 5px;
+}
+.answer-item .action .hg-icon::before, .answer-item .action .hg-icon::after {
+    content: '';
+    height: 100%;
+    width: 1px;
+    background-color: var(--light-grey);
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+}
+.answer-item .action .hg-icon::before {
+    right: 85px;
+}
+.answer-item .action .hg-icon::after {
+    right: 35px;
+}
+.question-group-item__header--title {
+    width: 100%;
+}
+.question-group-item__header--title label {
+    margin-bottom: 0;
+    width: 70%;
+    width: calc(100% - 100px);
+}
+.answer-select-group-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+.answer-select-group-3 .select-box__current {
+    padding: 15px 0px 6px;
+}
+.answer-select-group-3 .select-box:nth-child(1):before {
+    content: 'Thuộc tính';
+    background: white;
+    left: 20px;
+    padding: 0 5px;
+    position: absolute;
+    top: 0;
+    z-index: 100;
+    transform: translateY(-50%);
+}
+.answer-select-group-3 .select-box:nth-child(2):before {
+    content: 'Mức khó';
+    background: white;
+    left: 20px;
+    padding: 0 5px;
+    position: absolute;
+    top: 0;
+    z-index: 100;
+    transform: translateY(-50%);
+}
+.answer-select-group-3 .select-box:nth-child(3):before {
+    content: 'Trình độ';
+    background: white;
+    left: 20px;
+    padding: 0 5px;
+    position: absolute;
+    top: 0;
+    z-index: 100;
+    transform: translateY(-50%);
+}
+.answer-select-group-3 .select-box {
+    border: 1px solid var(--black);
+}
+.alert-primary {
+    background-color: var(--blue);
+    border-color: var(--blue);
+    color: white;
+}
+.alert-success {
+    color: white;
+    background-color: var(--green);
+    border-color: var(--green);
+}
+.alert-danger {
+    color: white;
+    background-color: var(--red);
+    border-color: var(--red);
+}
+.alert-secondary {
+    color: var(--black);
+    background-color: var(--bg-grey);
+    border-color: var(--bg-grey);
+}
+.alert-dark {
+    color: #1b1e21;
+    background-color: var(--light-grey);
+    border-color: var(--light-grey);
+}
+.contact-list .list-item .hg-icon {
+    vertical-align: middle;
+    height: 25px;
+    width: 25px;
+}
+.contact-list .mn-tab .nav-tabs .nav-link .hg-icon {
+    left: 0;
+}
+.inline-button {
+    padding: 8px 30px;
+    font-size: 1.3em;
+    border-radius: 30px;
+    box-shadow: 3px 4px 4px var(--light-grey);
+}
+.MultiCarousel-inner .function-icon {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+.MultiCarousel-inner .function-icon h5 {
+    color: var(--blue);
+    margin-top: 20px;
+    font-size: 1.9rem;
+    font-weight: bold;
+}
+.btn.rightLst .hg-icon, .btn.leftLst .hg-icon {
+    width: 40px;
+    height: 40px;
 }
 
 @-webkit-keyframes HideList {
