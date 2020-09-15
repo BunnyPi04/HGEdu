@@ -20,16 +20,28 @@
     color: #666;
     height: 100%
 }
+.MultiCarousel .leftLst {
+    transform: translate(-30px,-50%) rotate(90deg);
+}
+.MultiCarousel .rightLst {
+    transform: translate(30px,-50%) rotate(90deg);
+}
+
 .MultiCarousel .leftLst, .MultiCarousel .rightLst {
     position: absolute;
     border-radius: 50%;
-    top: calc(50% - 20px);
+    top: 50%;
+    /*transform: translateY(-50%) rotate(90deg);*/
+    /*transform: rotate(90deg);*/
 }
 .MultiCarousel .leftLst {
-    left:0;
+    left: 0;
 }
 .MultiCarousel .rightLst {
-    right:0;
+    right: 0;
+}
+.MultiCarousel .btn:focus {
+    box-shadow: none;
 }
 
 .MultiCarousel .leftLst.over, .MultiCarousel .rightLst.over {

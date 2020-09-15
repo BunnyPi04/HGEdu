@@ -437,3 +437,24 @@ span {
 .icon-geography {
     background-image: url('../images/app/146.png');
 }
+.icon-dropdown {
+    background-image: url('../images/app/181.png');
+}
+.icon-dropdown.icon-grey, .icon-dropdown.disable {
+    background-image: url('../images/app/182.png');
+}
+.icon-cgs {
+    background-image: url('../images/app/seetest1.png');
+}
+.icon-test-1.icon-active {
+    background-image: url('../images/app/63.png');
+}
+.icon-test-1.disable {
+    background-image: url('../images/app/62.png');
+}
+.icon-test-2.icon-active {
+    background-image: url('../images/app/65.png');
+}
+.icon-test-2.disable {
+    background-image: url('../images/app/64.png');
+}

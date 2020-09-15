@@ -15,8 +15,8 @@
 body {
     margin: 0 auto;
     padding: 0;
-    font-size: 18px;
-    font-family: Effra;
+    font-size: 15px;
+    font-family: Montserrat;
 }
 h1, h2, h3, h4 {
     color: var(--blue);
@@ -30,17 +30,34 @@ a, a:hover {
     src: url(../fonts/iCielEffra-Regular.otf);
 }
 @font-face {
-    font-family: Roboto;
-    src: url(../fonts/RobotoCondensed-Regular.ttf);
+    font-family: Montserrat;
+    src: url(../fonts/Montserrat-Light.ttf);
+    font-weight: lighter;
 }
 @font-face {
-    font-family: Roboto;
-    src: url(../fonts/Roboto-Bold.ttf);
+    font-family: Montserrat;
+    src: url(../fonts/Montserrat-LightItalic.ttf);
+    font-weight: lighter;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: url(../fonts/Montserrat-Medium.ttf);
+}
+@font-face {
+    font-family: Montserrat;
+    src: url(../fonts/Montserrat-MediumItalic.ttf);
+    font-style: italic;
+}
+@font-face {
+    font-family: Montserrat;
+    src: url(../fonts/Montserrat-Bold.ttf);
     font-weight: bold;
 }
 @font-face {
-    font-family: Roboto;
-    src: url(../fonts/Roboto-BoldItalic.ttf);
+    font-family: Montserrat;
+    src: url(../fonts/Montserrat-BoldItalic.ttf);
     font-weight: bold;
     font-style: italic;
 }
@@ -50,8 +67,8 @@ textarea:focus, input:focus {
 .font-effra {
     font-family: Effra;
 }
-.font-eroboto {
-    font-family: Roboto;
+.font-roboto {
+    font-family: Montserrat;
 }
 .h-50 {
     height: 50%;
@@ -95,7 +112,7 @@ textarea:focus, input:focus {
     height: 5rem;
 }
 .font-15 {
-    font-size: 1.5rem;
+    font-size: 1.5rem !important;
 }
 .m-0-auto {
     margin: 0 auto;
@@ -301,10 +318,10 @@ textarea:focus, input:focus {
     border: 1px solid var(--blue);
 }
 .extra-large h1 {
-    font-size: 3.1rem;
+    font-size: 2.5rem;
 }
 .extra-large h3 {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
 }
 .login-form .form-body {
     margin: 0 auto;
@@ -389,6 +406,7 @@ textarea:focus, input:focus {
 }
 .sidebar-logo img, .sidebar-profile img {
     width: 100%;
+    height: 55px;
 }
 .main-container {
     background-color: var(--bg-grey);
@@ -521,7 +539,7 @@ textarea:focus, input:focus {
     height: 60px;
     width: 100%;
     display: grid;
-    grid-template-columns: 1fr 4fr 2fr 5fr;
+    grid-template-columns: 135px 35% auto auto;
     margin-bottom: 10px;
     padding: 0 25px;
     align-items: center;
@@ -541,7 +559,7 @@ textarea:focus, input:focus {
     box-shadow: 1px 3px 8px var(--light-grey);
 }
 .list-item__user-name {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     content: var(--blue);
     font-weight: bold;
 }
@@ -615,6 +633,7 @@ textarea:focus, input:focus {
     padding: 10px;
     margin: 0 auto;
     min-width: 40vw;
+    /*width: 45vw;w*/
 }
 .modal-box .modal-header {
     align-items: baseline;
@@ -652,7 +671,7 @@ textarea:focus, input:focus {
     border: 1px solid var(--black);
     border-radius: 5px;
     padding: 0 17px;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
 }
 .modal-label {
     line-height: 4rem;
@@ -732,6 +751,7 @@ textarea:focus, input:focus {
     border: 1px solid var(--grey);
     border-radius: 4px;
     z-index: 99;
+    font-size: 1.1rem;
 }
 .select-box__current {
     position: relative;
@@ -758,7 +778,7 @@ textarea:focus, input:focus {
             transform: translateY(-50%);
     width: 20px;
     height: 20px;
-    opacity: 0.3;
+    opacity: 1;
     -webkit-transition: 0.2s ease;
     transition: 0.2s ease;
 }
@@ -778,6 +798,7 @@ textarea:focus, input:focus {
     margin: 0;
     padding: 5px 15px;
     background-color: #fff;
+    border-radius: 4px;
 }
 .select-box__list {
     border: 1px solid var(--grey);
@@ -788,6 +809,7 @@ textarea:focus, input:focus {
     padding: 0;
     list-style: none;
     opacity: 0;
+    transition-duration: 0.5s;
     -webkit-animation-name: HideList;
             animation-name: HideList;
     -webkit-animation-duration: 0.5s;
@@ -868,6 +890,7 @@ textarea:focus, input:focus {
 }
 .class-mn .select-box__icon {
     width: 20px;
+    height: 20px;
 }
 .class-mn .account-list .list-item {
     height: auto;
@@ -886,7 +909,7 @@ textarea:focus, input:focus {
 }
 .class-list__label {
     display: inline-block;
-    line-height: 50px;
+    line-height: 40px;
 }
 .class-list__class-info-item {
     display: flex;
@@ -896,7 +919,7 @@ textarea:focus, input:focus {
     border-radius: 20px;
     background: var(--blue);
     display: grid;
-    grid-template-columns: 6fr 5fr;
+    grid-template-columns: 7fr 5fr;
 }
 .home__instruction div {
     color: white;
@@ -907,6 +930,7 @@ textarea:focus, input:focus {
 }
 .home__instruction--text {
     padding: 25px;
+    font-size: 0.8rem;
 }
 .home__instruction--video {
     background: white;
@@ -924,7 +948,7 @@ textarea:focus, input:focus {
 .home-page-container {
     padding: 30px;
     display: grid;
-    grid-template-columns: 7fr 3fr;
+    grid-template-columns: 8fr 3fr;
 }
 .home-page__ad-container {
     position: fixed;
@@ -1156,6 +1180,7 @@ textarea:focus, input:focus {
     background-color: transparent;
     border: none;
     line-height: 48px;
+    font-size: 1.1rem;
 }
 .time-table-add-button {
     vertical-align: bottom;
@@ -1163,7 +1188,7 @@ textarea:focus, input:focus {
     padding: 10px;
 }
 .time-table-button__container {
-    font-size: 1.4em;
+    font-size: 1.2em;
     cursor: pointer;
 }
 .time-table-button__container .hg-icon {
@@ -1177,6 +1202,10 @@ textarea:focus, input:focus {
 .time-table-note {
     min-width: 25%;
 }
+.add-class-filter-title {
+    display: grid;
+    align-items: center;
+}
 .mn-content-time-table__body {
     overflow: auto;
     max-height: calc(100vh - 400px);
@@ -1189,6 +1218,7 @@ textarea:focus, input:focus {
     width: 100%;
     padding: 7px;
     margin-bottom: 15px;
+    font-size: 0.9rem;
 }
 .list-class__item-delete {
     text-align: center;
@@ -1306,14 +1336,14 @@ textarea:focus, input:focus {
 .exam-calendar {
     display: grid;
     grid-template-columns: 3fr 7fr;
-    height: calc(100vh - 220px);
-    overflow: auto;
+/*    height: calc(100vh - 220px);
+    overflow: auto;*/
 }
 .exam-calendar__exam-container {
-    border-left: 1px solid var(--grey);
+    border-left: 1px solid var(--light-grey);
 }
 .exam-calendar__exam--date {
-    border-bottom: 1px solid var(--grey);
+    border-bottom: 1px solid var(--light-grey);
 }
 .exam-calendar__exam--item {
     display: grid;
@@ -1327,6 +1357,7 @@ textarea:focus, input:focus {
 .exam-calendar__exam--time {
     display: flex;
     border-right: 1px solid var(--grey);
+    align-items: center;
 }
 .exam-calendar__exam--time .hg-icon.main-icon {
     width: 75px;
@@ -1341,10 +1372,22 @@ textarea:focus, input:focus {
     grid-template-rows: 1fr 1fr;
     justify-content: center;
     align-items: center;
+    grid-gap: 10px;
+}
+.exam-calendar__exam--time .time-info div {
+    display: flex;
+    align-items: center;
 }
 .exam-calendar__exam--info .hg-icon {
     width: 25px;
     height: 25px;
+}
+.exam-calendar__exam--time .time-info div .hg-icon {
+    margin-right: 7px;
+}
+.exam-calendar__exam-list {
+    overflow: auto;
+    height: calc(100vh - 26px);
 }
 .vertical-text-bottom {
     vertical-align: text-bottom;
@@ -1361,6 +1404,7 @@ textarea:focus, input:focus {
     display: grid;
     align-items: center;
     text-align: center;
+    padding-left: 15px;
 }
 .fixed-send-announcement-icon .hg-icon {
     width: 30px;
@@ -1707,7 +1751,7 @@ label[for="file-input"] {
     width: 1.3rem;
     height: 1.3rem;
     border-radius: 50%;
-    top: 0.2rem;
+    top: 0.05rem;
     box-shadow: 0px 1px 1px var(--light-grey);
 }
 .custom-control-input:checked~.custom-control-label::before {
@@ -1750,7 +1794,7 @@ label[for="file-input"] {
 .answer-item {
     border-radius: 5px;
     box-shadow: 0px 1px 10px var(--light-grey);
-    padding: 5px 10px 5px 60px;
+    padding: 8px 10px 8px 60px;
     position: relative;
     margin-bottom: 10px;
     display: flex;
@@ -1893,8 +1937,93 @@ label[for="file-input"] {
     font-weight: bold;
 }
 .btn.rightLst .hg-icon, .btn.leftLst .hg-icon {
-    width: 40px;
-    height: 40px;
+    width: 100px;
+    height: 100px;
+}
+.highlight-news {
+    display: grid;
+    grid-template-columns: 7fr 4fr;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 3px 4px 4px var(--light-grey);
+}
+.highlight-news__image {
+    border-radius: 20px;
+    overflow: hidden;
+    max-height: 340px;
+}
+.highlight-news__excerpt {
+    padding: 40px;
+}
+.highlight-news__excerpt p {
+    font-size: 0.8rem;
+    line-height: 1.6rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+.link-see-more {
+    color: var(--blue);
+    text-decoration: underline;
+}
+.account-info-right .account-info-form-1-1 div:not(:first-child) {
+    font-family: Effra;
+}
+.form-body.register-info-form .account-info-right {
+    font-size: 1.2rem;
+}
+.mn-tab {
+    font-size: 1.2rem;
+}
+.exam-mn .mn-tab .nav .nav-item .hg-icon {
+    width: 2.3rem;
+    height: 2.3rem;
+}
+.exam-tab {
+    vertical-align: super;
+}
+.exam-mn .exam-calendar__exam-list {
+    height: calc(100vh - 275px);
+}
+.exam-pop-up-choose__item {
+    border-radius: 10px;
+    color: var(--light-grey);
+    display: grid;
+    grid-template-columns: 80px auto;
+    width: 100%;
+    background-color: var(--bg-grey);
+    align-items: center;
+    font-size: 1.4rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+/*.exam-pop-up-choose__item:first-child:hover {
+
+}*/
+.exam-pop-up-choose__item .hg-icon {
+    margin: 0 auto;
+}
+.exam-pop-up-choose__item:hover {
+    color: var(--blue);
+}
+.overflow-none {
+    overflow: unset;
+}
+.library-header__title.custom-control-label {
+    font-size: 1.2rem
+}
+.create-exam-plan .modal-header {
+    display: block;
+    text-align: center;
+}
+.create-exam-plan .modal-title {
+    font-size: 1.3rem;
+    color: var(--black);
+    font-weight: normal;
+}
+.create-exam-plan__subject {
+    font-size: 1.3rem;
 }
 
 @-webkit-keyframes HideList {
