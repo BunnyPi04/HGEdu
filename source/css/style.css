@@ -828,6 +828,7 @@ textarea:focus, input:focus {
     display: block;
     padding: 15px;
     background-color: #fff;
+    border-radius: 4px;
 }
 .select-box__option:hover, .select-box__option:focus {
     color: #546c84;
@@ -2024,6 +2025,142 @@ label[for="file-input"] {
 }
 .create-exam-plan__subject {
     font-size: 1.3rem;
+}
+.exam-pick-class {
+    display: grid;
+    grid-template-columns: 200px auto;
+    font-size: 1rem;
+    grid-gap: 10px;
+    padding: 10px 0;
+}
+.exam-pick-class .select-box {
+    font-size: 0.9rem;
+}
+.create-exam-plan .modal-box {
+    height: 85vh;
+}
+.create-exam-plan .modal-box .modal-body {
+    height: 85%;
+}
+.create-exam-plan .modal-box .modal-body .select-box__input-text {
+    padding-right: 35px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+.create-exam-plan .modal-box .modal-body .select-box__option {
+    padding: 5px 15px;
+    position: relative;
+}
+.create-exam-plan .modal-box .modal-body li:not(:last-child) .select-box__option:before {
+    position: absolute;
+    bottom: 0;
+    content: '';
+    width: 97%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    height: 1px;
+    background-color: var(--grey)
+}
+.create-exam-plan .modal-box .modal-body .select-box__option .option-icon, .create-exam-plan .modal-box .modal-body .select-box__value .option-icon {
+    width: 15px;
+    height: 15px;
+    vertical-align: middle;
+}
+.library-content-area .mn-content-time-table-header.class-time-table-container .select-box__icon {
+    width: 15px;
+    height: 15px;
+    right: 10px;
+}
+.library-content-area .mn-content-time-table-header.class-time-table-container .select-box__input-text {
+    padding-right: 30px;
+    padding-left: 10px;
+}
+.pick-test-subject {
+    display: inline;
+    padding: 3px 15px;
+    border: 1px solid var(--grey);
+    margin-right: 10px;
+    border-radius: 3px;
+    font-size: 1rem;
+    font-family: Effra;
+    cursor: pointer;
+}
+.create-exam-plan__body {
+    height: 88%;
+    overflow: auto;
+}
+.exam-pop-up-choose__item:nth-child(2) {
+    padding: 5px 0;
+}
+.exam-pop-up-choose__item:nth-child(2) .icon-file {
+    height: 40px;
+    width: 37px;
+}
+.modal__footer {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2rem;
+    padding-top: 10px;
+    border-top: 1px solid var(--light-grey);
+}
+.pop-up-pick-subject .modal-list-scroll {
+    max-width: 30vw;
+    overflow-x: auto;
+    margin-right: 5px;
+}
+.pop-up-add-student-to-class .modal-body__table--thead {
+    font-size: 1.2rem;
+}
+.pop-up-pick-subject .modal-list__item.modal-pick-student {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin: 6px 0;
+}
+.pop-up-pick-subject .modal-list__item.modal-pick-student .hg-icon {
+    width: 25px;
+    height: 25px;
+    vertical-align: middle;
+}
+.pop-up-pick-subject .modal-list__item.modal-pick-student .modal-pick-student__icon {
+    padding-top: 0;
+    padding-bottom: 0;
+    border-left: none;
+}
+.pop-up-pick-subject .modal-list__item.modal-pick-student .modal-pick-student__icon .icon-close {
+    width: 20px;
+    height: 20px;
+}
+.pop-up-pick-subject .modal-list__item.modal-pick-student .subject-name {
+    vertical-align: middle;
+}
+.pop-up-pick-subject .treeview .file a.picked {
+    position: relative;
+}
+.pop-up-pick-subject .treeview .file a.picked:before {
+    content: '';
+    width: 85%;
+    height: 1px;
+    position: absolute;
+    background-color: var(--red);
+    left: 22px;
+    top: 5px;
+}
+.modal-pick-student__student-name {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.pop-up-pick-subject .modal-body__table {
+    border: none;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 5px;
+}
+.pop-up-pick-subject .box-shadow {
+    box-shadow: 0px 1px 4px var(--light-grey);
+    border-radius: 10px;
 }
 
 @-webkit-keyframes HideList {
