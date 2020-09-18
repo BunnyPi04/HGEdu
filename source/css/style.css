@@ -1,6 +1,7 @@
 :root {
     --blue: #226bcf;
     --light-blue: #5498df;
+    --bg-light-blue: #eef6ff;
     --black: #3a3a3a;
     --green: #2aa699;
     --grey: #797979;
@@ -2162,6 +2163,131 @@ label[for="file-input"] {
     box-shadow: 0px 1px 4px var(--light-grey);
     border-radius: 10px;
 }
+.exam-code {
+    position: relative;
+    display: inline-block;
+    width: 208px;
+    height: 30px;
+}
+.exam-code .input-code-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 5px;
+    z-index: 1;
+}
+.exam-code .input-code-container .input-code {
+    width: 30px;
+    height: 30px;
+    background-color: var(--blue);
+    border-radius: 4px;
+}
+.exam-code .input-code__input {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 2;
+    background-color: transparent;
+    line-height: 1rem;
+    height: 30px;
+    letter-spacing: 23px;
+    padding-left: 7px;
+    color: white;
+}
+.create-exam__code-title {
+    line-height: 30px;
+    float: left;
+}
+.create-exam__code {
+    padding: 17px 0 15px;
+    border-top: 1px solid var(--light-grey);
+    font-family: Effra;
+    font-size: 1.3rem;
+}
+.create-exam__excerpt--title {
+    font-size: 1.2rem;
+    color: var(--blue);
+}
+.create-exam__excerpt .hg-icon {
+    width: 25px;
+    height: 25px;
+}
+.create-exam__excerpt .hg-icon, .create-exam__excerpt .create-exam__excerpt--title {
+    vertical-align: middle;
+}
+.knowledge-wide {
+    border-top: 1px solid var(--light-grey);
+
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.knowledge-wide .select-box {
+    width: auto;
+    display: inline-block;
+    margin-left: 15px;
+    font-size: 1rem;
+    z-index: 100;
+}
+.knowledge-wide .select-box .select-box__input-text {
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+.exam-filter {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2rem;
+    padding-bottom: 15px;
+}
+.exam-filter {
+    font-size: 1rem;
+    border-bottom: 1px solid var(--light-grey);
+}
+.create-exam__knowledge-list {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    background-color: var(--bg-grey);
+}
+.create-exam__knowledge-list--head-title {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 1px solid #e7e7e7;
+    font-weight: bold;
+}
+.create-exam__knowledge-list--head-title h4 {
+    margin-bottom: 0;
+}
+.create-exam__knowledge-list div:nth-of-type(odd) {
+    border-right: 1px solid #e7e7e7;
+}
+.create-exam__knowledge-list .treeview {
+    padding-top: 5px;
+}
+.create-exam__knowledge-list--item table thead th {
+    font-size: 1.2rem;
+    font-weight: normal;
+}
+.create-exam__knowledge-list--item table tr {
+    border-bottom: 1px solid #e7e7e7;
+}
+.create-exam__knowledge-list--item table th,.create-exam__knowledge-list--item table td {
+    padding: 15px 0;
+}
+.create-exam__knowledge-list--item table tbody tr td:first-child {
+    text-align: center;
+}
+.create-exam__knowledge-list--item--picked:not(:last-child) {
+    background: var(--bg-light-blue);
+}
+.create-exam__knowledge-list--item .hg-icon {
+    width: 20px;
+    height: 20px
+}
+.exam-quality {
+    border-top: 1px solid var(--light-grey);
+}
 
 @-webkit-keyframes HideList {
     from {
@@ -2212,4 +2338,14 @@ input[type=radio]:checked~.custom-control-label.green::before {
 ::-webkit-scrollbar-thumb {
     background: var(--light-grey);
     border-radius: 10px;
+}
+.input-code__input::-webkit-outer-spin-button,
+.input-code__input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+.input-code__input[type=number] {
+  -moz-appearance: textfield;
 }
