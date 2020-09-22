@@ -69,6 +69,12 @@ a, a:hover {
     font-weight: bold;
     font-style: italic;
 }
+@font-face {
+    font-family: Montserrat;
+    src: url(../fonts/Montserrat-SemiBold.ttf);
+    font-weight: 400;
+    font-style: italic;
+}
 textarea:focus, input:focus {
     outline: none;
 }
@@ -153,7 +159,7 @@ textarea:focus, input:focus {
 }
 .mail.custom-tooltip {
     display: block;
-    width: 325px;
+    width: 100%;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
@@ -223,8 +229,8 @@ textarea:focus, input:focus {
 }
 .form-body.register-info-form.grid-container {
     display: grid;
-    grid-template-columns: 1fr 3fr;
-    grid-column-gap: 30px;
+    grid-template-columns: 160px auto;
+    grid-column-gap: 60px;
 }
 .register-info-form-1-2 {
     display: grid;
@@ -240,17 +246,18 @@ textarea:focus, input:focus {
     margin: 0 auto;
     border: 1px solid var(--black);
     border-radius: 5px;
+    font-size: 18px;
 }
 .input-text-above-first-name input, .input-text-above-last-name input {
-    padding-left: 20px;
-    padding-right: 20px
+    padding-left: 24px;
+    padding-right: 24px
 }
 .input-text-above-first-name:before {
     content: 'Họ và đệm';
     background: white;
     position: absolute;
     top: 0;
-    padding: 0 10px;
+    padding: 0 15px;
     margin-left: 10px;
     transform: translateY(-50%);
 }
@@ -259,7 +266,7 @@ textarea:focus, input:focus {
     background: white;
     position: absolute;
     top: 0;
-    padding: 0 10px;
+    padding: 0 15px;
     margin-left: 10px;
     transform: translateY(-50%);
 }
@@ -426,7 +433,7 @@ textarea:focus, input:focus {
 }
 .mn-main-header {
     padding: 45px 60px;
-    height: 200px;
+    height: 180px;
     border-bottom: 2px solid var(--border-light-grey);
     position: relative;
 }
@@ -715,33 +722,49 @@ textarea:focus, input:focus {
 }
 .account-info {
     margin: 5rem 6rem;
-    max-width: 130vh;
 }
 .account-info-form-1-1 {
     display: grid;
     grid-template-columns: 1fr 2fr;
     grid-gap: 2.5rem;
 }
+.account-info__head, .account-info__info {
+    display: grid;
+    grid-template-columns: 300px auto;
+    grid-gap: 35px;
+}
 .account-name h1 {
-    font-weight: bold;
+    font-weight: 400;
+    margin-top: 5px;
+}
+.account-info__info .tooltip-container h3 {
+    font-size: 28px;
+    font-family: Effra;
+}
+.account-info__info-title {
+    font-size: 24px !important;
 }
 .account-role {
     border-radius: 20px;
     background-color: white;
     box-shadow: 1px 3px 8px var(--light-grey);
     float: left;
-    width: 75px;
-    height: 75px;
+    width: 65px;
+    height: 65px;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-right: 20px;
 }
+.account-role .hg-icon {
+    width: 42px;
+    height: 42px;
+}
 .account-role__edit {
     line-height: 75px;    
 }
 .account-role__edit a {
-    font-size: 1.5rem;
+    font-size: 18px;
 }
 .account-role__edit .hg-icon {
     width: 1.5rem;
@@ -1994,7 +2017,11 @@ label[for="file-input"] {
     font-family: Effra;
 }
 .form-body.register-info-form .account-info-right {
-    font-size: 1.2rem;
+    font-size: 20px;
+    font-family: Effra;
+}
+.form-body.register-info-form .account-info-right .account-name h1 {
+    font-family: Montserrat;
 }
 .mn-tab {
     font-size: 1.2rem;
@@ -2487,10 +2514,16 @@ label[for="file-input"] {
 .exam-action div {
     cursor: pointer;
 }
+.function-popup .modal-box {
+    width: 600px;
+}
+.function-popup__tab, .mn-tab.function-popup__tab .nav-tabs {
+    width: 100%;
+}
 .function-popup__tab .nav-link {
     padding-left: 0 !important;
     padding-right: 0 !important;
-    width: 120px;
+    /*width: 120px;*/
     text-align: center;
     padding-top: 15px;
     padding-bottom: 15px;
@@ -2499,12 +2532,13 @@ label[for="file-input"] {
 /*    padding-top: 15px;
     padding-bottom: 15px;*/
     position: relative;
+    width: 100px;
 }
 .mn-tab.function-popup__tab .nav-tabs .nav-item:first-child .nav-link {
-    padding-left: 25px !important;
+    /*padding-left: 25px !important;*/
 }
 .mn-tab.function-popup__tab .nav-tabs .nav-item:last-child .nav-link {
-    padding-right: 25px !important;
+    /*padding-right: 25px !important;*/
 }
 .mn-tab.function-popup__tab .nav-tabs .nav-item:not(:last-child):after {
     content: '';
@@ -2531,7 +2565,11 @@ label[for="file-input"] {
     background-color: var(--bg-light-blue);
 }
 .function-popup__body--item li {
-    padding: 0 15px;
+    padding: 0 7px;
+}
+.grid-4 {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
 }
 .grid-3 {
     display: grid;
@@ -2562,15 +2600,36 @@ label[for="file-input"] {
 }
 .function-popup textarea {
     border: 1px solid var(--light-grey);
-    height: 150px;
-    font-size: 1.5rem;
+    height: 100px;
+    font-size: 14px;
     padding: 10px 15px;
     line-height: 2.3rem;
 }
 .function-popup__body--resutl-area {
     width: 100%;
-    min-height: 150px;
+    min-height: 100px;
     overflow: auto;
+}
+.function-popup__body--resutl h5 {
+    font-size: 14px;
+}
+.mn-main-header h1, .home-page-header h1, .home-page__content h1 {
+    font-size: 30px;
+}
+.home-page__content h4 {
+    font-size: 22px;
+    font-weight: normal;
+}
+.home-page__content p {
+    font-size: 14px;
+}
+.function-action {
+    font-size: 18px;
+    margin: 0 20px;
+    border-top: 1px solid var(--light-grey);
+    padding: 15px 0;
+    display: flex;
+    justify-content: space-between;
 }
 
 @-webkit-keyframes HideList {

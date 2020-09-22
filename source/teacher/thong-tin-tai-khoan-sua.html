@@ -37,7 +37,7 @@
         <div class="main-container">
             <!-- Start header area -->
             <div class="mn-main-header">
-                <h1 class="font-weight-bold">Thông tin tài khoản</h1>
+                <h1>Thông tin tài khoản</h1>
                 <div class="mn-tab">
                     
                 </div>
@@ -49,16 +49,13 @@
                 <div class="mn-content-main-content">
                     <div class="account-info extra-large account-info-edit">
                         <div class="form-body register-info-form grid-container pt-3 w-100 mb-5">
-                            <div class="avatar pr-3">
-                                <div class="pr-5 mb-3 text-center">
-                                    <img class="w-100" src="../assets/images/app/111.png">
-                                    Thay ảnh đại diện
-                                </div>
-                                <div class="pr-5">
-                                    <img class="w-100" src="../assets/images/user/qr.jpg">
-                                </div>
+                            <div class="pr-5 text-center">
+                                <label for="file-input">
+                                    <img class="w-100 preview" src="../assets/images/app/111.png">
+                                </label>
+                                <input class="image-input d-none" id="file-input" type="file" />
                             </div>
-                            <div class="account-info-right text-left">
+                            <div class="account-info-right">
                                 <div class="account-name">
                                     <h1>Lê Quang Huy</h1>
                                 </div>
@@ -68,6 +65,12 @@
                                     <div class="label my-2"><div class="float-left">Nhập lại mật khẩu<span class="required">*</span>: </div></div>
                                     <div class="input my-2"><input class="w-100" type="password" name="" placeholder="Nhập"></div>
                                 </div>
+                            </div>
+                            <div class="">
+                                <p class="text-center">Thay ảnh đại diện</p>
+                                <img class="w-100 mt-5" src="../assets/images/user/qr.jpg">
+                            </div>
+                            <div class="account-info-right text-left">
                                 <div class="register-info-form-2-1 py-3">
                                     <div class="w-100 input py-2 input-text-above-first-name text-center">
                                         <input class="w-100 border-0" type="text" name="" placeholder="Nhập" value="Lê Quang">
@@ -102,6 +105,7 @@
                                     </div>
                                 </div>
                             </div>
+
                         </div>
                     </div>
                 </div>

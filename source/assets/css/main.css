@@ -523,7 +523,7 @@ span {
 }
 
 .math {
-    background-image: url('../images/app/math.png');
+    background-image: url('../images/app/function.png');
     background-repeat: no-repeat;
     background-size: auto 100%;
     display: block;
@@ -531,163 +531,203 @@ span {
     cursor: pointer;
 }
 .math.squareroot1 {
-    background-position-x: -130px;
-    width: 90px;
-    height: 75px
+    background-image: url('../images/app/math.png');
+    background-position-x: -86px;
+    width: 60px;
+    height: 50px;
 }
 .math.squareroot1.active, .active>.math.squareroot1 {
-    background-position-x: -25px;
+    background-image: url('../images/app/math.png');
+    background-position-x: -17px;
 }
 .math.matrix {
-    background-position-x: -345px;
-    width: 90px;
-    height: 75px
+    background-image: url('../images/app/math.png');
+    background-position-x: -230px;
+    width: 60px;
+    height: 50px;
 }
 .math.matrix.active, .active>.math.matrix {
-    background-position-x: -235px;
+    background-image: url('../images/app/math.png');
+    background-position-x: -157px;
 }
 .math.float {
-    background-position-x: -501px;
-    width: 90px;
-    height: 75px
+    background-image: url('../images/app/math.png');
+    background-position-x: -334px;
+    width: 60px;
+    height: 50px;
 }
 .math.float.active, .active>.math.float {
-    background-position-x: -433px;
+    background-image: url('../images/app/math.png');
+    background-position-x: -289px;
 }
 .math.arrow {
-    background-position-x: -615px;
-    width: 55px;
-    height: 75px
+    background-image: url('../images/app/math.png');
+    background-position-x: -408px;
+    width: 40px;
+    height: 50px;
 }
 .math.arrow.active, .active>.math.arrow {
-    background-position-x: -573px;
+    background-image: url('../images/app/math.png');
+    background-position-x: -379px;
 }
 .math.alpha {
-    background-position-x: -717px;
-    width: 90px;
-    height: 75px
+    background-image: url('../images/app/math.png');
+    background-position-x: -477px;
+    width: 60px;
+    height: 50px;
 }
 .math.alpha.active, .active>.math.alpha {
-    background-position-x: -651px;
+    background-image: url('../images/app/math.png');
+    background-position-x: -434px;
 }
 .math.abc {
-    background-position-x: -879px;
-    width: 55px;
-    height: 75px
+    background-image: url('../images/app/math.png');
+    background-position-x: -585px;
+    width: 40px;
+    height: 50px;
 }
 .math.abc.active, .active>.math.abc {
-    background-position-x: -803px;
+    background-image: url('../images/app/math.png');
+    background-position-x: -535px;
 }
 .math.squareroot2 {
-    background-position-x: -952px;
-    width: 55px;
-    height: 75px
+    background-position-x: -7px;
+    width: 40px;
+    height: 50px;
 }
 .math.squareroot3 {
-    background-position-x: -1015px;
-    width: 55px;
-    height: 75px
+    background-position-x: -47px;
+    width: 40px;
+    height: 50px;
 }
 .math.square1 {
-    background-position-x: -1070px;
-    width: 55px;
-    height: 75px
+    background-position-x: -87px;
+    width: 40px;
+    height: 50px;
 }
 .math.square2 {
-    background-position-x: -1123px;
-    width: 55px;
-    height: 75px
+    background-position-x: -127px;
+    width: 40px;
+    height: 50px;
 }
 .math.square3 {
-    background-position-x: -1174px;
-    width: 55px;
-    height: 75px
+    background-position-x: -169px;
+    width: 40px;
+    height: 50px;
 }
 .math.square4 {
-    background-position-x: -1128px;
-    width: 55px;
-    height: 75px
+    background-position-x: -248px;
+    width: 40px;
+    height: 50px;
 }
 .math.square5 {
-    background-position-x: -1256px;
-    width: 55px;
-    height: 75px
+    background-position-x: -208px;
+    width: 40px;
+    height: 50px;
 }
 .math.square6 {
-    background-position-x: -1295px;
-    width: 55px;
-    height: 75px
+    background-position-x: -422px;
+    background-position-y: -11px;
+    width: 40px;
+    height: 55px;
+    background-size: auto 130%;
 }
 .math.square7 {
-    background-position-x: -1340px;
-    width: 55px;
-    height: 75px
+    background-position-x: -328px;
+    width: 40px;
+    height: 50px;
 }
 .math.integral1 {
-    background-position-x: -1390px;
-    width: 55px;
-    height: 75px
+    background-position-x: -367px;
+    width: 40px;
+    height: 50px;
 }
 .math.lim {
-    background-position-x: -1444px;
-    width: 55px;
-    height: 75px
+    background-position-x: -450px;
+    width: 40px;
+    height: 50px;
 }
 .math.log {
-    background-position-x: -1510px;
-    width: 55px;
-    height: 75px
+    background-position-x: -409px;
+    width: 40px;
+    height: 50px;
 }
 .math.sum1 {
-    background-position-x: -1564px;
-    width: 55px;
-    height: 75px
+    background-position-x: -491px;
+    width: 40px;
+    height: 50px;
 }
 .math.sum2 {
-    background-position-x: -1602px;
-    width: 55px;
-    height: 75px
+    background-position-x: -491px;
+    width: 40px;
+    height: 50px;
 }
 .math.abs {
-    background-position-x: -1647px;
-    width: 55px;
-    height: 75px
+    background-position-x: -531px;
+    width: 40px;
+    height: 50px;
 }
 .math.integral2 {
-    background-position-x: -1692px;
-    width: 55px;
-    height: 75px
+    background-position-x: -572px;
+    width: 40px;
+    height: 50px;
 }
 .math.integral3 {
-    background-position-x: -1730px;
-    width: 55px;
-    height: 75px
+    background-position-x: -612px;
+    width: 40px;
+    height: 50px;
 }
 .math.integral4 {
-    background-position-x: -1730px;
-    width: 55px;
-    height: 75px
+    background-position-x: -652px;
+    width: 40px;
+    height: 50px;
 }
 .math.integral5 {
-    background-position-x: -1770px;
-    width: 55px;
-    height: 75px
+    background-position-x: -772px;
+    width: 40px;
+    height: 50px;
 }
 .math.integral6 {
-    background-position-x: -1810px;
-    width: 55px;
-    height: 75px
+    background-position-x: -731px;
+    width: 40px;
+    height: 50px;
 }
 .math.integral7 {
-    background-position-x: -1848px;
-    width: 55px;
-    height: 75px
+    background-position-x: -692px;
+    width: 40px;
+    height: 50px;
 }
 .math.integral8 {
     background-position-x: -1894px;
-    width: 55px;
-    height: 75px
+    width: 40px;
+    height: 50px;
 }
+.math.matrix1 {
+    background-position-x: -1281px;
+    width: 55px;
+    height: 75px;
+}
+.math.matrix2 {
+    background-position-x: -1343px;
+    width: 55px;
+    height: 75px;
+}
+.math.matrix3 {
+    background-position-x: -1403px;
+    width: 55px;
+    height: 75px;
+}
+.math.matrix4 {
+    background-position-x: -1222px;
+    width: 55px;
+    height: 75px;
+}
+.math.matrix5 {
+    background-position-x: -1465px;
+    width: 55px;
+    height: 75px;
+}
+
 :root {
     --blue: #226bcf;
     --light-blue: #5498df;
@@ -757,6 +797,12 @@ a, a:hover {
     font-family: Montserrat;
     src: url(../fonts/Montserrat-BoldItalic.ttf);
     font-weight: bold;
+    font-style: italic;
+}
+@font-face {
+    font-family: Montserrat;
+    src: url(../fonts/Montserrat-SemiBold.ttf);
+    font-weight: 400;
     font-style: italic;
 }
 textarea:focus, input:focus {
@@ -843,7 +889,7 @@ textarea:focus, input:focus {
 }
 .mail.custom-tooltip {
     display: block;
-    width: 325px;
+    width: 100%;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
@@ -913,8 +959,8 @@ textarea:focus, input:focus {
 }
 .form-body.register-info-form.grid-container {
     display: grid;
-    grid-template-columns: 1fr 3fr;
-    grid-column-gap: 30px;
+    grid-template-columns: 160px auto;
+    grid-column-gap: 60px;
 }
 .register-info-form-1-2 {
     display: grid;
@@ -930,17 +976,18 @@ textarea:focus, input:focus {
     margin: 0 auto;
     border: 1px solid var(--black);
     border-radius: 5px;
+    font-size: 18px;
 }
 .input-text-above-first-name input, .input-text-above-last-name input {
-    padding-left: 20px;
-    padding-right: 20px
+    padding-left: 24px;
+    padding-right: 24px
 }
 .input-text-above-first-name:before {
     content: 'Họ và đệm';
     background: white;
     position: absolute;
     top: 0;
-    padding: 0 10px;
+    padding: 0 15px;
     margin-left: 10px;
     transform: translateY(-50%);
 }
@@ -949,7 +996,7 @@ textarea:focus, input:focus {
     background: white;
     position: absolute;
     top: 0;
-    padding: 0 10px;
+    padding: 0 15px;
     margin-left: 10px;
     transform: translateY(-50%);
 }
@@ -1116,7 +1163,7 @@ textarea:focus, input:focus {
 }
 .mn-main-header {
     padding: 45px 60px;
-    height: 200px;
+    height: 180px;
     border-bottom: 2px solid var(--border-light-grey);
     position: relative;
 }
@@ -1405,33 +1452,49 @@ textarea:focus, input:focus {
 }
 .account-info {
     margin: 5rem 6rem;
-    max-width: 130vh;
 }
 .account-info-form-1-1 {
     display: grid;
     grid-template-columns: 1fr 2fr;
     grid-gap: 2.5rem;
 }
+.account-info__head, .account-info__info {
+    display: grid;
+    grid-template-columns: 300px auto;
+    grid-gap: 35px;
+}
 .account-name h1 {
-    font-weight: bold;
+    font-weight: 400;
+    margin-top: 5px;
+}
+.account-info__info .tooltip-container h3 {
+    font-size: 28px;
+    font-family: Effra;
+}
+.account-info__info-title {
+    font-size: 24px !important;
 }
 .account-role {
     border-radius: 20px;
     background-color: white;
     box-shadow: 1px 3px 8px var(--light-grey);
     float: left;
-    width: 75px;
-    height: 75px;
+    width: 65px;
+    height: 65px;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-right: 20px;
 }
+.account-role .hg-icon {
+    width: 42px;
+    height: 42px;
+}
 .account-role__edit {
     line-height: 75px;    
 }
 .account-role__edit a {
-    font-size: 1.5rem;
+    font-size: 18px;
 }
 .account-role__edit .hg-icon {
     width: 1.5rem;
@@ -2684,7 +2747,11 @@ label[for="file-input"] {
     font-family: Effra;
 }
 .form-body.register-info-form .account-info-right {
-    font-size: 1.2rem;
+    font-size: 20px;
+    font-family: Effra;
+}
+.form-body.register-info-form .account-info-right .account-name h1 {
+    font-family: Montserrat;
 }
 .mn-tab {
     font-size: 1.2rem;
@@ -3177,10 +3244,16 @@ label[for="file-input"] {
 .exam-action div {
     cursor: pointer;
 }
+.function-popup .modal-box {
+    width: 600px;
+}
+.function-popup__tab, .mn-tab.function-popup__tab .nav-tabs {
+    width: 100%;
+}
 .function-popup__tab .nav-link {
     padding-left: 0 !important;
     padding-right: 0 !important;
-    width: 120px;
+    /*width: 120px;*/
     text-align: center;
     padding-top: 15px;
     padding-bottom: 15px;
@@ -3189,12 +3262,13 @@ label[for="file-input"] {
 /*    padding-top: 15px;
     padding-bottom: 15px;*/
     position: relative;
+    width: 100px;
 }
 .mn-tab.function-popup__tab .nav-tabs .nav-item:first-child .nav-link {
-    padding-left: 25px !important;
+    /*padding-left: 25px !important;*/
 }
 .mn-tab.function-popup__tab .nav-tabs .nav-item:last-child .nav-link {
-    padding-right: 25px !important;
+    /*padding-right: 25px !important;*/
 }
 .mn-tab.function-popup__tab .nav-tabs .nav-item:not(:last-child):after {
     content: '';
@@ -3221,7 +3295,11 @@ label[for="file-input"] {
     background-color: var(--bg-light-blue);
 }
 .function-popup__body--item li {
-    padding: 0 15px;
+    padding: 0 7px;
+}
+.grid-4 {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
 }
 .grid-3 {
     display: grid;
@@ -3252,12 +3330,37 @@ label[for="file-input"] {
 }
 .function-popup textarea {
     border: 1px solid var(--light-grey);
-    height: 150px;
-    font-size: 1.5rem;
+    height: 100px;
+    font-size: 14px;
     padding: 10px 15px;
     line-height: 2.3rem;
 }
-
+.function-popup__body--resutl-area {
+    width: 100%;
+    min-height: 100px;
+    overflow: auto;
+}
+.function-popup__body--resutl h5 {
+    font-size: 14px;
+}
+.mn-main-header h1, .home-page-header h1, .home-page__content h1 {
+    font-size: 30px;
+}
+.home-page__content h4 {
+    font-size: 22px;
+    font-weight: normal;
+}
+.home-page__content p {
+    font-size: 14px;
+}
+.function-action {
+    font-size: 18px;
+    margin: 0 20px;
+    border-top: 1px solid var(--light-grey);
+    padding: 15px 0;
+    display: flex;
+    justify-content: space-between;
+}
 
 @-webkit-keyframes HideList {
     from {
