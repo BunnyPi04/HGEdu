@@ -116,6 +116,9 @@ span {
 .icon-file {
     background-image: url('../images/app/16.png');
 }
+.icon-file.disable {
+    background-image: url('../images/app/137.png');
+}
 .icon-file.icon-active {
     background-image: url('../images/app/15.png');
 }
@@ -503,6 +506,12 @@ span {
 .icon-cgs {
     background-image: url('../images/app/seetest1.png');
 }
+.icon-test-1 {
+    background-image: url('../images/app/62.png');
+}
+.icon-test-2 {
+    background-image: url('../images/app/64.png');
+}
 .icon-test-1.icon-active {
     background-image: url('../images/app/63.png');
 }
@@ -520,6 +529,9 @@ span {
 }
 .icon-check .icon-white {
     background-image: url('../images/app/51.png');
+}
+.icon-logout {
+    background-image: url('../images/app/68.png');
 }
 
 .math {
@@ -591,46 +603,58 @@ span {
     background-position-x: -535px;
 }
 .math.squareroot2 {
-    background-position-x: -7px;
+    background-position-x: -5px;
     width: 40px;
     height: 50px;
+    background-size: auto 90%;
 }
 .math.squareroot3 {
-    background-position-x: -47px;
+    background-position-x: -41px;
     width: 40px;
     height: 50px;
+    background-size: auto 90%;
 }
 .math.square1 {
-    background-position-x: -87px;
-    width: 40px;
+    background-position-x: -74px;
+    width: 36px;
     height: 50px;
+    background-size: auto 86%;
+    background-position-y: center;
 }
 .math.square2 {
-    background-position-x: -127px;
-    width: 40px;
+    background-position-x: -109px;
+    width: 36px;
     height: 50px;
+    background-size: auto 86%;
+    background-position-y: center;
 }
 .math.square3 {
-    background-position-x: -169px;
-    width: 40px;
+    background-position-x: -144px;
+    width: 36px;
     height: 50px;
+    background-size: auto 86%;
+    background-position-y: center;
 }
 .math.square4 {
-    background-position-x: -248px;
-    width: 40px;
+    background-position-x: -213px;
+    width: 36px;
     height: 50px;
+    background-size: auto 86%;
+    background-position-y: center;
 }
 .math.square5 {
-    background-position-x: -208px;
-    width: 40px;
+    background-position-x: -178px;
+    width: 36px;
     height: 50px;
+    background-size: auto 86%;
+    background-position-y: center;
 }
 .math.square6 {
-    background-position-x: -422px;
-    background-position-y: -11px;
-    width: 40px;
-    height: 55px;
-    background-size: auto 130%;
+    background-position-x: -331px;
+    background-position-y: center;
+    width: 36px;
+    height: 50px;
+    background-size: auto 113%;
 }
 .math.square7 {
     background-position-x: -328px;
@@ -643,59 +667,71 @@ span {
     height: 50px;
 }
 .math.lim {
-    background-position-x: -450px;
-    width: 40px;
+    background-position-x: -453px;
+    width: 36px;
     height: 50px;
 }
 .math.log {
-    background-position-x: -409px;
-    width: 40px;
+    background-position-x: -411px;
+    width: 36px;
     height: 50px;
 }
 .math.sum1 {
-    background-position-x: -491px;
-    width: 40px;
+    background-position-x: -492px;
+    width: 36px;
     height: 50px;
 }
 .math.sum2 {
-    background-position-x: -491px;
-    width: 40px;
+    background-position-x: -492px;
+    width: 36px;
     height: 50px;
 }
 .math.abs {
-    background-position-x: -531px;
-    width: 40px;
+    background-position-x: -533px;
+    width: 36px;
     height: 50px;
 }
 .math.integral2 {
-    background-position-x: -572px;
-    width: 40px;
+    background-position-x: -484px;
+    width: 36px;
     height: 50px;
+    background-size: auto 86%;
+    background-position-y: center;
 }
 .math.integral3 {
-    background-position-x: -612px;
-    width: 40px;
+    background-position-x: -525px;
+    width: 36px;
     height: 50px;
+    background-size: auto 86%;
+    background-position-y: center;
 }
 .math.integral4 {
-    background-position-x: -652px;
-    width: 40px;
+    background-position-x: -559px;
+    width: 36px;
     height: 50px;
+    background-size: auto 86%;
+    background-position-y: center;
 }
 .math.integral5 {
-    background-position-x: -772px;
-    width: 40px;
+    background-position-x: -664px;
+    width: 36px;
     height: 50px;
+    background-size: auto 86%;
+    background-position-y: center;
 }
 .math.integral6 {
-    background-position-x: -731px;
-    width: 40px;
+    background-position-x: -629px;
+    width: 36px;
     height: 50px;
+    background-size: auto 86%;
+    background-position-y: center;
 }
 .math.integral7 {
-    background-position-x: -692px;
-    width: 40px;
+    background-position-x: -594px;
+    width: 36px;
     height: 50px;
+    background-size: auto 86%;
+    background-position-y: center;
 }
 .math.integral8 {
     background-position-x: -1894px;
@@ -703,29 +739,596 @@ span {
     height: 50px;
 }
 .math.matrix1 {
-    background-position-x: -1281px;
-    width: 55px;
-    height: 75px;
+    background-position-x: -856px;
+    width: 36px;
+    height: 50px;
 }
 .math.matrix2 {
-    background-position-x: -1343px;
-    width: 55px;
-    height: 75px;
+    background-position-x: -897px;
+    width: 36px;
+    height: 50px;
 }
 .math.matrix3 {
-    background-position-x: -1403px;
-    width: 55px;
-    height: 75px;
+    background-position-x: -936px;
+    width: 36px;
+    height: 50px;
 }
 .math.matrix4 {
-    background-position-x: -1222px;
-    width: 55px;
-    height: 75px;
+    background-position-x: -815px;
+    width: 36px;
+    height: 50px;
 }
 .math.matrix5 {
-    background-position-x: -1465px;
-    width: 55px;
-    height: 75px;
+    background-position-x: -978px;
+    width: 36px;
+    height: 50px;
+}
+.math.equal1 {
+    background-position-x: -707px;
+    background-position-y: center;
+    width: 36px;
+    height: 50px;
+    background-size: auto 70%;
+}
+.math.equal2 {
+    background-position-x: -1187px;
+    background-position-y: center;
+    width: 36px;
+    height: 50px;
+    background-size: auto 70%;
+}
+.math.equal3 {
+    background-position-x: -1159px;
+    background-position-y: center;
+    width: 36px;
+    height: 50px;
+    background-size: auto 70%;
+}
+.math.equal4 {
+    background-position-x: -1131px;
+    background-position-y: center;
+    width: 36px;
+    height: 50px;
+    background-size: auto 70%;
+}
+.math.equal5 {
+    background-position-x: -1102px;
+    background-position-y: center;
+    width: 36px;
+    height: 50px;
+    background-size: auto 70%;
+}
+.math.equal6 {
+    background-position-x: -1074px;
+    background-position-y: center;
+    width: 36px;
+    height: 50px;
+    background-size: auto 70%;
+}
+.math.equal7 {
+    background-position-x: -1046px;
+    background-position-y: center;
+    width: 36px;
+    height: 50px;
+    background-size: auto 70%;
+}
+.math.equal8 {
+    background-position-x: -1018px;
+    background-position-y: center;
+    width: 36px;
+    height: 50px;
+    background-size: auto 70%;
+}
+.math.special1 {
+    background-position-x: -751px;
+    background-position-y: center;
+    width: 36px;
+    height: 50px;
+    background-size: auto 55%;
+}
+.math.special2 {
+    background-position-x: -773px;
+    background-position-y: center;
+    width: 36px;
+    height: 50px;
+    background-size: auto 55%;
+}
+.math.special3 {
+    background-position-x: -729px;
+    background-position-y: center;
+    width: 36px;
+    height: 50px;
+    background-size: auto 55%;
+}
+.math.special4 {
+    background-position-x: -708px;
+    background-position-y: center;
+    width: 34px;
+    height: 50px;
+    background-size: auto 55%;
+}
+.math.special5 {
+    background-position-x: -684px;
+    background-position-y: center;
+    width: 36px;
+    height: 50px;
+    background-size: auto 55%;
+}
+.math.special6 { /*missing*/
+    background-position-x: -2361px;
+    background-position-y: center;
+    width: 32px;
+    height: 50px;
+    background-size: auto 68%;
+}
+.math.special7 {
+    background-position-x: -662px;
+    background-position-y: center;
+    width: 36px;
+    height: 50px;
+    background-size: auto 55%;
+}
+.math.special8 {
+    background-position-x: -640px;
+    background-position-y: center;
+    width: 36px;
+    height: 50px;
+    background-size: auto 55%;
+}
+.math.special9 {
+    background-position-x: -618px;
+    background-position-y: center;
+    width: 36px;
+    height: 50px;
+    background-size: auto 55%;
+}
+.math.special10 {
+    background-position-x: -597px;
+    background-position-y: center;
+    width: 36px;
+    height: 50px;
+    background-size: auto 55%;
+}
+.math.special11 {
+    background-position-x: -573px;
+    background-position-y: center;
+    width: 36px;
+    height: 50px;
+    background-size: auto 55%;
+}
+.math.arrow1 {
+    background-position-x: -1546px;
+    background-position-y: center;
+    width: 36px;
+    height: 50px;
+    background-size: auto 65%;
+}
+.math.arrow2 {
+    background-position-x: -1468px;
+    background-position-y: center;
+    width: 36px;
+    height: 50px;
+    background-size: auto 65%;
+}
+.math.arrow3 { /*missing*/
+    background-position-x: -1336px;
+    background-position-y: center;
+    width: 36px;
+    height: 50px;
+    background-size: auto 65%;
+}
+.math.arrow4 {
+    background-position-x: -1362px;
+    background-position-y: center;
+    width: 36px;
+    height: 50px;
+    background-size: auto 65%;
+}
+.math.arrow5 {
+    background-position-x: -1520px;
+    background-position-y: center;
+    width: 36px;
+    height: 50px;
+    background-size: auto 65%;
+}
+.math.arrow6 {
+    background-position-x: -1494px;
+    background-position-y: center;
+    width: 36px;
+    height: 50px;
+    background-size: auto 65%;
+}
+.math.arrow7 {
+    background-position-x: -1415px;
+    background-position-y: center;
+    width: 36px;
+    height: 50px;
+    background-size: auto 65%;
+}
+.math.arrow8 {
+    background-position-x: -1441px;
+    background-position-y: center;
+    width: 36px;
+    height: 50px;
+    background-size: auto 65%;
+}
+.math.arrow9 {
+    background-position-x: -1310px;
+    background-position-y: center;
+    width: 36px;
+    height: 50px;
+    background-size: auto 65%;
+}
+.math.arrow10 {
+    background-position-x: -1285px;
+    background-position-y: center;
+    width: 36px;
+    height: 50px;
+    background-size: auto 65%;
+}
+.math.arrow11 {
+    background-position-x: -1258px;
+    background-position-y: center;
+    width: 36px;
+    height: 50px;
+    background-size: auto 65%;
+}
+.math.arrow12 {
+    background-position-x: -1232px;
+    background-position-y: center;
+    width: 36px;
+    height: 50px;
+    background-size: auto 65%;
+}
+.math.arrow13 {
+    background-position-x: -1205px;
+    background-position-y: center;
+    width: 36px;
+    height: 50px;
+    background-size: auto 65%;
+}
+.math.arrow14 { /*missing*/
+    background-position-x: -1179px;
+    background-position-y: center;
+    width: 36px;
+    height: 50px;
+    background-size: auto 65%;
+}
+.math.arrow15 {
+    background-position-x: -1258px;
+    background-position-y: center;
+    width: 36px;
+    height: 50px;
+    background-size: auto 65%;
+}
+.math.arrow16 {
+    background-position-x: -1389px;
+    background-position-y: center;
+    width: 36px;
+    height: 50px;
+    background-size: auto 65%;
+}
+.math.arrow17 {
+    background-position-x: -1311px;
+    background-position-y: center;
+    width: 36px;
+    height: 50px;
+    background-size: auto 65%;
+}
+.math.alpha1 {
+    background-position-x: -1331px;
+    background-position-y: center;
+    width: 30px;
+    height: 50px;
+    background-size: auto 55%;
+}
+.math.alpha2 {
+    background-position-x: -1641px;
+    background-position-y: center;
+    width: 32px;
+    height: 50px;
+    background-size: auto 55%;
+}
+.math.alpha3 {
+    background-position-x: -1619px;
+    background-position-y: center;
+    width: 32px;
+    height: 50px;
+    background-size: auto 55%;
+}
+.math.alpha4 {
+    background-position-x: -1575px;
+    background-position-y: center;
+    width: 30px;
+    height: 50px;
+    background-size: auto 55%;
+}
+.math.alpha5 {
+    background-position-x: -1553px;
+    background-position-y: center;
+    width: 30px;
+    height: 50px;
+    background-size: auto 55%;
+}
+.math.alpha6 {
+    background-position-x: -1530px;
+    background-position-y: center;
+    width: 30px;
+    height: 50px;
+    background-size: auto 55%;
+}
+.math.alpha7 {
+    background-position-x: -1529px;
+    background-position-y: center;
+    width: 32px;
+    height: 50px;
+    background-size: auto 55%;
+}
+.math.alpha8 {
+    background-position-x: -1508px;
+    background-position-y: center;
+    width: 32px;
+    height: 50px;
+    background-size: auto 55%;
+}
+.math.alpha9 {
+    background-position-x: -1485px;
+    background-position-y: center;
+    width: 32px;
+    height: 50px;
+    background-size: auto 55%;
+}
+.math.alpha10 {
+    background-position-x: -1352px;
+    background-position-y: center;
+    width: 32px;
+    height: 50px;
+    background-size: auto 55%;
+}
+.math.alpha11 {
+    background-position-x: -2306px;
+    background-position-y: center;
+    width: 32px;
+    height: 50px;
+    background-size: auto 55%;
+}
+.math.alpha12 {
+    background-position-x: -2284px;
+    background-position-y: center;
+    width: 30px;
+    height: 50px;
+    background-size: auto 55%;
+}
+.math.alpha13 {
+    background-position-x: -2262px;
+    background-position-y: center;
+    width: 32px;
+    height: 50px;
+    background-size: auto 55%;
+}
+.math.alpha14 {
+    background-position-x: -2240px;
+    background-position-y: center;
+    width: 32px;
+    height: 50px;
+    background-size: auto 55%;
+}
+.math.alpha15 {
+    background-position-x: -2218px;
+    background-position-y: center;
+    width: 32px;
+    height: 50px;
+    background-size: auto 55%;
+}
+.math.alpha16 {
+    background-position-x: -2195px;
+    background-position-y: center;
+    width: 32px;
+    height: 50px;
+    background-size: auto 55%;
+}
+.math.alpha17 {
+    background-position-x: -2018px;
+    background-position-y: center;
+    width: 32px;
+    height: 50px;
+    background-size: auto 55%;
+}
+.math.alpha18 {
+    background-position-x: -1996px;
+    background-position-y: center;
+    width: 32px;
+    height: 50px;
+    background-size: auto 55%;
+}
+.math.alpha19 {
+    background-position-x: -1974px;
+    background-position-y: center;
+    width: 32px;
+    height: 50px;
+    background-size: auto 55%;
+}
+.math.alpha20 {
+    background-position-x: -1974px;
+    background-position-y: center;
+    width: 32px;
+    height: 50px;
+    background-size: auto 55%;
+}
+.math.alpha21 {
+    background-position-x: -1375px;
+    background-position-y: center;
+    width: 30px;
+    height: 50px;
+    background-size: auto 55%;
+}
+.math.alpha22 {
+    background-position-x: -1464px;
+    background-position-y: center;
+    width: 32px;
+    height: 50px;
+    background-size: auto 55%;
+}
+.math.alpha23 {
+    background-position-x: -1441px;
+    background-position-y: center;
+    width: 32px;
+    height: 50px;
+    background-size: auto 55%;
+}
+.math.alpha24 {
+    background-position-x: -1419px;
+    background-position-y: center;
+    width: 32px;
+    height: 50px;
+    background-size: auto 55%;
+}
+.math.alpha25 {
+    background-position-x: -1397px;
+    background-position-y: center;
+    width: 32px;
+    height: 50px;
+    background-size: auto 55%;
+}
+.math.alpha26 {
+    background-position-x: -2175px;
+    background-position-y: center;
+    width: 32px;
+    height: 50px;
+    background-size: auto 55%;
+}
+.math.alpha27 {
+    background-position-x: -2151px;
+    background-position-y: center;
+    width: 32px;
+    height: 50px;
+    background-size: auto 55%;
+}
+.math.alpha28 {
+    background-position-x: -2129px;
+    background-position-y: center;
+    width: 30px;
+    height: 50px;
+    background-size: auto 55%;
+}
+.math.alpha29 {
+    background-position-x: -2106px;
+    background-position-y: center;
+    width: 32px;
+    height: 50px;
+    background-size: auto 55%;
+}
+.math.alpha30 {
+    background-position-x: -2085px;
+    background-position-y: center;
+    width: 32px;
+    height: 50px;
+    background-size: auto 55%;
+}
+.math.alpha31 {
+    background-position-x: -2062px;
+    background-position-y: center;
+    width: 32px;
+    height: 50px;
+    background-size: auto 55%;
+}
+.math.alpha32 {
+    background-position-x: -2040px;
+    background-position-y: center;
+    width: 32px;
+    height: 50px;
+    background-size: auto 55%;
+}
+.math.alpha33 {
+    background-position-x: -2018px;
+    background-position-y: center;
+    width: 32px;
+    height: 50px;
+    background-size: auto 55%;
+}
+.math.alpha34 {
+    background-position-x: -1929px;
+    background-position-y: center;
+    width: 32px;
+    height: 50px;
+    background-size: auto 55%;
+}
+.math.square8 {
+    background-position-x: -2715px;
+    background-position-y: center;
+    width: 32px;
+    height: 50px;
+    background-size: auto 79%;
+}
+.math.square9 {
+    background-position-x: -2523px;
+    background-position-y: center;
+    width: 32px;
+    height: 50px;
+    background-size: auto 79%;
+}
+.math.square10 {
+    background-position-x: -2651px;
+    background-position-y: center;
+    width: 32px;
+    height: 50px;
+    background-size: auto 79%;
+}
+.math.square11 { /*missing*/
+    background-position-x: -2715px;
+    background-position-y: center;
+    width: 32px;
+    height: 50px;
+    background-size: auto 79%;
+}
+.math.square12 {
+    background-position-x: -2619px;
+    background-position-y: center;
+    width: 32px;
+    height: 50px;
+    background-size: auto 79%;
+}
+.math.square13 {
+    background-position-x: -2428px;
+    background-position-y: center;
+    width: 32px;
+    height: 50px;
+    background-size: auto 79%;
+}
+.math.square14 {
+    background-position-x: -2492px;
+    background-position-y: center;
+    width: 32px;
+    height: 50px;
+    background-size: auto 79%;
+}
+.math.square15 {
+    background-position-x: -2492px;
+    background-position-y: center;
+    width: 32px;
+    height: 50px;
+    background-size: auto 79%;
+}
+.math.square16 {
+    background-position-x: -2492px;
+    background-position-y: center;
+    width: 32px;
+    height: 50px;
+    background-size: auto 79%;
+}
+.math.square17 {
+    background-position-x: -3564px;
+    background-position-y: center;
+    width: 32px;
+    height: 50px;
+    background-size: auto 84%;
+}
+.math.square18 {
+    background-position-x: -2836px;
+    background-position-y: center;
+    width: 32px;
+    height: 50px;
+    background-size: auto 91%;
 }
 
 :root {
@@ -1111,7 +1714,7 @@ textarea:focus, input:focus {
     color: var(--light-grey);
 }
 .sidebar {
-    width: 55px;
+    width: 50px;
     height: 100vh;
     position: fixed;
     display: flex;
@@ -1135,14 +1738,14 @@ textarea:focus, input:focus {
     top: 5px;
     left: 0;
     bottom: 0;
-    border: 3px solid var(--blue);
     height: 80%;
+    width: 5px;
     background-color: var( --blue);
 }
 .sidebar a span {
     margin: 0 10px;
-    width: 30px;
-    height: 30px;
+    width: 24px;
+    height: 24px;
 }
 .sidebar a:hover {
     background-color: #f1f3f4;
@@ -1168,7 +1771,7 @@ textarea:focus, input:focus {
     position: relative;
 }
 .mn-content {
-    max-height: calc(100vh - 200px);
+    max-height: calc(100vh - 180px);
 }
 .mn-content-maincontent {
     /*flex: 1;*/
@@ -1405,7 +2008,8 @@ textarea:focus, input:focus {
 }
 .modal-box .modal-confirm {
     color: var(--green);
-    font-size: 1.5rem;
+    font-size: 16px;
+    font-family: Effra;
 }
 .modal-box .modal-confirm.disable {
     color: var(--grey);
@@ -1418,9 +2022,10 @@ textarea:focus, input:focus {
 }
 .modal-title {
     color: var(--blue);
-    font-size: 1.7rem;
+    font-size: 22px;
     line-height: 1.7rem;
     font-weight: bold;
+    font-family: Effra;
 }
 .modal-row {
     width: 100%;
@@ -1430,7 +2035,7 @@ textarea:focus, input:focus {
     border: 1px solid var(--black);
     border-radius: 5px;
     padding: 0 17px;
-    font-size: 1.3rem;
+    font-size: 18px;
 }
 .modal-label {
     line-height: 4rem;
@@ -1466,6 +2071,9 @@ textarea:focus, input:focus {
 .account-name h1 {
     font-weight: 400;
     margin-top: 5px;
+}
+.account-info__info {
+    font-family: Effra;
 }
 .account-info__info .tooltip-container h3 {
     font-size: 28px;
@@ -1551,8 +2159,8 @@ textarea:focus, input:focus {
     right: 15px;
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%);
-    width: 20px;
-    height: 20px;
+    width: 17px;
+    height: 17px;
     opacity: 1;
     -webkit-transition: 0.2s ease;
     transition: 0.2s ease;
@@ -2129,6 +2737,7 @@ textarea:focus, input:focus {
     border-radius: 15px;
     box-shadow: 3px 4px 4px var(--light-grey);
     margin-bottom: 10px;
+    font-family: Effra;
 }
 .exam-calendar__exam--time {
     display: flex;
@@ -2193,8 +2802,10 @@ textarea:focus, input:focus {
     background-color: var(--light-grey);
 }
 .modal-confirm-delete {
-    width: 30vw;
-    font-size: 2.1rem;
+    min-width: unset;
+    width: 494px;
+    font-size: 30px;
+    font-family: Effra;
 }
 .delete-confirm-text {
     text-align: center;
@@ -2205,6 +2816,29 @@ textarea:focus, input:focus {
 }
 .modal-confirm-delete .confirm-delete-btn {
     padding: 10px;
+}
+.account-info-page {
+    position: relative;
+}
+.account-info-page__container {
+    overflow: auto;
+}
+.logout {
+    color: var(--light-grey);
+    position: absolute;
+    right: 60px;
+    top: 45px;
+    display: flex;
+    vertical-align: middle;
+    align-items: center;
+    font-size: 18px;
+    cursor: pointer;
+    font-family: Effra;
+}
+.logout .hg-icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
 }
 .library-header {
     display: grid;
@@ -2760,8 +3394,21 @@ label[for="file-input"] {
     width: 2.3rem;
     height: 2.3rem;
 }
+.exam-mn.mn-main-header h1 {
+    padding-bottom: 21px;
+    margin-bottom: 0;
+}
 .exam-tab {
     vertical-align: super;
+    font-family: Effra;
+}
+.active>.hg-icon.icon-test-1, .nav-link:not(.active):hover .hg-icon.icon-test-1 {
+    background-image: url(../images/app/63.png);
+    transition-duration: 0.3s;
+}
+.active>.hg-icon.icon-test-2, .nav-link:not(.active):hover .hg-icon.icon-test-2 {
+    background-image: url(../images/app/65.png);
+    transition-duration: 0.3s;
 }
 .exam-mn .exam-calendar__exam-list {
     height: calc(100vh - 275px);
@@ -2774,7 +3421,7 @@ label[for="file-input"] {
     width: 100%;
     background-color: var(--bg-grey);
     align-items: center;
-    font-size: 1.4rem;
+    font-size: 22px;
     font-weight: bold;
     cursor: pointer;
 }
@@ -2787,11 +3434,21 @@ label[for="file-input"] {
 .exam-pop-up-choose__item:hover {
     color: var(--blue);
 }
+.exam-pop-up-choose__item:hover .hg-icon.icon-cgs {
+    background-image: url(../images/app/seetest1.png);
+}
+.exam-pop-up-choose__item:hover .hg-icon.icon-file {
+    background-image: url('../images/app/15.png');
+}
+
 .overflow-none {
     overflow: unset;
 }
 .library-header__title.custom-control-label {
     font-size: 1.2rem
+}
+.create-exam-plan .modal-box {
+    max-width: 960px;
 }
 .create-exam-plan .modal-header {
     display: block;
@@ -2803,14 +3460,78 @@ label[for="file-input"] {
     font-weight: normal;
 }
 .create-exam-plan__subject {
-    font-size: 1.3rem;
+    font-size: 18px;
+}
+.exam-list-exam {
+    height: 70%;
+    box-shadow: 0px 1px 5px var(--light-grey);
+    border-radius: 5px;
+}
+.exam-list-exam__header {
+    padding: 12px 15px 12px;
+    display: grid;
+    grid-template-columns: 2fr 3fr 6fr 4fr 4fr 2fr;
+    text-align: center;
+    border-bottom: 1px solid var(--light-grey);
+    color: var(--blue);
+    font-size: 18px;
+    font-family: Effra;
+}
+.exam-list-exam__body {
+    height: 85%;
+    overflow: auto;
+}
+.exam-list-exam__body--item {
+    display: grid;
+    grid-template-columns: 2fr 3fr 6fr 4fr 4fr 2fr;
+    display: grid;
+    margin: 5px 10px;
+    font-size: 18px;
+    font-family: Effra;
+    box-shadow: 0px 1px 5px var(--light-grey);
+    border-radius: 5px;
+}
+.exam-list-exam__body--item div {
+    position: relative;
+}
+.exam-list-exam__body--item .hg-icon {
+    width: 25px;
+    height: 25px;
+}
+.exam-list-exam__body--item>div:not(:last-child):after {
+    content: '';
+    position: absolute;
+    width: 1px;
+    background-color: var(--light-grey);
+    height: 80%;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+}
+.exam-list-exam__body--item>div:nth-child(1), .exam-list-exam__body--item>div:nth-child(2), .exam-list-exam__body--item>div:nth-child(5), .exam-list-exam__body--item>div:nth-child(6), .exam-list-exam__body--item>div:nth-child(7) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.exam-list-exam__body--item>div:nth-child(6) {
+    font-size: 25px;
+}
+.exam-list-exam__body--item>div {
+    padding: 20px;
+}
+.exam-list-exam__body--item hr {
+    margin: 0 auto;
+    width: 80px;
+    border-top: 1px solid var(--grey);
 }
 .exam-pick-class {
     display: grid;
     grid-template-columns: 200px auto;
     font-size: 1rem;
     grid-gap: 10px;
-    padding: 10px 0;
+    padding: 5px 0;
+    margin-bottom: 15px;
 }
 .exam-pick-class .select-box {
     font-size: 0.9rem;
@@ -2879,7 +3600,7 @@ label[for="file-input"] {
 .modal__footer {
     display: flex;
     justify-content: space-between;
-    font-size: 1.2rem;
+    font-size: 18px;
     padding-top: 10px;
     border-top: 1px solid var(--light-grey);
 }
@@ -3280,6 +4001,9 @@ label[for="file-input"] {
     top: 50%;
     transform: translateY(-50%);
 }
+.mn-tab.function-popup__tab .nav-tabs .nav-item .nav-link {
+    padding: 5px 0;
+}
 .mn-tab.function-popup__tab .nav-tabs .nav-item .nav-link.active {
     background-color: var(--bg-light-blue) !important;
 }
@@ -3295,7 +4019,16 @@ label[for="file-input"] {
     background-color: var(--bg-light-blue);
 }
 .function-popup__body--item li {
-    padding: 0 7px;
+    padding: 0 4px;
+}
+.grid-15 {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto;
+}
+
+.grid-6 {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
 }
 .grid-4 {
     display: grid;
@@ -3361,6 +4094,14 @@ label[for="file-input"] {
     display: flex;
     justify-content: space-between;
 }
+.library-side-tree-view {
+    overflow: auto;
+    height: calc(100vh - 220px);
+}
+.library-side-tree-view>ul {
+    width: 266px;
+    overflow: auto;
+}
 
 @-webkit-keyframes HideList {
     from {
@@ -3401,6 +4142,7 @@ input[type=radio]:checked~.custom-control-label.green::before {
 }
 ::-webkit-scrollbar {
     width: 4px;
+    height: 4px;
 }
 ::-webkit-scrollbar-track {
     /*box-shadow: inset 0 0 5px grey;*/
@@ -3439,6 +4181,7 @@ input[type=radio]:checked~.custom-control-label.green::before {
 }
 .treeview li.extend {
     display: flex;
+    white-space: nowrap;
 }
 .treeview li.extend:checked ~ :before {
     transform: rotate(180deg);

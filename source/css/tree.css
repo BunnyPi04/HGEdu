@@ -14,6 +14,7 @@
 }
 .treeview li.extend {
     display: flex;
+    white-space: nowrap;
 }
 .treeview li.extend:checked ~ :before {
     transform: rotate(180deg);

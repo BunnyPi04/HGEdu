@@ -381,7 +381,7 @@ textarea:focus, input:focus {
     color: var(--light-grey);
 }
 .sidebar {
-    width: 55px;
+    width: 50px;
     height: 100vh;
     position: fixed;
     display: flex;
@@ -405,14 +405,14 @@ textarea:focus, input:focus {
     top: 5px;
     left: 0;
     bottom: 0;
-    border: 3px solid var(--blue);
     height: 80%;
+    width: 5px;
     background-color: var( --blue);
 }
 .sidebar a span {
     margin: 0 10px;
-    width: 30px;
-    height: 30px;
+    width: 24px;
+    height: 24px;
 }
 .sidebar a:hover {
     background-color: #f1f3f4;
@@ -438,7 +438,7 @@ textarea:focus, input:focus {
     position: relative;
 }
 .mn-content {
-    max-height: calc(100vh - 200px);
+    max-height: calc(100vh - 180px);
 }
 .mn-content-maincontent {
     /*flex: 1;*/
@@ -675,7 +675,8 @@ textarea:focus, input:focus {
 }
 .modal-box .modal-confirm {
     color: var(--green);
-    font-size: 1.5rem;
+    font-size: 16px;
+    font-family: Effra;
 }
 .modal-box .modal-confirm.disable {
     color: var(--grey);
@@ -688,19 +689,20 @@ textarea:focus, input:focus {
 }
 .modal-title {
     color: var(--blue);
-    font-size: 1.7rem;
+    font-size: 22px;
     line-height: 1.7rem;
     font-weight: bold;
+    font-family: Effra;
 }
 .modal-row {
     width: 100%;
 }
 .modal-box input {
-    height: 4rem;
+    height: 50px;
     border: 1px solid var(--black);
     border-radius: 5px;
     padding: 0 17px;
-    font-size: 1.3rem;
+    font-size: 18px;
 }
 .modal-label {
     line-height: 4rem;
@@ -736,6 +738,9 @@ textarea:focus, input:focus {
 .account-name h1 {
     font-weight: 400;
     margin-top: 5px;
+}
+.account-info__info {
+    font-family: Effra;
 }
 .account-info__info .tooltip-container h3 {
     font-size: 28px;
@@ -821,8 +826,8 @@ textarea:focus, input:focus {
     right: 15px;
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%);
-    width: 20px;
-    height: 20px;
+    width: 17px;
+    height: 17px;
     opacity: 1;
     -webkit-transition: 0.2s ease;
     transition: 0.2s ease;
@@ -1399,6 +1404,7 @@ textarea:focus, input:focus {
     border-radius: 15px;
     box-shadow: 3px 4px 4px var(--light-grey);
     margin-bottom: 10px;
+    font-family: Effra;
 }
 .exam-calendar__exam--time {
     display: flex;
@@ -1463,8 +1469,10 @@ textarea:focus, input:focus {
     background-color: var(--light-grey);
 }
 .modal-confirm-delete {
-    width: 30vw;
-    font-size: 2.1rem;
+    min-width: unset;
+    width: 494px;
+    font-size: 30px;
+    font-family: Effra;
 }
 .delete-confirm-text {
     text-align: center;
@@ -1475,6 +1483,29 @@ textarea:focus, input:focus {
 }
 .modal-confirm-delete .confirm-delete-btn {
     padding: 10px;
+}
+.account-info-page {
+    position: relative;
+}
+.account-info-page__container {
+    overflow: auto;
+}
+.logout {
+    color: var(--light-grey);
+    position: absolute;
+    right: 60px;
+    top: 45px;
+    display: flex;
+    vertical-align: middle;
+    align-items: center;
+    font-size: 18px;
+    cursor: pointer;
+    font-family: Effra;
+}
+.logout .hg-icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
 }
 .library-header {
     display: grid;
@@ -2030,8 +2061,21 @@ label[for="file-input"] {
     width: 2.3rem;
     height: 2.3rem;
 }
+.exam-mn.mn-main-header h1 {
+    padding-bottom: 21px;
+    margin-bottom: 0;
+}
 .exam-tab {
     vertical-align: super;
+    font-family: Effra;
+}
+.active>.hg-icon.icon-test-1, .nav-link:not(.active):hover .hg-icon.icon-test-1 {
+    background-image: url(../images/app/63.png);
+    transition-duration: 0.3s;
+}
+.active>.hg-icon.icon-test-2, .nav-link:not(.active):hover .hg-icon.icon-test-2 {
+    background-image: url(../images/app/65.png);
+    transition-duration: 0.3s;
 }
 .exam-mn .exam-calendar__exam-list {
     height: calc(100vh - 275px);
@@ -2044,7 +2088,7 @@ label[for="file-input"] {
     width: 100%;
     background-color: var(--bg-grey);
     align-items: center;
-    font-size: 1.4rem;
+    font-size: 22px;
     font-weight: bold;
     cursor: pointer;
 }
@@ -2057,11 +2101,21 @@ label[for="file-input"] {
 .exam-pop-up-choose__item:hover {
     color: var(--blue);
 }
+.exam-pop-up-choose__item:hover .hg-icon.icon-cgs {
+    background-image: url(../images/app/seetest1.png);
+}
+.exam-pop-up-choose__item:hover .hg-icon.icon-file {
+    background-image: url('../images/app/15.png');
+}
+
 .overflow-none {
     overflow: unset;
 }
 .library-header__title.custom-control-label {
     font-size: 1.2rem
+}
+.create-exam-plan .modal-box {
+    max-width: 960px;
 }
 .create-exam-plan .modal-header {
     display: block;
@@ -2073,14 +2127,78 @@ label[for="file-input"] {
     font-weight: normal;
 }
 .create-exam-plan__subject {
-    font-size: 1.3rem;
+    font-size: 18px;
+}
+.exam-list-exam {
+    height: 70%;
+    box-shadow: 0px 1px 5px var(--light-grey);
+    border-radius: 5px;
+}
+.exam-list-exam__header {
+    padding: 12px 15px 12px;
+    display: grid;
+    grid-template-columns: 2fr 3fr 6fr 4fr 4fr 2fr;
+    text-align: center;
+    border-bottom: 1px solid var(--light-grey);
+    color: var(--blue);
+    font-size: 18px;
+    font-family: Effra;
+}
+.exam-list-exam__body {
+    height: 85%;
+    overflow: auto;
+}
+.exam-list-exam__body--item {
+    display: grid;
+    grid-template-columns: 2fr 3fr 6fr 4fr 4fr 2fr;
+    display: grid;
+    margin: 5px 10px;
+    font-size: 18px;
+    font-family: Effra;
+    box-shadow: 0px 1px 5px var(--light-grey);
+    border-radius: 5px;
+}
+.exam-list-exam__body--item div {
+    position: relative;
+}
+.exam-list-exam__body--item .hg-icon {
+    width: 25px;
+    height: 25px;
+}
+.exam-list-exam__body--item>div:not(:last-child):after {
+    content: '';
+    position: absolute;
+    width: 1px;
+    background-color: var(--light-grey);
+    height: 80%;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+}
+.exam-list-exam__body--item>div:nth-child(1), .exam-list-exam__body--item>div:nth-child(2), .exam-list-exam__body--item>div:nth-child(5), .exam-list-exam__body--item>div:nth-child(6), .exam-list-exam__body--item>div:nth-child(7) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.exam-list-exam__body--item>div:nth-child(6) {
+    font-size: 25px;
+}
+.exam-list-exam__body--item>div {
+    padding: 20px;
+}
+.exam-list-exam__body--item hr {
+    margin: 0 auto;
+    width: 80px;
+    border-top: 1px solid var(--grey);
 }
 .exam-pick-class {
     display: grid;
     grid-template-columns: 200px auto;
     font-size: 1rem;
     grid-gap: 10px;
-    padding: 10px 0;
+    padding: 5px 0;
+    margin-bottom: 15px;
 }
 .exam-pick-class .select-box {
     font-size: 0.9rem;
@@ -2149,7 +2267,7 @@ label[for="file-input"] {
 .modal__footer {
     display: flex;
     justify-content: space-between;
-    font-size: 1.2rem;
+    font-size: 18px;
     padding-top: 10px;
     border-top: 1px solid var(--light-grey);
 }
@@ -2550,6 +2668,9 @@ label[for="file-input"] {
     top: 50%;
     transform: translateY(-50%);
 }
+.mn-tab.function-popup__tab .nav-tabs .nav-item .nav-link {
+    padding: 5px 0;
+}
 .mn-tab.function-popup__tab .nav-tabs .nav-item .nav-link.active {
     background-color: var(--bg-light-blue) !important;
 }
@@ -2565,7 +2686,16 @@ label[for="file-input"] {
     background-color: var(--bg-light-blue);
 }
 .function-popup__body--item li {
-    padding: 0 7px;
+    padding: 0 4px;
+}
+.grid-15 {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto;
+}
+
+.grid-6 {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
 }
 .grid-4 {
     display: grid;
@@ -2631,6 +2761,14 @@ label[for="file-input"] {
     display: flex;
     justify-content: space-between;
 }
+.library-side-tree-view {
+    overflow: auto;
+    height: calc(100vh - 220px);
+}
+.library-side-tree-view>ul {
+    width: 266px;
+    overflow: auto;
+}
 
 @-webkit-keyframes HideList {
     from {
@@ -2671,6 +2809,7 @@ input[type=radio]:checked~.custom-control-label.green::before {
 }
 ::-webkit-scrollbar {
     width: 4px;
+    height: 4px;
 }
 ::-webkit-scrollbar-track {
     /*box-shadow: inset 0 0 5px grey;*/
