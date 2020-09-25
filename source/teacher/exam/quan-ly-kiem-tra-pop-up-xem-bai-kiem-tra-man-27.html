@@ -455,6 +455,282 @@
                 </div>
             </div>
             <!-- End main content area -->
+
+            <!-- Pop up -->
+            <div class="pop-up-modal-overlay create-exam-plan">
+                <div class="modal-box modal-large px-4">
+                    <div class="modal-header">
+                        <span class="modal-title text-center">Thông tin buổi kiểm tra</span>
+                    </div>
+                    <div class="modal-body p-0">
+                        <div class="w-100 create-question-popup_question-id border-b-grey px-2 py-0">
+                            <span class="text-blue font-weight-bold create-exam-plan__subject">Chủ đề: <input class="border-0" type="text" value="Kiểm tra sát hạch" disabled></span>
+                        </div>
+                        <div class="w-100 px-2 create-exam-plan__body">
+                            <div class="question-group-item panel-group" id="accordion">
+                            <!-- item 1 -->
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <div class="">
+                                            <span class="text-blue font-weight-bold create-exam-plan__subject">Thông tin đề thi</span>
+                                            <a class="open-collapse" data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+                                                <span class="hg-icon icon-open-arrow"></span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div id="collapse1" class="panel-collapse collapse in show">
+                                        <div class="panel-body">
+                                            <div class="suffer">
+                                                <div class="dinline-block text-blue">Chọn hoán vị<span class="required">*</span>: </div>
+                                                <div class="suffer-num">
+                                                    <div class="suffer-item"><label>
+                                                        <input class="d-none" type="radio" name="suffer" checked="">
+                                                        <span class="checksuffer" value="1">1</span>
+                                                    </label></div>
+                                                    <div class="suffer-item"><label>
+                                                        <input class="d-none" type="radio" name="suffer">
+                                                        <span class="checksuffer" value="2">2</span>
+                                                    </label></div>
+                                                    <div class="suffer-item"><label>
+                                                        <input class="d-none" type="radio" name="suffer">
+                                                        <span class="checksuffer" value="3">3</span>
+                                                    </label></div>
+                                                    <div class="suffer-item"><label>
+                                                        <input class="d-none" type="radio" name="suffer">
+                                                        <span class="checksuffer" value="4">4</span>
+                                                    </label></div>
+                                                    <div class="suffer-item"><label>
+                                                        <input class="d-none" type="radio" name="suffer">
+                                                        <span class="checksuffer" value="5">5</span>
+                                                    </label></div>
+                                                    <div class="suffer-item"><label>
+                                                        <input class="d-none" type="radio" name="suffer">
+                                                        <span class="checksuffer" value="6">6</span>
+                                                    </label></div>
+                                                    <div class="suffer-item"><label>
+                                                        <input class="d-none" type="radio" name="suffer">
+                                                        <span class="checksuffer" value="7">7</span>
+                                                    </label></div>
+                                                    <div class="suffer-item"><label>
+                                                        <input class="d-none" type="radio" name="suffer">
+                                                        <span class="checksuffer" value="8">8</span>
+                                                    </label></div>
+                                                    <div class="suffer-item"><label>
+                                                        <input class="d-none" type="radio" name="suffer">
+                                                        <span class="checksuffer" value="9">9</span>
+                                                    </label></div>
+                                                </div>
+                                            </div>
+                                            <div class="export my-4">
+                                                <div class="float-left mr-5 text-blue">Tạo file Word đề thi và đáp án: </div>
+                                                <button class="btn btn-success export-excel">Tạo file</button>
+                                            </div>
+                                            <div class="w-100 exam-list-exam question-info">
+                                                <div class="exam-list-exam__header">
+                                                    <div class="">STT</div>
+                                                    <div class="">Thông tin</div>
+                                                    <div class="text-left">Nội dung</div>
+                                                </div>
+                                                <div class="exam-list-exam__body exam-info__question-list">
+                                                    <div class="item">
+                                                        <div class="">1</div>
+                                                        <div class="info">
+                                                            <span class="blue-round"></span>
+                                                            <span class="green-round">1</span>
+                                                            <span class="hg-icon icon-info2"></span>
+                                                        </div>
+                                                        <div class="text-left">Câu này là đúng hay sai?</div>
+                                                    </div>
+                                                    <div class="item">
+                                                        <div class="">2</div>
+                                                        <div class="info">
+                                                            <span class="blue-round"></span>
+                                                            <span class="yellow-round">2</span>
+                                                            <span class="hg-icon icon-info2"></span>
+                                                        </div>
+                                                        <div class="text-left">HG Education được thành lập vào năm nào?</div>
+                                                    </div>
+                                                    <div class="item">
+                                                        <div class="">3</div>
+                                                        <div class="info">
+                                                            Câu hỏi chùm
+                                                        </div>
+                                                        <div class="text-left">Phản ứng hóa học nào sau đây đúng?</div>
+                                                    </div>
+
+                                                    <div class="item">
+                                                        <div class="">4</div>
+                                                        <div class="info">
+                                                            <span class="blue-round"></span>
+                                                            <span class="purple-round">3</span>
+                                                            <span class="hg-icon icon-info2"></span>
+                                                        </div>
+                                                        <div class="text-left">Phát biểu là đúng hay sai?</div>
+                                                    </div>
+                                                    <div class="item">
+                                                        <div class="">5</div>
+                                                        <div class="info">
+                                                            <span class="blue-round"></span>
+                                                            <span class="red-round">4</span>
+                                                            <span class="hg-icon icon-info2"></span>
+                                                        </div>
+                                                        <div class="text-left">Nhóm IA có mấy nguyên tố? Câu này là đúng hay sai?<br/> Phản ứng hóa học nào sau đây đúng? HG Education được thành lập vào năm nào?</div>
+                                                    </div>
+                                                    <div class="item">
+                                                        <div class="">6</div>
+                                                        <div class="info">
+                                                            Câu hỏi chùm
+                                                        </div>
+                                                        <div class="text-left">Câu này là đúng hay sai?</div>
+                                                    </div>
+                                                    <div class="item">
+                                                        <div class="">1</div>
+                                                        <div class="info">
+                                                            Câu hỏi chùm
+                                                        </div>
+                                                        <div class="text-left">Phản ứng hóa học nào sau đây đúng? Phát biểu là đúng hay sai?</div>
+                                                    </div>
+                                                    <div class="item">
+                                                        <div class="">1</div>
+                                                        <div class="info">
+                                                            <span class="blue-round"></span>
+                                                            <span class="green-round">1</span>
+                                                            <span class="hg-icon icon-info2"></span>
+                                                        </div>
+                                                        <div class="text-left">Câu này là đúng hay sai?</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <div class="">
+                                            <span class="text-blue font-weight-bold create-exam-plan__subject">Kết quả kiểm tra</span>
+                                            <a class="open-collapse" data-toggle="collapse" data-parent="#accordion" href="#collapse2">
+                                                <span class="hg-icon icon-open-arrow"></span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div id="collapse2" class="panel-collapse collapse show">
+                                        <div class="panel-body">
+                                            <div class="result-row">
+                                                <div class="dinline-block mr-5 text-blue">Thông tin điểm theo lớp:</div>
+                                                <div class="hg-icon icon-card-basic option-icon mr-2"></div> <div class="dinline-block">Thẻ cơ bản</div>
+                                            </div>
+                                            <div class="result-row">
+                                                <div class="dinline-block mr-3 text-blue">Trạng thái tồn tại của lớp hiện hành:</div>
+                                                <span class="text-light-grey">Tồn tại</span>
+                                            </div>
+                                            <div class="result-row">
+                                                <div class="dinline-block mr-5 text-blue">Chế độ vào điểm:</div>
+                                                <div class="dinline-block">
+                                                    <div class="select-box">
+                                                        <div class="select-box__current" tabindex="1">
+                                                            <div class="select-box__value">
+                                                                <input class="select-box__input" type="radio" id="0" value="1" name="row" checked="checked"/>
+                                                                <p class="select-box__input-text">Chọn cột điểm</p>
+                                                            </div>
+                                                            <div class="select-box__value">
+                                                                <input class="select-box__input" type="radio" id="row1" value="2" name="row"/><p class="select-box__input-text">Thẻ cơ bản</p>
+                                                            </div>
+                                                            <div class="select-box__value">
+                                                                <input class="select-box__input" type="radio" id="row2" value="3" name="row"/>
+                                                                <p class="select-box__input-text">Thẻ xanh</p>
+                                                            </div>
+                                                            <div class="select-box__value">
+                                                                <input class="select-box__input" type="radio" id="row3" value="4" name="row"/>
+                                                                <p class="select-box__input-text">Thẻ đỏ</p>
+                                                            </div>
+                                                            <span class="hg-icon icon-dropdown select-box__icon"></span>
+                                                        </div>
+                                                        <ul class="select-box__list">
+                                                            <li>
+                                                                <label class="select-box__option" for="row1" aria-hidden="aria-hidden">Thẻ cơ bản</label>
+                                                            </li>
+                                                            <li>
+                                                                <label class="select-box__option" for="row2" aria-hidden="aria-hidden">Thẻ xanh</label>
+                                                            </li>
+                                                            <li>
+                                                                <label class="select-box__option" for="row3" aria-hidden="aria-hidden">Thẻ đỏ</label>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="insert-score-button">Vào điểm</div>
+                                            </div>
+                                            <div class="w-100 exam-list-exam question-info score-board mt-3">
+                                                <div class="exam-list-exam__header">
+                                                    <div class="">ID</div>
+                                                    <div class="">Tên</div>
+                                                    <div class="text-left">Điểm số</div>
+                                                </div>
+                                                <div class="exam-list-exam__body exam-info__question-list">
+                                                    <div class="item">
+                                                        <div class="">16524826012213</div>
+                                                        <div class="info">
+                                                            Đỗ Nguyên Phát
+                                                        </div>
+                                                        <div class="text-left">8.75</div>
+                                                    </div>
+                                                    <div class="item">
+                                                        <div class="">16524826012213</div>
+                                                        <div class="info">
+                                                            Đỗ Nguyên Phát
+                                                        </div>
+                                                        <div class="text-left">8.75</div>
+                                                    </div>
+                                                    <div class="item">
+                                                        <div class="">16524826012213</div>
+                                                        <div class="info">
+                                                            Đỗ Nguyên Phát
+                                                        </div>
+                                                        <div class="text-left">8.75</div>
+                                                    </div>
+                                                    <div class="item">
+                                                        <div class="">16524826012213</div>
+                                                        <div class="info">
+                                                            Đỗ Nguyên Phát
+                                                        </div>
+                                                        <div class="text-left">8.75</div>
+                                                    </div>
+                                                    <div class="item">
+                                                        <div class="">16524826012213</div>
+                                                        <div class="info">
+                                                            Đỗ Nguyên Phát 
+                                                        </div>
+                                                        <div class="text-left">8.75</div>
+                                                    </div>
+                                                    <div class="item">
+                                                        <div class="">16524826012213</div>
+                                                        <div class="info">
+                                                            Đỗ Nguyên Phát
+                                                        </div>
+                                                        <div class="text-left">8.75</div>
+                                                    </div>
+                                                    <div class="item">
+                                                        <div class="">16524826012213</div>
+                                                        <div class="info">
+                                                            Đỗ Nguyên Phát
+                                                        </div>
+                                                        <div class="text-left">8.75</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal__footer">
+                        <div>Hủy thao tác</div>
+                        <div class="text-light-grey">Hoàn tất</div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </body>
