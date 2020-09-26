@@ -560,7 +560,7 @@
 
 
                 <!-- POP up tạo đề thi -->
-                <div class="pop-up-modal-overlay create-exam">
+                <div class="pop-up-modal-overlay create-exam auto-create">
                     <div class="modal-box modal-large">
                         <div class="modal-header border-0">
                             <div class="text-center w-100">
@@ -570,7 +570,7 @@
 
                         <div class="modal-body p-0 pb-3 px-3">
                             <div class="w-100 create-exam__code border-b-grey px-3">
-                                <div class="create-exam__code-title">Mã đề thi:</div>
+                                <div class="create-exam__code-title">Mã mở đầu bộ đề<span class="required">*</span>:</div>
                                 <div class="exam-code ml-3">
                                     <div class="input-code-container">
                                         <div class="input-code"></div>
@@ -589,7 +589,12 @@
                                     <span class="create-exam__excerpt--title super-align font-weight-bold">Mô tả<span class="required">*</span></span>
                                 </div>
                                 <div class="">
-                                    <input class="w-100 border-0" type="text" placeholder="Nhập nội dung">
+                                    <input class="w-100 border-0" type="text" placeholder="Nhập nội dung" value="Bộ đề LTQG 2020">
+                                </div>
+                                <div class="px-2 mb-3 mx-2 exam-quantity">
+                                    <span class="hg-icon icon-paper-4 icon-active mr-2"></span>
+                                    <span class="create-exam__excerpt--title super-align font-weight-bold">Số lượng đề cần soạn<span class="required">*</span></span>
+                                    <input class="border-0" type="text" placeholder="Nhập nội dung" value="10">
                                 </div>
                                 <div class="exam-question-list">
                                     <div class="w-100 question-group-item panel-group" id="accordion">
@@ -605,7 +610,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div id="collapse1" class="panel-collapse collapse in pop-up-pick-subject">
+                                            <div id="collapse1" class="panel-collapse collapse in pop-up-pick-subject show">
                                                 <div class="panel-body m-0">
                                                     <div class="row mb-2 modal-body__table--thead">
                                                         <div class="col-md-6">
@@ -715,456 +720,13 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="knowledge-wide px-2 mb-3 mx-2">
-                                    <span class="hg-icon icon-target mr-2"></span>
-                                    <span class="create-exam__excerpt--title super-align font-weight-bold">Phạm vi mảng kiến thức sử dụng</span>
-                                    <div class="select-box">
-                                        <div class="select-box__current" tabindex="1">
-                                            <div class="select-box__value">
-                                                <input class="select-box__input" type="radio" id="knowledge0" value="1" name="knowledge" checked="checked"/>
-                                                <p class="select-box__input-text">Chọn các mảng kiến thức cần sử dụng</p>
-                                            </div>
-                                            <div class="select-box__value">
-                                                <input class="select-box__input" type="radio" id="knowledge1" value="2" name="knowledge"/>
-                                                <p class="select-box__input-text text-blue">Hữu cơ</p>
-                                            </div>
-                                            <div class="select-box__value">
-                                                <input class="select-box__input" type="radio" id="knowledge2" value="2" name="knowledge"/>
-                                                <p class="select-box__input-text text-blue">Vô cơ</p>
-                                            </div>
-                                            <div class="select-box__value">
-                                                <input class="select-box__input" type="radio" id="knowledge3" value="2" name="knowledge"/>
-                                                <p class="select-box__input-text text-blue">Phản ứng hóa học</p>
-                                            </div>
-                                            <div class="select-box__value">
-                                                <input class="select-box__input" type="radio" id="knowledge4" value="2" name="knowledge"/>
-                                                <p class="select-box__input-text">Nguyên tố</p>
-                                            </div>
-                                            <div class="select-box__value">
-                                                <input class="select-box__input" type="radio" id="knowledge5" value="2" name="knowledge"/>
-                                                <p class="select-box__input-text">Hydro Cacbon</p>
-                                            </div>
-                                            <div class="select-box__value">
-                                                <input class="select-box__input" type="radio" id="knowledge6" value="2" name="knowledge"/>
-                                                <p class="select-box__input-text">Ancol và Phenol</p>
-                                            </div>
-                                            <div class="select-box__value">
-                                                <input class="select-box__input" type="radio" id="knowledge7" value="2" name="knowledge"/>
-                                                <p class="select-box__input-text">Andehit và Ceton</p>
-                                            </div>
-                                            <div class="select-box__value">
-                                                <input class="select-box__input" type="radio" id="knowledge8" value="2" name="knowledge"/>
-                                                <p class="select-box__input-text">Este</p>
-                                            </div>
-                                            <div class="select-box__value">
-                                                <input class="select-box__input" type="radio" id="knowledge9" value="2" name="knowledge"/>
-                                                <p class="select-box__input-text">Cacbo Hydrat</p>
-                                            </div>
-                                            <span class="hg-icon icon-dropdown select-box__icon"></span>
-                                        </div>
-                                        <ul class="select-box__list">
-                                            <li>
-                                                <label class="select-box__option text-blue" for="knowledge1" aria-hidden="aria-hidden">Hữu cơ</label>
-                                            </li>
-                                            <li>
-                                                <label class="select-box__option text-blue" for="knowledge2" aria-hidden="aria-hidden">Vô cơ</label>
-                                            </li>
-                                            <li>
-                                                <label class="select-box__option text-blue" for="knowledge3" aria-hidden="aria-hidden">Phản ứng hóa học</label>
-                                            </li>
-                                            <li>
-                                                <label class="select-box__option" for="knowledge4" aria-hidden="aria-hidden">Nguyên tố</label>
-                                            </li>
-                                            <li>
-                                                <label class="select-box__option" for="knowledge5" aria-hidden="aria-hidden">Hydro Cacbon</label>
-                                            </li>
-                                            <li>
-                                                <label class="select-box__option" for="knowledge6" aria-hidden="aria-hidden">Ancol và Phenol</label>
-                                            </li>
-                                            <li>
-                                                <label class="select-box__option" for="knowledge7" aria-hidden="aria-hidden">Andehit và Ceton</label>
-                                            </li>
-                                            <li>
-                                                <label class="select-box__option" for="knowledge8" aria-hidden="aria-hidden">Este</label>
-                                            </li>
-                                            <li>
-                                                <label class="select-box__option" for="knowledge9" aria-hidden="aria-hidden">Cacbo Hydrat</label>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="exam-filter pl-2">
-                                    <div class="dinline-block mr-2">
-                                        <span class="text-blue exam-filter__text">Bộ lọc</a>
-                                    </div>
-                                    <div class="dinline-block">
-                                        <div class="select-box">
-                                            <div class="select-box__current" tabindex="2">
-                                                <div class="select-box__value">
-                                                    <input class="select-box__input" type="radio" id="Ben0" value="1" name="Ben" checked="checked"/>
-                                                    <p class="select-box__input-text">Câu hỏi đơn</p>
-                                                </div>
-                                                <div class="select-box__value">
-                                                    <input class="select-box__input" type="radio" id="Ben1" value="2" name="Ben"/>
-                                                    <p class="select-box__input-text">Câu hỏi nhóm</p>
-                                                </div>
-                                                <span class="hg-icon icon-dropdown select-box__icon"></span>
-                                            </div>
-                                            <ul class="select-box__list">
-                                                <li>
-                                                    <label class="select-box__option" for="Ben0" aria-hidden="aria-hidden">Câu hỏi đơn</label>
-                                                </li>
-                                                <li>
-                                                    <label class="select-box__option" for="Ben1" aria-hidden="aria-hidden">Câu hỏi nhóm</label>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="dinline-block">
-                                        <div class="select-box">
-                                            <div class="select-box__current" tabindex="1">
-                                                <div class="select-box__value">
-                                                    <input class="select-box__input" type="radio" id="a2" value="1" name="q" checked="checked"/>
-                                                    <p class="select-box__input-text">Mức khó</p>
-                                                </div>
-                                                <div class="select-box__value">
-                                                    <input class="select-box__input" type="radio" id="a3" value="2" name="q"/>
-                                                    <p class="select-box__input-text">Mức trung bình</p>
-                                                </div>
-                                                <div class="select-box__value">
-                                                    <input class="select-box__input" type="radio" id="a4" value="3" name="q"/>
-                                                    <p class="select-box__input-text">Mức dễ</p>
-                                                </div>
-                                                <span class="hg-icon icon-dropdown select-box__icon"></span>
-                                            </div>
-                                            <ul class="select-box__list">
-                                                <li>
-                                                    <label class="select-box__option" for="a2" aria-hidden="aria-hidden">Mức khó</label>
-                                                </li>
-                                                <li>
-                                                    <label class="select-box__option" for="a3" aria-hidden="aria-hidden">Mức trung bình</label>
-                                                </li>
-                                                <li>
-                                                    <label class="select-box__option" for="a4" aria-hidden="aria-hidden">Mức dễ</label>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="dinline-block">
-                                        <div class="select-box">
-                                            <div class="select-box__current" tabindex="1">
-                                                <div class="select-box__value">
-                                                    <input class="select-box__input" type="radio" id="attr2-1" value="1" name="attr2" checked="checked"/>
-                                                    <p class="select-box__input-text">Thuộc tính</p>
-                                                </div>
-                                                <div class="select-box__value">
-                                                    <input class="select-box__input" type="radio" id="attr2-2" value="2" name="attr2"/>
-                                                    <p class="select-box__input-text">Mức trung bình</p>
-                                                </div>
-                                                <div class="select-box__value">
-                                                    <input class="select-box__input" type="radio" id="attr2-3" value="3" name="attr2"/>
-                                                    <p class="select-box__input-text">Mức dễ</p>
-                                                </div>
-                                                <span class="hg-icon icon-dropdown select-box__icon"></span>
-                                            </div>
-                                            <ul class="select-box__list">
-                                                <li>
-                                                    <label class="select-box__option" for="attr2-1" aria-hidden="aria-hidden">Thuộc tính</label>
-                                                </li>
-                                                <li>
-                                                    <label class="select-box__option" for="attr2-2" aria-hidden="aria-hidden">Mức trung bình</label>
-                                                </li>
-                                                <li>
-                                                    <label class="select-box__option" for="attr2-3" aria-hidden="aria-hidden">Mức dễ</label>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="dinline-block">
-                                        <div class="select-box">
-                                            <div class="select-box__current" tabindex="1">
-                                                <div class="select-box__value">
-                                                    <input class="select-box__input" type="radio" id="form2-1" value="1" name="form2" checked="checked"/>
-                                                    <p class="select-box__input-text">Form câu hỏi</p>
-                                                </div>
-                                                <div class="select-box__value">
-                                                    <input class="select-box__input" type="radio" id="form2-2" value="2" name="form2"/>
-                                                    <p class="select-box__input-text">Mức trung bình</p>
-                                                </div>
-                                                <div class="select-box__value">
-                                                    <input class="select-box__input" type="radio" id="form2-3" value="3" name="form2"/>
-                                                    <p class="select-box__input-text">Mức dễ</p>
-                                                </div>
-                                                <span class="hg-icon icon-dropdown select-box__icon"></span>
-                                            </div>
-                                            <ul class="select-box__list">
-                                                <li>
-                                                    <label class="select-box__option" for="form2-1" aria-hidden="aria-hidden">Form câu hỏi</label>
-                                                </li>
-                                                <li>
-                                                    <label class="select-box__option" for="form2-2" aria-hidden="aria-hidden">Mức trung bình</label>
-                                                </li>
-                                                <li>
-                                                    <label class="select-box__option" for="form2-3" aria-hidden="aria-hidden">Mức dễ</label>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="dinline-block">
-                                        <div class="select-box">
-                                            <div class="select-box__current" tabindex="1">
-                                                <div class="select-box__value">
-                                                    <input class="select-box__input" type="radio" id="rank2-1" value="1" name="rank2" checked="checked"/>
-                                                    <p class="select-box__input-text">Trình độ</p>
-                                                </div>
-                                                <div class="select-box__value">
-                                                    <input class="select-box__input" type="radio" id="rank2-2" value="2" name="rank2"/>
-                                                    <p class="select-box__input-text">Senior</p>
-                                                </div>
-                                                <div class="select-box__value">
-                                                    <input class="select-box__input" type="radio" id="rank2-3" value="3" name="rank2"/>
-                                                    <p class="select-box__input-text">Middle</p>
-                                                </div>
-                                                <span class="hg-icon icon-dropdown select-box__icon"></span>
-                                            </div>
-                                            <ul class="select-box__list">
-                                                <li>
-                                                    <label class="select-box__option" for="rank2-1" aria-hidden="aria-hidden">Trình độ</label>
-                                                </li>
-                                                <li>
-                                                    <label class="select-box__option" for="rank2-2" aria-hidden="aria-hidden">Senior</label>
-                                                </li>
-                                                <li>
-                                                    <label class="select-box__option" for="rank2-3" aria-hidden="aria-hidden">Middle</label>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="dinline-block">
-                                        <div class="select-box">
-                                            <div class="select-box__current" tabindex="1">
-                                                <div class="select-box__value">
-                                                    <input class="select-box__input" type="radio" id="kn1" value="1" name="knowledge2" checked="checked"/>
-                                                    <p class="select-box__input-text">Kiến thức đặc thù</p>
-                                                </div>
-                                                <div class="select-box__value">
-                                                    <input class="select-box__input" type="radio" id="kn2" value="2" name="knowledge2"/>
-                                                    <p class="select-box__input-text">Senior</p>
-                                                </div>
-                                                <div class="select-box__value">
-                                                    <input class="select-box__input" type="radio" id="kn3" value="3" name="knowledge2"/>
-                                                    <p class="select-box__input-text">Middle</p>
-                                                </div>
-                                                <span class="hg-icon icon-dropdown select-box__icon"></span>
-                                            </div>
-                                            <ul class="select-box__list">
-                                                <li>
-                                                    <label class="select-box__option" for="kn1" aria-hidden="aria-hidden">Kiến thức đặc thù</label>
-                                                </li>
-                                                <li>
-                                                    <label class="select-box__option" for="kn2" aria-hidden="aria-hidden">Senior</label>
-                                                </li>
-                                                <li>
-                                                    <label class="select-box__option" for="kn3" aria-hidden="aria-hidden">Middle</label>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="create-exam__knowledge-list w-100 my-3">
-                                    <div class="create-exam__knowledge-list--head-title"><h4>Danh sách mảng</h4></div>
-                                    <div class="create-exam__knowledge-list--head-title"><h4>Phản ứng hóa học</h4></div>
-                                    <div class="">
-                                        <!-- Treeview Start -->
-                                        <ul class="treeview">
-                                            <!-- Main Folder Start -->
-                                            <li class="file">
-                                                <a href="#">
-                                                    <span class="hg-icon icon-file"></span>
-                                                    <span class="tree-view__folder-title">Hữu cơ</span>
-                                                </a>
-                                            </li>
-                                            <li class="file">
-                                                <a href="#">
-                                                    <span class="hg-icon icon-file"></span>
-                                                    <span class="tree-view__folder-title">Vô cơ</span>
-                                                </a>
-                                            </li>
-                                            <li class="file">
-                                                <a href="#">
-                                                    <span class="hg-icon icon-file"></span>
-                                                    <span class="tree-view__folder-title text-blue">Phản ứng hóa học</span>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="create-exam__knowledge-list--item">
-                                        <table class="w-100">
-                                            <thead>
-                                                <tr>
-                                                    <th class="text-center text-blue">Mã câu</th>
-                                                    <th class="text-blue">Câu hỏi</th>
-                                                    <th class="action"></th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr class="create-exam__knowledge-list--item--picked">
-                                                    <td class="code">VC00001</td>
-                                                    <td>Câu này là đúng hay sai</td>
-                                                    <td><span class="hg-icon icon-close icon-red"></span></td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="code">VC00002</td>
-                                                    <td>HG Education thành lập năm nào</td>
-                                                    <td><span class="hg-icon icon-plus icon-green"></span></td>
-                                                </tr>
-                                                <tr class="create-exam__knowledge-list--item--picked">
-                                                    <td class="code">VC00003</td>
-                                                    <td>Phản ứng hóa học nào sau đây là đúng</td>
-                                                    <td><span class="hg-icon icon-close icon-red"></span></td>
-                                                </tr>
-                                                <tr class="create-exam__knowledge-list--item--picked">
-                                                    <td class="code">VC00004</td>
-                                                    <td>Câu này là đúng hay sai</td>
-                                                    <td><span class="hg-icon icon-close icon-red"></span></td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="code">VC00005</td>
-                                                    <td>Câu này là đúng hay sai</td>
-                                                    <td><span class="hg-icon icon-plus icon-green"></span></td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                </div>
-                                <div class="exam-quality mt-2 mb-4 pt-4">
-                                    <div class="w-100">
-                                        <span class="hg-icon icon-info icon-active mr-2"></span>
-                                        <span class="create-exam__excerpt--title super-align font-weight-bold">Chất lượng đề</span>
-                                    </div>
-                                    <div class="exam-quality__container">
-                                        <div class="exam-quality--item count">
-                                            <div class="text-center">
-                                                <h6 class="text-center">Tổng số câu hỏi</h6>
-                                                <div class="count-question">0</div>
-                                            </div>
-                                        </div>
-                                        <div class="exam-quality--item separate">
-                                            <div class="exam-chart-container text-center">
-                                                <svg class="" width="60" height="60">
-                                                    <circle class="svg-index" cx="31" cy="31" r="26" stroke-width="6"/>
-                                                    <text class="percent" y="50%" x="50%" dominant-baseline="middle" text-anchor="middle">20%</text>
-                                                    <path d="M31,5
-                                                        a 15.9155 15.9155 0 0 1 0 52
-                                                        a 15.9155 15.9155 0 0 1 0 -52" stroke="var(--pink)"
-                                                        stroke-dasharray="32.65, 500"
-                                                    />
-                                                    <!-- first param of stroke dasharray present for percent -->
-                                                    <!-- x = (2*3.14*percent*3.6*R)/360 (R = 26) -->
-                                                </svg>
-                                            </div>
-                                            <div class="exam-quality__explan-container">
-                                                <div>
-                                                    <div class="pink-round"></div>
-                                                    <div>Toàn diện kiến thức</div>
-                                                </div>
-                                            </div>
-                                            <div class="exam-chart-container text-center">
-                                                <svg class="" width="60" height="60">
-                                                    <circle class="svg-index" cx="31" cy="31" r="26" stroke-width="6"/>
-                                                    <text class="percent" y="50%" x="50%" dominant-baseline="middle" text-anchor="middle">0%</text>
-                                                    <path d="M31,5
-                                                        a 15.9155 15.9155 0 0 1 0 52
-                                                        a 15.9155 15.9155 0 0 1 0 -52" stroke="var(--yellow)"
-                                                        stroke-dasharray="45, 500"
-                                                    />
-                                                    <path d="M31,5
-                                                        a 15.9155 15.9155 0 0 1 0 52
-                                                        a 15.9155 15.9155 0 0 1 0 -52" stroke="var(--aqua)"
-                                                        stroke-dasharray="30, 500"
-                                                    />
-                                                </svg>
-                                            </div>
-                                            <div class="exam-quality__explan-container">
-                                                <div>
-                                                    <div class="blue-round"></div>
-                                                    <div>Lý thuyết</div>
-                                                </div>
-                                                <div>
-                                                    <div class="yellow-round"></div>
-                                                    <div>Lý thuyết</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="exam-quality--item big-chart">
-                                            <div class="exam-chart-container text-center">
-                                                <svg class="" width="134" height="134">
-                                                    <circle class="svg-index" cx="67" cy="67" r="60" stroke-width="14"/>
-                                                    <text class="percent" y="50%" x="50%" dominant-baseline="middle" text-anchor="middle">30%</text>
-                                                    <!-- 100% -->
-                                                    <path d="M67,7
-                                                        a 15.9155 15.9155 0 0 1 0 120
-                                                        a 15.9155 15.9155 0 0 1 0 -120" stroke="var(--red)"
-                                                        stroke-dasharray="376.8, 1000"
-                                                        stroke-width="14"
-                                                    />
-                                                    <!-- first param of stroke dasharray present for percent -->
-                                                    <!-- x = (2*3.14*percent*3.6*R)/360 (R = 60) -->
-
-                                                    <!-- 75% present for 75% - 22% - 8% = 45% -->
-                                                    <path d="M67,7
-                                                        a 15.9155 15.9155 0 0 1 0 120
-                                                        a 15.9155 15.9155 0 0 1 0 -120" stroke="var(--purple)"
-                                                        stroke-dasharray="282.6, 1000"
-                                                        stroke-width="14"
-                                                    />
-
-                                                    <!-- 30% present for 30% - 8% = 22%-->
-                                                    <path d="M67,7
-                                                        a 15.9155 15.9155 0 0 1 0 120
-                                                        a 15.9155 15.9155 0 0 1 0 -120" stroke="var(--yellow)"
-                                                        stroke-dasharray="113, 1000"
-                                                        stroke-width="14"
-                                                    />
-
-                                                    <!-- 8% -->
-                                                    <path d="M67,7
-                                                        a 15.9155 15.9155 0 0 1 0 120
-                                                        a 15.9155 15.9155 0 0 1 0 -120" stroke="var(--green)"
-                                                        stroke-dasharray="30.14, 1000"
-                                                        stroke-width="14"
-                                                    />
-                                                    <!-- Stroke-dasharray="13, 500" if percent = 13% -->
-                                                </svg>
-                                            </div>
-                                            <div class="exam-quality__explan-container">
-                                                <div>
-                                                    <div class="green-round"></div>
-                                                    <div>Mức 1: 8%</div>
-                                                </div>
-                                                <div>
-                                                    <div class="orange-round"></div>
-                                                    <div>Mức 2: 22%</div>
-                                                </div>
-                                                <div>
-                                                    <div class="purple-round"></div>
-                                                    <div>Mức 3: 37%</div>
-                                                </div>
-                                                <div>
-                                                    <div class="red-round"></div>
-                                                    <div>Mức 4: 0</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="exam-question-list">
+                                <div class="exam-question-list matrix">
                                     <div class="w-100 question-group-item panel-group" id="accordion">
                                         <div class="question-group-item__container panel panel-default">
                                             <div class="panel-heading">
                                                 <div class="exam-question-list__open">
-                                                    <div class="hg-icon icon-question icon-active mr-2"></div>
-                                                    <div class="create-exam__excerpt--title super-align font-weight-bold">Danh sách câu hỏi</div>
+                                                    <div class="hg-icon icon-statistic mr-2"></div>
+                                                    <div class="create-exam__excerpt--title super-align font-weight-bold">Ma trận đề thi</div>
                                                     <div class="panel-title ml-3">
                                                         <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
                                                             <span class="hg-icon icon-open-arrow"></span>
@@ -1172,93 +734,13 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div id="collapse1" class="panel-collapse collapse in">
-                                                <div class="panel-body">
-                                                    <div class="exam-question-list__thead">
-                                                        <div class="exam-question-list__item">
-                                                            <h5 class="text-blue text-center">Mã câu hỏi</h5>
-                                                            <h5 class="text-blue text-center">Thông tin</h5>
-                                                            <h5 class="text-blue">Nội dung</h5>
-                                                            <div></div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="exam-question-list__tbody">
-                                                        <div class="exam-question-list__item">
-                                                            <div class="exam-question-list__item--code text-center">123456</div>
-                                                            <div class="exam-question-list__item--info text-center">
-                                                                <span class="blue-round"></span>
-                                                                <span class="green-round">1</span>
-                                                                <span class="grey-round">!</span>
-                                                            </div>
-                                                            <div class="">
-                                                                Câu này là đúng hay sai
-                                                            </div>
-                                                            <div class="text-center">
-                                                                <span class="hg-icon icon-close icon-red"></span>
-                                                            </div>
-                                                        </div>
-                                                        <div class="exam-question-list__item">
-                                                            <div class="exam-question-list__item--code text-center">123456</div>
-                                                            <div class="exam-question-list__item--info text-center">
-                                                                <span class="blue-round"></span>
-                                                                <span class="green-round">1</span>
-                                                                <span class="grey-round">!</span>
-                                                            </div>
-                                                            <div class="">
-                                                                Câu này là đúng hay sai
-                                                            </div>
-                                                            <div class="text-center">
-                                                                <span class="hg-icon icon-close icon-red"></span>
-                                                            </div>
-                                                        </div>
-                                                        <div class="exam-question-list__item">
-                                                            <div class="exam-question-list__item--code text-center">123456</div>
-                                                            <div class="exam-question-list__item--info text-center">
-                                                                <span class="blue-round"></span>
-                                                                <span class="green-round">1</span>
-                                                                <span class="grey-round">!</span>
-                                                            </div>
-                                                            <div class="">
-                                                                Câu này là đúng hay sai
-                                                            </div>
-                                                            <div class="text-center">
-                                                                <span class="hg-icon icon-close icon-red"></span>
-                                                            </div>
-                                                        </div>
-                                                        <div class="exam-question-list__item">
-                                                            <div class="exam-question-list__item--code text-center">123456</div>
-                                                            <div class="exam-question-list__item--info text-center">
-                                                                <span class="blue-round"></span>
-                                                                <span class="green-round">1</span>
-                                                                <span class="grey-round">!</span>
-                                                            </div>
-                                                            <div class="">
-                                                                Câu này là đúng hay sai
-                                                            </div>
-                                                            <div class="text-center">
-                                                                <span class="hg-icon icon-close icon-red"></span>
-                                                            </div>
-                                                        </div>
-                                                        <div class="exam-question-list__item">
-                                                            <div class="exam-question-list__item--code text-center">123456</div>
-                                                            <div class="exam-question-list__item--info text-center">
-                                                                <span class="blue-round"></span>
-                                                                <span class="green-round">1</span>
-                                                                <span class="grey-round">!</span>
-                                                            </div>
-                                                            <div class="">
-                                                                Câu này là đúng hay sai
-                                                            </div>
-                                                            <div class="text-center">
-                                                                <span class="hg-icon icon-close icon-red"></span>
-                                                            </div>
-                                                        </div>
-                                                    </div>
+                                            <div id="collapse1" class="panel-collapse collapse in pop-up-pick-subject show">
+                                                <div class="panel-body m-0">
+                                                    ffffffffff
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
                                 <div class="exam-action">
                                     <div class="cancel">Hủy thao tác</div>
                                     <div class="save text-blue">Lưu đề thi</div>

@@ -585,7 +585,7 @@
                             </div>
                             <div>
                                 <span class="modal-confirm">
-                                    <span class="hg-icon icon-plus icon-green m-0"></span> 
+                                    <span class="hg-icon icon-plus icon-active m-0"></span> 
                                     <span class="text-blue">Tạo chùm</span>
                                 </span>
                             </div>
@@ -596,14 +596,19 @@
                                 <div class="w-100 create-question-popup_question-id border-b-grey">
                                     ID<span class="required">*</span>: <input class="border-0" type="text" placeholder="Nhập">
                                 </div>
-                                <div class="w-100 border-b-grey py-3">
-                                    <div class="px-2 my-3 mx-2">
-                                        <span class="hg-icon icon-content mr-2"></span>
+                                <div class="w-100 border-b-grey py-3 ">
+                                    <div class="px-2 my-3 mx-2 title">
+                                        <span class="hg-icon icon-question mr-2"></span>
                                         <span class="library-header__title super-align">Nội dung<span class="required">*</span></span>
                                     </div>
                                     <div class="modal-text-area__area col-12 p-0">
                                         <div class="fx function px-5">
-                                            <span class="hg-icon icon-image icon-active mr-4"></span>
+
+                                            <!-- input image -->
+                                            <label>
+                                                <span class="hg-icon icon-image icon-active mr-4"></span>
+                                                <input id="input-image-1" class="d-none" type="file">
+                                            </label>
                                             <span class="hg-icon icon-fx mr-4"></span>
                                             <span>
                                                 <div class="custom-control custom-switch dinline-block">
@@ -614,13 +619,20 @@
                                         </div>
                                         <textarea class="w-100"></textarea>
                                     </div>
-                                    <span class="error-message px-2">Nội dung không được quá 2000 ký tự</span>
+                                    <span class="error-message px-2">Nội dung không được quá 2000 ký tự</span><br/>
+
+                                    <!-- preview image -->
+                                    <div class="w-100 text-center">
+                                        <img id="preview-1" src="" style="max-height: 300px;">
+                                    </div>
+
+
                                     <div class="px-2 my-3 mx-2 flex-space-between">
-                                        <div class="float-left">
-                                            <span class="hg-icon icon-content mr-2"></span>
+                                        <div class="float-left title">
+                                            <span class="hg-icon icon-tick mr-2"></span>
                                             <span class="library-header__title super-align">Đáp án<span class="required">*</span></span>
                                         </div>
-                                        <div class="float-right">
+                                        <div class="float-right lock">
                                             <div class="custom-control custom-switch dinline-block">
                                                 <input type="checkbox" class="custom-control-input" id="customSwitch3">
                                                 <label class="library-header__title custom-control-label text-blue" for="customSwitch3">Chức năng khóa đảo đáp án</label>
@@ -645,9 +657,9 @@
                                         <textarea class="w-100"></textarea>
                                     </div>
                                     <span class="error-message px-2">Nội dung không được quá 2000 ký tự</span>
-                                    <div class="answer mb-3 px-2">
-                                        <div class="px-2 my-3 mx-2">
-                                            <span class="hg-icon icon-info icon-active mr-2"></span>
+                                    <div class="answer mb-3 px-2"> 
+                                        <div class="px-2 my-3 mx-2 title">
+                                            <span class="hg-icon icon-tick icon-active mr-2"></span>
                                             <span class="library-header__title super-align">Đáp án<span class="required">*</span></span>
                                         </div>
                                         <div class="answer-item full-fill-radio-input">
@@ -663,7 +675,7 @@
                                                     <span class="checkmark"></span>
                                                 </label>
                                                 <div class="action text-right">
-                                                    <span class="hg-icon icon-edit mr-4"></span>
+                                                    <span class="hg-icon icon-edit icon-green mr-4"></span>
                                                     <span class="hg-icon icon-close icon-red"></span>
                                                 </div>
                                             </div>
@@ -680,7 +692,7 @@
                                                     <span class="checkmark"></span>
                                                 </label>
                                                 <div class="action text-right">
-                                                    <span class="hg-icon icon-edit mr-4"></span>
+                                                    <span class="hg-icon icon-edit icon-green mr-4"></span>
                                                     <span class="hg-icon icon-close icon-red"></span>
                                                 </div>
                                             </div>
@@ -697,7 +709,7 @@
                                                     <span class="checkmark"></span>
                                                 </label>
                                                 <div class="action text-right">
-                                                    <span class="hg-icon icon-edit mr-4"></span>
+                                                    <span class="hg-icon icon-edit icon-green mr-4"></span>
                                                     <span class="hg-icon icon-close icon-red"></span>
                                                 </div>
                                             </div>
@@ -714,15 +726,15 @@
                                                     <span class="checkmark"></span>
                                                 </label>
                                                 <div class="action text-right">
-                                                    <span class="hg-icon icon-edit mr-4"></span>
+                                                    <span class="hg-icon icon-edit icon-green mr-4"></span>
                                                     <span class="hg-icon icon-close icon-red"></span>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="answer mb-3 px-2">
-                                        <div class="px-2 my-3 mx-2">
-                                            <span class="hg-icon icon-info icon-active mr-2"></span>
+                                        <div class="px-2 my-3 mx-2 title">
+                                            <span class="hg-icon icon-tick icon-active mr-2"></span>
                                             <span class="library-header__title super-align">Đáp án checkbox<span class="required">*</span></span>
                                         </div>
                                         <div class="answer-item full-fill-checkbox-input">
@@ -738,7 +750,7 @@
                                                     <span class="checkmark"></span>
                                                 </label>
                                                 <div class="action text-right">
-                                                    <span class="hg-icon icon-edit mr-4"></span>
+                                                    <span class="hg-icon icon-edit icon-green mr-4"></span>
                                                     <span class="hg-icon icon-close icon-red"></span>
                                                 </div>
                                             </div>
@@ -755,7 +767,7 @@
                                                     <span class="checkmark"></span>
                                                 </label>
                                                 <div class="action text-right">
-                                                    <span class="hg-icon icon-edit mr-4"></span>
+                                                    <span class="hg-icon icon-edit icon-green mr-4"></span>
                                                     <span class="hg-icon icon-close icon-red"></span>
                                                 </div>
                                             </div>
@@ -772,7 +784,7 @@
                                                     <span class="checkmark"></span>
                                                 </label>
                                                 <div class="action text-right">
-                                                    <span class="hg-icon icon-edit mr-4"></span>
+                                                    <span class="hg-icon icon-edit icon-green mr-4"></span>
                                                     <span class="hg-icon icon-close icon-red"></span>
                                                 </div>
                                             </div>
@@ -784,12 +796,11 @@
                                                 </div>
                                             </div>
                                             <div class="question-group-item__header--title">
-                                                <label class="float-left">Đáp án này chả đúng
-                                                    <input class="float-left mx-2 d-none" type="checkbox" name="answer2" value="2">
-                                                    <span class="checkmark"></span>
+                                                <label class="float-left">Đáp án này chả đúng<br/>
+                                                    <img src="https://i.pinimg.com/originals/2b/36/2f/2b362f7ea3e8b33f64260f01dd739a48.png">
                                                 </label>
                                                 <div class="action text-right">
-                                                    <span class="hg-icon icon-edit mr-4"></span>
+                                                    <span class="hg-icon icon-edit icon-green mr-4"></span>
                                                     <span class="hg-icon icon-close icon-red"></span>
                                                 </div>
                                             </div>
@@ -823,7 +834,7 @@
                                                     <input class="select-box__input" type="radio" id="attr3" value="3" name="attribute1"/>
                                                     <p class="select-box__input-text">Middle</p>
                                                 </div>
-                                                <span class="hg-icon icon-open-arrow select-box__icon"></span>
+                                                <span class="hg-icon icon-dropdown select-box__icon"></span>
                                             </div>
                                             <ul class="select-box__list">
                                                 <li>
@@ -851,7 +862,7 @@
                                                     <input class="select-box__input" type="radio" id="diff3" value="3" name="difficult1"/>
                                                     <p class="select-box__input-text">Dễ</p>
                                                 </div>
-                                                <span class="hg-icon icon-open-arrow select-box__icon"></span>
+                                                <span class="hg-icon icon-dropdown select-box__icon"></span>
                                             </div>
                                             <ul class="select-box__list">
                                                 <li>
@@ -879,7 +890,7 @@
                                                     <input class="select-box__input" type="radio" id="level3" value="3" name="level1"/>
                                                     <p class="select-box__input-text">Dễ</p>
                                                 </div>
-                                                <span class="hg-icon icon-open-arrow select-box__icon"></span>
+                                                <span class="hg-icon icon-dropdown select-box__icon"></span>
                                             </div>
                                             <ul class="select-box__list">
                                                 <li>
@@ -951,9 +962,9 @@
                                         <span class="hg-icon icon-question mr-2"></span>
                                         <span class="library-header__title super-align">Chùm câu hỏi<span class="required">*</span></span>
                                     </div>
-                                    <div class="px-4">
+                                    <div class="px-4 add-question">
                                         <span class="hg-icon icon-plus icon-green m-0"></span>
-                                        <span class="text-green font-15">Thêm câu hỏi</span>
+                                        <span class="text-green">Thêm câu hỏi</span>
                                     </div>
                                     <div class="question-group-item panel-group" id="accordion">
                                         <!-- item 1 -->
@@ -975,7 +986,7 @@
                                             </div>
                                             <div id="collapse1" class="panel-collapse collapse in">
                                                 <div class="panel-body">
-                                                    <div class="px-2 mb-3 mx-2">
+                                                    <div class="px-2 mb-3 mx-2 title">
                                                         <span class="hg-icon icon-question mr-2"></span>
                                                         <span class="library-header__title super-align">Câu hỏi<span class="required">*</span></span>
                                                     </div>
@@ -994,8 +1005,8 @@
                                                     </div>
                                                     <span class="error-message px-2">Nội dung không được quá 2000 ký tự</span>
                                                     <div class="answer mb-3 px-2">
-                                                        <div class="px-2 my-3 mx-2">
-                                                            <span class="hg-icon icon-info icon-active mr-2"></span>
+                                                        <div class="px-2 my-3 mx-2 title">
+                                                            <span class="hg-icon icon-tick icon-active mr-2"></span>
                                                             <span class="library-header__title super-align">Đáp án<span class="required">*</span></span>
                                                         </div>
                                                         <div class="answer-item full-fill-radio-input">
@@ -1011,7 +1022,7 @@
                                                                     <span class="checkmark"></span>
                                                                 </label>
                                                                 <div class="action text-right">
-                                                                    <span class="hg-icon icon-edit mr-4"></span>
+                                                                    <span class="hg-icon icon-edit icon-green mr-4"></span>
                                                                     <span class="hg-icon icon-close icon-red"></span>
                                                                 </div>
                                                             </div>
@@ -1028,7 +1039,7 @@
                                                                     <span class="checkmark"></span>
                                                                 </label>
                                                                 <div class="action text-right">
-                                                                    <span class="hg-icon icon-edit mr-4"></span>
+                                                                    <span class="hg-icon icon-edit icon-green mr-4"></span>
                                                                     <span class="hg-icon icon-close icon-red"></span>
                                                                 </div>
                                                             </div>
@@ -1045,7 +1056,7 @@
                                                                     <span class="checkmark"></span>
                                                                 </label>
                                                                 <div class="action text-right">
-                                                                    <span class="hg-icon icon-edit mr-4"></span>
+                                                                    <span class="hg-icon icon-edit icon-green mr-4"></span>
                                                                     <span class="hg-icon icon-close icon-red"></span>
                                                                 </div>
                                                             </div>
@@ -1062,7 +1073,7 @@
                                                                     <span class="checkmark"></span>
                                                                 </label>
                                                                 <div class="action text-right">
-                                                                    <span class="hg-icon icon-edit mr-4"></span>
+                                                                    <span class="hg-icon icon-edit icon-green mr-4"></span>
                                                                     <span class="hg-icon icon-close icon-red"></span>
                                                                 </div>
                                                             </div>
@@ -1257,4 +1268,21 @@
         </div>
     </div>
 </body>
+<script type="text/javascript">
+    function readURL(input) {
+      if (input.files && input.files[0]) {
+        var reader = new FileReader();
+        
+        reader.onload = function(e) {
+          $('#preview-1').attr('src', e.target.result);
+        }
+        
+        reader.readAsDataURL(input.files[0]); // convert to base64 string
+      }
+    }
+
+    $("#input-image-1").change(function() {
+      readURL(this);
+    });
+</script>
 </html>

@@ -170,6 +170,9 @@ span {
 .icon-paper-4 {
     background-image: url('../images/app/13.png');
 }
+.icon-paper-4.disable {
+    background-image: url('../images/app/178.png');
+}
 .icon-paper-4.icon-active {
     background-image: url('../images/app/12.png');
 }
@@ -193,6 +196,9 @@ span {
 }
 .icon-edit {
     background-image: url('../images/app/82.png');
+}
+.icon-edit.icon-green {
+    background-image: url('../images/app/175.png');
 }
 .icon-edit.icon-active {
     background-image: url('../images/app/81.png');
@@ -319,6 +325,9 @@ span {
 }
 .icon-plus {
     background-image: url('../images/app/87.png');
+}
+.icon-plus.icon-active {
+    background-image: url('../images/app/180.png');
 }
 .icon-plus.icon-white {
     background-image: url('../images/app/88.png');
@@ -478,6 +487,24 @@ span {
 }
 .icon-info2 {
     background-image: url('../images/app/95.png');
+}
+.icon-touch {
+    background-image: url('../images/app/56.png');
+}
+.icon-setting {
+    background-image: url('../images/app/settings.png');
+}
+.icon-tick {
+    background-image: url('../images/app/4.png');
+}
+.icon-list {
+    background-image: url('../images/app/84.png');
+}
+.icon-list.icon-active {
+    background-image: url('../images/app/83.png');
+}
+.icon-statistic {
+    background-image: url('../images/app/89.png');
 }
 
 .math {
