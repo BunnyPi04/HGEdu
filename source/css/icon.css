@@ -35,7 +35,7 @@ span {
 .icon-parent.disable {
     background-image: url('../images/app/26.png');
 }
-.active .icon-parent {
+.active>.icon-parent {
     background-image: url('../images/app/27.png');
 }
 .icon-mod {
@@ -160,6 +160,9 @@ span {
 }
 .icon-mail {
     background-image: url('../images/app/25.png');
+}
+.icon-mail.icon-green {
+    background-image: url('../images/app/176.png');
 }
 .icon-mail.disable {
     background-image: url('../images/app/23.png');
@@ -408,7 +411,7 @@ span {
     background-image: url('../images/app/71.png');
 }
 .icon-paper-3.disable {
-    background-image: url('../images/app/71.png');
+    background-image: url('../images/app/71-1.png');
 }
 .icon-paper-3.icon-active {
     background-image: url('../images/app/72.png');
@@ -448,6 +451,9 @@ span {
 }
 .icon-geography {
     background-image: url('../images/app/146.png');
+}
+.icon-geography.disable {
+    background-image: url('../images/app/146-2.png');
 }
 .icon-dropdown {
     background-image: url('../images/app/181.png');
@@ -505,6 +511,12 @@ span {
 }
 .icon-statistic {
     background-image: url('../images/app/89.png');
+}
+.icon-reply, .icon-reply.icon-active {
+    background-image: url('../images/app/reply.png');
+}
+.icon-reply.disable {
+    background-image: url('../images/app/reply-1.png');
 }
 
 .math {
