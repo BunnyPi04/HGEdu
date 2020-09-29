@@ -2297,6 +2297,7 @@ textarea:focus, input:focus {
     padding: 15px;
     background-color: #fff;
     border-radius: 4px;
+    font-family: Effra;
 }
 .select-box__option:hover, .select-box__option:focus {
     color: #546c84;
@@ -3196,8 +3197,8 @@ textarea:focus, input:focus {
 }
 .library__question-table th {
     color: var(--light-blue);
-    font-size: 1.3rem;
-    font-weight: bold;
+    font-size: 18px;
+    font-weight: normal;
 }
 .filter-text {
     line-height: 2.5rem;
@@ -3720,14 +3721,15 @@ label[for="file-input"] {
     padding-left: 10px;
 }
 .pick-test-subject {
-    display: inline;
-    padding: 3px 15px;
+    display: inline-block;
+    padding: 0px 15px;
     border: 1px solid var(--grey);
     margin-right: 10px;
     border-radius: 3px;
     font-size: 1rem;
     font-family: Effra;
     cursor: pointer;
+    margin-bottom: 10px;
 }
 .create-exam-plan__body {
     height: 88%;
@@ -4686,6 +4688,140 @@ label[for="file-input"] {
     height: 22px;
     vertical-align: middle;
 }
+.exam-date {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.plus-date {
+    background-color: var(--light-blue);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+}
+.plus-date .hg-icon {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.create-question-popup_body img {
+    max-width: 100%;
+}
+.mygroup__library .my-group-list {
+    padding-bottom: 7px;
+}
+.mygroup__library .list-item .hg-icon {
+    margin-left: 0;
+    width: 20px;
+    height: 20px;
+}
+.mygroup__library .list-item:last-child {
+    margin-bottom: 0;
+}
+.ti-input {
+    border-radius: 3px;
+}
+.ti-new-tag-input {
+    font-size: 18px !important;
+    line-height: 20px !important;
+    height: 20px !important;
+    font-family: Effra;
+}
+.ti-selected-item {
+    background-color: var(--blue) !important;
+}
+.ti-item>div {
+    padding: 10px !important;
+}
+.ti-tag {
+    background-color: var(--blue) !important;
+    padding: 3px 10px !important;
+    border-radius: 3px !important;
+    font-size: 14px !important;
+    line-height: 20px;
+}
+.create-question-popup_body .vue-tags-input {
+    max-width: unset;
+}
+.group h1 {
+    font-size: 30px;
+}
+.group .library-content-area .mn-main-header h1 {
+    max-width: 60%;
+}
+.group .library-side-bar .side-head {
+    padding-top: 30px;
+    padding-bottom: 5px;
+    position: relative;
+    height: 160px;
+}
+.group .library-side-bar .side-head h1, .group .library-side-bar .side-head p {
+    padding-left: 40px;
+    padding-right: 10px;
+}
+.group .library-side-bar .side-head:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    height: 1px;
+    width: 95%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    background-color: var(--light-grey);
+}
+
+.group .library-side-bar .side-head h1, .group .library-side-bar .side-head p {
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+.group .library-side-bar .side-head .back-icon {
+    left: 14px;
+    top: 40px;
+}
+.group .library-side-bar .side-head .back-icon .hg-icon {
+    width: 16px;
+    height: 16px;
+}
+.group .mn-main-header {
+    padding: 30px 30px;
+}
+.group .mn-main-header .library-content-area__action {
+    top: 30px;
+    right: 30px;
+    transform: none;
+}
+.group .modal-title {
+    font-weight: normal;
+    font-size: 25px;
+}
+.group__download-form {
+    min-height: 60vh;
+}
+.group__download-form--label {
+    font-size: 18px;
+    font-family: Effra;
+    padding: 20px 0;
+}
+.group__download-form--label input {
+    height: unset;
+}
+.group__download-form--label .error-message {
+    font-size: 18px;
+}
+.group__download-form--select {
+    font-size: 18px; font-family: Effra;
+    padding: 9px 0;
+}
 
 @-webkit-keyframes HideList {
     from {
@@ -4752,8 +4888,9 @@ input[type=radio]:checked~.custom-control-label.green::before {
 .treeview {
     line-height: 28px;
     font-weight: 500;
-    font-size: 15px;
+    font-size: 14px;
     padding-top: 20px;
+    font-family: Effra;
 }
 .treeview,
 .treeview ul,

@@ -335,6 +335,9 @@ span {
 .icon-plus.icon-white {
     background-image: url('../images/app/88.png');
 }
+.icon-plus .disable {
+    background-image: url('../images/app/172.png');
+}
 .icon-time-clock {
     background-image: url('../images/app/70.png');
 }

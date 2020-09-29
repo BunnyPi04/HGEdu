@@ -1,8 +1,9 @@
 .treeview {
     line-height: 28px;
     font-weight: 500;
-    font-size: 15px;
+    font-size: 14px;
     padding-top: 20px;
+    font-family: Effra;
 }
 .treeview,
 .treeview ul,
