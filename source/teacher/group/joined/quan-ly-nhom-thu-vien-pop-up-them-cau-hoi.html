@@ -42,12 +42,12 @@
                     <h1>Câu hỏi nhóm</h1>
                     <p>Thi Tiếng Anh</p>
                     <div class="w-100 px-4 py-2 library-side-bar__folder-group">
-                        <div class="">
-                            <span class="hg-icon icon-add-folder icon-active mr-2"></span>
-                            <span class="hg-icon icon-add-file icon-active mr-2"></span>
-                        </div>
-                        <div><span class="hg-icon icon-add-folder disable"></span></div>
-                    </div>
+                                <div class="">
+                                    <span class="hg-icon icon-add-folder icon-active mr-2"></span>
+                                    <span class="hg-icon icon-add-file icon-active mr-2"></span>
+                                </div>
+                                <div><span class="hg-icon icon-add-folder disable"></span></div>
+                            </div>
                 </div>
                 <!-- End header area -->
                 <!-- Start content area -->
@@ -453,78 +453,48 @@
                             </tr>
                         </tbody>
                     </table>
+                    <button class="btn btn-primary fixed-send-announcement-icon">
+                        Đã gửi thông báo
+                    </button>
+
                     <div class="fixed-add-icon">
                         <span class="hg-icon icon-add-round"></span>
                     </div>
                 </div>
                 <!-- End main content area -->
-
                 <!-- Pop up -->
-                <div class="pop-up-modal-overlay">
-                    <div class="modal-box modal-large px-4 pt-0">
-                        <div class="modal-header ex-header">
+                <div class="pop-up-modal-overlay modal-create-exam-method">
+                    <div class="modal-box">
+                        <div class="modal-header border-0">
                             <div class="">
-                                <span class="hg-icon icon-close float-left"></span>
-                            </div>
-                            <div class="text-center">
-                                <span class="modal-title font-weight-normal">Tải câu hỏi đơn</span>
+                                <span class="hg-icon icon-back float-left"></span>
+                                <span class="modal-title text-center font-weight-normal font-15">Chọn chế độ thêm</span>
                             </div>
                             <div>
-                                <span class="modal-confirm disable">Lưu</span> <!-- Remove class disable for green text -->
+                                <span class="modal-confirm">
+    <!--                                 <span class="hg-icon icon-mail icon-green m-0"></span> 
+                                    <span>Gửi thông báo</span> -->
+                                </span>
                             </div>
                         </div>
-                        <div class="modal-body group__download-form pt-0">
-                            <div class="row group__download-form--label">
-                                <div class="text-left">ID <span class="required">*</span>: </div>
-                                <div class="text-left">
-                                    <input class="w-100 border-0" type="text" placeholder="Nhập">
-                                    <!-- <span class="error-message px-3">ID bị trùng</span> -->
+                        <div class="modal-body mt-3">
+                            <div class="exam-pop-up-choose">
+                                <div class="exam-pop-up-choose__item mb-3">
+                                    <div class="">
+                                        <span class="hg-icon icon-touch"></span>
+                                    </div>
+                                    <div>
+                                        <h4 class="text-blue font-weight-normal">Tự nhập</h4>
+                                        <p>Tự nhập thông tin câu hỏi</p>
+                                    </div>
                                 </div>
-                            </div>
-
-                            <div class="row group__download-form--select">
-                                <div class="text-left text-blue">Lưu vào mảng kiến thức <span class="required">*</span>: </div>
-                                <div class="modal__popup__input-container">
-                                    <div class="select-box">
-                                        <div class="select-box__current" tabindex="1">
-                                            <div class="select-box__value">
-                                                <input class="select-box__input" type="radio" id="0" value="1" name="save" checked="checked"/>
-                                                <p class="select-box__input-text">Tùy chọn mảng kiến thức</p>
-                                            </div>
-                                            <div class="select-box__value">
-                                                <input class="select-box__input" type="radio" id="1" value="2" name="save"/>
-                                                <p class="select-box__input-text">Vô cơ</p>
-                                            </div>
-                                            <div class="select-box__value">
-                                                <input class="select-box__input" type="radio" id="2" value="3" name="save"/>
-                                                <p class="select-box__input-text">Hữu cơ</p>
-                                            </div>
-                                            <div class="select-box__value">
-                                                <input class="select-box__input" type="radio" id="3" value="4" name="save"/>
-                                                <p class="select-box__input-text">Este</p>
-                                            </div>
-                                            <div class="select-box__value">
-                                                <input class="select-box__input" type="radio" id="4" value="5" name="save"/>
-                                                <p class="select-box__input-text">Khác</p>
-                                            </div><span class="hg-icon icon-dropdown select-box__icon"></span>
-                                        </div>
-                                        <ul class="select-box__list">
-                                            <li>
-                                                <label class="select-box__option" for="0" aria-hidden="aria-hidden">Tùy chọn mảng kiến thức</label>
-                                            </li>
-                                            <li>
-                                                <label class="select-box__option" for="1" aria-hidden="aria-hidden">Vô cơ</label>
-                                            </li>
-                                            <li>
-                                                <label class="select-box__option" for="2" aria-hidden="aria-hidden">Hữu cơ</label>
-                                            </li>
-                                            <li>
-                                                <label class="select-box__option" for="3" aria-hidden="aria-hidden">Este</label>
-                                            </li>
-                                            <li>
-                                                <label class="select-box__option" for="4" aria-hidden="aria-hidden">Khác</label>
-                                            </li>
-                                        </ul>
+                                <div class="exam-pop-up-choose__item">
+                                    <div class="">
+                                        <span class="hg-icon icon-setting"></span>
+                                    </div>
+                                    <div>
+                                        <h4 class="text-blue font-weight-normal">Tải từ thư viện câu hỏi cá nhân</h4>
+                                        <p>Sao chép câu hỏi và toàn bộ thông tin từ thư viện cá nhân</p>
                                     </div>
                                 </div>
                             </div>

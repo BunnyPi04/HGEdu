@@ -718,47 +718,52 @@
                                 <div class="knowledge-wide px-2 mb-3 mx-2">
                                     <span class="hg-icon icon-target mr-2"></span>
                                     <span class="create-exam__excerpt--title super-align font-weight-bold">Phạm vi mảng kiến thức sử dụng</span>
-                                    <div class="select-box">
-                                        <div class="select-box__current" tabindex="1">
+                                    <div class="select-box multiselect">
+                                        <div class="select-box__current" tabindex="1" style="">
+                                            <!-- for case multiple -->
                                             <div class="select-box__value">
-                                                <input class="select-box__input" type="radio" id="knowledge0" value="1" name="knowledge" checked="checked"/>
+                                                <input class="select-box__input multiple-text" type="checkbox" id="knowledge-multiple" value="1"/>
+                                                <p class="select-box__input-text">Đã chọn n mảng</p>
+                                            </div>
+                                            <div class="select-box__value">
+                                                <input class="select-box__input" type="checkbox" id="knowledge0" value="1" checked="" />
                                                 <p class="select-box__input-text">Chọn các mảng kiến thức cần sử dụng</p>
                                             </div>
                                             <div class="select-box__value">
-                                                <input class="select-box__input" type="radio" id="knowledge1" value="2" name="knowledge"/>
                                                 <p class="select-box__input-text text-blue">Hữu cơ</p>
+                                                <input class="select-box__input" type="checkbox" id="knowledge1" value="2" name="knowledge"/>
                                             </div>
                                             <div class="select-box__value">
-                                                <input class="select-box__input" type="radio" id="knowledge2" value="2" name="knowledge"/>
                                                 <p class="select-box__input-text text-blue">Vô cơ</p>
+                                                <input class="select-box__input" type="checkbox" id="knowledge2" value="3" name="knowledge"/>
                                             </div>
                                             <div class="select-box__value">
-                                                <input class="select-box__input" type="radio" id="knowledge3" value="2" name="knowledge"/>
                                                 <p class="select-box__input-text text-blue">Phản ứng hóa học</p>
+                                                <input class="select-box__input" type="checkbox" id="knowledge3" value="4" name="knowledge"/>
                                             </div>
                                             <div class="select-box__value">
-                                                <input class="select-box__input" type="radio" id="knowledge4" value="2" name="knowledge"/>
                                                 <p class="select-box__input-text">Nguyên tố</p>
+                                                <input class="select-box__input" type="checkbox" id="knowledge4" value="5" name="knowledge"/>
                                             </div>
                                             <div class="select-box__value">
-                                                <input class="select-box__input" type="radio" id="knowledge5" value="2" name="knowledge"/>
                                                 <p class="select-box__input-text">Hydro Cacbon</p>
+                                                <input class="select-box__input" type="checkbox" id="knowledge5" value="6" name="knowledge"/>
                                             </div>
                                             <div class="select-box__value">
-                                                <input class="select-box__input" type="radio" id="knowledge6" value="2" name="knowledge"/>
                                                 <p class="select-box__input-text">Ancol và Phenol</p>
+                                                <input class="select-box__input" type="checkbox" id="knowledge6" value="7" name="knowledge"/>
                                             </div>
                                             <div class="select-box__value">
-                                                <input class="select-box__input" type="radio" id="knowledge7" value="2" name="knowledge"/>
                                                 <p class="select-box__input-text">Andehit và Ceton</p>
+                                                <input class="select-box__input" type="checkbox" id="knowledge7" value="8" name="knowledge"/>
                                             </div>
                                             <div class="select-box__value">
-                                                <input class="select-box__input" type="radio" id="knowledge8" value="2" name="knowledge"/>
                                                 <p class="select-box__input-text">Este</p>
+                                                <input class="select-box__input" type="checkbox" id="knowledge8" value="9" name="knowledge"/>
                                             </div>
                                             <div class="select-box__value">
-                                                <input class="select-box__input" type="radio" id="knowledge9" value="2" name="knowledge"/>
                                                 <p class="select-box__input-text">Cacbo Hydrat</p>
+                                                <input class="select-box__input" type="checkbox" id="knowledge9" value="10" name="knowledge"/>
                                             </div>
                                             <span class="hg-icon icon-dropdown select-box__icon"></span>
                                         </div>
@@ -1272,4 +1277,50 @@
         </div>
     </div>
 </body>
+<style type="text/css">
+    .bg-checked label {
+        background-color: var(--blue);
+        color: white !important;
+    }
+    .bg-checked label:hover {
+        background-color: var(--light-blue);
+    }
+</style>
+<script type="text/javascript">
+    $('input[name=knowledge').change(function() {
+        let count = $('input[name=knowledge]:checked').length;
+        console.log(count);
+        if (count == 0) {
+            $('#knowledge0 :checkbox').prop('checked', true);
+            $('#knowledge-multiple + .select-box__input-text').css('display', 'none');
+        } else if (count == 1) {
+            $('#knowledge0:checkbox').prop('checked', false);
+            $('#knowledge0:checkbox').prop('display', 'none');
+            $('.select-box__input:checked ~ .select-box__input-text').css('display', 'block');
+        } else {
+            $('#knowledge0 :checkbox').prop('checked', false);
+            $('#knowledge-multiple + .select-box__input-text').innerHTML = 'Đã chọn ' + count + ' mảng';
+            $('#knowledge-multiple + .select-box__input-text').css('display', 'block');
+        }
+        console.log();
+    });
+    // $('.multiselect ul li :checkbox:checked').each(function () {
+    //   $(this).parents('li').toggleClass('selected');
+    //   console.log($(this));
+    // });
+    // $('.multiselect ul li').click(function () {
+    //     let id = $(this).children('label').attr('for');
+    //     $('.multiselect #knowledge0 :checkbox').prop('checked', false);
+    //     $('.multiselect #' + id + ' :checkbox').prop('checked', $(this).hasClass('bg-checked'));
+    //     $(this).toggleClass('bg-checked');
+    //     var numberOfChecked = $('.multiselect :checkbox:checked').length;
+    //     // console.log(numberOfChecked);
+    //     if (numberOfChecked > 1) {
+    //         $('.select-box__input.multiple-text + .select-box__input-text').addClass('display', 'block');
+    //         $('.multiselect .select-box__input:checked + .multiselect .select-box__input-text').addClass('dnone');
+    //     } else {
+    //         $('.multiselect .select-box__input:checked + .select-box__input-text').css('display', 'block');
+    //     }
+    // });
+</script>
 </html>

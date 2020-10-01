@@ -701,6 +701,16 @@ textarea:focus, input:focus {
 .modal-box.modal-large {
     width: 860px;
 }
+.modal-box.modal-extra-large {
+    width: 1000px;
+}
+.ex-header {
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+.modal-box .modal-header.ex-header {
+    align-items: center;
+}
 .modal-box.modal-large .row:not(:last-child) {
     border-bottom: 1px solid var(--border-light-grey);
 }
@@ -1025,7 +1035,7 @@ textarea:focus, input:focus {
     width: 20px;
     height: 20px;
 }
-.class-mn .account-list .list-item {
+.class-mn .account-list .list-item, .library-exam .account-list .list-item, .account-list-header {
     height: auto;
 }
 .class-mn .account-list .list-item .list-item__user-name {
@@ -1033,9 +1043,9 @@ textarea:focus, input:focus {
     font-size: 18px;
     font-family: Effra;
 }
-.class-mn .list-item .class-list__icon .hg-icon {
-    width: 5rem;
-    height: 5rem;
+.class-mn .list-item .class-list__icon .hg-icon, .library-exam .list-item .class-list__icon .hg-icon {
+    width: 72px;
+    height: 72px;
 }
 .class-list__class-name {
     font-size: 22px;
@@ -1466,9 +1476,10 @@ textarea:focus, input:focus {
     bottom: 50px;
     left: 100px;
     padding: 10px 30px;
-    font-size: 1.3em;
+    font-size: 22px;
     border-radius: 15px;
     box-shadow: 3px 4px 4px var(--light-grey);
+    z-index: 3;
 }
 .btn-primary {
     background-color: var(--blue);
@@ -1724,7 +1735,7 @@ textarea:focus, input:focus {
 }
 .library-side-bar {
     box-shadow: 0px 0px 6px var(--light-grey);
-    z-index: 99;
+    z-index: 2;
 }
 .library-side-bar .library-side-bar__main-tab .tab-blue span, .library-side-bar .tab-red span {
     height: 3px;
@@ -3446,6 +3457,160 @@ label[for="file-input"] {
 .group__download-form--select {
     font-size: 18px; font-family: Effra;
     padding: 9px 0;
+}
+.share-library__container {
+    display: grid;
+    grid-template-columns: 206px auto;
+    min-height: 70vh;
+}
+.share-library__left-side--head, .share-library__main-side--head {
+    height: 110px;
+    display: flex;
+    align-items: center;
+    padding-right: 10px;
+}
+.share-library__main-side--head h1 {
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+.share-library__left-side {
+    overflow: auto;
+    border-right: 1px solid var(--light-grey);
+}
+.share-library__left-side--head {
+    border-bottom: 1px solid var(--light-grey);
+    padding-left: 20px;
+}
+.share-library__main-side--head {
+    border-bottom: 1px solid var(--border-light-grey);
+    padding-left: 30px;
+}
+.share-library__main-side--head-title {
+    position: relative;
+}
+.share-library__main-side--head-title .num {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transform: translateY(15px);
+}
+.share-library__main-side--main-filter {
+    display: grid;
+    grid-template-columns: 140px auto;
+    border-bottom: 1px solid var(--border-light-grey);
+}
+.share-library__main-side--main-filter .filter-text {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+.share-library__main-side--main-filter .filter-text h4 {
+    color: var(--light-blue);
+    font-size: 18px;
+    font-weight: bold;
+}
+.share-library__main-side--main-filter .filter-item {
+    padding: 10px 30px 10px 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 10px;
+}
+.share-library__main-side--main-table .table-head, .share-library__main-side--main-table .table-body .table-body__item {
+    display: grid;
+    grid-template-columns: 140px auto 220px;
+    grid-column-gap: 10px;
+    padding: 14px 0;
+    border-bottom: 1px solid var(--border-light-grey);
+}
+.share-library__main-side--main-table .table-head {
+    color: var(--light-blue);
+    font-size: 18px;
+}
+.share-library__main-side--main-table .table-body__item>div {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    font-family: Effra;
+}
+.share-library__main-side--main-table .code {
+    justify-content: center;
+}
+.share-library__main-side--main-table .table-body__item .answer {
+    padding-right: 10px;
+    display: block;
+}
+.share-library__main-side--main-table .table-body__item .answer .input-group:not(:last-child) {
+    margin-bottom: 10px;
+}
+.share-library__main-side--main-table .table-body__item .answer-item-block {
+    display: grid;
+    grid-template-columns: 42px auto;
+    height: 42px;
+    align-items: center;
+    justify-content: center;
+}
+.share-library__main-side--main-table .table-body__item .answer-item-block .plus {
+    background-color: var(--green);
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.share-library__main-side--main-table .answer .hg-icon {
+    width: 20px;
+    height: 20px;
+}
+.share-library__main-side--main-table .table-body__item .input-group-text {
+    height: 40px;
+    background: var(--green);
+    border: 1px solid var(--green);
+}
+.share-library__main-side--main-table .table-body__item .form-control {
+    height: 40px;
+    border: 1px solid var(--green);
+}
+.library-exam .list-item__user-name {
+    font-weight: normal;
+}
+.library-exam .class-list__class-name .class-list__label {
+    color: var(--blue);
+    font-size: 22px;
+    font-family: Montserrat;
+}
+.library-exam .class-list__class-name .code {
+    color: var(--black);
+    font-size: 18px;
+    font-family: Effra;
+    font-weight: normal;
+    margin-left: 10px;
+}
+.library-exam .account-list .list-item {
+    font-size: 18px;
+    font-family: Effra;
+    grid-template-columns: 135px auto 135px;
+    box-shadow: 0px 3px 6px var(--shadow);
+}
+.library-exam .account-list .list-item .exam-info .exam-content {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin-top: 10px;
+}
+.library-exam .account-list .list-item .exam-info {
+    padding: 8px 0;
+}
+.library-exam .account-list .list-item .library-exam__action .hg-icon {
+    width: 22px;
+    height: 22px;
+    float: right;
+    margin-right: 37px;
+    margin-left: 0;
+}
+.library-exam .account-list.list-container {
+    max-height: calc(100vh - 250px);
 }
 
 @-webkit-keyframes HideList {
