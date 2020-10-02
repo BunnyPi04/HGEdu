@@ -1,0 +1,95 @@
+
+<!doctype html>
+<html>
+
+<head>
+    <title>Doughnut Chart</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <script src="assets/js/script.js"></script>
+    <!-- <script src="../utils.js"></script> -->
+    <style>
+    canvas {
+        -moz-user-select: none;
+        -webkit-user-select: none;
+        -ms-user-select: none;
+    }
+    </style>
+</head>
+
+<body>
+    <div style="width: 400px; height: 400px;">
+        <canvas id="usersChart" width="1" height="1"></canvas>
+    </div>
+    <script>
+        window.onload = function() {
+            new Chart(document.getElementById('usersChart'), {
+                type: 'RoundedDoughnut',
+                data: {
+                    labels: [
+                        'Green',
+                        'Dark Yellow',
+                        'Purple',
+                        'Red',
+                        'Pink',
+                        'Aqua',
+                        'Yellow'
+                    ], datasets: [
+                        {
+                            data: [23, 10, 15, 20, 10, 8, 15],
+                            backgroundColor: [
+                                window.chartColors.strong_green,
+                                window.chartColors.dark_yellow,
+                                window.chartColors.purple,
+                                window.chartColors.red,
+                                window.chartColors.pink,
+                                window.chartColors.aqua,
+                                window.chartColors.yellow
+                            ],
+                            borderWidth : 0
+                        }]
+                },
+                options: {
+                    cutoutPercentage: 70,
+                    tooltips: {
+                        callbacks: {
+                            title: function(tooltipItem, data) {
+                                return data['labels'][tooltipItem[0]['index']];
+                            },
+                            label: function(tooltipItem, data) {
+                                return data['datasets'][0]['data'][tooltipItem['index']];
+                            },
+                            afterLabel: function(tooltipItem, data) {
+                                var dataset = data['datasets'][0];
+                                var percent = Math.round((dataset['data'][tooltipItem['index']] / dataset["_meta"][0]['total']) * 100)
+                                return '(' + percent + '%)';
+                            }
+                        },
+                        backgroundColor: '#FFF',
+                        titleFontSize: 12,
+                        titleFontColor: window.chartColors.blue,
+                        titleFontFamily: 'Effra',
+                        bodyFontColor: window.chartColors.black,
+                        bodyFontSize: 10,
+                        displayColors: false
+                    },
+                    elements: {
+                        center: {
+                            text: '50',
+                            color: '#FF6384', // Default is #000000
+                            fontStyle: 'Arial', // Default is Arial
+                            sidePadding: 20, // Default is 20 (as a percentage)
+                            minFontSize: 40, // Default is 20 (in px), set to false and text will not wrap.
+                            lineHeight: 25, // Default is 25 (in px), used for when text wraps
+                            unitText: 'Mức',
+                            unitSize: '30',
+                            unitFont: 'Effra',
+                            unitColor: window.chartColors.black,
+                        }
+                    }
+                }
+            });
+        };
+    </script>
+</body>
+
+</html>

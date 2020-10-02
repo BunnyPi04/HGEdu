@@ -521,6 +521,12 @@ span {
 .icon-reply.disable {
     background-image: url('../images/app/reply-1.png');
 }
+.icon-chart {
+    background-image: url('../images/app/3.png');
+}
+.icon-filter {
+    background-image: url('../images/app/11.png');
+}
 
 .math {
     background-image: url('../images/app/function.png');

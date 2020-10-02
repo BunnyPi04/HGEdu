@@ -1044,10 +1044,10 @@
                                 </div>
                                 <div class="exam-quality mt-2 mb-4 pt-4">
                                     <div class="w-100">
-                                        <span class="hg-icon icon-info icon-active mr-2"></span>
+                                        <span class="hg-icon icon-chart icon-active mr-2"></span>
                                         <span class="create-exam__excerpt--title super-align font-weight-bold">Chất lượng đề</span>
                                     </div>
-                                    <div class="exam-quality__container">
+                                    <div class="exam-quality__container my-5">
                                         <div class="exam-quality--item count">
                                             <div class="text-center">
                                                 <h6 class="text-center">Tổng số câu hỏi</h6>
@@ -1056,17 +1056,9 @@
                                         </div>
                                         <div class="exam-quality--item separate">
                                             <div class="exam-chart-container text-center">
-                                                <svg class="" width="60" height="60">
-                                                    <circle class="svg-index" cx="31" cy="31" r="26" stroke-width="6"/>
-                                                    <text class="percent" y="50%" x="50%" dominant-baseline="middle" text-anchor="middle">20%</text>
-                                                    <path d="M31,5
-                                                        a 15.9155 15.9155 0 0 1 0 52
-                                                        a 15.9155 15.9155 0 0 1 0 -52" stroke="var(--pink)"
-                                                        stroke-dasharray="32.65, 500"
-                                                    />
-                                                    <!-- first param of stroke dasharray present for percent -->
-                                                    <!-- x = (2*3.14*percent*3.6*R)/360 (R = 26) -->
-                                                </svg>
+                                                <div style="width: 60px; height: 60px;">
+                                                    <canvas id="chart1" width="1" height="1"></canvas>
+                                                </div>
                                             </div>
                                             <div class="exam-quality__explan-container">
                                                 <div>
@@ -1075,20 +1067,9 @@
                                                 </div>
                                             </div>
                                             <div class="exam-chart-container text-center">
-                                                <svg class="" width="60" height="60">
-                                                    <circle class="svg-index" cx="31" cy="31" r="26" stroke-width="6"/>
-                                                    <text class="percent" y="50%" x="50%" dominant-baseline="middle" text-anchor="middle">0%</text>
-                                                    <path d="M31,5
-                                                        a 15.9155 15.9155 0 0 1 0 52
-                                                        a 15.9155 15.9155 0 0 1 0 -52" stroke="var(--yellow)"
-                                                        stroke-dasharray="45, 500"
-                                                    />
-                                                    <path d="M31,5
-                                                        a 15.9155 15.9155 0 0 1 0 52
-                                                        a 15.9155 15.9155 0 0 1 0 -52" stroke="var(--aqua)"
-                                                        stroke-dasharray="30, 500"
-                                                    />
-                                                </svg>
+                                                <div style="width: 60px; height: 60px;">
+                                                    <canvas id="chart2" width="1" height="1"></canvas>
+                                                </div>
                                             </div>
                                             <div class="exam-quality__explan-container">
                                                 <div>
@@ -1097,67 +1078,32 @@
                                                 </div>
                                                 <div>
                                                     <div class="yellow-round"></div>
-                                                    <div>Lý thuyết</div>
+                                                    <div>Bài tập</div>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="exam-quality--item big-chart">
                                             <div class="exam-chart-container text-center">
-                                                <svg class="" width="134" height="134">
-                                                    <circle class="svg-index" cx="67" cy="67" r="60" stroke-width="14"/>
-                                                    <text class="percent" y="50%" x="50%" dominant-baseline="middle" text-anchor="middle">30%</text>
-                                                    <!-- 100% -->
-                                                    <path d="M67,7
-                                                        a 15.9155 15.9155 0 0 1 0 120
-                                                        a 15.9155 15.9155 0 0 1 0 -120" stroke="var(--red)"
-                                                        stroke-dasharray="376.8, 1000"
-                                                        stroke-width="14"
-                                                    />
-                                                    <!-- first param of stroke dasharray present for percent -->
-                                                    <!-- x = (2*3.14*percent*3.6*R)/360 (R = 60) -->
-
-                                                    <!-- 75% present for 75% - 22% - 8% = 45% -->
-                                                    <path d="M67,7
-                                                        a 15.9155 15.9155 0 0 1 0 120
-                                                        a 15.9155 15.9155 0 0 1 0 -120" stroke="var(--purple)"
-                                                        stroke-dasharray="282.6, 1000"
-                                                        stroke-width="14"
-                                                    />
-
-                                                    <!-- 30% present for 30% - 8% = 22%-->
-                                                    <path d="M67,7
-                                                        a 15.9155 15.9155 0 0 1 0 120
-                                                        a 15.9155 15.9155 0 0 1 0 -120" stroke="var(--yellow)"
-                                                        stroke-dasharray="113, 1000"
-                                                        stroke-width="14"
-                                                    />
-
-                                                    <!-- 8% -->
-                                                    <path d="M67,7
-                                                        a 15.9155 15.9155 0 0 1 0 120
-                                                        a 15.9155 15.9155 0 0 1 0 -120" stroke="var(--green)"
-                                                        stroke-dasharray="30.14, 1000"
-                                                        stroke-width="14"
-                                                    />
-                                                    <!-- Stroke-dasharray="13, 500" if percent = 13% -->
-                                                </svg>
+                                                <div style="width: 134px; height: 134px;">
+                                                    <canvas id="chart3" width="1" height="1"></canvas>
+                                                </div>
                                             </div>
                                             <div class="exam-quality__explan-container">
-                                                <div>
+                                                <div class="mb-2">
                                                     <div class="green-round"></div>
                                                     <div>Mức 1: 8%</div>
                                                 </div>
-                                                <div>
+                                                <div class="mb-2">
                                                     <div class="orange-round"></div>
                                                     <div>Mức 2: 22%</div>
                                                 </div>
-                                                <div>
+                                                <div class="mb-2">
                                                     <div class="purple-round"></div>
                                                     <div>Mức 3: 37%</div>
                                                 </div>
-                                                <div>
+                                                <div class="mb-2">
                                                     <div class="red-round"></div>
-                                                    <div>Mức 4: 0</div>
+                                                    <div>Mức 4: 33%</div>
                                                 </div>
                                             </div>
                                         </div>
@@ -1304,23 +1250,184 @@
         }
         console.log();
     });
-    // $('.multiselect ul li :checkbox:checked').each(function () {
-    //   $(this).parents('li').toggleClass('selected');
-    //   console.log($(this));
-    // });
-    // $('.multiselect ul li').click(function () {
-    //     let id = $(this).children('label').attr('for');
-    //     $('.multiselect #knowledge0 :checkbox').prop('checked', false);
-    //     $('.multiselect #' + id + ' :checkbox').prop('checked', $(this).hasClass('bg-checked'));
-    //     $(this).toggleClass('bg-checked');
-    //     var numberOfChecked = $('.multiselect :checkbox:checked').length;
-    //     // console.log(numberOfChecked);
-    //     if (numberOfChecked > 1) {
-    //         $('.select-box__input.multiple-text + .select-box__input-text').addClass('display', 'block');
-    //         $('.multiselect .select-box__input:checked + .multiselect .select-box__input-text').addClass('dnone');
-    //     } else {
-    //         $('.multiselect .select-box__input:checked + .select-box__input-text').css('display', 'block');
-    //     }
-    // });
+        window.onload = function() {
+            new Chart(document.getElementById('chart1'), {
+                type: 'RoundedDoughnut',
+                data: {
+                    labels: [
+                        'Toàn diện kiến thức',
+                        'Khác',
+                    ],
+                    datasets: [
+                        {
+                            data: [25, 75],
+                            backgroundColor: [
+                                window.chartColors.pink,
+                                window.chartColors.light_grey,
+                            ],
+                            borderWidth : 0
+                        }
+                    ]
+                },
+                options: {
+                    cutoutPercentage: 80,
+                    legend: {
+                        display: false
+                    },
+                    tooltips: {
+                        callbacks: {
+                            title: function(tooltipItem, data) {
+                                return data['labels'][tooltipItem[0]['index']];
+                            },
+                            label: function(tooltipItem, data) {
+                                return data['datasets'][0]['data'][tooltipItem['index']] + '%';
+                            },
+                        },
+                        backgroundColor: '#FFF',
+                        titleFontSize: 12,
+                        titleFontColor: window.chartColors.blue,
+                        titleFontFamily: 'Effra',
+                        bodyFontColor: window.chartColors.black,
+                        bodyFontSize: 10,
+                        displayColors: false
+                    },
+                    elements: {
+                        center: {
+                            text: '25%',
+                            color: window.chartColors.grey, // Default is #000000
+                            // fontStyle: 'Mon', // Default is Arial
+                            sidePadding: 20, // Default is 20 (as a percentage)
+                            minFontSize: 10, // Default is 20 (in px), set to false and text will not wrap.
+                            maxFontSize: 15,
+                            lineHeight: 15, // Default is 25 (in px), used for when text wraps
+                        }
+                    }
+                }
+            });
+
+            new Chart(document.getElementById('chart2'), {
+                type: 'RoundedDoughnut',
+                data: {
+                    labels: [
+                        'Lý thuyết: 0',
+                        'Bài tập: 0',
+                    ],
+                    datasets: [
+                        {
+                            data: [40, 60],
+                            backgroundColor: [
+                                window.chartColors.aqua,
+                                window.chartColors.yellow,
+                            ],
+                            borderWidth : 0
+                        }
+                    ]
+                },
+                options: {
+                    cutoutPercentage: 80,
+                    legend: {
+                        display: false
+                    },
+                    tooltips: {
+                        callbacks: {
+                            title: function(tooltipItem, data) {
+                                return data['labels'][tooltipItem[0]['index']];
+                            },
+                            label: function(tooltipItem, data) {
+                                return data['datasets'][0]['data'][tooltipItem['index']] + '%';
+                            },
+                        },
+                        backgroundColor: '#FFF',
+                        titleFontSize: 12,
+                        titleFontColor: window.chartColors.blue,
+                        titleFontFamily: 'Effra',
+                        bodyFontColor: window.chartColors.black,
+                        bodyFontSize: 10,
+                        displayColors: false
+                    },
+                    elements: {
+                        center: {
+                            text: '40%',
+                            color: window.chartColors.grey, // Default is #000000
+                            // fontStyle: 'Mon', // Default is Arial
+                            sidePadding: 20, // Default is 20 (as a percentage)
+                            minFontSize: 10, // Default is 20 (in px), set to false and text will not wrap.
+                            maxFontSize: 15,
+                            lineHeight: 15, // Default is 25 (in px), used for when text wraps
+                            unitText: 'Lý thuyết',
+                            unitSize: '8',
+                            unitFont: 'Effra',
+                            unitColor: window.chartColors.black,
+                        }
+                    }
+                }
+            });
+
+            new Chart(document.getElementById('chart3'), {
+                type: 'RoundedDoughnut',
+                data: {
+                    labels: [
+                        'Mức 1: 8%',
+                        'Mức 2: 22%',
+                        'Mức 3: 37%',
+                        'Mức 4: 33%',
+                    ],
+                    datasets: [
+                        {
+                            data: [8, 22, 27, 33],
+                            backgroundColor: [
+                                window.chartColors.strong_green,
+                                window.chartColors.dark_yellow,
+                                window.chartColors.purple,
+                                window.chartColors.red,
+                            ],
+                            borderWidth : 0
+                        }
+                    ]
+                },
+                options: {
+                    cutoutPercentage: 75,
+                    legend: {
+                        display: false
+                    },
+                    tooltips: {
+                        callbacks: {
+                            title: function(tooltipItem, data) {
+                                return data['labels'][tooltipItem[0]['index']];
+                            },
+                            label: function(tooltipItem, data) {
+                                return data['datasets'][0]['data'][tooltipItem['index']] + '%';
+                            },
+                            // afterLabel: function(tooltipItem, data) {
+                            //     var dataset = data['datasets'][0];
+                            //     var percent = Math.round((dataset['data'][tooltipItem['index']] / dataset["_meta"][0]['total']) * 100)
+                            //     return '(' + percent + '%)';
+                            // }
+                        },
+                        backgroundColor: '#FFF',
+                        titleFontSize: 12,
+                        titleFontColor: window.chartColors.blue,
+                        titleFontFamily: 'Effra',
+                        bodyFontColor: window.chartColors.black,
+                        bodyFontSize: 10,
+                        displayColors: false
+                    },
+                    elements: {
+                        center: {
+                            text: '2.2',
+                            color: window.chartColors.grey, // Default is #000000
+                            // fontStyle: 'Montserrat', // Default is Montserrat
+                            sidePadding: 20, // Default is 20 (as a percentage)
+                            maxFontSize: 28,
+                            lineHeight: 25, // Default is 15 (in px), used for when text wraps
+                            unitText: 'Mức khó',
+                            unitSize: 16,
+                            unitFont: 'Effra',
+                            unitColor: window.chartColors.black,
+                        }
+                    }
+                }
+            });
+        };
 </script>
 </html>

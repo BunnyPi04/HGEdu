@@ -82,7 +82,7 @@ label:has( > input[type=checkbox]:checked):before {
     transform: rotate(180deg);
 }
 .tree-view__folder-title {
-    vertical-align: super;
+    vertical-align: middle;
     padding-left: 10px;
 }
 .tree-view li:has(> .extend)
