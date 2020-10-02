@@ -26,6 +26,11 @@ body {
     padding: 0;
     font-size: 15px;
     font-family: Montserrat;
+	image-rendering: -moz-crisp-edges;
+image-rendering: -moz-crisp-edges;
+image-rendering: -o-crisp-edges;
+image-rendering: -webkit-optimize-contrast;
+-ms-interpolation-mode: nearest-neighbor;
 }
 h1, h2, h3, h4 {
     color: var(--blue);
