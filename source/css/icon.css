@@ -527,6 +527,21 @@ span {
 .icon-filter {
     background-image: url('../images/app/11.png');
 }
+.icon-upload {
+    background-image: url('../images/app/to-mod.png');
+}
+.icon-tick-2 {
+    background-image: url('../images/app/52.png');
+}
+.icon-tick-2.icon-active {
+    background-image: url('../images/app/52.png');
+}
+.icon-tick-2.icon-green {
+    background-image: url('../images/app/50.png');
+}
+.icon-tick-2.icon-white {
+    background-image: url('../images/app/51.png');
+}
 
 .math {
     background-image: url('../images/app/function.png');

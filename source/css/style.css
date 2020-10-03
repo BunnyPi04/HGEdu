@@ -26,11 +26,11 @@ body {
     padding: 0;
     font-size: 15px;
     font-family: Montserrat;
-	image-rendering: -moz-crisp-edges;
-image-rendering: -moz-crisp-edges;
-image-rendering: -o-crisp-edges;
-image-rendering: -webkit-optimize-contrast;
--ms-interpolation-mode: nearest-neighbor;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: -o-crisp-edges;
+    image-rendering: -webkit-optimize-contrast;
+    -ms-interpolation-mode: nearest-neighbor;
 }
 h1, h2, h3, h4 {
     color: var(--blue);
@@ -445,7 +445,7 @@ textarea:focus, input:focus {
     overflow: hidden;
 }
 .mn-main-header {
-    padding: 25px 50px;
+    padding: 30px 50px;
     height: 180px;
     border-bottom: 2px solid var(--border-light-grey);
     position: relative;
@@ -3735,6 +3735,130 @@ label[for="file-input"] {
 }
 .matrix {
     font-family: Montserrat;
+}
+.modal-suffle .modal-header {
+    position: relative;
+}
+.modal-suffle .modal-header .action {
+    position: absolute;
+    left: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.modal-suffle .modal-title {
+    font-size: 30px;
+}
+.suffle-item__container {
+    display: flex;
+    justify-content: space-around;
+}
+.suffle-item {
+    color: white;
+    background-color: var(--light-grey);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 41px;
+    font-family: Effra;
+    border-radius: 5px;
+    cursor: pointer;
+    transition-duration: 0.3s;
+}
+.suffle-item:hover {
+    background-color: var(--blue);
+}
+.noti-header {
+    color: var(--blue);
+    font-size: 18px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.noti-header, .noti-item {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 40px auto 200px 350px 150px 150px;
+    align-items: center;
+    grid-gap: 10px;
+}
+/*.noti-header .noti-date, .noti-header .noti-date {
+    text-align: left;
+}*/
+.noti-item {
+    font-size: 22px;
+    font-family: Effra;
+    box-shadow: 0px 0px 3px var(--shadow);
+    border-radius: 7px;
+    padding: 5px 10px;
+    background-color: white;
+    margin: 3px 0 5px 2px;
+}
+.noti-item .hg-icon {
+    width: 28px;
+    height: 28px;
+    vertical-align: middle;
+}
+.noti-date, .noti-parent, .noti-student {
+    text-align: center;
+}
+.noti-check {
+    display: block;
+    position: relative;
+    /*padding-left: 35px;*/
+    /*margin-bottom: 12px;*/
+    cursor: pointer;
+    /*font-size: 22px;*/
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.noti-check input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+.noti-check .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 23px;
+    width: 23px;
+    background-color: transparent;
+    border-radius: 5px;
+    border: 1px solid #B5B5B5;
+    cursor: pointer;
+}
+.noti-item .noti-check .checkmark {
+    top: 4px;
+}
+
+.noti-check:hover input[type="checkbox"] ~ .checkmark {
+    background-color: var(--light-grey);
+}
+.noti-check input[type="checkbox"]:checked ~ .checkmark {
+    background-color: var(--blue);
+    border: 1px solid var(--blue);
+}
+.noti-check .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+.noti-check input[type="checkbox"]:checked ~ .checkmark:after {
+  display: block;
+}
+.noti-check .checkmark:after {
+    left: 7px;
+    top: 2px;
+    width: 8px;
+    height: 14px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
 }
 
 @-webkit-keyframes HideList {
