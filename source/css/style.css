@@ -3833,7 +3833,12 @@ label[for="file-input"] {
 .noti-item .noti-check .checkmark {
     top: 4px;
 }
-
+.noti-header .checkmark {
+    top: 3px;
+}
+.noti-header div span {
+    vertical-align: middle;
+}
 .noti-check:hover input[type="checkbox"] ~ .checkmark {
     background-color: var(--light-grey);
 }
@@ -3859,6 +3864,10 @@ label[for="file-input"] {
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
+}
+.picked-row {
+    background-color: var(--light-grey);
+    color: white;
 }
 
 @-webkit-keyframes HideList {
