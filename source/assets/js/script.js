@@ -413,6 +413,9 @@ $('.checkbox-row').change(function () {
         container.removeClass('picked-row');
     }
 });
+$(".nav-toggle").click(function () {
+    $(".sidebar").toggleClass("active");
+});
     
 /*!
   * Bootstrap v4.5.2 (https://getbootstrap.com/)

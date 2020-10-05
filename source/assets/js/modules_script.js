@@ -40,4 +40,7 @@ $('.checkbox-row').change(function () {
         container.removeClass('picked-row');
     }
 });
+$(".nav-toggle").click(function () {
+    $(".sidebar").toggleClass("active");
+});
     

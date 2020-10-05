@@ -10,7 +10,7 @@
 <body>
     <div class="main full-width-page">
         <!-- Start side bar -->
-        <div class="sidebar active">
+        <div class="sidebar">
             <div class="sidebar-logo">
                 <a class="p-0" href="">
                     <img class="side-hide" src="../assets/images/app/169.png">
@@ -18,7 +18,7 @@
                 </a>
             </div>
             <div class="sidebar-function-icon">
-                <a class="mb-3" href=""><span class="hg-icon icon-nav icon-active"></span></a>
+                <a class="mb-3 nav-toggle"><span class="hg-icon icon-nav icon-active"></span></a>
                 <a class="active" href="">
                     <span class="hg-icon icon-home"></span>
                     <span class="side-show">Trang chủ</span>
@@ -72,7 +72,7 @@
         <!-- Start Main content -->
         <div class="main-container">
             <!-- Start header area -->
-            <div class="home-page-header p-5">
+            <div class="home-page-header">
                 <h1>Trang chủ</h1>
             </div>
             <!-- End header area -->
@@ -88,28 +88,27 @@
                                 Nếu cần xem lại, bạn có thể vào trang Tài khoản, chọn mục Hướng dẫn nhé!</p>
                             </div>
                             <div class="home__instruction--video">
-                                <iframe width="560" height="315" src="https://www.youtube.com/embed/1juIFmPyG-Y" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/eY1XtWyKlJA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                             </div>
                         </div>
-                        <h1 class="py-5 px-3">Tin tức</h1>
-                        <div class="highlight-news">
-                            <div class="highlight-news__image">
-                                <img class="w-100" src="https://lightbox-prod.imgix.net/images/uploads/1592538917546-pokemon-detective-pikachu-2019-cc2.jpg?auto=format&fit=crop&crop=faces%2Cright&ar=16%3A9&ixlib=react-9.0.1">
-                            </div>
-                            <div class="highlight-news__excerpt">
-                                <h5 class="font-weight-bold text-blue">Với chúng tôi, sự kết nối là tất cả</h5>
-                                <p class="pt-3">Sứ mệnh của HG Education là tạo nên sự kết nối thiết chặt giữa giáo viên, phụ huynh và học sinh</p>
-                                <a class="link-see-more" href="">Đọc tiếp</a>
+                        <h1 class="home__title">Tin tức</h1>
+                        <div class="highlight-video__container">
+                            <div class="highlight-video">
+                                <iframe src="https://www.youtube.com/embed/eY1XtWyKlJA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                             </div>
                         </div>
                     </div>
                     <div class="home-page__ad">
-                        <div class="home-page__ad-container" style="background-color: coral;">
+                        <div class="home-page__ad-container">
                             <div class="home-page__ad--ad-item">
-                                <img src="">
+                                <a href="">
+                                    <img src="https://thietkelogosaigon.com/wp-content/uploads/2019/02/64b6c775563077.5c505b26b7d0a.jpg">
+                                </a>
                             </div>
                             <div class="home-page__ad--ad-item">
-                                <img src="">
+                                <a href="">
+                                    <img src="https://thietkelogosaigon.com/wp-content/uploads/2019/02/64b6c775563077.5c505b26b7d0a.jpg">
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -120,4 +119,5 @@
     </div>
 </body>
 <style type="text/css"></style>
+<script src="../assets/js/modules_script.js"></script>
 </html>

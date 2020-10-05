@@ -89,13 +89,13 @@ span {
 .icon-home {
     background-image: url('../images/app/5.png');
 }
-.icon-home.icon-active {
+.icon-home.icon-active, .sidebar .active>.icon-home {
     background-image: url('../images/app/6.png');
 }
 .icon-contact {
     background-image: url('../images/app/161.png');
 }
-.icon-contact.icon-active {
+.icon-contact.icon-active, .sidebar .active>.icon-contact {
     background-image: url('../images/app/162.png');
 }
 .icon-qr {
@@ -167,7 +167,7 @@ span {
 .icon-mail.disable {
     background-image: url('../images/app/23.png');
 }
-.icon-mail.icon-active, .active .icon-mail {
+.icon-mail.icon-active, .active>.icon-mail {
     background-image: url('../images/app/24.png');
 }
 .icon-paper-4 {
@@ -188,13 +188,13 @@ span {
 .icon-plane {
     background-image: url('../images/app/59.png');
 }
-.icon-plane.icon-active {
+.icon-plane.icon-active, .sidebar .active>.icon-plane {
     background-image: url('../images/app/58.png');
 }
 .icon-group {
     background-image: url('../images/app/54.png');
 }
-.icon-group.icon-active {
+.icon-group.icon-active, .sidebar .active>.icon-group {
     background-image: url('../images/app/53.png');
 }
 .icon-edit {
@@ -203,19 +203,19 @@ span {
 .icon-edit.icon-green {
     background-image: url('../images/app/175.png');
 }
-.icon-edit.icon-active {
+.icon-edit.icon-active, .sidebar .active>.icon-edit {
     background-image: url('../images/app/81.png');
 }
 .icon-bell {
     background-image: url('../images/app/96.png');
 }
-.icon-bell.icon-active {
+.icon-bell.icon-active, .sidebar .active>.icon-bell {
     background-image: url('../images/app/97.png');
 }
 .icon-plan {
     background-image: url('../images/app/40.png');
 }
-.icon-plan.icon-active {
+.icon-plan.icon-active, .sidebar .active>.icon-plan {
     background-image: url('../images/app/42.png');
 }
 .icon-plan.icon-red {
@@ -227,7 +227,7 @@ span {
 .icon-class {
     background-image: url('../images/app/115.png');
 }
-.icon-class.icon-active {
+.icon-class.icon-active, .sidebar .active.icon-class {
     background-image: url('../images/app/114.png');
 }
 .icon-class.disable {
@@ -344,7 +344,7 @@ span {
 .icon-paper {
     background-image: url('../images/app/171.png');
 }
-.icon-paper.icon-active {
+.icon-paper.icon-active, .sidebar .active>.icon-paper {
     background-image: url('../images/app/170.png');
 }
 .icon-add-contact-2 {
