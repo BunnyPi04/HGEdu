@@ -87,8 +87,8 @@ textarea:focus, input:focus {
 .font-effra {
     font-family: Effra;
 }
-.font-roboto {
-    font-family: Montserrat;
+.font-roboto, .font-monserrat {
+    font-family: Montserrat !important;
 }
 .h-50 {
     height: 50%;
@@ -140,6 +140,12 @@ textarea:focus, input:focus {
 }
 .font-15 {
     font-size: 1.5rem !important;
+}
+.font-18 {
+    font-size: 18px;
+}
+.font-30 {
+    font-size: 30px !important;
 }
 .m-0-auto {
     margin: 0 auto;
@@ -540,6 +546,8 @@ textarea:focus, input:focus {
 .mn-content .tab-pane#list4,
 .mn-content .tab-pane#list5,
 .mn-content .tab-pane#list6,
+.mn-content .tab-pane#list-question1,
+.mn-content .tab-pane#list-exam1,
 .tab-pane#math1,
 .tab-pane#math2,
 .tab-pane#math3,
@@ -559,6 +567,8 @@ textarea:focus, input:focus {
 .mn-content .tab-pane#list4.active,
 .mn-content .tab-pane#list5.active,
 .mn-content .tab-pane#list6.active,
+.mn-content .tab-pane#list-question1.active,
+.mn-content .tab-pane#list-exam1.active,
 .tab-pane#math1.active,
 .tab-pane#math2.active,
 .tab-pane#math3.active,
@@ -732,21 +742,22 @@ textarea:focus, input:focus {
 .modal-row {
     width: 100%;
 }
+.modal-box input {
+    height: 50px;
+    border: 1px solid var(--grey);
+    border-radius: 4px;
+    padding: 0 17px;
+    font-size: 18px;
+}
 .create-group .modal-box input {
     font-size: 22px;
     font-family: Effra;
     border: 1px solid var(--grey);
 }
-.modal-box input {
-    height: 50px;
-    border: 1px solid var(--black);
-    border-radius: 5px;
-    padding: 0 17px;
-    font-size: 18px;
-}
+
 .modal-label {
     line-height: 4rem;
-    font-size: 1.3rem;
+    font-size: 18px;
     float: right;
     text-align: right;
 }
@@ -755,6 +766,9 @@ textarea:focus, input:focus {
 }
 .modal-text-area__head--right-option--option-name {
     display: table-cell;
+}
+.input-in-row {
+    margin-top: 6px;
 }
 .available-message {
     color: var(--green);
@@ -957,7 +971,7 @@ textarea:focus, input:focus {
     margin: 0;
     border: 1px solid var(--light-grey);
     border-radius: 15px;
-    box-shadow: 0px 0px 10px var(--border-light-grey);
+    box-shadow: 0px 0px 6px var(--shadow);
     height: 30vh;
     padding: 1em;
 }
@@ -1631,8 +1645,8 @@ textarea:focus, input:focus {
 }
 .library-header__title {
     color: var(--blue);
-    font-size: 1.5rem;
-    line-height: 1.8rem;
+    font-size: 18px;
+    line-height: 20px;
 }
 .library .mn-content {
     width: 100%;
@@ -1687,14 +1701,14 @@ textarea:focus, input:focus {
     left: 0;
     right: 0;
     top: 50%;
-    transform: translateY(-50%) rotate(-90deg);
+    transform: translateY(-50%);
     width: 30px;
     height: 30px;
 }
 .library__group-modal .modal-text-area__area textarea {
     padding-top: 50px;
     border-radius: 10px;
-    box-shadow: 1px 5px 7px var(--light-grey);
+    box-shadow: 0px 3px 6px var(--shadow);
     border: none;
 }
 .library__group-modal .fx {
@@ -1717,7 +1731,7 @@ textarea:focus, input:focus {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     border-bottom: 1px solid var(--light-grey);
-    box-shadow: 1px 5px 7px var(--light-grey);
+    box-shadow: 0px 3px 6px var(--shadow);
 }
 .sub-item__key {
     background: white;
@@ -2432,6 +2446,9 @@ label[for="file-input"] {
 .pop-up-pick-subject .modal-list__item.modal-pick-student .subject-name {
     vertical-align: middle;
 }
+.pop-up-pick-subject .treeview .file a {
+    display: inline-block;
+}
 .pop-up-pick-subject .treeview .file a.picked {
     position: relative;
 }
@@ -2454,7 +2471,7 @@ label[for="file-input"] {
     position: absolute;
     background-color: var(--red);
     left: 22px;
-    top: 7px;
+    top: 47%;
 }
 .modal-pick-student__student-name {
     text-overflow: ellipsis;

@@ -76,13 +76,13 @@
                 <div class="mn-main-header">
                     <div class="mn-tab text-right float-right library-side-bar__main-tab" style="visibility: visible; animation-name: fadeInUp;">
                         <ul class="nav nav-tabs border-0 d-inline-block" role="tablist">
-                            <li class="nav-item d-inline-block border-0 active">
-                                <a class="tab-blue nav-link active" data-toggle="tab" href="#list1" role="tab" aria-selected="false">
+                            <li class="nav-item d-inline-block border-0 ">
+                                <a class="tab-blue nav-link" data-toggle="tab" href="#list1" role="tab" aria-selected="true">
                                     <span></span>
                                 </a>
                             </li>
-                            <li class="nav-item d-inline-block border-0">
-                                <a class="tab-red nav-link" data-toggle="tab" href="#list2" role="tab" aria-selected="true">
+                            <li class="nav-item d-inline-block border-0 active">
+                                <a class="tab-red nav-link active" data-toggle="tab" href="#list2" role="tab" aria-selected="false">
                                     <span></span>
                                 </a>
                             </li>
@@ -93,7 +93,7 @@
 
                 <!-- Start content area -->
                 <div class="mn-content">
-                    <div class="tab-pane fade active show in" id="list1" role="tabpanel"> <!-- Tab 1 -->
+                    <div class="tab-pane fade" id="list1" role="tabpanel"> <!-- Tab 1 -->
                         <div class="library-side-bar__tab-header blue-tab">
                             <h4 class="px-4">Thư viện cá nhân</h4>
                             <div class="library-tab-small pl-4 pr-3">
@@ -422,7 +422,7 @@
 
 
 
-                    <div class="tab-pane fade" id="list2" role="tabpanel"> <!-- Tab 2 -->
+                    <div class="tab-pane fade active show in" id="list2" role="tabpanel"> <!-- Tab 2 -->
                         <div class="library-side-bar__tab-header">
                             <h4 class="text-red px-4">Thư viện chung</h4>
                             <div class="library-tab-small pl-4 pr-3">
@@ -726,251 +726,16 @@
             <div class="library-content-area">
                 <!-- Start header area -->
                 <div class="mn-main-header">
-                    <h1>Thông tin chi tiết</h1>
-                    <div class="cursor-pointer float-right library-content-area__action">
-                        <div class="mr-4">
-                            <span class="hg-icon icon-pencil icon-active"></span>
-                            <span class="text-blue">Sửa tên</span>
-                        </div>
-                        <div>
-                            <span class="hg-icon icon-trash"></span>
-                            <span class="text-red">Xóa</span>
-                        </div>
-                    </div>
+                    <h1>Phiếu trả lời trắc nghiệm bản quyền của HGEdu</h1>
                 </div>
                 <!-- End header area -->
 
                 <!-- Start content area -->
-                <div class="mn-content library-search-bar">
-                    <div class="mn-content-search w-100 px-4">
-                        <span class="hg-icon icon-search mr-3"></span>
-                        <input class="mn-content-search-input" type="text" name="search-key-word" placeholder="Tìm kiếm">
-                    </div>
+
+                <div class="mn-content w-100 text-center" style="overflow: auto">
+                    <img class="w-90 dblock" src="../../assets/images/app/Phieutracnghiem.jpg">
                 </div>
-                <div class="mn-content-time-table-header w-100 py-2 px-4 class-time-table-container border-0 bg-white">
-                    <div class="dinline-block mr-2">
-                        <span class="text-blue filter-text">Bộ lọc</a>
-                    </div>
-                    <div class="dinline-block">
-                        <div class="select-box">
-                            <div class="select-box__current" tabindex="1">
-                                <div class="select-box__value">
-                                    <input class="select-box__input" type="radio" id="0" value="1" name="Ben" checked="checked"/>
-                                    <p class="select-box__input-text">Câu hỏi đơn</p>
-                                </div>
-                                <div class="select-box__value">
-                                    <input class="select-box__input" type="radio" id="1" value="2" name="Ben"/>
-                                    <p class="select-box__input-text">Câu hỏi nhóm</p>
-                                </div>
-                                <span class="hg-icon icon-dropdown select-box__icon"></span>
-                            </div>
-                            <ul class="select-box__list">
-                                <li>
-                                    <label class="select-box__option" for="1" aria-hidden="aria-hidden">Câu hỏi đơn</label>
-                                </li>
-                                <li>
-                                    <label class="select-box__option" for="2" aria-hidden="aria-hidden">Câu hỏi nhóm</label>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="dinline-block">
-                        <div class="select-box">
-                            <div class="select-box__current" tabindex="1">
-                                <div class="select-box__value">
-                                    <input class="select-box__input" type="radio" id="2" value="1" name="q" checked="checked"/>
-                                    <p class="select-box__input-text">Mức khó</p>
-                                </div>
-                                <div class="select-box__value">
-                                    <input class="select-box__input" type="radio" id="3" value="2" name="q"/>
-                                    <p class="select-box__input-text">Mức trung bình</p>
-                                </div>
-                                <div class="select-box__value">
-                                    <input class="select-box__input" type="radio" id="4" value="3" name="q"/>
-                                    <p class="select-box__input-text">Mức dễ</p>
-                                </div>
-                                <span class="hg-icon icon-dropdown select-box__icon"></span>
-                            </div>
-                            <ul class="select-box__list">
-                                <li>
-                                    <label class="select-box__option" for="2" aria-hidden="aria-hidden">Mức khó</label>
-                                </li>
-                                <li>
-                                    <label class="select-box__option" for="3" aria-hidden="aria-hidden">Mức trung bình</label>
-                                </li>
-                                <li>
-                                    <label class="select-box__option" for="4" aria-hidden="aria-hidden">Mức dễ</label>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="dinline-block">
-                        <div class="select-box">
-                            <div class="select-box__current" tabindex="1">
-                                <div class="select-box__value">
-                                    <input class="select-box__input" type="radio" id="attr1" value="1" name="attr" checked="checked"/>
-                                    <p class="select-box__input-text">Thuộc tính</p>
-                                </div>
-                                <div class="select-box__value">
-                                    <input class="select-box__input" type="radio" id="attr2" value="2" name="attr"/>
-                                    <p class="select-box__input-text">Mức trung bình</p>
-                                </div>
-                                <div class="select-box__value">
-                                    <input class="select-box__input" type="radio" id="attr3" value="3" name="attr"/>
-                                    <p class="select-box__input-text">Mức dễ</p>
-                                </div>
-                                <span class="hg-icon icon-dropdown select-box__icon"></span>
-                            </div>
-                            <ul class="select-box__list">
-                                <li>
-                                    <label class="select-box__option" for="attr1" aria-hidden="aria-hidden">Thuộc tính</label>
-                                </li>
-                                <li>
-                                    <label class="select-box__option" for="attr2" aria-hidden="aria-hidden">Mức trung bình</label>
-                                </li>
-                                <li>
-                                    <label class="select-box__option" for="attr3" aria-hidden="aria-hidden">Mức dễ</label>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="dinline-block">
-                        <div class="select-box">
-                            <div class="select-box__current" tabindex="1">
-                                <div class="select-box__value">
-                                    <input class="select-box__input" type="radio" id="form1" value="1" name="form" checked="checked"/>
-                                    <p class="select-box__input-text">Form câu hỏi</p>
-                                </div>
-                                <div class="select-box__value">
-                                    <input class="select-box__input" type="radio" id="form2" value="2" name="form"/>
-                                    <p class="select-box__input-text">Mức trung bình</p>
-                                </div>
-                                <div class="select-box__value">
-                                    <input class="select-box__input" type="radio" id="form3" value="3" name="form"/>
-                                    <p class="select-box__input-text">Mức dễ</p>
-                                </div>
-                                <span class="hg-icon icon-dropdown select-box__icon"></span>
-                            </div>
-                            <ul class="select-box__list">
-                                <li>
-                                    <label class="select-box__option" for="form1" aria-hidden="aria-hidden">Form câu hỏi</label>
-                                </li>
-                                <li>
-                                    <label class="select-box__option" for="form2" aria-hidden="aria-hidden">Mức trung bình</label>
-                                </li>
-                                <li>
-                                    <label class="select-box__option" for="form3" aria-hidden="aria-hidden">Mức dễ</label>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="dinline-block">
-                        <div class="select-box">
-                            <div class="select-box__current" tabindex="1">
-                                <div class="select-box__value">
-                                    <input class="select-box__input" type="radio" id="rank1" value="1" name="rank" checked="checked"/>
-                                    <p class="select-box__input-text">Trình độ</p>
-                                </div>
-                                <div class="select-box__value">
-                                    <input class="select-box__input" type="radio" id="rank2" value="2" name="rank"/>
-                                    <p class="select-box__input-text">Senior</p>
-                                </div>
-                                <div class="select-box__value">
-                                    <input class="select-box__input" type="radio" id="rank3" value="3" name="rank"/>
-                                    <p class="select-box__input-text">Middle</p>
-                                </div>
-                                <span class="hg-icon icon-dropdown select-box__icon"></span>
-                            </div>
-                            <ul class="select-box__list">
-                                <li>
-                                    <label class="select-box__option" for="rank1" aria-hidden="aria-hidden">Trình độ</label>
-                                </li>
-                                <li>
-                                    <label class="select-box__option" for="rank2" aria-hidden="aria-hidden">Senior</label>
-                                </li>
-                                <li>
-                                    <label class="select-box__option" for="rank3" aria-hidden="aria-hidden">Middle</label>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="dinline-block">
-                        <div class="select-box">
-                            <div class="select-box__current" tabindex="1">
-                                <div class="select-box__value">
-                                    <input class="select-box__input" type="radio" id="k1" value="1" name="k" checked="checked"/>
-                                    <p class="select-box__input-text">Kiến thức đặc thù</p>
-                                </div>
-                                <div class="select-box__value">
-                                    <input class="select-box__input" type="radio" id="k2" value="2" name="k"/>
-                                    <p class="select-box__input-text">Senior</p>
-                                </div>
-                                <div class="select-box__value">
-                                    <input class="select-box__input" type="radio" id="k3" value="3" name="k"/>
-                                    <p class="select-box__input-text">Middle</p>
-                                </div>
-                                <span class="hg-icon icon-dropdown select-box__icon"></span>
-                            </div>
-                            <ul class="select-box__list">
-                                <li>
-                                    <label class="select-box__option" for="k1" aria-hidden="aria-hidden">Kiến thức đặc thù</label>
-                                </li>
-                                <li>
-                                    <label class="select-box__option" for="k2" aria-hidden="aria-hidden">Senior</label>
-                                </li>
-                                <li>
-                                    <label class="select-box__option" for="k3" aria-hidden="aria-hidden">Middle</label>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="w-100 py-2 bg-white">
-                    <table class="w-100 px-4 library__question-table">
-                        <thead>
-                            <tr>
-                                <th class="text-center">Mã câu</th>
-                                <th>Câu hỏi</th>
-                                <th class="text-center">Mức khó</th>
-                                <th>Thuộc tính</th>
-                                <th></th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td class="text-center">A5MM</td>
-                                <td>Câu này là đúng hay sai?</td>
-                                <td class="text-center">2</td>
-                                <td>Lý thuyết</td>
-                                <td class="text-center"><span class="hg-icon icon-download icon-active"></span></td>
-                            </tr>
-                            <tr>
-                                <td class="text-center">A5MM</td>
-                                <td>Câu này là đúng hay sai?</td>
-                                <td class="text-center">2</td>
-                                <td>Lý thuyết</td>
-                                <td class="text-center"><span class="hg-icon icon-download icon-active"></span></td>
-                            </tr>
-                            <tr>
-                                <td class="text-center">A5MM</td>
-                                <td>Câu này là đúng hay sai?</td>
-                                <td class="text-center">2</td>
-                                <td>Lý thuyết</td>
-                                <td class="text-center"><span class="hg-icon icon-download icon-active"></span></td>
-                            </tr>
-                            <tr>
-                                <td class="text-center">A5MM</td>
-                                <td>Câu này là đúng hay sai?</td>
-                                <td class="text-center">2</td>
-                                <td>Lý thuyết</td>
-                                <td class="text-center"><span class="hg-icon icon-download icon-active"></span></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <div class="fixed-add-icon">
-                        <span class="hg-icon icon-add-round"></span>
-                    </div>
-                </div>
+
                 <!-- End main content area -->
             </div>
         </div>

@@ -542,6 +542,9 @@ span {
 .icon-tick-2.icon-white {
     background-image: url('../images/app/51.png');
 }
+.icon-arrow-down {
+    background-image: url('../images/app/173.png');
+}
 
 .math {
     background-image: url('../images/app/function.png');
