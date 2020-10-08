@@ -263,6 +263,21 @@ span {
 .icon-open-arrow {
     background-image: url('../images/app/7.png');
 }
+.icon-prev-arrow {
+    background-image: url('../images/app/7.png');
+    transform: rotate(90deg);
+}
+.icon-next-arrow {
+    background-image: url('../images/app/7.png');
+    transform: rotate(-90deg);
+}
+.icon-up-arrow {
+    background-image: url('../images/app/7.png');
+    transform: rotate(180deg);
+}
+.icon-down-arrow {
+    background-image: url('../images/app/7.png');
+}
 .icon-card-red {
     background-image: url('../images/app/103.png');
 }

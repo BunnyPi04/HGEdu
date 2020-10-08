@@ -150,6 +150,9 @@ textarea:focus, input:focus {
 .m-0-auto {
     margin: 0 auto;
 }
+.unset-height {
+    height: unset !important;
+}
 .cursor-pointer {
     cursor: pointer
 }
@@ -460,7 +463,7 @@ textarea:focus, input:focus {
     position: relative;
 }
 .mn-content {
-    max-height: calc(100vh - 180px);
+    flex-grow: 1;
 }
 .mn-content-maincontent {
     /*flex: 1;*/
@@ -777,7 +780,7 @@ textarea:focus, input:focus {
     color: var(--red);
 }
 .account-info {
-    margin: 5rem 6rem;
+    margin: 20px 50px;
 }
 .account-info-form-1-1 {
     display: grid;
@@ -1625,7 +1628,8 @@ textarea:focus, input:focus {
     color: var(--light-grey);
     position: absolute;
     right: 60px;
-    top: 45px;
+    top: 50%;
+    transform: translateY(-50%);
     display: flex;
     vertical-align: middle;
     align-items: center;
@@ -4052,7 +4056,144 @@ label[for="file-input"] {
     box-shadow: 0px 3px 6px var(--shadow);
     transition-delay: 0.1s;
 }
-
+.create-exam-plan__treeview {
+/*    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 20px;*/
+    /*border: 1px solid var(--light-grey);*/
+    border-radius: 15px;
+    box-shadow: 0 0 6px var(--shadow);
+    margin: 5px;
+    padding: 15px;
+}
+.create-exam-plan__treeview .box-shadow {
+    border-radius: 15px;
+    box-shadow: 0 0 6px var(--shadow);
+    padding-right: 10px !important;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.create-exam-plan__treeview h5 {
+    text-align: center;
+    color: var(--blue);
+    font-size: 20px;
+    font-family: Effra;
+    /*margin-bottom: 0;*/
+}
+.create-exam-plan__treeview--lib:first-child {
+    padding-right: 10px;
+}
+.create-exam-plan__treeview--lib:last-child {
+    padding-left: 10px;
+}
+.create-exam-plan__treeview--button {
+    margin: 0 auto;
+    background-color: var(--green);
+    border: none;
+    color: white;
+    border-radius: 4px;
+    padding: 2px 17px;
+    font-size: 21px;
+    font-family: Effra;
+    margin-top: 15px;
+}
+.create-exam-plan__treeview--button.disabled {
+    background-color: var(--light-grey);
+}
+.datepicker, .timepicker {
+    box-shadow: 0px 0px 6px var(--shadow);
+    border-radius: 15px;
+    width: 100%;
+    max-width: unset;
+    font-family: Effra;
+    font-size: 18px;
+    padding-bottom: 50px;
+    padding-top: 64px;
+    color: var(--black);
+    position: relative;
+}
+.datepicker:before {
+    content: 'Ngày';
+    color: var(--blue);
+    top: 25px;
+    left: 30px;
+    position: absolute;
+}
+.timepicker:before {
+    content: 'Giờ';
+    color: var(--blue);
+    top: 25px;
+    left: 30px;
+    position: absolute;
+}
+.datetimepicker-group>.row {
+    margin: 5px;
+}
+.datetimepicker-group .title {
+    margin: 30px 0;
+}
+.bootstrap-datetimepicker-widget>.row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 25px;
+    width: 100%;
+    margin-left: 0;
+}
+.bootstrap-datetimepicker-widget table td.active, .bootstrap-datetimepicker-widget table td.active:hover {
+    color: var(--blue) !important;
+    background-color: transparent !important;
+}
+.bootstrap-datetimepicker-widget .datepicker .hg-icon {
+    width: 20px;
+    height: 20px;
+}
+.bootstrap-datetimepicker-widget table thead tr:first-child th {
+    font-weight: normal;
+}
+.bootstrap-datetimepicker-widget table tr:last-child th {
+    height: unset;
+    padding-top: 30px;
+}
+.bootstrap-datetimepicker-widget table td.day {
+    height: 30px !important;
+}
+.bootstrap-datetimepicker-widget table td.old, .bootstrap-datetimepicker-widget table td.new {
+    color: var(--light-grey) !important;
+}
+.separator {
+    font-size: 44px;
+    font-family: Montserrrat;
+    width: 5% !important;
+}
+.timepicker-hour, .timepicker-minute {
+    position: relative;
+    font-size: 44px !important;
+}
+.timepicker-hour::after, .timepicker-minute:after {
+    content: '';
+    position: absolute;
+    bottom: 3px;
+    width: 180%;
+    margin: 0 auto;
+    left: -40%;
+    right: 0;
+    height: 2px;
+    background-color: var(--light-grey);
+}
+.modal-box input.exam-duration-input {
+    padding: 0 10px;
+    height: 25px;
+    width: 73px;
+    text-align: center;
+    border: 1px solid var(--light-grey);
+    margin-left: 20px;
+    margin-right: 10px;
+    font-size: 18px;
+    font-family: Effra;
+}
+.exam-duration-container {
+    padding: 30px 0
+}
 
 @-webkit-keyframes HideList {
     from {
