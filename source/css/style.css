@@ -865,6 +865,18 @@ textarea:focus, input:focus {
 .mn-tab .nav-link.active .hg-icon.icon-paper-4, .mn-tab .nav-link:hover .hg-icon.icon-paper-4 {
     background-image: url('../images/app/12.png');
 }
+.mn-tab .nav-link.active .hg-icon.icon-schedule, .mn-tab .nav-link:hover .hg-icon.icon-schedule {
+    background-image: url(../images/app/30.png);
+}
+.mn-tab .nav-link.active .hg-icon.icon-board, .mn-tab .nav-link:hover .hg-icon.icon-board {
+    background-image: url(../images/app/108.png);
+}
+.mn-tab .nav-link.active .hg-icon.icon-mail, .mn-tab .nav-link:hover .hg-icon.icon-mail {
+    background-image: url(../images/app/24.png);
+}
+.mn-tab .nav-link.active .hg-icon.icon-card-tab, .mn-tab .nav-link:hover .hg-icon.icon-card-tab {
+    background-image: url(../images/app/106.png);
+}
 .modal__popup__input-container {
     display: grid;
     align-items: center;
@@ -3810,7 +3822,7 @@ label[for="file-input"] {
 .modal-suffle .modal-header {
     position: relative;
 }
-.modal-suffle .modal-header .action {
+.modal-suffle .modal-header .action, .policy .modal-header .action {
     position: absolute;
     left: 30px;
     top: 50%;
@@ -4193,6 +4205,84 @@ label[for="file-input"] {
 }
 .exam-duration-container {
     padding: 30px 0
+}
+.instruc-video {
+    width: 1200px;
+}
+.instruc-video .instruc-video__header {
+    padding: 30px;
+    border-bottom: 1px solid var(--black);
+    position: relative;
+}
+.instruc-video .instruc-video__header .modal-title {
+    font-size: 30px;
+    font-family: Montserrat;
+}
+.instruc-video .instruc-video__header .hg-icon {
+    width: 16px;
+    height: 16px;
+    margin-top: 4px;
+    margin-right: 15px;
+}
+.instruc-video__body {
+    display: grid;
+    grid-template-columns: auto 380px;
+}
+.instruc-video__main-video {
+    border-right: 1px solid var(--black);
+    padding: 25px 35px 25px 15px;
+}
+.instruc-video__content-table {
+    padding: 25px 15px 25px 20px;
+}
+.instruc-video__content-table .nav-tabs {
+    display: list-item;
+    border-bottom: none;
+}
+.instruc-video__content-table .nav-tabs li {
+    position: relative;
+}
+.instruc-video__content-table .nav-tabs li a {
+    color: var(--black);
+    font-size: 20px;
+    line-height: 40px;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+.instruc-video__content-table .nav-tabs li.active a {
+    color: var(--blue);
+}
+.instruc-video__content-table .show-tooltip {
+    z-index: 1;
+    line-height: 2rem;
+    width: auto;
+    bottom: 0;
+    transform: translateY(100%);
+}
+.instruc-video__main-video h3 {
+    font-size: 25px;
+    color: var(--blue);
+    margin-bottom: 30px;
+}
+.instruc-video__main-video iframe {
+    width: 100%;
+    height: 50vh;
+}
+.policy {
+    padding: 0 0 15px 0;
+}
+.policy.instruc-video .instruc-video__header .modal-title {
+    font-size: 25px;
+}
+.policy .modal-body {
+    font-size: 18px;
+    padding: 25px 30px;
+    line-height: 25px;
+    height: 50vh;
+    overflow: auto;
+    margin-right: 10px;
 }
 
 @-webkit-keyframes HideList {

@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HGEdu</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../../assets/css/main.css">
+    <script src="../../assets/js/script.js"></script>
+</head>
+<body>
+    <div class="main full-width-page">
+        <!-- Start side bar -->
+        <div class="sidebar">
+            <div class="sidebar-logo">
+                <a class="p-0" href="">
+                    <img class="side-hide" src="../../assets/images/app/169.png">
+                    <img class="side-show" src="../../assets/images/app/HGEdu-logo.png">
+                </a>
+            </div>
+            <div class="sidebar-function-icon">
+                <a class="mb-3 nav-toggle"><span class="hg-icon icon-nav icon-active"></span></a>
+                <a href="">
+                    <span class="hg-icon icon-home"></span>
+                    <span class="side-show">Trang chủ</span>
+                </a>
+                <a href="">
+                    <span class="hg-icon icon-mail"></span>
+                    <span class="side-show">Thông báo</span>
+                </a>
+                <a href="">
+                    <span class="hg-icon icon-contact-book"></span>
+                    <span class="side-show">Danh bạ</span>
+                </a>
+                <a href="">
+                    <span class="hg-icon icon-plan"></span>
+                    <span class="side-show">Lịch kiểm tra</span>
+                </a>
+                <a class="active" href="">
+                    <span class="hg-icon icon-class"></span>
+                    <span class="side-show">Lớp học</span>
+                </a>
+                <a href="">
+                    <span class="hg-icon icon-bell"></span>
+                    <span class="side-show">Tương tác</span>
+                </a>
+            </div>
+            <div class="sidebar-profile">
+                <a href="">
+                    <span class="hg-icon icon-plane"></span>
+                    <span class="side-show">Hỗ trợ</span>
+                </a>
+                <a href="thong-tin-tai-khoan.html">
+                    <span class="hg-icon icon-user"></span>
+                    <span class="side-show">Tài khoản cá nhân</span>
+                </a>
+            </div>
+        </div>
+        <!-- End sidebar -->
+
+        <!-- Start Main content -->
+        <div class="main-container class-mn">
+            <!-- Start header area -->
+            <div class="mn-main-header">
+                <div class="back-icon"><a href=""><span class="hg-icon icon-back-blue"></span></a></div>
+                <h1>Tiếng Anh - Học chính - Đống Đa</h1>
+                <div class="mn-tab text-center float-left" style="visibility: visible; animation-name: fadeInUp;">
+                    <ul class="nav nav-tabs border-0 d-inline-block" role="tablist">
+                        <li class="nav-item d-inline-block border-0">
+                            <a class="nav-link active" data-toggle="tab" href="#list1" role="tab" aria-selected="false">
+                                <span class="hg-icon icon-parent disable"></span>
+                                <span>Học sinh</span>
+                            </a>
+                        </li>
+                        <li class="nav-item d-inline-block border-0">
+                            <a class="nav-link" data-toggle="tab" href="#list2" role="tab" aria-selected="true">
+                                <span class="hg-icon icon-calendar disable"></span>
+                                <span>Lịch học</span>
+                            </a>
+                        </li>
+                        <li class="nav-item d-inline-block border-0">
+                            <a class="nav-link" data-toggle="tab" href="#list3" role="tab" aria-selected="true">
+                                <span class="hg-icon icon-schedule disable"></span>
+                                <span>Lịch kiểm tra</span>
+                            </a>
+                        </li>
+                        <li class="nav-item d-inline-block border-0">
+                            <a class="nav-link" data-toggle="tab" href="#list4" role="tab" aria-selected="true">
+                                <span class="hg-icon icon-board disable"></span>
+                                <span>Bảng điểm</span>
+                            </a>
+                        </li>
+                        <li class="nav-item d-inline-block border-0">
+                            <a class="nav-link" data-toggle="tab" href="#list5" role="tab" aria-selected="true">
+                                <span class="hg-icon icon-mail disable"></span>
+                                <span>Gửi thông báo</span>
+                            </a>
+                        </li>
+                        <li class="nav-item d-inline-block border-0">
+                            <a class="nav-link" data-toggle="tab" href="#list6" role="tab" aria-selected="true">
+                                <span class="hg-icon icon-card-tab disable"></span>
+                                <span>Gắn thẻ chức năng</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- End header area -->
+
+            <!-- Start content area -->
+            <div class="mn-content">
+                <div class="mn-content-main-content">
+<!-- Tab 1: List học sinh -->
+                    <div class="tab-pane fade active show in" id="list1" role="tabpanel">
+                        <div class="mn-content-search w-100 px-5">
+                            <span class="hg-icon icon-search mr-3"></span>
+                            <input class="mn-content-search-input" type="text" name="search-key-word" placeholder="Tìm kiếm">
+                        </div>
+                        <div class="account-list-header py-3 px-4">
+                            <div class=""></div>
+                            <div class="text-blue ml-5"><h4>Tên học sinh</h4></div>
+                            <div class="text-uppercase text-blue">ID</div>
+                            <div class=""></div>
+                        </div>
+                        <div class="list-container account-list px-4 mr-3">
+                            <div class="list-item">
+                                <div><img class="list-avatar" src="../../assets/images/user/avatar-default.jpg"></div>
+                                <div class="list-item__user-name">
+                                    <a class="text-blue font-weight-bold">Phan Đức Hữu <small >(Hữu SP)</small></a>
+                                </div>
+                                <div class="list-item__id">02948579392</div>
+                                <div class="text-right"><span class="hg-icon icon-close icon-red"></span></div>
+                            </div>
+                            <div class="list-item">
+                                <div><img class="list-avatar" src="../../assets/images/user/avatar-default.jpg"></div>
+                                <div class="list-item__user-name">
+                                    <a class="text-blue font-weight-bold">Phan Đức Hữu <small>(Hữu SP)</small></a>
+                                </div>
+                                <div class="list-item__id">02948579392</div>
+                                <div class="text-right"><span class="hg-icon icon-close icon-red"></span></div>
+                            </div>
+                            <div class="list-item">
+                                <div><img class="list-avatar" src="../../assets/images/user/avatar-default.jpg"></div>
+                                <div class="list-item__user-name">
+                                    <a class="text-blue font-weight-bold">Phan Đức Hữu <small>(Hữu SP)</small></a>
+                                </div>
+                                <div class="list-item__id">02948579392</div>
+                                <div class="text-right"><span class="hg-icon icon-close icon-red"></span></div>
+                            </div>
+                            <div class="list-item">
+                                <div><img class="list-avatar" src="../../assets/images/user/avatar-default.jpg"></div>
+                                <div class="list-item__user-name">
+                                    <a class="text-blue font-weight-bold">Phan Đức Hữu <small>(Hữu SP)</small></a>
+                                </div>
+                                <div class="list-item__id">02948579392</div>
+                                <div class="text-right"><span class="hg-icon icon-close icon-red"></span></div>
+                            </div>
+                            <div class="list-item">
+                                <div><img class="list-avatar" src="../../assets/images/user/avatar-default.jpg"></div>
+                                <div class="list-item__user-name">
+                                    <a class="text-blue font-weight-bold">Phan Đức Hữu <small>(Hữu SP)</small></a>
+                                </div>
+                                <div class="list-item__id">02948579392</div>
+                                <div class="text-right"><span class="hg-icon icon-close icon-red"></span></div>
+                            </div>
+                            <div class="list-item">
+                                <div><img class="list-avatar" src="../../assets/images/user/avatar-default.jpg"></div>
+                                <div class="list-item__user-name">
+                                    <a class="text-blue font-weight-bold">Phan Đức Hữu <small>(Hữu SP)</small></a>
+                                </div>
+                                <div class="list-item__id">02948579392</div>
+                                <div class="text-right"><span class="hg-icon icon-close icon-red"></span></div>
+                            </div>
+                            <div class="list-item">
+                                <div><img class="list-avatar" src="../../assets/images/user/avatar-default.jpg"></div>
+                                <div class="list-item__user-name">
+                                    <a class="text-blue font-weight-bold">Phan Đức Hữu <small>(Hữu SP)</small></a>
+                                </div>
+                                <div class="list-item__id">02948579392</div>
+                                <div class="text-right"><span class="hg-icon icon-close icon-red"></span></div>
+                            </div>
+                            <div class="list-item">
+                                <div><img class="list-avatar" src="../../assets/images/user/avatar-default.jpg"></div>
+                                <div class="list-item__user-name">
+                                    <a class="text-blue font-weight-bold">Phan Đức Hữu <small>(Hữu SP)</small></a>
+                                </div>
+                                <div class="list-item__id">02948579392</div>
+                                <div class="text-right"><span class="hg-icon icon-close icon-red"></span></div>
+                            </div>
+                            <div class="list-item">
+                                <div><img class="list-avatar" src="../../assets/images/user/avatar-default.jpg"></div>
+                                <div class="list-item__user-name">
+                                    <a class="text-blue font-weight-bold">Phan Đức Hữu <small>(Hữu SP)</small></a>
+                                </div>
+                                <div class="list-item__id">02948579392</div>
+                                <div class="text-right"><span class="hg-icon icon-close icon-red"></span></div>
+                            </div>
+                            <div class="list-item">
+                                <div><img class="list-avatar" src="../../assets/images/user/avatar-default.jpg"></div>
+                                <div class="list-item__user-name">
+                                    <a class="text-blue font-weight-bold">Phan Đức Hữu <small>(Hữu SP)</small></a>
+                                </div>
+                                <div class="list-item__id">02948579392</div>
+                                <div class="text-right"><span class="hg-icon icon-close icon-red"></span></div>
+                            </div>
+                            <div class="list-item">
+                                <div><img class="list-avatar" src="../../assets/images/user/avatar-default.jpg"></div>
+                                <div class="list-item__user-name">
+                                    <a class="text-blue font-weight-bold">Phan Đức Hữu <small>(Hữu SP)</small></a>
+                                </div>
+                                <div class="list-item__id">02948579392</div>
+                                <div class="text-right"><span class="hg-icon icon-close icon-red"></span></div>
+                            </div>
+                            <div class="list-item">
+                                <div><img class="list-avatar" src="../../assets/images/user/avatar-default.jpg"></div>
+                                <div class="list-item__user-name">
+                                    <a class="text-blue font-weight-bold">Phan Đức Hữu <small>(Hữu SP)</small></a>
+                                </div>
+                                <div class="list-item__id">02948579392</div>
+                                <div class="text-right"><span class="hg-icon icon-close icon-red"></span></div>
+                            </div>
+                        </div>
+                        <div class="fixed-add-icon">
+                            <span class="hg-icon icon-add-contact"></span>
+                        </div>
+                    </div>
+
+<!-- Tab 2: Lịch học -->
+                    <div class="tab-pane fade" id="list2" role="tabpanel"> <!-- tab 2 -->
+                        <div class="mn-content-time-table-header w-100 p-5 class-time-table-container">
+                            <div class="add-class-filter-title mr-2">
+                                <h5 class="font-weight-bold text-blue">Sắp xếp lịch học</h5>
+                            </div>
+                            <div class="select-day dinline-block">
+                                <div class="select-box">
+                                    <div class="select-box__current" tabindex="1">
+                                        <div class="select-box__value">
+                                            <input class="select-box__input" type="radio" id="0" value="1" name="Ben" checked="checked"/>
+                                            <p class="select-box__input-text text-light-grey">Chọn thứ trong tuần</p>
+                                        </div>
+                                        <div class="select-box__value">
+                                            <input class="select-box__input" type="radio" id="1" value="2" name="Ben"/>
+                                            <p class="select-box__input-text">Thứ 2</p>
+                                        </div>
+                                        <div class="select-box__value">
+                                            <input class="select-box__input" type="radio" id="2" value="3" name="Ben"/>
+                                            <p class="select-box__input-text">Thứ 3</p>
+                                        </div>
+                                        <div class="select-box__value">
+                                            <input class="select-box__input" type="radio" id="3" value="4" name="Ben"/>
+                                            <p class="select-box__input-text">Thứ 4</p>
+                                        </div>
+                                        <div class="select-box__value">
+                                            <input class="select-box__input" type="radio" id="4" value="5" name="Ben"/>
+                                            <p class="select-box__input-text">Thứ 5</p>
+                                        </div>
+                                        <div class="select-box__value">
+                                            <input class="select-box__input" type="radio" id="5" value="5" name="Ben"/>
+                                            <p class="select-box__input-text">Thứ 6</p>
+                                        </div>
+                                        <div class="select-box__value">
+                                            <input class="select-box__input" type="radio" id="6" value="5" name="Ben"/>
+                                            <p class="select-box__input-text">Thứ 7</p>
+                                        </div>
+                                        <div class="select-box__value">
+                                            <input class="select-box__input" type="radio" id="7" value="5" name="Ben"/>
+                                            <p class="select-box__input-text">Chủ nhật</p>
+                                        </div>
+                                        <span class="hg-icon icon-open-arrow select-box__icon"></span>
+                                    </div>
+                                    <ul class="select-box__list">
+                                        <li>
+                                            <label class="select-box__option" for="1" aria-hidden="aria-hidden">Thứ 2</label>
+                                        </li>
+                                        <li>
+                                            <label class="select-box__option" for="2" aria-hidden="aria-hidden">Thứ 3</label>
+                                        </li>
+                                        <li>
+                                            <label class="select-box__option" for="3" aria-hidden="aria-hidden">Thứ 4</label>
+                                        </li>
+                                        <li>
+                                            <label class="select-box__option" for="4" aria-hidden="aria-hidden">Thứ 5</label>
+                                        </li>
+                                        <li>
+                                            <label class="select-box__option" for="5" aria-hidden="aria-hidden">Thứ 6</label>
+                                        </li>
+                                        <li>
+                                            <label class="select-box__option" for="6" aria-hidden="aria-hidden">Thứ 7</label>
+                                        </li>
+                                        <li>
+                                            <label class="select-box__option" for="7" aria-hidden="aria-hidden">Chủ nhật</label>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="select-time dinline-block ml-3">
+                                <div class="date-group">
+                                    <span class="hg-icon icon-clock"></span>
+                                    <input class="date-input m-0 text-right" type="number" name="start-hour" placeholder="__" min="0" max="24">:<input class="date-input m-0 text-left" type="number" name="start-min" placeholder="__" min="0" max="60">
+                                    -
+                                    <input class="date-input m-0 text-right" type="number" name="end-hour" placeholder="__" min="0" max="24">:<input class="date-input m-0 text-left" type="number" name="end-min" placeholder="__" min="0" max="60">
+                                </div>
+                            </div>
+                            <div class="time-table-note dinline-block ml-3">
+                                <div class="time-table-note__input-container">
+                                    <input type="text" placeholder="Nhập nội dung" value="Học tăng cường">
+                                    <span class="error-message">Nội dung không được quá 255 ký tự</span>
+                                </div>
+                            </div>
+                            <div class="time-table-add-button dinline-block ml-3">
+                                <div class="time-table-button__container">
+                                    <span class="hg-icon icon-plus mr-2"></span>
+                                    <span class="time-table-button__container--text text-green">Thêm vào lịch</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="list-class px-5 mr-5 mn-content-time-table__body">
+                            <h4 class="font-weight-bold my-4">Lịch học</h4>
+                            <div class="list-class__item">
+                                <div class="list-class__item-delete"><div class="hg-icon icon-close icon-red"></div></div>
+                                <div class="list-class__item-date">
+                                    Thứ 3
+                                </div>
+                                <div class="list-class__item-time">6:30 - 9:00</div>
+                                <div class="list-class__item-note">Học toán đại số</div>
+                            </div>
+                            <div class="list-class__item">
+                                <div class="list-class__item-delete"><div class="hg-icon icon-close icon-red"></div></div>
+                                <div class="list-class__item-date">
+                                    Thứ 3
+                                </div>
+                                <div class="list-class__item-time">6:30 - 9:00</div>
+                                <div class="list-class__item-note">Học toán đại số Học toán đại số Học toán đại số Học toán đại số Học toán đại sốHọc toán đại sốHọc toán đại số Học toán đại số Học toán đại số </div>
+                            </div>
+                            <div class="list-class__item">
+                                <div class="list-class__item-delete"><div class="hg-icon icon-close icon-red"></div></div>
+                                <div class="list-class__item-date">
+                                    Thứ 3
+                                </div>
+                                <div class="list-class__item-time">6:30 - 9:00</div>
+                                <div class="list-class__item-note">Học toán đại số</div>
+                            </div>
+                            <div class="list-class__item">
+                                <div class="list-class__item-delete"><div class="hg-icon icon-close icon-red"></div></div>
+                                <div class="list-class__item-date">
+                                    Thứ 3
+                                </div>
+                                <div class="list-class__item-time">6:30 - 9:00</div>
+                                <div class="list-class__item-note">Học toán đại số</div>
+                            </div>
+                            <div class="list-class__item">
+                                <div class="list-class__item-delete"><div class="hg-icon icon-close icon-red"></div></div>
+                                <div class="list-class__item-date">
+                                    Thứ 3
+                                </div>
+                                <div class="list-class__item-time">6:30 - 9:00</div>
+                                <div class="list-class__item-note">Học toán đại số</div>
+                            </div>
+                            <div class="list-class__item">
+                                <div class="list-class__item-delete"><div class="hg-icon icon-close icon-red"></div></div>
+                                <div class="list-class__item-date">
+                                    Thứ 3
+                                </div>
+                                <div class="list-class__item-time">6:30 - 9:00</div>
+                                <div class="list-class__item-note">Học toán đại số</div>
+                            </div>
+                            <div class="list-class__item">
+                                <div class="list-class__item-delete"><div class="hg-icon icon-close icon-red"></div></div>
+                                <div class="list-class__item-date">
+                                    Thứ 3
+                                </div>
+                                <div class="list-class__item-time">6:30 - 9:00</div>
+                                <div class="list-class__item-note">Học toán đại số</div>
+                            </div>
+
+                        </div>
+                        <div class="fixed-add-icon">
+                            <span class="hg-icon icon-add-round"></span>
+                        </div>
+                    </div>
+
+<!-- tab 3: Lịch kiểm tra -->
+                    <div class="tab-pane fade" id="list3" role="tabpanel"> <!-- tab 3 -->
+                        <div class="exam-calendar">
+                            <div class="exam-calendar__calendar-container p-3">
+                                Tháng 12, 2019
+                            </div>
+                            <div class="exam-calendar__exam-container">
+                                <div class="exam-calendar__exam--date p-3">
+                                    <h4 class="font-weight-bold">Thứ 6, 13/12/2019</h4>
+                                </div>
+                                <div class="exam-calendar__exam-list p-3">
+                                    <div class="exam-calendar__exam--item">
+                                        <div class="exam-calendar__exam--time">
+                                            <span class="hg-icon icon-file main-icon mr-4"></span>
+                                            <div class="time-info">
+                                                <div class="">
+                                                    <b>14:30 •  </b>Kiểm tra 1 tiết
+                                                </div>
+                                                <div class="">
+                                                    <span class="hg-icon icon-time-clock sub-icon"></span> 45'
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="exam-calendar__exam--info px-3 py-2">
+                                            <div class=" py-2">
+                                                <span class="hg-icon icon-card-red mr-3"></span> <span> Tiếng Anh - Học chính - Đống Đa</span>
+                                            </div>
+                                            <div class=" py-2">
+                                                <span class="hg-icon icon-mod mr-3"></span> <span>Đỗ Nguyên Phát</span>
+                                            </div> 
+                                        </div>
+                                        <div class="exam-calendar__exam--action">
+                                            <div class="text-blue">Mở</div>
+                                            <div class="text-red">Hủy bỏ</div>
+                                        </div>
+                                    </div>
+                                    <div class="exam-calendar__exam--item">
+                                        <div class="exam-calendar__exam--time">
+                                            <span class="hg-icon icon-file main-icon mr-4"></span>
+                                            <div class="time-info">
+                                                <div class="">
+                                                    <b>14:30 •  </b>Kiểm tra 1 tiết
+                                                </div>
+                                                <div class="">
+                                                    <span class="hg-icon icon-time-clock sub-icon"></span> 45'
+                                                </div>
+                                                <div class="">
+                                                    <span class="hg-icon icon-cgs sub-icon"></span> Có giám sát
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="exam-calendar__exam--info px-3 py-2">
+                                            <div class=" py-2">
+                                                <span class="hg-icon icon-card-red mr-3"></span> <span> Tiếng Anh - Học chính - Đống Đa</span>
+                                            </div>
+                                            <div class=" py-2">
+                                                <span class="hg-icon icon-mod mr-3"></span> <span>Đỗ Nguyên Phát</span>
+                                            </div> 
+                                        </div>
+                                        <div class="exam-calendar__exam--action">
+                                            <div class="text-blue">Mở</div>
+                                            <div class="text-light-grey">Hủy bỏ</div>
+                                        </div>
+                                    </div>
+                                    <div class="exam-calendar__exam--item">
+                                        <div class="exam-calendar__exam--time">
+                                            <span class="hg-icon icon-file main-icon mr-4"></span>
+                                            <div class="time-info">
+                                                <div class="">
+                                                    <b>14:30 •  </b>Kiểm tra 1 tiết
+                                                </div>
+                                                <div class="">
+                                                    <span class="hg-icon icon-time-clock sub-icon"></span> 45'
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="exam-calendar__exam--info px-3 py-2">
+                                            <div class=" py-2">
+                                                <span class="hg-icon icon-card-red mr-3"></span> <span> Tiếng Anh - Học chính - Đống Đa</span>
+                                            </div>
+                                            <div class=" py-2">
+                                                <span class="hg-icon icon-mod mr-3"></span> <span>Đỗ Nguyên Phát</span>
+                                            </div> 
+                                        </div>
+                                        <div class="exam-calendar__exam--action">
+                                            <div class="text-blue">Mở</div>
+                                            <div class="text-light-grey">Hủy bỏ</div>
+                                        </div>
+                                    </div>
+                                    <div class="exam-calendar__exam--item">
+                                        <div class="exam-calendar__exam--time">
+                                            <span class="hg-icon icon-file main-icon mr-4"></span>
+                                            <div class="time-info">
+                                                <div class="">
+                                                    <b>14:30 •  </b>Kiểm tra 1 tiết
+                                                </div>
+                                                <div class="">
+                                                    <span class="hg-icon icon-time-clock sub-icon"></span> 45'
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="exam-calendar__exam--info px-3 py-2">
+                                            <div class=" py-2">
+                                                <span class="hg-icon icon-card-red mr-3"></span> <span> Tiếng Anh - Học chính - Đống Đa</span>
+                                            </div>
+                                            <div class=" py-2">
+                                                <span class="hg-icon icon-mod mr-3"></span> <span>Đỗ Nguyên Phát</span>
+                                            </div> 
+                                        </div>
+                                        <div class="exam-calendar__exam--action">
+                                            <div class="text-blue">Mở</div>
+                                            <div class="text-light-grey">Hủy bỏ</div>
+                                        </div>
+                                    </div>
+                                    <div class="exam-calendar__exam--item">
+                                        <div class="exam-calendar__exam--time">
+                                            <span class="hg-icon icon-file main-icon mr-4"></span>
+                                            <div class="time-info">
+                                                <div class="">
+                                                    <b>14:30 •  </b>Kiểm tra 1 tiết
+                                                </div>
+                                                <div class="">
+                                                    <span class="hg-icon icon-time-clock sub-icon"></span> 45'
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="exam-calendar__exam--info px-3 py-2">
+                                            <div class=" py-2">
+                                                <span class="hg-icon icon-card-red mr-3"></span> <span> Tiếng Anh - Học chính - Đống Đa</span>
+                                            </div>
+                                            <div class=" py-2">
+                                                <span class="hg-icon icon-mod mr-3"></span> <span>Đỗ Nguyên Phát</span>
+                                            </div> 
+                                        </div>
+                                        <div class="exam-calendar__exam--action">
+                                            <div class="text-blue">Mở</div>
+                                            <div class="text-light-grey">Hủy bỏ</div>
+                                        </div>
+                                    </div>
+                                    <div class="exam-calendar__exam--item">
+                                        <div class="exam-calendar__exam--time">
+                                            <span class="hg-icon icon-file main-icon mr-4"></span>
+                                            <div class="time-info">
+                                                <div class="">
+                                                    <b>14:30 •  </b>Kiểm tra 1 tiết
+                                                </div>
+                                                <div class="">
+                                                    <span class="hg-icon icon-time-clock sub-icon"></span> 45'
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="exam-calendar__exam--info px-3 py-2">
+                                            <div class=" py-2">
+                                                <span class="hg-icon icon-card-red mr-3"></span> <span> Tiếng Anh - Học chính - Đống Đa</span>
+                                            </div>
+                                            <div class=" py-2">
+                                                <span class="hg-icon icon-mod mr-3"></span> <span>Đỗ Nguyên Phát</span>
+                                            </div> 
+                                        </div>
+                                        <div class="exam-calendar__exam--action">
+                                            <div class="text-blue">Mở</div>
+                                            <div class="text-light-grey">Hủy bỏ</div>
+                                        </div>
+                                    </div>
+                                    <div class="exam-calendar__exam--item">
+                                        <div class="exam-calendar__exam--time">
+                                            <span class="hg-icon icon-file main-icon mr-4"></span>
+                                            <div class="time-info">
+                                                <div class="">
+                                                    <b>14:30 •  </b>Kiểm tra 1 tiết
+                                                </div>
+                                                <div class="">
+                                                    <span class="hg-icon icon-time-clock sub-icon"></span> 45'
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="exam-calendar__exam--info px-3 py-2">
+                                            <div class=" py-2">
+                                                <span class="hg-icon icon-card-red mr-3"></span> <span> Tiếng Anh - Học chính - Đống Đa</span>
+                                            </div>
+                                            <div class=" py-2">
+                                                <span class="hg-icon icon-mod mr-3"></span> <span>Đỗ Nguyên Phát</span>
+                                            </div> 
+                                        </div>
+                                        <div class="exam-calendar__exam--action">
+                                            <div class="text-blue">Mở</div>
+                                            <div class="text-light-grey">Hủy bỏ</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+<!-- tab 4: Bảng điểm -->
+                    <div class="tab-pane fade" id="list4" role="tabpanel"> <!-- tab 4 -->
+                        <div class="py-2 px-4 bg-white">
+                            <div class="float-left mr-5">Tạo file Excel bảng điểm của lớp: </div>
+                            <button class="btn btn-success export-excel">Tạo file</button>
+                            <div class="float-right"><a href="" class="text-red">Xóa bảng điểm</a></div>
+                        </div>
+                        <div class="max-overflow">
+                            <table class="mark-table">
+                                <thead class="text-center">
+                                    <tr class="text-center font-weight-bold">
+                                        <th>
+                                            Tên học sinh
+                                        </th>
+                                        <th colspan="12" class="text-center">X1</th>
+                                        <th colspan="6">X2</th>
+                                        <th>X3</th>
+                                        <th>TK</th>
+                                    </tr>
+                                    <tr>
+                                        <th class="text-blue">
+                                            Cột điểm
+                                        </th>
+                                        <th> 1-1 </th>
+                                        <th> 1-2 </th>
+                                        <th> 1-3 </th>
+                                        <th> 1-4 </th>
+                                        <th> 1-5 </th>
+                                        <th> 1-6 </th>
+                                        <th> 1-7 </th>
+                                        <th> 1-8 </th>
+                                        <th> 1-9 </th>
+                                        <th> 1-10 </th>
+                                        <th> 1-11 </th>
+                                        <th> 1-12 </th>
+                                        <th> 2-1 </th>
+                                        <th> 2-2 </th>
+                                        <th> 2-3 </th>
+                                        <th> 2-4 </th>
+                                        <th> 2-5 </th>
+                                        <th> 2-6 </th>
+                                        <th> 3 </th>
+                                        <th> 4 </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="text-center">
+                                        <td class="student-name text-left">
+                                            <img src="../../assets/images/user/avatar-default.jpg">
+                                            <a href="#" class="" target="_blank">Trần Hương Giang</a>
+                                        </td>
+                                        <td>9.75</td>
+                                        <td>9.75</td>
+                                        <td>9.75</td>
+                                        <td>9.75</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>9.75</td>
+                                        <td>9.75</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td class="text-red">9.75</td>
+                                        <td class="text-red">8</td>
+                                    </tr>
+                                    <tr class="text-center">
+                                        <td class="student-name text-left">
+                                            <img src="../../assets/images/user/avatar-default.jpg">
+                                            <a href="#" class="" target="_blank">Trần Hương Giang</a>
+                                        </td>
+                                        <td>9.75</td>
+                                        <td>9.75</td>
+                                        <td>9.75</td>
+                                        <td>9.75</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>9.75</td>
+                                        <td>9.75</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td class="text-red">9.75</td>
+                                        <td class="text-red">8</td>
+                                    </tr>
+                                    <tr class="text-center">
+                                        <td class="student-name text-left">
+                                            <img src="../../assets/images/user/avatar-default.jpg">
+                                            <a href="#" class="" target="_blank">Trần Hương Giang</a>
+                                        </td>
+                                        <td>9.75</td>
+                                        <td>9.75</td>
+                                        <td>9.75</td>
+                                        <td>9.75</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>9.75</td>
+                                        <td>9.75</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td class="text-red">9.75</td>
+                                        <td class="text-red">8</td>
+                                    </tr>
+                                    <tr class="text-center">
+                                        <td class="student-name text-left">
+                                            <img src="../../assets/images/user/avatar-default.jpg">
+                                            <a href="#" class="" target="_blank">Trần Hương Giang</a>
+                                        </td>
+                                        <td>9.75</td>
+                                        <td>9.75</td>
+                                        <td>9.75</td>
+                                        <td>9.75</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>9.75</td>
+                                        <td>9.75</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td class="text-red">9.75</td>
+                                        <td class="text-red">8</td>
+                                    </tr>
+                                    <tr class="text-center">
+                                        <td class="student-name text-left">
+                                            <img src="../../assets/images/user/avatar-default.jpg">
+                                            <a href="#" class="" target="_blank">Trần Hương Giang</a>
+                                        </td>
+                                        <td>9.75</td>
+                                        <td>9.75</td>
+                                        <td>9.75</td>
+                                        <td>9.75</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>9.75</td>
+                                        <td>9.75</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td class="text-red">9.75</td>
+                                        <td class="text-red">8</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <button class="btn btn-primary fixed-send-announcement-icon">
+                            Đã gửi thông báo
+                        </button>
+                    </div>
+
+                    <div class="tab-pane fade" id="list5" role="tabpanel"> <!-- tab 5 -->
+                        Gửi thông báo
+                    </div>
+
+<!-- tab 6: Thẻ chức năng -->
+                    <div class="tab-pane fade" id="list6" role="tabpanel">
+                        <div class="px-5 py-4 mr-2">
+                            <h4 class="font-weight-bold">Chọn thẻ chức năng</h4>
+                            <div>Trạng thái của thẻ có thể thay đổi</div>
+                            <div class="function-card text-center mt-5">
+                                <div class="function-card__card-item">
+                                    <div class="function-card__card-item--icon card-grey">
+                                        <span class="hg-icon icon-card-basic"></span>
+                                    </div>
+                                    <div class="function-card__card-item--card-name text-center">
+                                        Thẻ cơ bản <br/>
+                                        <small class="text-light-grey">(Thẻ mặc định ban đầu)</small>
+                                    </div>
+                                </div>
+                                <div class="function-card__card-item">
+                                    <div class="function-card__card-item--icon card-blue active ">
+                                        <span class="hg-icon icon-card-blue"></span>
+                                    </div>
+                                    <div class="function-card__card-item--card-name text-center">
+                                        Thẻ xanh <br/>
+                                    </div>
+                                </div>
+                                <div class="function-card__card-item">
+                                    <div class="function-card__card-item--icon card-red">
+                                        <span class="hg-icon icon-card-red"></span>
+                                    </div>
+                                    <div class="function-card__card-item--card-name text-center">
+                                        Thẻ đỏ <br/>
+                                        <small class="text-light-grey">(Thường dùng cho lớp học chính)</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End main content area -->
+            <div class="pop-up-modal-overlay">
+                <div class="modal-box modal-confirm-delete">
+                    <div class="modal-header text-center">
+                        <div class="delete-confirm-text my-2">
+                            Bạn chắc chắn muốn rời khỏi lớp?
+                        </div>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-md-6 text-center text-red cursor-pointer confirm-delete-btn border-r-grey">
+                                Không
+                            </div>
+                            <div class="col-md-6 text-center text-blue cursor-pointer confirm-delete-btn">
+                                Có
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="../../assets/js/modules_script.js"></script>
+</html>

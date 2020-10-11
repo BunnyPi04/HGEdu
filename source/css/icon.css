@@ -227,7 +227,7 @@ span {
 .icon-class {
     background-image: url('../images/app/115.png');
 }
-.icon-class.icon-active, .sidebar .active.icon-class {
+.icon-class.icon-active, .sidebar .active>.icon-class {
     background-image: url('../images/app/114.png');
 }
 .icon-class.disable {
