@@ -22,9 +22,15 @@
 }
 .MultiCarousel .leftLst {
     transform: translate(-30px,-50%) rotate(90deg);
+    box-shadow: none !important;
 }
 .MultiCarousel .rightLst {
     transform: translate(30px,-50%) rotate(90deg);
+    box-shadow: none !important;
+}
+.MultiCarousel .leftLst .hg-icon, .MultiCarousel .rightLst .hg-icon {
+    width: 50px !important;
+    height: 50px !important;
 }
 
 .MultiCarousel .leftLst, .MultiCarousel .rightLst {
