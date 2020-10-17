@@ -371,6 +371,9 @@ span {
 .icon-add-contact-2.icon-white {
     background-image: url('../images/app/121.png');
 }
+.icon-add-contact-2.disable {
+    background-image: url('../images/app/177.png');
+}
 .icon-send-2 {
     background-image: url('../images/app/60.png');
 }
