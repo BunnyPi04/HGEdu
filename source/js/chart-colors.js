@@ -22,6 +22,10 @@ window.chartColors = {
     strong_pink: '#f81a3f',
     purple: '#834eeb',
     shadow: '#00000029',
+    easy: '#5c96d1',
+    normal: '#086bd1',
+    hard: '#002ad4',
+    very_hard: '#001c8f'
 
     // red: 'rgb(255, 99, 132)',
     // orange: 'rgb(255, 159, 64)',
@@ -231,36 +235,36 @@ Chart.pluginService.register({
 Chart.defaults.RoundedDoughnut = Chart.helpers.clone(Chart.defaults.doughnut);
 Chart.controllers.RoundedDoughnut = Chart.controllers.doughnut.extend({
     draw: function(ease) {
-        var ctx           = this.chart.ctx;
-        var easingDecimal = ease || 1;
-        var arcs          = this.getMeta().data;
-        Chart.helpers.each(arcs, function(arc, i) {
-            arc.transition(easingDecimal).draw();
+        // var ctx           = this.chart.ctx;
+        // var easingDecimal = ease || 1;
+        // var arcs          = this.getMeta().data;
+        // Chart.helpers.each(arcs, function(arc, i) {
+        //     arc.transition(easingDecimal).draw();
 
-            var pArc   = arcs[i === 0 ? arcs.length - 1 : i - 1];
-            var pColor = pArc._view.backgroundColor;
+        //     var pArc   = arcs[i === 0 ? arcs.length - 1 : i - 1];
+        //     var pColor = pArc._view.backgroundColor;
 
-            var vm         = arc._view;
-            var radius     = (vm.outerRadius + vm.innerRadius) / 2;
-            var thickness  = (vm.outerRadius - vm.innerRadius) / 2;
-            var startAngle = Math.PI / 2 - vm.startAngle;
-            var angle      = Math.PI / 2 - vm.endAngle;
+        //     var vm         = arc._view;
+        //     var radius     = (vm.outerRadius + vm.innerRadius) / 2;
+        //     var thickness  = (vm.outerRadius - vm.innerRadius) / 2;
+        //     var startAngle = Math.PI / 2 - vm.startAngle;
+        //     var angle      = Math.PI / 2 - vm.endAngle;
 
-            ctx.save();
-            ctx.translate(vm.x, vm.y);
+        //     ctx.save();
+        //     ctx.translate(vm.x, vm.y);
 
-            ctx.fillStyle = i === 0 ? '#eeeeef' : pColor;
-            ctx.beginPath();
-            ctx.arc(radius * Math.sin(startAngle), radius * Math.cos(startAngle), thickness, 0, 2 * Math.PI);
-            // ctx.arc(arc.round.radius * Math.sin(endAngle), arc.round.radius * Math.cos(endAngle), arc.round.thickness, 0, 2 * Math.PI);
-            ctx.fill();
+        //     ctx.fillStyle = i === 0 ? '#eeeeef' : pColor;
+        //     ctx.beginPath();
+        //     ctx.arc(radius * Math.sin(startAngle), radius * Math.cos(startAngle), thickness, 0, 2 * Math.PI);
+        //     // ctx.arc(arc.round.radius * Math.sin(endAngle), arc.round.radius * Math.cos(endAngle), arc.round.thickness, 0, 2 * Math.PI);
+        //     ctx.fill();
 
-            ctx.fillStyle = vm.backgroundColor;
-            ctx.beginPath();
-            ctx.arc(radius * Math.sin(angle), radius * Math.cos(angle), thickness, 0, 2 * Math.PI);
-            ctx.fill();
+        //     ctx.fillStyle = vm.backgroundColor;
+        //     ctx.beginPath();
+        //     ctx.arc(radius * Math.sin(angle), radius * Math.cos(angle), thickness, 0, 2 * Math.PI);
+        //     ctx.fill();
 
-            ctx.restore();
-        });
+        //     ctx.restore();
+        // });
     }
 });

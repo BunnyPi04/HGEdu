@@ -22,6 +22,10 @@
     --strong-pink: #f81a3f;
     --purple: #834eeb;
     --shadow: #00000029;
+    --easy: #5c96d1;
+    --normal: #086bd1;
+    --hard: #002ad4;
+    --very-hard: #001c8f;
 }
 body {
     margin: 0 auto;
@@ -47,12 +51,12 @@ a, a:hover {
 }
 @font-face {
     font-family: Montserrat;
-    src: url(../fonts/Montserrat-Light.ttf);
-    font-weight: lighter;
+    src: url(../fonts/Montserrat-ExtraLight.ttf);
+    font-weight: 200;
 }
 @font-face {
     font-family: Montserrat;
-    src: url(../fonts/Montserrat-LightItalic.ttf);
+    src: url(../fonts/Montserrat-ExtraLightItalic.ttf);
     font-weight: lighter;
     font-style: italic;
 }
@@ -60,6 +64,7 @@ a, a:hover {
 @font-face {
     font-family: Montserrat;
     src: url(../fonts/Montserrat-Medium.ttf);
+    font-weight: 300;
 }
 @font-face {
     font-family: Montserrat;
@@ -86,8 +91,11 @@ a, a:hover {
 textarea:focus, input:focus {
     outline: none;
 }
+.font-light {
+    font-weight: 200;
+}
 .font-effra {
-    font-family: Effra;
+    font-family: Effra !important;
 }
 .font-roboto, .font-monserrat {
     font-family: Montserrat !important;
@@ -254,6 +262,9 @@ textarea:focus, input:focus {
 .register-info {
     margin: 0 auto;
 }
+.form-body.register-info-form.grid-container div p {
+    font-size: 16px;
+}
 .form-body.register-info-form.grid-container {
     display: grid;
     grid-template-columns: 160px auto;
@@ -274,6 +285,9 @@ textarea:focus, input:focus {
     border: 1px solid var(--black);
     border-radius: 5px;
     font-size: 18px;
+}
+.register-info-right input {
+    height: 30px;
 }
 .input-text-above-first-name input, .input-text-above-last-name input {
     padding-left: 24px;
@@ -415,11 +429,12 @@ textarea:focus, input:focus {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 3% 0;
+    padding: 3vh 0;
     background-color: white;
     box-shadow: 0px 0px 6px var(--light-grey);
     border-right: 0.1px solid var(--light-grey);
     overflow: hidden;
+    overflow-y: auto;
 }
 .sidebar a {
     display: flex;
@@ -548,7 +563,7 @@ textarea:focus, input:focus {
     width: 2rem;
     position: absolute;
     left: 5px;
-    bottom: 1rem;
+    bottom: 0;
 }
 .mn-content .tab-pane#list2,
 .mn-content .tab-pane#list1,
@@ -592,6 +607,12 @@ textarea:focus, input:focus {
 .mn-content .tab-pane#list-exam.active {
     display: block;
 }
+.nav-link {
+    padding: 0;
+}
+/*.nav-link .hg-icon {
+    bottom: 0;
+}*/
 .mn-tab .nav-link.active .hg-icon.icon-account {
     background-image: url('../images/app/27.png');
 }
@@ -606,18 +627,40 @@ textarea:focus, input:focus {
     max-height: calc(100vh - 4rem - 200px);
     overflow: auto;
 }
+.width-unset {
+    width: unset !important;
+}
+.class-mn .class-tab .account-list .list-item .list-item__user-name {
+    font-size: 20px;
+    font-family: Montserrat;
+}
+.class-mn .class-tab .account-list .list-item .list-item__user-name small {
+    color: var(--blue);
+    font-weight: 200;
+}
+.class-mn .class-tab .account-list-header h4 {
+    font-size: 18px;
+    font-family: Montserrat;
+}
+.class-tab .account-list .list-item, .class-tab .account-list-header {
+    grid-template-columns: 95px auto 200px 100px;
+}
+.class-tab .account-list .list-item .list-item__id {
+    font-weight: bold;
+    font-family: Montserrat;
+}
 .account-list .list-item, .account-list-header {
     height: 60px;
     width: 100%;
     display: grid;
-    grid-template-columns: 135px 35% auto auto;
+    grid-template-columns: 95px 35% auto auto;
     margin-bottom: 10px;
-    padding: 0 25px;
+    padding: 0 22px;
     font-size: 18px;
     align-items: center;
 }
 .list-item .list-avatar {
-    height: 50px;
+    height: 44px;
     border-radius: 50%;
 }
 .list-item .hg-icon {
@@ -713,6 +756,15 @@ textarea:focus, input:focus {
 .modal-box .modal-header {
     align-items: baseline;
     border-bottom: 1px solid var(--light-grey);
+    position: relative;
+}
+.modal-box .modal-header div:nth-child(2).text-center {
+    position: absolute;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    display: inline;
+    text-align: center;
 }
 .modal-box .modal-header .hg-icon {
     width: 1.5rem;
@@ -725,7 +777,7 @@ textarea:focus, input:focus {
     font-family: Effra;
 }
 .modal-box .modal-confirm.disable {
-    color: var(--grey);
+    color: var(--light-grey);
 }
 .modal-box.modal-large {
     width: 860px;
@@ -975,7 +1027,7 @@ textarea:focus, input:focus {
 }
 .select-box__option {
     display: block;
-    padding: 15px;
+    padding: 5px 15px;
     background-color: #fff;
     border-radius: 4px;
     font-family: Effra;
@@ -1079,12 +1131,24 @@ textarea:focus, input:focus {
     width: 25px;
     height: 25px;
 }
+.list-filter .select-box__list li {
+    position: relative;
+}
+.list-filter .select-box__list li:not(:last-child):after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    height: 1px;
+    width: 98%;
+    left: 1%;
+    background-color: var(--light-grey);
+}
 .class-mn .select-box__icon {
     width: 20px;
     height: 20px;
 }
 .class-mn .account-list .list-item, .library-exam .account-list .list-item, .account-list-header {
-    height: auto;
+    height: 60px;
 }
 .class-mn .account-list .list-item .list-item__user-name {
     font-weight: unset;
@@ -1369,6 +1433,9 @@ textarea:focus, input:focus {
     grid-template-columns: auto auto auto auto auto auto auto;
     grid-gap: 20px;
 }
+.class-tab .mn-content-time-table-header {
+    grid-template-columns: auto auto auto auto auto;
+}
 .mn-content-time-table-header.disable {
     opacity: 0.5;
 }
@@ -1427,7 +1494,7 @@ textarea:focus, input:focus {
 }
 .mn-content-time-table__body {
     overflow: auto;
-    max-height: calc(100vh - 400px);
+    max-height: calc(100vh - 350px);
 }
 .list-class__item {
     display: flex;
@@ -1435,21 +1502,21 @@ textarea:focus, input:focus {
     border-radius: 10px;
     box-shadow: 0px 2px 6px var(--light-grey);
     width: 100%;
-    padding: 7px;
+    padding: 8px;
     margin-bottom: 15px;
     font-size: 0.9rem;
 }
 .list-class__item-delete {
     text-align: center;
     border-right: 1px solid var(--black);
-    padding: 20px 35px;
+    padding: 10px 20px 10px 15px;
     display: grid;
     justify-content: center;
     align-items: center;
 }
 .list-class__item-delete .hg-icon {
-    width: 25px;
-    height: 25px;
+    width: 20px;
+    height: 20px;
     vertical-align: middle;
     margin: 0;
 }
@@ -1461,9 +1528,13 @@ textarea:focus, input:focus {
     display: grid;
     justify-content: center;
     align-items: center;
+    font-family: Effra;
+}
+.list-class__item-note {
+    font-family: Effra;
 }
 .list-class__item-date {
-    width: 7em;
+    width: 100px;
 }
 .list-class__item-time {
     width: 10em;
@@ -2255,7 +2326,7 @@ label[for="file-input"] {
     margin-bottom: 0;
 }
 .exam-tab {
-    vertical-align: super;
+    vertical-align: middle;
     font-family: Effra;
 }
 .active>.hg-icon.icon-test-1, .nav-link:not(.active):hover .hg-icon.icon-test-1 {
@@ -2267,7 +2338,7 @@ label[for="file-input"] {
     transition-duration: 0.3s;
 }
 .exam-mn .exam-calendar__exam-list {
-    height: calc(100vh - 275px);
+    height: calc(100vh - 225px);
 }
 .exam-pop-up-choose__item {
     border-radius: 10px;
@@ -2719,7 +2790,7 @@ label[for="file-input"] {
 .svg-small {
     stroke-width: 7px;
 }
-.pink-round, .blue-round, .yellow-round, .green-round, .orange-round, .purple-round, .red-round, .grey-round {
+.pink-round, .blue-round, .yellow-round, .green-round, .orange-round, .purple-round, .red-round, .grey-round, .easy-round, .normal-round, .hard-round, .very-hard-round {
     width: 18px;
     height: 18px;
     border-radius: 50%;
@@ -2751,6 +2822,18 @@ label[for="file-input"] {
 }
 .grey-round {
     background-color: var(--light-grey);
+}
+.easy-round {
+    background-color: var(--easy);
+}
+.normal-round {
+    background-color: var(--normal);
+}
+.hard-round {
+    background-color: var(--hard);
+}
+.very-hard-round {
+    background-color: var(--very-hard);
 }
 .exam-quality__explan-container>div {
     display: grid;
@@ -3175,8 +3258,8 @@ label[for="file-input"] {
     font-family: Effra;
 }
 .modal-box .modal-header .hg-icon {
-    width: 22px;
-    height: 22px;
+    width: 20px;
+    height: 20px;
 }
 .modal-create-exam-method p {
     font-size: 14px;
@@ -4821,6 +4904,16 @@ label[for="file-input"] {
     grid-column-gap: 40px;
     font-size: 20px;
     grid-row-gap: 15px;
+}
+.send-annouce .select-box .select-box__input-text {
+    padding: 2px 15px;
+}
+.send-annouce .modal-confirm {
+    font-size: 18px;
+    font-family: Effra;
+}
+textarea {
+    border: none;
 }
 
 @-webkit-keyframes HideList {

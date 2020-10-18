@@ -506,11 +506,14 @@ span {
 .icon-target {
     background-image: url('../images/app/37.png');
 }
-.icon-check .icon-white {
+.icon-check.icon-white {
     background-image: url('../images/app/51.png');
 }
 .icon-logout {
     background-image: url('../images/app/68.png');
+}
+.icon-logout.icon-red {
+    background-image: url('../images/app/69.png');
 }
 .icon-info2 {
     background-image: url('../images/app/95.png');

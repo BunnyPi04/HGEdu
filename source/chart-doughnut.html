@@ -23,29 +23,22 @@
     <script>
         window.onload = function() {
             new Chart(document.getElementById('usersChart'), {
-                type: 'RoundedDoughnut',
+                type: 'doughnut',
                 data: {
                     labels: [
-                        'Green',
-                        'Dark Yellow',
-                        'Purple',
-                        'Red',
-                        'Pink',
-                        'Aqua',
-                        'Yellow'
+                        'easy',
+                        'normal',
+                        'hard',
+                        'Very hard',
                     ], datasets: [
                         {
-                            data: [23, 10, 15, 20, 10, 8, 15],
+                            data: [23, 50, 15, 26],
                             backgroundColor: [
-                                window.chartColors.strong_green,
-                                window.chartColors.dark_yellow,
-                                window.chartColors.purple,
-                                window.chartColors.red,
-                                window.chartColors.pink,
-                                window.chartColors.aqua,
-                                window.chartColors.yellow
+                                window.chartColors.easy,
+                                window.chartColors.normal,
+                                window.chartColors.hard,
+                                window.chartColors.very_hard,
                             ],
-                            borderWidth : 0
                         }]
                 },
                 options: {

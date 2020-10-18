@@ -1126,19 +1126,19 @@
                                             </div>
                                             <div class="exam-quality__explan-container">
                                                 <div class="mb-2">
-                                                    <div class="green-round"></div>
+                                                    <div class="easy-round"></div>
                                                     <div>Mức 1: 8%</div>
                                                 </div>
                                                 <div class="mb-2">
-                                                    <div class="orange-round"></div>
+                                                    <div class="normal-round"></div>
                                                     <div>Mức 2: 22%</div>
                                                 </div>
                                                 <div class="mb-2">
-                                                    <div class="purple-round"></div>
+                                                    <div class="hard-round"></div>
                                                     <div>Mức 3: 37%</div>
                                                 </div>
                                                 <div class="mb-2">
-                                                    <div class="red-round"></div>
+                                                    <div class="very-hard-round"></div>
                                                     <div>Mức 4: 33%</div>
                                                 </div>
                                             </div>
@@ -1263,7 +1263,7 @@
 <script type="text/javascript">
         window.onload = function() {
             new Chart(document.getElementById('chart1'), {
-                type: 'RoundedDoughnut',
+                type: 'doughnut',
                 data: {
                     labels: [
                         'Toàn diện kiến thức',
@@ -1276,7 +1276,7 @@
                                 window.chartColors.pink,
                                 window.chartColors.light_grey,
                             ],
-                            borderWidth : 0
+                            // borderWidth: 0
                         }
                     ]
                 },
@@ -1317,7 +1317,7 @@
             });
 
             new Chart(document.getElementById('chart2'), {
-                type: 'RoundedDoughnut',
+                type: 'doughnut',
                 data: {
                     labels: [
                         'Lý thuyết: 0',
@@ -1330,7 +1330,7 @@
                                 window.chartColors.aqua,
                                 window.chartColors.yellow,
                             ],
-                            borderWidth : 0
+                            // borderWidth : 0
                         }
                     ]
                 },
@@ -1375,7 +1375,7 @@
             });
 
             new Chart(document.getElementById('chart3'), {
-                type: 'RoundedDoughnut',
+                type: 'doughnut',
                 data: {
                     labels: [
                         'Mức 1: 8%',
@@ -1387,12 +1387,12 @@
                         {
                             data: [8, 22, 27, 33],
                             backgroundColor: [
-                                window.chartColors.strong_green,
-                                window.chartColors.dark_yellow,
-                                window.chartColors.purple,
-                                window.chartColors.red,
+                                window.chartColors.easy,
+                                window.chartColors.normal,
+                                window.chartColors.hard,
+                                window.chartColors.very_hard,
                             ],
-                            borderWidth : 0
+                            // borderWidth : 0
                         }
                     ]
                 },
