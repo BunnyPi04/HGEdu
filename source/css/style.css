@@ -211,6 +211,7 @@ textarea:focus, input:focus {
 .custom-tooltip:hover + .show-tooltip {
     display: inline-table;
     height: 2rem;
+    line-height: 2rem;
 }
 .required {
     color: red;
@@ -544,7 +545,7 @@ textarea:focus, input:focus {
 .mn-tab .nav-tabs .nav-link::after {
     content: '';
     position: absolute;
-    bottom: 3px;
+    bottom: 0px;
     height: 2px;
     width: 100%;
     background-color: var(--blue);
@@ -563,7 +564,8 @@ textarea:focus, input:focus {
     width: 2rem;
     position: absolute;
     left: 5px;
-    bottom: 0;
+    top: 50%;
+    transform: translateY(-50%);
 }
 .mn-content .tab-pane#list2,
 .mn-content .tab-pane#list1,
@@ -620,7 +622,7 @@ textarea:focus, input:focus {
     background-image: url('../images/app/158.png');
 }
 .account-list.list-container {
-    max-height: calc(100vh - 4rem - 300px);
+    max-height: calc(100vh - 4rem - 130px);
     overflow: auto;
 }
 .storage-id-list {
@@ -758,7 +760,7 @@ textarea:focus, input:focus {
     border-bottom: 1px solid var(--light-grey);
     position: relative;
 }
-.modal-box .modal-header div:nth-child(2).text-center {
+.modal-box .modal-header.title-center div:nth-child(2).text-center {
     position: absolute;
     margin: 0 auto;
     left: 0;
@@ -1148,6 +1150,9 @@ textarea:focus, input:focus {
     height: 20px;
 }
 .class-mn .account-list .list-item, .library-exam .account-list .list-item, .account-list-header {
+    height: auto;
+}
+.class-mn .class-tab .account-list .list-item, .library-exam .account-list .list-item, .account-list-header {
     height: 60px;
 }
 .class-mn .account-list .list-item .list-item__user-name {
@@ -2467,7 +2472,7 @@ label[for="file-input"] {
     height: 85vh;
 }
 .create-exam-plan .modal-box .modal-body {
-    height: 85%;
+    height: calc(100% - 105px);
 }
 .create-exam-plan .modal-box .modal-body .select-box__input-text {
     padding-right: 35px;
