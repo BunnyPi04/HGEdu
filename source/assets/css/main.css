@@ -6405,6 +6405,16 @@ label[for="file-input"] {
     font-size: 18px;
     font-family: Effra;
 }
+.ui-autocomplete.ui-front {
+    z-index: 1000;
+    background-color: var(--bg-light-blue);
+    box-shadow: 0 3px 6px var(--shadow);
+    width: 300px;
+    list-style: none;
+    line-height: 24px;
+    padding-left: 10px;
+    border-radius: 3px;
+}
 textarea {
     border: none;
 }
