@@ -1640,7 +1640,10 @@ textarea:focus, input:focus {
     font-size: 1.5rem !important;
 }
 .font-18 {
-    font-size: 18px;
+    font-size: 18px !important;
+}
+.font-22 {
+    font-size: 22px !important;
 }
 .font-30 {
     font-size: 30px !important;
@@ -1738,8 +1741,26 @@ textarea:focus, input:focus {
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
 }
+.login-form .label {
+    font-size: 18px;
+    font-family: Effra;
+}
+.login-form h5.pt-5 {
+    padding-top: 70px !important;
+    font-size: 24px;
+    font-family: Effra;
+}
 .form-body .label, .form-body .register-button {
     line-height: 2.2em;
+}
+.register-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.register-button button {
+    padding: 5px 10px;
+    border-radius: 5px;
 }
 .form-body input {
     border: none;
@@ -3742,8 +3763,11 @@ label[for="file-input"] {
 }
 .contact-list .list-item .hg-icon {
     vertical-align: middle;
-    height: 25px;
-    width: 25px;
+    height: 20px;
+    width: 20px;
+}
+.error-message {
+    font-size: 18px;
 }
 .contact-list .mn-tab .nav-tabs .nav-link .hg-icon {
     left: 0;
@@ -6414,6 +6438,19 @@ label[for="file-input"] {
     line-height: 24px;
     padding-left: 10px;
     border-radius: 3px;
+}
+.timepicker-picker a.btn {
+    box-shadow: none;
+}
+.bootstrap-datetimepicker-widget table td span:hover {
+    background-color: transparent !important;
+    filter: drop-shadow(0px 3px 6px var(--shadow));
+}
+.login-form .register-button a {
+    font-family: Effra;
+}
+.login-form .register-button .btn-primary {
+    background-color: #0052D4 !important;
 }
 textarea {
     border: none;
