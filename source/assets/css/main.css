@@ -1722,7 +1722,8 @@ textarea:focus, input:focus {
     justify-content: space-between;
     padding: 40px 40px;
 }
-.signup-header img {
+.signup-header .arrow-container a {
+    height: 38px;
 }
 .signup-header>div {
     display: inline-block;
@@ -1761,6 +1762,8 @@ textarea:focus, input:focus {
 .register-button button {
     padding: 5px 10px;
     border-radius: 5px;
+    font-size: 18px;
+    font-family: Effra;
 }
 .form-body input {
     border: none;
@@ -2170,6 +2173,17 @@ textarea:focus, input:focus {
     font-size: 18px;
     align-items: center;
 }
+/*.contact-list .account-list-header {
+    top: -1px;
+    position: sticky;
+    background-color: var(--bg-grey);
+}*/
+.list-with-add {
+    padding-bottom: 104px;
+}
+.account-list.list-container {
+    max-height: unset;
+}
 .list-item .list-avatar {
     height: 44px;
     border-radius: 50%;
@@ -2237,8 +2251,8 @@ textarea:focus, input:focus {
     right: 3rem;
 }
 .fixed-add-icon .hg-icon {
-    width: 5.5rem;
-    height: 5.5rem;
+    width: 80px;
+    height: 80px;
     filter: drop-shadow(3px 4px 4px var(--light-grey));
 }
 .pop-up-modal-overlay {    
