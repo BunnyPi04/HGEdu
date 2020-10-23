@@ -156,7 +156,11 @@ span {
     background-image: url('../images/app/86.png');
 }
 .icon-add-round {
-    background-image: url('../images/app/130.png');
+    background-image: url(../images/app/88.png);
+    background-color: var(--green);
+    border-radius: 50%;
+    background-size: 28px 28px;
+    background-position: center;
 }
 .icon-mail {
     background-image: url('../images/app/25.png');
@@ -258,7 +262,11 @@ span {
     background-image: url('../images/app/38.png');
 }
 .icon-add-contact {
-    background-image: url('../images/app/132.png');
+    background-image: url(../images/app/121.png);
+    background-color: var(--green);
+    border-radius: 50%;
+    background-size: 28px 28px;
+    background-position: center;
 }
 .icon-open-arrow {
     background-image: url('../images/app/7.png');

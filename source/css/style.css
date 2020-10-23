@@ -1666,6 +1666,7 @@ textarea:focus, input:focus {
     border-radius: 15px;
     box-shadow: 3px 4px 4px var(--light-grey);
     z-index: 3;
+    font-family: Effra;
 }
 .btn-primary {
     background-color: var(--blue);
@@ -3445,7 +3446,7 @@ label[for="file-input"] {
 }
 .sidebar {
     transition-duration: 0.3s;
-    z-index: 2;
+    z-index: 3;
 }
 .sidebar.active {
     width: 200px;
@@ -3512,6 +3513,11 @@ label[for="file-input"] {
 .group-list .list-item .list-item__icon svg {
     transition-duration: 0.2s;
 }
+.group-list .list-item .list-item__icon .hg-icon.icon-reply {
+    width: 38px;
+    height: 38px;
+    float: right;
+}
 .group-list .list-item .list-item__icon svg:hover {
     fill: var(--blue);
 }
@@ -3531,7 +3537,7 @@ label[for="file-input"] {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 20px;
-    max-height: 60vh;
+    /*max-height: 60vh;*/
     overflow: auto;
     padding-top: 5px;
 }
@@ -3543,7 +3549,7 @@ label[for="file-input"] {
     border-radius: 15px;
     box-shadow: 0px 3px 6px var(--shadow);
 }
-.my-group-list .list-item:last-child {
+.my-group-list .list-item:last-child, .my-group-list .list-item:nth-last-child(2) {
     margin-bottom: 5px;
 }
 .my-group-list .list-item .class-list__icon {
@@ -3563,11 +3569,21 @@ label[for="file-input"] {
 .group-list-joined .member .account-list-header, .group-list-joined .member .list-item {
     grid-template-columns: 135px 3fr 2fr;
 }
-.group-list-joined .member .account-list-header, .group-list-joined .member .list-item .icon-mod {
+.group-list-joined .member .list-item .icon-mod {
     margin-left: 35px;
     width: 22px;
     height: 22px;
     vertical-align: middle;
+}
+.group-list-joined .back-icon {
+    top: 38px;
+}
+.group-list-joined .back-icon .hg-icon {
+    width: 16px;
+    height: 16px;
+}
+.group-list-joined .back-icon a {
+    display: block;
 }
 .exam-date {
     display: flex;
@@ -4977,6 +4993,48 @@ label[for="file-input"] {
 }
 .login-form .register-button .btn-primary {
     background-color: #0052D4 !important;
+}
+.share-library-update__container {
+    padding: 40px;
+}
+.share-library-update .share-library__main-side {
+    box-shadow: 0 0px 6px var(--shadow);
+    margin: 5px;
+    border-radius: 10px;
+}
+.share-library-update .modal-header {
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.share-library__row {
+    margin: 0 5px 20px 5px;
+    font-size: 18px;
+}
+.share-library__row:not(:first-child) {
+    padding-top: 18px;
+}
+.share-library-update .select-box {
+    height: 42px;
+    line-height: 30px;
+    font-family: Effra;
+}
+.share-library-update .share-library__main-side--main-filter .filter-item {
+    padding-top: 17px;
+    padding-bottom: 17px;
+    padding-right: 44px;
+}
+.share-library-update .answer .error-message, .share-library-update .answer .available-message {
+    width: 100%;
+    font-size: 11px;
+    font-family: Effra;
+    padding-left: 50px;
+    padding-top: 5px;
+}
+.available-message {
+    color: var(--green);
+}
+.share-library-update .modal-confirm {
+    font-size: 18px;
 }
 textarea {
     border: none;
