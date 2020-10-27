@@ -423,6 +423,20 @@ $('.nav-toggle').click(function () {
     $('.sidebar').toggleClass('active');
 });
 
+$(document).ready(function () {
+    if ($('.mn-content>.mn-content-main-content').children('.tab-pane').length > 0) {
+        $('.mn-content').css('overflow', 'hidden');
+
+        $('.mn-content>.mn-content-main-content').css('height', '100%');
+
+        $('.mn-content>.mn-content-main-content .tab-pane').each(function(index) {
+            console.log('n');
+            $(this).css('height', '100%');
+            $(this).css('overflow', 'auto');
+        });
+    }
+});
+
 /*!
   * Bootstrap v4.5.2 (https://getbootstrap.com/)
   * Copyright 2011-2020 The Bootstrap Authors (https://github.com/twbs/bootstrap/graphs/contributors)
