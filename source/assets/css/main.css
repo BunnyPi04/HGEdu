@@ -696,6 +696,14 @@ span {
 .icon-arrow-down {
     background-image: url('../images/app/173.png');
 }
+.icon-eye.icon-green {
+    background-image: url('../images/app/136.png');
+    background-size: 120%;
+    background-position: center;
+}
+.icon-setting.icon-green {
+    background-image: url('../images/app/134.png');
+}
 
 .math {
     background-image: url('../images/app/function.png');
@@ -6135,7 +6143,7 @@ label[for="file-input"] {
     flex-direction: row-reverse;
 }
 .student-noti-pop-up.modal-box.modal-large .row:not(:last-child) {
-    border-bottom: 1px solid var(--ligh-grey);
+    border-bottom: 1px solid var(--light-grey);
 }
 .full-page.error, .full-page.ready {
     width: 100vw;
@@ -6594,6 +6602,78 @@ textarea {
     height: auto;
     display: inline-block;
     padding-top: 1px;
+}
+.parent:not(.class-mn) .account-list .list-item, .parent:not(.class-mn) .account-list-header {
+    grid-template-columns: 95px 58% auto auto;
+}
+.parent .account-list-header {
+    font-weight: 200;
+    margin-bottom: 0;
+}
+.parent .mn-main-header {
+    padding-right: 32.7px;
+}
+.parent-account {
+    float: right;
+    width: 305px;
+    background-color: white;
+    box-shadow: 0 0px 6px var(--shadow);
+    border-radius: 5px;
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+}
+.parent-account .avatar {
+    width: 38px;
+    margin-right: 15px;
+}
+.parent-account__info h6 {
+    font-size: 17px;
+    font-weight: bold;
+}
+.parent-account__info .nick {
+    font-weight: 200;
+}
+.box-482 {
+    width: 482px;
+}
+.noti-item .nick {
+    color: var(--light-grey);
+}
+.parent .mn-content-search, .student .mn-content-search {
+    padding-right: 32.7px !important;
+}
+.hover-class-time-table {
+    display: none;
+}
+.list-item__id .icon-info:hover+.hover-class-time-table {
+    display: block !important;
+    box-shadow: 0 0 6px var(--shadow);
+    padding: 20px 15px;
+    border-radius: 5px;
+    font-size: 18px;
+    font-family: Effra;
+    margin-left: 20px;
+}
+.hover-class-time-table__table td {
+    font-size: 18px;
+    font-family: Effra;
+    position: relative;
+}
+.hover-class-time-table__table tr td:not(:last-child) {
+    padding-right: 5px;
+}
+.hover-class-time-table__table tr td:not(:first-child) {
+    padding-left: 5px;
+}
+.hover-class-time-table__table tr td:not(:last-child):after {
+    content: '';
+    height: 70%;
+    width: 1px;
+    background-color: var(--black);
+    top: 15%;
+    position: absolute;
+    right: 0;
 }
 
 @-webkit-keyframes HideList {

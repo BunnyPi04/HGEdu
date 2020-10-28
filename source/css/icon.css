@@ -574,6 +574,14 @@ span {
 .icon-arrow-down {
     background-image: url('../images/app/173.png');
 }
+.icon-eye.icon-green {
+    background-image: url('../images/app/136.png');
+    background-size: 120%;
+    background-position: center;
+}
+.icon-setting.icon-green {
+    background-image: url('../images/app/134.png');
+}
 
 .math {
     background-image: url('../images/app/function.png');
