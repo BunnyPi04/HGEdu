@@ -1159,6 +1159,7 @@ textarea:focus, input:focus {
     display: table-cell;
     font-size: 18px;
     font-family: Effra;
+    vertical-align: middle;
 }
 .list-filter .select-box {
     font-size: 18px;
@@ -5170,6 +5171,9 @@ textarea {
     top: 15%;
     position: absolute;
     right: 0;
+}
+.list-filter .select-box__input:checked + .select-box__input-text, .list-filter .select-box .select-box__option {
+    display: flex;
 }
 
 @-webkit-keyframes HideList {

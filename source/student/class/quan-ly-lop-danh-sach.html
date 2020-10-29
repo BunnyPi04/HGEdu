@@ -60,15 +60,11 @@
         <!-- Start Main content -->
         <div class="main-container class-mn student">
             <!-- Start header area -->
-            <div class="mn-main-header">
-                <h1>Quản lý lớp học</h1>
-            </div>
-            <!-- End header area -->
-            <div class="mn-content-search w-100 px-3 flex-reverse">
-
+                        <div class="mn-main-header unset-height">
+                <h1 class="dinline-block">Quản lý lớp học</h1>
                 <div class="list-filter float-right">
-                    <div class="list-filter-label px-3 ">Liệt kê theo môn</div>
-                    <div class="select-box my-2">
+                    <div class="list-filter-label px-3">Liệt kê theo môn</div>
+                    <div class="select-box">
                         <div class="select-box__current" tabindex="2">
                             <div class="select-box__value">
                                 <input class="select-box__input" type="radio" id="5" value="1" name="subject" checked="checked"/>
@@ -99,7 +95,7 @@
                 </div>
                 <div class="list-filter float-right">
                     <div class="list-filter-label px-3 ">Liệt kê theo chức năng</div>
-                    <div class="select-box my-2">
+                    <div class="select-box">
                         <div class="select-box__current" tabindex="1">
                             <div class="select-box__value">
                                 <input class="select-box__input" type="radio" id="0" value="1" name="function" checked="checked"/>
@@ -107,7 +103,7 @@
                             </div>
                             <div class="select-box__value">
                                 <input class="select-box__input" type="radio" id="1" value="2" name="function"/>
-                                <p class="select-box__input-text"><span class="hg-icon icon-card-basic option-icon mr-2"></span> Thẻ cơ bản</p>
+                                <p class="select-box__input-text"><span class="hg-icon icon-card-grey option-icon mr-2"></span> Thẻ cơ bản</p>
                             </div>
                             <div class="select-box__value">
                                 <input class="select-box__input" type="radio" id="2" value="3" name="function"/>
@@ -124,7 +120,7 @@
                                 <label class="select-box__option" for="0" aria-hidden="aria-hidden"><span class="hg-icon option-icon mr-2"></span> Lựa chọn</label>
                             </li>
                             <li>
-                                <label class="select-box__option" for="1" aria-hidden="aria-hidden"><span class="hg-icon icon-card-basic option-icon mr-2"></span> Thẻ cơ bản</label>
+                                <label class="select-box__option" for="1" aria-hidden="aria-hidden"><span class="hg-icon icon-card-grey option-icon mr-2"></span> Thẻ cơ bản</label>
                             </li>
                             <li>
                                 <label class="select-box__option" for="2" aria-hidden="aria-hidden"><span class="hg-icon icon-card-blue option-icon mr-2"></span> Thẻ xanh</label>
@@ -135,6 +131,11 @@
                         </ul>
                     </div>
                 </div>
+            </div>
+            <!-- End header area -->
+            <div class="mn-content-search w-100 px-4">
+                <span class="hg-icon icon-search mr-1"></span>
+                <input class="mn-content-search-input" type="text" name="search-key-word" placeholder="Tìm kiếm">
             </div>
 
             <!-- Start content area -->
