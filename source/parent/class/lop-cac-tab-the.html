@@ -19,7 +19,7 @@
             </div>
             <div class="sidebar-function-icon">
                 <a class="mb-3 nav-toggle"><span class="hg-icon icon-nav icon-active"></span></a>
-                <a class="active" href="">
+                <a href="">
                     <span class="hg-icon icon-home"></span>
                     <span class="side-show">Trang chủ</span>
                 </a>
@@ -35,7 +35,7 @@
                     <span class="hg-icon icon-plan"></span>
                     <span class="side-show">Lịch kiểm tra</span>
                 </a>
-                <a href="">
+                <a class="active" href="">
                     <span class="hg-icon icon-class"></span>
                     <span class="side-show">Lớp học</span>
                 </a>
@@ -224,94 +224,7 @@
 
 <!-- Tab 2: Lịch học -->
                     <div class="tab-pane fade" id="list2" role="tabpanel"> <!-- tab 2 -->
-                        <div class="mn-content-time-table-header w-100 p-5 class-time-table-container">
-                            <div class="add-class-filter-title mr-2">
-                                <h5 class="font-weight-bold text-blue">Sắp xếp lịch học</h5>
-                            </div>
-                            <div class="select-day dinline-block">
-                                <div class="select-box">
-                                    <div class="select-box__current" tabindex="1">
-                                        <div class="select-box__value">
-                                            <input class="select-box__input" type="radio" id="0" value="1" name="Ben" checked="checked"/>
-                                            <p class="select-box__input-text text-light-grey">Chọn thứ trong tuần</p>
-                                        </div>
-                                        <div class="select-box__value">
-                                            <input class="select-box__input" type="radio" id="1" value="2" name="Ben"/>
-                                            <p class="select-box__input-text">Thứ 2</p>
-                                        </div>
-                                        <div class="select-box__value">
-                                            <input class="select-box__input" type="radio" id="2" value="3" name="Ben"/>
-                                            <p class="select-box__input-text">Thứ 3</p>
-                                        </div>
-                                        <div class="select-box__value">
-                                            <input class="select-box__input" type="radio" id="3" value="4" name="Ben"/>
-                                            <p class="select-box__input-text">Thứ 4</p>
-                                        </div>
-                                        <div class="select-box__value">
-                                            <input class="select-box__input" type="radio" id="4" value="5" name="Ben"/>
-                                            <p class="select-box__input-text">Thứ 5</p>
-                                        </div>
-                                        <div class="select-box__value">
-                                            <input class="select-box__input" type="radio" id="5" value="5" name="Ben"/>
-                                            <p class="select-box__input-text">Thứ 6</p>
-                                        </div>
-                                        <div class="select-box__value">
-                                            <input class="select-box__input" type="radio" id="6" value="5" name="Ben"/>
-                                            <p class="select-box__input-text">Thứ 7</p>
-                                        </div>
-                                        <div class="select-box__value">
-                                            <input class="select-box__input" type="radio" id="7" value="5" name="Ben"/>
-                                            <p class="select-box__input-text">Chủ nhật</p>
-                                        </div>
-                                        <span class="hg-icon icon-open-arrow select-box__icon"></span>
-                                    </div>
-                                    <ul class="select-box__list">
-                                        <li>
-                                            <label class="select-box__option" for="1" aria-hidden="aria-hidden">Thứ 2</label>
-                                        </li>
-                                        <li>
-                                            <label class="select-box__option" for="2" aria-hidden="aria-hidden">Thứ 3</label>
-                                        </li>
-                                        <li>
-                                            <label class="select-box__option" for="3" aria-hidden="aria-hidden">Thứ 4</label>
-                                        </li>
-                                        <li>
-                                            <label class="select-box__option" for="4" aria-hidden="aria-hidden">Thứ 5</label>
-                                        </li>
-                                        <li>
-                                            <label class="select-box__option" for="5" aria-hidden="aria-hidden">Thứ 6</label>
-                                        </li>
-                                        <li>
-                                            <label class="select-box__option" for="6" aria-hidden="aria-hidden">Thứ 7</label>
-                                        </li>
-                                        <li>
-                                            <label class="select-box__option" for="7" aria-hidden="aria-hidden">Chủ nhật</label>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="select-time dinline-block">
-                                <div class="date-group">
-                                    <span class="hg-icon icon-clock"></span>
-                                    <input class="date-input m-0 text-right" type="number" name="start-hour" placeholder="__" min="0" max="24">:<input class="date-input m-0 text-left" type="number" name="start-min" placeholder="__" min="0" max="60">
-                                    -
-                                    <input class="date-input m-0 text-right" type="number" name="end-hour" placeholder="__" min="0" max="24">:<input class="date-input m-0 text-left" type="number" name="end-min" placeholder="__" min="0" max="60">
-                                </div>
-                            </div>
-                            <div class="time-table-note dinline-block">
-                                <div class="time-table-note__input-container">
-                                    <input type="text" placeholder="Nhập nội dung" value="Học tăng cường">
-                                    <span class="error-message">Nội dung không được quá 255 ký tự</span>
-                                </div>
-                            </div>
-                            <div class="time-table-add-button dinline-block ml-3">
-                                <div class="time-table-button__container">
-                                    <span class="hg-icon icon-plus mr-1"></span>
-                                    <span class="time-table-button__container--text text-green">Thêm vào lịch</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="list-class px-5 mr-5 mn-content-time-table__body">
+                        <div class="list-class px-4 mn-content-time-table__body">
                             <h4 class="font-weight-bold my-4">Lịch học</h4>
                             <div class="list-class__item">
                                 <div class="list-class__item-delete"><div class="hg-icon icon-close icon-red"></div></div>
@@ -369,10 +282,54 @@
                                 <div class="list-class__item-time">6:30 - 9:00</div>
                                 <div class="list-class__item-note">Học toán đại số</div>
                             </div>
-
-                        </div>
-                        <div class="fixed-add-icon">
-                            <span class="hg-icon icon-add-round"></span>
+                            <div class="list-class__item">
+                                <div class="list-class__item-delete"><div class="hg-icon icon-close icon-red"></div></div>
+                                <div class="list-class__item-date">
+                                    Thứ 3
+                                </div>
+                                <div class="list-class__item-time">6:30 - 9:00</div>
+                                <div class="list-class__item-note">Học toán đại số</div>
+                            </div>
+                            <div class="list-class__item">
+                                <div class="list-class__item-delete"><div class="hg-icon icon-close icon-red"></div></div>
+                                <div class="list-class__item-date">
+                                    Thứ 3
+                                </div>
+                                <div class="list-class__item-time">6:30 - 9:00</div>
+                                <div class="list-class__item-note">Học toán đại số</div>
+                            </div>
+                            <div class="list-class__item">
+                                <div class="list-class__item-delete"><div class="hg-icon icon-close icon-red"></div></div>
+                                <div class="list-class__item-date">
+                                    Thứ 3
+                                </div>
+                                <div class="list-class__item-time">6:30 - 9:00</div>
+                                <div class="list-class__item-note">Học toán đại số</div>
+                            </div>
+                            <div class="list-class__item">
+                                <div class="list-class__item-delete"><div class="hg-icon icon-close icon-red"></div></div>
+                                <div class="list-class__item-date">
+                                    Thứ 3
+                                </div>
+                                <div class="list-class__item-time">6:30 - 9:00</div>
+                                <div class="list-class__item-note">Học toán đại số</div>
+                            </div>
+                            <div class="list-class__item">
+                                <div class="list-class__item-delete"><div class="hg-icon icon-close icon-red"></div></div>
+                                <div class="list-class__item-date">
+                                    Thứ 3
+                                </div>
+                                <div class="list-class__item-time">6:30 - 9:00</div>
+                                <div class="list-class__item-note">Học toán đại số</div>
+                            </div>
+                            <div class="list-class__item">
+                                <div class="list-class__item-delete"><div class="hg-icon icon-close icon-red"></div></div>
+                                <div class="list-class__item-date">
+                                    Thứ 3
+                                </div>
+                                <div class="list-class__item-time">6:30 - 9:00</div>
+                                <div class="list-class__item-note">Học toán đại số</div>
+                            </div>
                         </div>
                     </div>
 
@@ -572,11 +529,6 @@
 
 <!-- tab 4: Bảng điểm -->
                     <div class="tab-pane fade" id="list4" role="tabpanel"> <!-- tab 4 -->
-                        <div class="py-2 px-4 bg-white">
-                            <div class="float-left mr-5 mt-1">Tạo file Excel bảng điểm của lớp: </div>
-                            <button class="btn btn-success export-excel">Tạo file</button>
-                            <div class="float-right mt-1"><a href="" class="text-red">Xóa bảng điểm</a></div>
-                        </div>
                         <div class="max-overflow">
                             <table class="mark-table">
                                 <thead class="text-center">

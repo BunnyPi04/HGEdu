@@ -5100,6 +5100,15 @@ textarea {
     display: inline-block;
     padding-top: 1px;
 }
+.parent .list-class.mn-content-time-table__body {
+    max-height: unset;
+}
+.parent .list-class.mn-content-time-table__body h4 {
+    font-size: 18px;
+}
+.parent .exam-calendar .exam-calendar__exam-list {
+    height: unset;
+}
 .parent:not(.class-mn) .account-list .list-item, .parent:not(.class-mn) .account-list-header {
     grid-template-columns: 95px 58% auto auto;
 }
@@ -5127,6 +5136,7 @@ textarea {
 .parent-account__info h6 {
     font-size: 17px;
     font-weight: bold;
+    margin-bottom: 0;
 }
 .parent-account__info .nick {
     font-weight: 200;
@@ -5174,6 +5184,24 @@ textarea {
 }
 .list-filter .select-box__input:checked + .select-box__input-text, .list-filter .select-box .select-box__option {
     display: flex;
+}
+.picked-row .nick {
+    color: white;
+}
+.parent.notification-list .noti-request .list-item {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 22px;
+    font-family: Effra;
+}
+.parent.notification-list .noti-request .list-item .list-item__user-name a {
+    font-size: 22px;
+}
+.parent.notification-list .noti-request .list-item .hg-icon {
+    width: 18px;
+}
+.parent.notification-list .noti-request .list-item .action {
+    font-size: 18px;
 }
 
 @-webkit-keyframes HideList {
