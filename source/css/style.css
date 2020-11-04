@@ -1983,7 +1983,7 @@ textarea:focus, input:focus {
     cursor: pointer;
 }
 .library-side-bar__tab-header {
-    height: 109px;
+    height: 92px;
     border-bottom: 1px solid var(--light-grey);
 }
 .library-side-bar__tab-header h4 {
@@ -2678,6 +2678,13 @@ label[for="file-input"] {
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
+    font-size: 14px;
+}
+a[data-toggle="collapse"] span {
+    transition-duration: 0.3s;
+}
+a[data-toggle="collapse"][aria-expanded="true"] span {
+    transform: rotate(180deg);
 }
 .pop-up-pick-subject .modal-body__table {
     border: none;
@@ -2842,6 +2849,7 @@ label[for="file-input"] {
     grid-template-columns: 2fr 3fr 4fr;
     justify-content: center;
     align-items: center;
+    font-family: Effra;
 }
 .exam-quality__container .count-question {
     color: var(--blue);
@@ -2999,6 +3007,11 @@ label[for="file-input"] {
 }
 .exam-question-list__tbody {
     margin-top: 15px;
+    font-family: Effra;
+}
+.exam-question-list__tbody .exam-question-list__item .hg-icon {
+    width: 20px;
+    height: 20px;
 }
 .exam-question-list__tbody .exam-question-list__item {
     box-shadow: 0px 1px 7px var(--light-grey);
@@ -3011,6 +3024,7 @@ label[for="file-input"] {
     justify-content: space-between;
     padding: 15px 0;
     font-size: 1.2rem;
+    font-family: Effra;
 }
 .exam-action div {
     cursor: pointer;
@@ -3168,6 +3182,7 @@ label[for="file-input"] {
     padding: 15px 0;
     display: flex;
     justify-content: space-between;
+    font-family: Effra;
 }
 .library-side-tree-view {
     overflow: auto;
