@@ -2177,6 +2177,7 @@ textarea:focus, input:focus {
 .class-mn .class-tab .account-list-header h4 {
     font-size: 18px;
     font-family: Montserrat;
+    font-weight: 200;
 }
 .class-tab .account-list .list-item, .class-tab .account-list-header {
     grid-template-columns: 95px auto 200px 100px;
@@ -2697,6 +2698,7 @@ textarea:focus, input:focus {
 }
 .class-mn .account-list .list-item, .library-exam .account-list .list-item, .account-list-header {
     height: auto;
+    font-weight: 200;
 }
 .class-mn .class-tab .account-list .list-item, .library-exam .account-list .list-item, .account-list-header {
     height: 60px;
@@ -2886,7 +2888,7 @@ textarea:focus, input:focus {
 .modal-list__item.modal-pick-student {
     padding: 7px 15px;
     border-radius: 5px;
-    box-shadow: 0px 0px 7px var(--light-grey);
+    box-shadow: 0px 0px 6px var(--shadow);
     margin: 15px 0;
     display: grid;
     align-items: center;
@@ -3091,7 +3093,7 @@ textarea:focus, input:focus {
     width: 100px;
 }
 .list-class__item-time {
-    width: 10em;
+    width: 200px;
 }
 .list-class__item-note {
     font-size: 1.3em;
@@ -3113,11 +3115,14 @@ textarea:focus, input:focus {
 .mark-table {
     width: 100%;
     background: white;
+    font-family: Effra;
     /*max-height: calc(100vh - 300px);*/
 }
 .mark-table th {
     border: 1px solid var(--light-blue);
     padding: 7px 5px;
+    font-family: Effra;
+    font-size: 18px;
 }
 .mark-table thead tr:first-child th {
     color: var(--light-blue);
@@ -6721,6 +6726,50 @@ textarea {
 }
 .parent.notification-list .noti-request .list-item .action {
     font-size: 18px;
+}
+.update-add-student-scroll-list {
+    box-shadow: 0 0px 6px var(--shadow);
+    border-radius: 15px;
+    padding-right: 0;
+}
+.student-scroll-list__header {
+    border-bottom: 1px solid var(--light-grey);
+    padding: 13px 20px;
+}
+.student-scroll-list__header .icon-search {
+    width: 20px;
+    height: 20px;
+    float: left;
+}
+.student-scroll-list__header .mn-content-search-input {
+    margin-left: 0;
+    border: none;
+    height: 18px;
+    font-size: 18px;
+    font-family: Effra;
+    padding-left: 0;
+    width: 85%;
+}
+.update-add-student-scroll-list .modal-list-scroll {
+    margin-right: 5px;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+.update-add-student-scroll-list .modal-list__item.modal-pick-student {
+    margin: 5px 0;
+}
+.update-add-student-pop-up {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 15px;
+}
+.update-add-table-title {
+    font-size: 20px !important;
+    font-family: Effra;
+}
+.mt-05 {
+    margin-top: 0.5rem;
 }
 
 @-webkit-keyframes HideList {

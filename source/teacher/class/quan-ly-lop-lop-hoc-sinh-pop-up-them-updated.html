@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HGEdu</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../../assets/css/main.css">
+    <script src="../../assets/js/script.js"></script>
+</head>
+<body>
+    <div class="main full-width-page">
+        <!-- Start side bar -->
+        <div class="sidebar">
+            <div class="sidebar-logo">
+                <a class="p-0" href="">
+                    <img class="side-hide" src="../../assets/images/app/169.png">
+                    <img class="side-show" src="../../assets/images/app/HGEdu-logo.png">
+                </a>
+            </div>
+            <div class="sidebar-function-icon">
+                <a class="mb-3 nav-toggle"><span class="hg-icon icon-nav icon-active"></span></a>
+                <a href="">
+                    <span class="hg-icon icon-home"></span>
+                    <span class="side-show">Trang chủ</span>
+                </a>
+                <a href="">
+                    <span class="hg-icon icon-mail"></span>
+                    <span class="side-show">Thông báo</span>
+                </a>
+                <a href="">
+                    <span class="hg-icon icon-contact-book"></span>
+                    <span class="side-show">Danh bạ</span>
+                </a>
+                <a href="">
+                    <span class="hg-icon icon-paper"></span>
+                    <span class="side-show">Thư viện cá nhân</span>
+                </a>
+                <a href="">
+                    <span class="hg-icon icon-plan"></span>
+                    <span class="side-show">Lịch kiểm tra</span>
+                </a>
+                <a class="active" href="">
+                    <span class="hg-icon icon-door"></span>
+                    <span class="side-show">Lớp học</span>
+                </a>
+                <a href="">
+                    <span class="hg-icon icon-group"></span>
+                    <span class="side-show">Nhóm</span>
+                </a>
+                <a href="">
+                    <span class="hg-icon icon-edit"></span>
+                    <span class="side-show">Thư viện viết tắt</span>
+                </a>
+                <a href="">
+                    <span class="hg-icon icon-bell"></span>
+                    <span class="side-show">Tương tác</span>
+                </a>
+            </div>
+            <div class="sidebar-profile">
+                <a href="">
+                    <span class="hg-icon icon-plane"></span>
+                    <span class="side-show">Hỗ trợ</span>
+                </a>
+                <a href="thong-tin-tai-khoan.html">
+                    <span class="hg-icon icon-user icon-active"></span>
+                    <span class="side-show">Tài khoản cá nhân</span>
+                </a>
+            </div>
+        </div>
+        <!-- End sidebar -->
+
+        <!-- Start Main content -->
+        <div class="main-container class-mn">
+            <!-- Start header area -->
+            <div class="mn-main-header">
+                <div class="back-icon"><a href=""><span class="hg-icon icon-back-blue"></span></a></div>
+                <h1 class="font-weight-bold">Rapid English with Che</h1>
+                <div class="mn-tab text-center float-left" style="visibility: visible; animation-name: fadeInUp;">
+                    <ul class="nav nav-tabs border-0 d-inline-block" role="tablist">
+                        <li class="nav-item d-inline-block border-0">
+                            <a class="nav-link active" data-toggle="tab" href="#list1" role="tab" aria-selected="false">
+                                <span class="hg-icon icon-parent disable"></span>
+                                <span>Học sinh</span>
+                            </a>
+                        </li>
+                        <li class="nav-item d-inline-block border-0">
+                            <a class="nav-link" data-toggle="tab" href="#list2" role="tab" aria-selected="true">
+                                <span class="hg-icon icon-calendar disable"></span>
+                                <span>Lịch học</span>
+                            </a>
+                        </li>
+                        <li class="nav-item d-inline-block border-0">
+                            <a class="nav-link" data-toggle="tab" href="#list3" role="tab" aria-selected="true">
+                                <span class="hg-icon icon-schedule disable"></span>
+                                <span>Lịch kiểm tra</span>
+                            </a>
+                        </li>
+                        <li class="nav-item d-inline-block border-0">
+                            <a class="nav-link" data-toggle="tab" href="#list4" role="tab" aria-selected="true">
+                                <span class="hg-icon icon-board disable"></span>
+                                <span>Bảng điểm</span>
+                            </a>
+                        </li>
+                        <li class="nav-item d-inline-block border-0">
+                            <a class="nav-link" data-toggle="tab" href="#list5" role="tab" aria-selected="true">
+                                <span class="hg-icon icon-mail disable"></span>
+                                <span>Gửi thông báo</span>
+                            </a>
+                        </li>
+                        <li class="nav-item d-inline-block border-0">
+                            <a class="nav-link" data-toggle="tab" href="#list6" role="tab" aria-selected="true">
+                                <span class="hg-icon icon-card-tab disable"></span>
+                                <span>Gắn thẻ chức năng</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- End header area -->
+
+            <!-- Start content area -->
+            <div class="mn-content  class-tab">
+                <div class="mn-content-main-content">
+<!-- Tab 1: List học sinh -->
+                    <div class="tab-pane fade active show in" id="list1" role="tabpanel">
+                        <div class="mn-content-search w-100 px-5">
+                            <span class="hg-icon icon-search mr-3"></span>
+                            <input class="mn-content-search-input" type="text" name="search-key-word" placeholder="Tìm kiếm">
+                        </div>
+                        <div class="account-list-header py-3 px-4">
+                            <div class=""></div>
+                            <div class="text-blue ml-5"><h4>Tên học sinh</h4></div>
+                            <div class="text-uppercase text-blue">ID</div>
+                            <div class=""></div>
+                        </div>
+                        <div class="list-container account-list px-4 mr-2">
+                            <div class="list-item">
+                                <div><img class="list-avatar" src="../../assets/images/user/avatar-default.jpg"></div>
+                                <div class="list-item__user-name">
+                                    <a class="text-blue font-weight-bold">Phan Đức Hữu <small >(Hữu SP)</small></a>
+                                </div>
+                                <div class="list-item__id">02948579392</div>
+                                <div class="text-right"><span class="hg-icon icon-close icon-red"></span></div>
+                            </div>
+                            <div class="list-item">
+                                <div><img class="list-avatar" src="../../assets/images/user/avatar-default.jpg"></div>
+                                <div class="list-item__user-name">
+                                    <a class="text-blue font-weight-bold">Phan Đức Hữu <small>(Hữu SP)</small></a>
+                                </div>
+                                <div class="list-item__id">02948579392</div>
+                                <div class="text-right"><span class="hg-icon icon-close icon-red"></span></div>
+                            </div>
+                            <div class="list-item">
+                                <div><img class="list-avatar" src="../../assets/images/user/avatar-default.jpg"></div>
+                                <div class="list-item__user-name">
+                                    <a class="text-blue font-weight-bold">Phan Đức Hữu <small>(Hữu SP)</small></a>
+                                </div>
+                                <div class="list-item__id">02948579392</div>
+                                <div class="text-right"><span class="hg-icon icon-close icon-red"></span></div>
+                            </div>
+                            <div class="list-item">
+                                <div><img class="list-avatar" src="../../assets/images/user/avatar-default.jpg"></div>
+                                <div class="list-item__user-name">
+                                    <a class="text-blue font-weight-bold">Phan Đức Hữu <small>(Hữu SP)</small></a>
+                                </div>
+                                <div class="list-item__id">02948579392</div>
+                                <div class="text-right"><span class="hg-icon icon-close icon-red"></span></div>
+                            </div>
+                            <div class="list-item">
+                                <div><img class="list-avatar" src="../../assets/images/user/avatar-default.jpg"></div>
+                                <div class="list-item__user-name">
+                                    <a class="text-blue font-weight-bold">Phan Đức Hữu <small>(Hữu SP)</small></a>
+                                </div>
+                                <div class="list-item__id">02948579392</div>
+                                <div class="text-right"><span class="hg-icon icon-close icon-red"></span></div>
+                            </div>
+                            <div class="list-item">
+                                <div><img class="list-avatar" src="../../assets/images/user/avatar-default.jpg"></div>
+                                <div class="list-item__user-name">
+                                    <a class="text-blue font-weight-bold">Phan Đức Hữu <small>(Hữu SP)</small></a>
+                                </div>
+                                <div class="list-item__id">02948579392</div>
+                                <div class="text-right"><span class="hg-icon icon-close icon-red"></span></div>
+                            </div>
+                            <div class="list-item">
+                                <div><img class="list-avatar" src="../../assets/images/user/avatar-default.jpg"></div>
+                                <div class="list-item__user-name">
+                                    <a class="text-blue font-weight-bold">Phan Đức Hữu <small>(Hữu SP)</small></a>
+                                </div>
+                                <div class="list-item__id">02948579392</div>
+                                <div class="text-right"><span class="hg-icon icon-close icon-red"></span></div>
+                            </div>
+                            <div class="list-item">
+                                <div><img class="list-avatar" src="../../assets/images/user/avatar-default.jpg"></div>
+                                <div class="list-item__user-name">
+                                    <a class="text-blue font-weight-bold">Phan Đức Hữu <small>(Hữu SP)</small></a>
+                                </div>
+                                <div class="list-item__id">02948579392</div>
+                                <div class="text-right"><span class="hg-icon icon-close icon-red"></span></div>
+                            </div>
+                            <div class="list-item">
+                                <div><img class="list-avatar" src="../../assets/images/user/avatar-default.jpg"></div>
+                                <div class="list-item__user-name">
+                                    <a class="text-blue font-weight-bold">Phan Đức Hữu <small>(Hữu SP)</small></a>
+                                </div>
+                                <div class="list-item__id">02948579392</div>
+                                <div class="text-right"><span class="hg-icon icon-close icon-red"></span></div>
+                            </div>
+                            <div class="list-item">
+                                <div><img class="list-avatar" src="../../assets/images/user/avatar-default.jpg"></div>
+                                <div class="list-item__user-name">
+                                    <a class="text-blue font-weight-bold">Phan Đức Hữu <small>(Hữu SP)</small></a>
+                                </div>
+                                <div class="list-item__id">02948579392</div>
+                                <div class="text-right"><span class="hg-icon icon-close icon-red"></span></div>
+                            </div>
+                            <div class="list-item">
+                                <div><img class="list-avatar" src="../../assets/images/user/avatar-default.jpg"></div>
+                                <div class="list-item__user-name">
+                                    <a class="text-blue font-weight-bold">Phan Đức Hữu <small>(Hữu SP)</small></a>
+                                </div>
+                                <div class="list-item__id">02948579392</div>
+                                <div class="text-right"><span class="hg-icon icon-close icon-red"></span></div>
+                            </div>
+                            <div class="list-item">
+                                <div><img class="list-avatar" src="../../assets/images/user/avatar-default.jpg"></div>
+                                <div class="list-item__user-name">
+                                    <a class="text-blue font-weight-bold">Phan Đức Hữu <small>(Hữu SP)</small></a>
+                                </div>
+                                <div class="list-item__id">02948579392</div>
+                                <div class="text-right"><span class="hg-icon icon-close icon-red"></span></div>
+                            </div>
+                        </div>
+                        <div class="fixed-add-icon">
+                            <span class="hg-icon icon-add-contact"></span>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="list2" role="tabpanel"> <!-- tab 2 -->
+                        <div class="account-list-header py-3 px-4">
+                            <div class=""></div>
+                            <div class="text-uppercase text-blue">Tên tài khoản</div>
+                            <div class="text-uppercase text-blue">ID</div>
+                            <div class=""></div>
+                        </div>
+                        <div class="list-container account-list px-4 mr-2">
+                            <div class="list-item">
+                                <div><img class="list-avatar" src="../assets/images/user/avatar-default.jpg"></div>
+                                <div class="list-item__user-name">
+                                    <a class="text-blue font-weight-bold">Phan Đức Hữu <small>(Hữu SP)</small></a>
+                                </div>
+                                <div class="list-item__id">02948579392</div>
+                                <div class="text-right"><span class="hg-icon icon-close icon-red"></span></div>
+                            </div>
+                            <div class="list-item">
+                                <div><img class="list-avatar" src="../assets/images/user/avatar-default.jpg"></div>
+                                <div class="list-item__user-name">
+                                    <a class="text-blue font-weight-bold">Phan Đức Hữu <small>(Hữu SP)</small></a>
+                                </div>
+                                <div class="list-item__id">02948579392</div>
+                                <div class="text-right"><span class="hg-icon icon-close icon-red"></span></div>
+                            </div>
+                            <div class="list-item">
+                                <div><img class="list-avatar" src="../assets/images/user/avatar-default.jpg"></div>
+                                <div class="list-item__user-name">
+                                    <a class="text-blue font-weight-bold">Phan Đức Hữu <small>(Hữu SP)</small></a>
+                                </div>
+                                <div class="list-item__id">02948579392</div>
+                                <div class="text-right"><span class="hg-icon icon-close icon-red"></span></div>
+                            </div>
+                            <div class="list-item">
+                                <div><img class="list-avatar" src="../assets/images/user/avatar-default.jpg"></div>
+                                <div class="list-item__user-name">
+                                    <a class="text-blue font-weight-bold">Phan Đức Hữu <small>(Hữu SP)</small></a>
+                                </div>
+                                <div class="list-item__id">02948579392</div>
+                                <div class="text-right"><span class="hg-icon icon-close icon-red"></span></div>
+                            </div>
+                            <div class="list-item">
+                                <div><img class="list-avatar" src="../assets/images/user/avatar-default.jpg"></div>
+                                <div class="list-item__user-name">
+                                    <a class="text-blue font-weight-bold">Phan Đức Hữu <small>(Hữu SP)</small></a>
+                                </div>
+                                <div class="list-item__id">02948579392</div>
+                                <div class="text-right"><span class="hg-icon icon-close icon-red"></span></div>
+                            </div>
+                            <div class="list-item">
+                                <div><img class="list-avatar" src="../assets/images/user/avatar-default.jpg"></div>
+                                <div class="list-item__user-name">
+                                    <a class="text-blue font-weight-bold">Phan Đức Hữu <small>(Hữu SP)</small></a>
+                                </div>
+                                <div class="list-item__id">02948579392</div>
+                                <div class="text-right"><span class="hg-icon icon-close icon-red"></span></div>
+                            </div>
+                            <div class="list-item">
+                                <div><img class="list-avatar" src="../assets/images/user/avatar-default.jpg"></div>
+                                <div class="list-item__user-name">
+                                    <a class="text-blue font-weight-bold">Phan Đức Hữu <small>(Hữu SP)</small></a>
+                                </div>
+                                <div class="list-item__id">02948579392</div>
+                                <div class="text-right"><span class="hg-icon icon-close icon-red"></span></div>
+                            </div>
+                            <div class="list-item">
+                                <div><img class="list-avatar" src="../assets/images/user/avatar-default.jpg"></div>
+                                <div class="list-item__user-name">
+                                    <a class="text-blue font-weight-bold">Phan Đức Hữu <small>(Hữu SP)</small></a>
+                                </div>
+                                <div class="list-item__id">02948579392</div>
+                                <div class="text-right"><span class="hg-icon icon-close icon-red"></span></div>
+                            </div>
+                            <div class="list-item">
+                                <div><img class="list-avatar" src="../assets/images/user/avatar-default.jpg"></div>
+                                <div class="list-item__user-name">
+                                    <a class="text-blue font-weight-bold">Phan Đức Hữu <small>(Hữu SP)</small></a>
+                                </div>
+                                <div class="list-item__id">02948579392</div>
+                                <div class="text-right"><span class="hg-icon icon-close icon-red"></span></div>
+                            </div>
+                            <div class="list-item">
+                                <div><img class="list-avatar" src="../assets/images/user/avatar-default.jpg"></div>
+                                <div class="list-item__user-name">
+                                    <a class="text-blue font-weight-bold">Phan Đức Hữu <small>(Hữu SP)</small></a>
+                                </div>
+                                <div class="list-item__id">02948579392</div>
+                                <div class="text-right"><span class="hg-icon icon-close icon-red"></span></div>
+                            </div>
+                            <div class="list-item">
+                                <div><img class="list-avatar" src="../assets/images/user/avatar-default.jpg"></div>
+                                <div class="list-item__user-name">
+                                    <a class="text-blue font-weight-bold">Phan Đức Hữu <small>(Hữu SP)</small></a>
+                                </div>
+                                <div class="list-item__id">02948579392</div>
+                                <div class="text-right"><span class="hg-icon icon-close icon-red"></span></div>
+                            </div>
+                            <div class="list-item">
+                                <div><img class="list-avatar" src="../assets/images/user/avatar-default.jpg"></div>
+                                <div class="list-item__user-name">
+                                    <a class="text-blue font-weight-bold">Phan Đức Hữu <small>(Hữu SP)</small></a>
+                                </div>
+                                <div class="list-item__id">02948579392</div>
+                                <div class="text-right"><span class="hg-icon icon-close icon-red"></span></div>
+                            </div>
+                        </div>
+                        <div class="fixed-add-icon">
+                            <span class="hg-icon icon-add-contact"></span>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="list3" role="tabpanel"> <!-- tab 3 -->
+                        lịch kiểm tra
+                    </div>
+
+                    <div class="tab-pane fade" id="list4" role="tabpanel"> <!-- tab 4 -->
+                        Bảng điểm
+                    </div>
+
+                    <div class="tab-pane fade" id="list5" role="tabpanel"> <!-- tab 5 -->
+                        Gửi thông báo
+                    </div>
+
+<!-- tab 6: Thẻ chức năng -->
+                    <div class="tab-pane fade" id="list6" role="tabpanel">
+                        <div class="px-5 py-4 mr-2">
+                            <h4 class="font-weight-bold">Chọn thẻ chức năng</h4>
+                            <div>Trạng thái của thẻ có thể thay đổi</div>
+                            <div class="function-card text-center mt-5">
+                                <div class="function-card__card-item">
+                                    <div class="function-card__card-item--icon card-grey">
+                                        <span class="hg-icon icon-card-grey"></span>
+                                    </div>
+                                    <div class="function-card__card-item--card-name text-center">
+                                        Thẻ cơ bản <br/>
+                                        <small class="text-light-grey">(Thẻ mặc định ban đầu)</small>
+                                    </div>
+                                </div>
+                                <div class="function-card__card-item">
+                                    <div class="function-card__card-item--icon card-blue active ">
+                                        <span class="hg-icon icon-card-blue"></span>
+                                    </div>
+                                    <div class="function-card__card-item--card-name text-center">
+                                        Thẻ xanh <br/>
+                                    </div>
+                                </div>
+                                <div class="function-card__card-item">
+                                    <div class="function-card__card-item--icon card-red">
+                                        <span class="hg-icon icon-card-red"></span>
+                                    </div>
+                                    <div class="function-card__card-item--card-name text-center">
+                                        Thẻ đỏ <br/>
+                                        <small class="text-light-grey">(Thường dùng cho lớp học chính)</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End main content area -->
+            <div class="pop-up-modal-overlay pop-up-add-student-to-class">
+                <div class="modal-box modal-large"> <!-- add class 'modal-medium' for bigger modal -->
+                    <div class="modal-header">
+                        <div class="">
+                            <span class="hg-icon icon-back dloat-left"></span>
+                        </div>
+                        <div class="">
+                            <span class="modal-title text-center">Thêm học sinh</span>
+                        </div>
+                        <div>
+                            <span class="modal-confirm">
+                                Cập nhật
+                            </span>
+                        </div>
+                    </div>
+                    <div class="modal-body mb-3 pt-2">
+                        <div class="row mb-2 modal-body__table--thead border-0 update-add-table-title">
+                            <div class="col-md-6 py-1 text-center text-blue">
+                                Tất cả học sinh
+                            </div>
+                            <div class="col-md-6 py-1 text-center text-blue">
+                                Rapid English with Che
+                            </div>
+                        </div>
+                        <div class="pb-2 modal-body__table border-0 update-add-student-pop-up">
+                            <div class="update-add-student-scroll-list">
+                                <div class="student-scroll-list__header">
+                                    <span class="hg-icon icon-search mr-3"></span>
+                                    <input class="mn-content-search-input" type="text" name="search-key-word" placeholder="Tìm kiếm">
+                                </div>
+                                <div class="modal-list-scroll">
+                                    <div class="modal-list__item modal-pick-student row">
+                                        <div class="modal-pick-student__student-name">
+                                            <span class="text-blue">Lê Quang Huy </span>
+                                            <small>(Huy FPT)</small>
+                                        </div>
+                                        <div class="modal-pick-student__icon float-right text-center">
+                                            <span class="hg-icon icon-plus"></span>
+                                        </div>
+                                    </div>
+                                    <div class="modal-list__item modal-pick-student row">
+                                        <div class="modal-pick-student__student-name">
+                                            <span class="text-blue">Lê Quang Huy </span>
+                                            <small>(Huy FPT)</small>
+                                        </div>
+                                        <div class="modal-pick-student__icon float-right text-center">
+                                            <span class="hg-icon icon-plus"></span>
+                                        </div>
+                                    </div>
+                                    <div class="modal-list__item modal-pick-student row">
+                                        <div class="modal-pick-student__student-name">
+                                            <span class="text-blue">Lê Quang Huy </span>
+                                            <small>(Huy FPT)</small>
+                                        </div>
+                                        <div class="modal-pick-student__icon float-right text-center">
+                                            <span class="hg-icon icon-plus"></span>
+                                        </div>
+                                    </div>
+                                    <div class="modal-list__item modal-pick-student row">
+                                        <div class="modal-pick-student__student-name">
+                                            <span class="text-blue">Lê Quang Huy </span>
+                                            <small>(Huy FPT)</small>
+                                        </div>
+                                        <div class="modal-pick-student__icon float-right text-center">
+                                            <span class="hg-icon icon-plus"></span>
+                                        </div>
+                                    </div>
+                                    <div class="modal-list__item modal-pick-student row">
+                                        <div class="modal-pick-student__student-name">
+                                            <span class="text-blue">Lê Quang Huy </span>
+                                            <small>(Huy FPT)</small>
+                                        </div>
+                                        <div class="modal-pick-student__icon float-right text-center">
+                                            <span class="hg-icon icon-plus"></span>
+                                        </div>
+                                    </div>
+                                    <div class="modal-list__item modal-pick-student row">
+                                        <div class="modal-pick-student__student-name">
+                                            <span class="text-blue">Lê Quang Huy </span>
+                                            <small>(Huy FPT)</small>
+                                        </div>
+                                        <div class="modal-pick-student__icon float-right text-center">
+                                            <span class="hg-icon icon-plus"></span>
+                                        </div>
+                                    </div>
+                                    <div class="modal-list__item modal-pick-student row">
+                                        <div class="modal-pick-student__student-name">
+                                            <span class="text-blue">Lê Quang Huy </span>
+                                            <small>(Huy FPT)</small>
+                                        </div>
+                                        <div class="modal-pick-student__icon float-right text-center">
+                                            <span class="hg-icon icon-plus"></span>
+                                        </div>
+                                    </div>
+                                    <div class="modal-list__item modal-pick-student row">
+                                        <div class="modal-pick-student__student-name">
+                                            <span class="text-blue">Lê Quang Huy </span>
+                                            <small>(Huy FPT)</small>
+                                        </div>
+                                        <div class="modal-pick-student__icon float-right text-center">
+                                            <span class="hg-icon icon-plus"></span>
+                                        </div>
+                                    </div>
+                                    <div class="modal-list__item modal-pick-student row">
+                                        <div class="modal-pick-student__student-name">
+                                            <span class="text-blue">Lê Quang Huy </span>
+                                            <small>(Huy FPT)</small>
+                                        </div>
+                                        <div class="modal-pick-student__icon float-right text-center">
+                                            <span class="hg-icon icon-plus"></span>
+                                        </div>
+                                    </div>
+                                    <div class="modal-list__item modal-pick-student row">
+                                        <div class="modal-pick-student__student-name">
+                                            <span class="text-blue">Lê Quang Huy </span>
+                                            <small>(Huy FPT)</small>
+                                        </div>
+                                        <div class="modal-pick-student__icon float-right text-center">
+                                            <span class="hg-icon icon-plus"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="update-add-student-scroll-list">
+                                <div class="student-scroll-list__header">
+                                    <span class="hg-icon icon-search mr-3"></span>
+                                    <input class="mn-content-search-input" type="text" name="search-key-word" placeholder="Tìm kiếm">
+                                </div>
+                                <div class="modal-list-scroll">
+                                    <div class="modal-list__item modal-pick-student row">
+                                        <div class="modal-pick-student__student-name">
+                                            <span class="text-blue">Lê Quang Huy </span>
+                                            <small>(Huy FPT)</small>
+                                        </div>
+                                        <div class="modal-pick-student__icon float-right text-center">
+                                            <span class="hg-icon icon-close icon-red"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="../../assets/js/modules_script.js"></script>
+</html>
