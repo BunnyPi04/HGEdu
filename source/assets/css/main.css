@@ -3539,6 +3539,27 @@ textarea:focus, input:focus {
     width: 25px;
     height: 25px;
 }
+.library-search-bar .mn-content-time-table-header.class-time-table-container {
+    grid-template-columns: 65px 135px 130px 130px 130px 160px auto;
+}
+.library-search-bar .mn-content-time-table-header.class-time-table-container .select-box__current .select2-container {
+    width: 100%;
+    height: auto;
+}
+.library-search-bar .mn-content-time-table-header.class-time-table-container .select-box__current .select2-container .select2-selection--multiple {
+    border: none;
+    width: 100% !important;
+}
+.library-search-bar .mn-content-time-table-header.class-time-table-container .select-box__current .select2-search__field {
+    width: 100% !important;
+}
+.library-search-bar .mn-content-time-table-header.class-time-table-container .select-box__current .select2-container .select2-selection--multiple span {
+    height: auto;
+    width: auto;
+}
+.select2-dropdown--below .select2-results {
+    width: 100%;
+}
 .library-content-area .select-box {
     min-width: unset;
     border: 1px solid var(--light-grey);
@@ -5142,7 +5163,7 @@ a[data-toggle="collapse"][aria-expanded="true"] span {
     height: 22px;
     vertical-align: middle;
 }
-.group-list-joined .back-icon {
+.group-list-joined .back-icon, .class-mn .back-icon {
     top: 38px;
 }
 .group-list-joined .back-icon .hg-icon {
@@ -6770,6 +6791,59 @@ textarea {
 }
 .mt-05 {
     margin-top: 0.5rem;
+}
+.class-function-action {
+    position: absolute;
+    right: 30px;
+    top: 30px;
+}
+.class-function-action .hg-icon {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+.class-function-action .hg-icon.icon-setting {
+    background-size: 143%;
+    background-position: -5px -5px;
+    margin-left: 8px;
+    padding: 5px 0;
+}
+.class-function-action ul {
+    position: relative;
+    list-style: none;
+    font-size: 18px;
+    font-family: Effra;
+    text-align: center;
+}
+.class-function-action ul .txt {
+    padding-right: 10px;
+}
+.class-function-action ul li:first-of-type {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.class-function-action ul li:last-child {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.class-function-action ul li:not(:last-child) {
+    border-bottom: 1px solid var(--bg-light-grey);
+}
+.class-function-action ul li {
+    display: none;
+    color: var(--black);
+    cursor: pointer;
+    background-color: white;
+    padding: 5px 10px;
+    box-shadow: 0 3px 6px var(--shadow);
+}
+.class-function-action ul li:hover {
+    background: var(--bg-light-blue);
+    /*color: white;*/
+}
+.class-function-action ul:hover li {
+    display: block;
 }
 
 @-webkit-keyframes HideList {
