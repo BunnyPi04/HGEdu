@@ -1676,6 +1676,9 @@ textarea:focus, input:focus {
 .unset-height {
     height: unset !important;
 }
+.unset-min-width {
+    min-width: unset !important;
+}
 .cursor-pointer {
     cursor: pointer
 }
@@ -2957,7 +2960,7 @@ textarea:focus, input:focus {
     padding: 7px 15px;
     border: 1px solid var(--grey);
     border-radius: 5px;
-    padding-right: 50px;
+    padding-right: 40px;
 }
 .select-time .hg-icon {
     width: 25px;
@@ -2991,6 +2994,9 @@ textarea:focus, input:focus {
 }
 .class-tab .mn-content-time-table-header {
     grid-template-columns: auto auto auto auto auto;
+}
+.class-tab .mn-content-time-table-header {
+    padding-bottom: 40px !important;
 }
 .mn-content-time-table-header.disable {
     opacity: 0.5;
@@ -3034,8 +3040,8 @@ textarea:focus, input:focus {
     cursor: pointer;
 }
 .time-table-button__container .hg-icon {
-    width: 22px;
-    height: 22px;
+    width: 20px;
+    height: 20px;
     vertical-align: middle;
 }
 .time-table-button__container--text {
@@ -3048,12 +3054,15 @@ textarea:focus, input:focus {
     display: grid;
     align-items: center;
 }
+.add-class-filter-title h5 {
+    font-size: 18px;
+}
 .mn-content-time-table__body {
     overflow: auto;
     max-height: calc(100vh - 350px);
 }
 .list-class__item {
-    display: flex;
+    display: grid;
     background: white;
     border-radius: 10px;
     box-shadow: 0px 2px 6px var(--light-grey);
@@ -3061,6 +3070,7 @@ textarea:focus, input:focus {
     padding: 8px;
     margin-bottom: 15px;
     font-size: 0.9rem;
+    grid-template-columns: 55px 120px 200px auto;
 }
 .list-class__item-delete {
     text-align: center;
@@ -3090,7 +3100,7 @@ textarea:focus, input:focus {
     font-family: Effra;
 }
 .list-class__item-date {
-    width: 100px;
+    width: 120px;
 }
 .list-class__item-time {
     width: 200px;
@@ -3107,6 +3117,7 @@ textarea:focus, input:focus {
     transform: translateY(100%);
     left: 0;
     width: 100%;
+    font-size: 16px;
 }
 .max-overflow {
     max-height: calc(100vh - 300px);
@@ -4716,7 +4727,7 @@ a[data-toggle="collapse"][aria-expanded="true"] span {
 }
 .library-side-tree-view {
     overflow: auto;
-    height: calc(100vh - 220px);
+    height: calc(100vh - 160px);
 }
 .library-side-tree-view>ul {
     width: 266px;
@@ -5641,7 +5652,7 @@ a[data-toggle="collapse"][aria-expanded="true"] span {
     vertical-align: middle;
 }
 .noti-date, .noti-parent, .noti-student {
-    text-align: center;
+    text-align: left;
 }
 .noti-check {
     display: block;
@@ -6187,6 +6198,10 @@ a[data-toggle="collapse"][aria-expanded="true"] span {
 .student-noti-pop-up.modal-box.modal-large .row:not(:last-child) {
     border-bottom: 1px solid var(--light-grey);
 }
+.student-noti-pop-up .modal-header div:first-child {
+    display: flex;
+    align-items: center;
+}
 .full-page.error, .full-page.ready {
     width: 100vw;
     height: 100vh;
@@ -6233,7 +6248,7 @@ a[data-toggle="collapse"][aria-expanded="true"] span {
     border-bottom: 1px solid var(--black);
 }
 .exam-overview__student-id {
-    font-size: 20px;
+    font-size: 18px;
     line-height: 32px;
     font-family: Effra;
 }
@@ -6484,7 +6499,7 @@ a[data-toggle="collapse"][aria-expanded="true"] span {
 .exam-result .mark-title div {
     vertical-align: middle;
     display: inline;
-    font-size: 24px;
+    font-size: 22px;
     font-family: Effra;
 }
 .exam-result .mark-container .mark {
@@ -6801,7 +6816,7 @@ textarea {
     width: 20px;
     height: 20px;
     vertical-align: middle;
-    margin-right: 10px;
+    margin-right: 7px;
 }
 .class-function-action .hg-icon.icon-setting {
     background-size: 143%;
@@ -6814,7 +6829,7 @@ textarea {
     list-style: none;
     font-size: 18px;
     font-family: Effra;
-    text-align: center;
+    text-align: right;
 }
 .class-function-action ul .txt {
     padding-right: 10px;
@@ -6822,6 +6837,7 @@ textarea {
 .class-function-action ul li:first-of-type {
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
+    margin-top: 5px;
 }
 .class-function-action ul li:last-child {
     border-bottom-left-radius: 10px;
@@ -6837,6 +6853,7 @@ textarea {
     background-color: white;
     padding: 5px 10px;
     box-shadow: 0 3px 6px var(--shadow);
+    text-align: center;
 }
 .class-function-action ul li:hover {
     background: var(--bg-light-blue);
@@ -6844,6 +6861,9 @@ textarea {
 }
 .class-function-action ul:hover li {
     display: block;
+}
+.parent .mn-content-search.pr-4, .student .mn-content-search.pr-4 {
+    padding-right: 1.5rem!important;
 }
 
 @-webkit-keyframes HideList {
