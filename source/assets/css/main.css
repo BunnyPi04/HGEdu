@@ -220,6 +220,12 @@ span {
 .icon-contact.icon-active, .sidebar .active>.icon-contact {
     background-image: url('../images/app/162.png');
 }
+.icon-mod-bubble {
+    background-image: url('../images/app/160.png');
+}
+.icon-mod-bubble.icon-active, .sidebar .active>.icon-mod-bubble {
+    background-image: url('../images/app/159.png');
+}
 .icon-qr {
     background-image: url('../images/app/165.png');
 }
@@ -663,8 +669,15 @@ span {
 .icon-list.icon-active {
     background-image: url('../images/app/83.png');
 }
-.icon-statistic {
+.icon-statistic, .sidebar .active>.icon-statistic  {
     background-image: url('../images/app/89.png');
+    background-size: 83%;
+    background-position: center center;
+}
+.icon-statistic, .sidebar .icon-statistic {
+    background-image: url('../images/app/183.png');
+    background-size: 83%;
+    background-position: center center;
 }
 .icon-reply, .icon-reply.icon-active {
     background-image: url('../images/app/reply.png');
@@ -1513,6 +1526,7 @@ span {
     --light-green: #83c7c1;
     --red: #e82020;
     --bg-light-red: #fccccc;
+    --orange: #E81919;
     --light-grey: #bebebe;
     --bg-grey: #f6f6f6;
     --bg-dark-grey: #f2f2f2;
@@ -1684,6 +1698,9 @@ textarea:focus, input:focus {
 }
 .btn {
     text-transform: none;
+}
+.position-relative {
+    position: relative;
 }
 .btn-primary {
     background-color: var(--blue) !important;
@@ -6864,6 +6881,78 @@ textarea {
 }
 .parent .mn-content-search.pr-4, .student .mn-content-search.pr-4 {
     padding-right: 1.5rem!important;
+}
+.class-mn.parent .mn-content {
+    position: relative;
+}
+.empty-item-area {
+    position: absolute;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+}
+.empty-item-area img {
+    width: 129px;
+    margin-bottom: 10px;
+}
+.empty-item-area .txt {
+    color: var(--orange);
+    font-size: 22px;
+    font-family: Effra;
+}
+.admin .account-list-header.function-account {
+    grid-template-columns: 95px auto 150px 250px 350px;
+    color: var(--blue);
+    margin: 0 20px 0 1.5rem !important;
+    width: unset;
+    padding-right: 0;
+}
+.admin .account-list-header.function-account .select-box {
+    font-size: 18px;
+    font-family: Effra;
+    line-height: 20px;
+    min-width: unset;
+    width: 240px;
+    float: right;
+}
+.admin .account-list-header.function-account .select-box .select-box__list li {
+    position: relative;
+}
+.admin .account-list-header.function-account .select-box .select-box__list li:not(:last-child):before {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    height: 1px;
+    width: 96%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    background-color: var(--grey);
+}
+.admin .account-list-header.function-account .select-box .select-box__input-text {
+    background-color: var(--bg-light-grey);
+    padding: 3px 15px;
+}
+.admin .account-list.function-account {
+    padding-left: 26px;
+    padding-right: 20px;
+}
+.admin .account-list.function-account .list-item:not(.header) {
+    grid-template-columns: 95px auto 150px 250px 350px;
+    padding-right: 0;
+}
+.admin .account-list.function-account .list-item:not(.header) div:last-child {
+    text-align: right;
+    padding-right: 20px;
+}
+.admin .account-list.function-account .list-item:not(.header) .function-account-matrix .hg-icon {
+    width: 32px;
+    height: 32px;
+    margin-left: 0;
+    margin-right: 15px;
 }
 
 @-webkit-keyframes HideList {

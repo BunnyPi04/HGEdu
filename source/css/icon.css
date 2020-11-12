@@ -98,6 +98,12 @@ span {
 .icon-contact.icon-active, .sidebar .active>.icon-contact {
     background-image: url('../images/app/162.png');
 }
+.icon-mod-bubble {
+    background-image: url('../images/app/160.png');
+}
+.icon-mod-bubble.icon-active, .sidebar .active>.icon-mod-bubble {
+    background-image: url('../images/app/159.png');
+}
 .icon-qr {
     background-image: url('../images/app/165.png');
 }
@@ -541,8 +547,15 @@ span {
 .icon-list.icon-active {
     background-image: url('../images/app/83.png');
 }
-.icon-statistic {
+.icon-statistic, .sidebar .active>.icon-statistic  {
     background-image: url('../images/app/89.png');
+    background-size: 83%;
+    background-position: center center;
+}
+.icon-statistic, .sidebar .icon-statistic {
+    background-image: url('../images/app/183.png');
+    background-size: 83%;
+    background-position: center center;
 }
 .icon-reply, .icon-reply.icon-active {
     background-image: url('../images/app/reply.png');
