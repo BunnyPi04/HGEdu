@@ -3509,6 +3509,9 @@ a[data-toggle="collapse"][aria-expanded="true"] span {
 .modal-simple {
     max-width: 600px;
 }
+.modal-600 {
+    width: 600px;
+}
 .modal-warning {
     width: 800px;
 }
@@ -5436,6 +5439,53 @@ textarea {
     height: 32px;
     margin-left: 0;
     margin-right: 15px;
+    cursor: pointer;
+}
+.admin .mn-tab .nav-tabs {
+    font-family: Effra;
+    font-size: 18px;
+}
+.admin .mn-tab .nav-tabs .hg-icon {
+    width: 26px;
+    height: 26px;
+}
+.admin .mn-tab .nav-tabs .nav-item:hover .hg-icon.icon-vip {
+    background-image: url(../images/app/158.png);
+}
+.admin .mn-tab .nav-tabs .nav-item:hover .hg-icon.icon-account {
+    background-image: url(../images/app/27.png);
+}
+.admin .account-list-header {
+    font-size: 18px;
+}
+.admin .list-container .icon-lock {
+    width: 23px;
+    height: 23px;
+}
+.change-id .modal-header {
+    font-family: Effra;
+}
+.change-id .modal-header .modal-title {
+    font-size: 22px;
+}
+.change-id .modal-header .modal-confirm {
+    font-size: 20px;
+}
+.change-id .modal-body {
+    padding-right: 30px;
+}
+.change-id .modal-body>div {
+    display: grid;
+    grid-template-columns: 90px auto;
+    grid-gap: 15px;
+    padding-left: 30px;
+}
+.change-id .modal-body>div .modal-label {
+    text-align: left;
+}
+.change-id .error-message, .change-id .available-message {
+    font-family: Effra;
+    font-size: 18px;
 }
 
 @-webkit-keyframes HideList {
