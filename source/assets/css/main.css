@@ -720,6 +720,12 @@ span {
 .icon-setting.icon-green {
     background-image: url('../images/app/134.png');
 }
+.icon-medal {
+    background-image: url('../images/app/medal.png');
+}
+.icon-medal.disable {
+    background-image: url('../images/app/medal_1.png');
+}
 
 .math {
     background-image: url('../images/app/function.png');
@@ -3585,6 +3591,8 @@ textarea:focus, input:focus {
 .library-search-bar .mn-content-time-table-header.class-time-table-container .select-box__current .select2-container .select2-selection--multiple {
     border: none;
     width: 100% !important;
+    height: 37px;
+    line-height: 23px;
 }
 .library-search-bar .mn-content-time-table-header.class-time-table-container .select-box__current .select2-search__field {
     width: 100% !important;
@@ -3902,6 +3910,7 @@ label[for="file-input"] {
 }
 .error-message {
     font-size: 18px;
+    font-family: Effra
 }
 .contact-list .mn-tab .nav-tabs .nav-link .hg-icon {
     left: 0;
@@ -7071,6 +7080,52 @@ button.btn.btn-primary.fixed-send-announcement-icon:active {
 .services .list-container.account-list .list-item>div:not(:first-child) {
     padding-right: 10px;
 }
+.library-side-bar__tab-header.with-select-box {
+    height: 122px;
+}
+.library-side-bar__tab-header.with-select-box .select-box {
+    /*width: 200px;*/
+    min-width: unset;
+    height: 34px;
+    margin-bottom: 16px;
+    font-size: 18px;
+    font-family: Effra;
+    color: var(--black);
+}
+.library-side-bar__tab-header.with-select-box .select-box .select-box__input-text {
+    background-color: transparent;
+    padding: 3px 15px;
+}
+.upload-video .modal-label {
+    float: none;
+    text-align: left;
+    line-height: 30px;
+    font-size: 22px;
+    font-family: Effra;
+}
+.upload-video .modal-confirm {
+    font-size: 20px;
+}
+.upload-video__input-video label {
+    border: 1px solid var(--green);
+    padding: 3px 20px;
+    font-family: Effra;
+    font-size: 22px;
+    border-radius: 4px;
+}
+.upload-video__input-video label .hg-icon {
+    width: 17px;
+    height: 17px;
+    margin-left: 60px;
+    vertical-align: middle;
+}
+.upload-video .modal-body {
+    padding: 15px 40px 10px;
+}
+.upload-video .modal-body>div:not(:first-child) .modal-label {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
 
 @-webkit-keyframes HideList {
     from {
@@ -7159,7 +7214,7 @@ input[type=radio]:checked~.custom-control-label.green::before {
 .treeview .folder {
     position: relative;
 }
-.treeview .folder span.hg-icon {
+.treeview .folder span.hg-icon, .treeview .file span.hg-icon {
     width: 23px;
     height: 23px;
     margin-left: 24px;

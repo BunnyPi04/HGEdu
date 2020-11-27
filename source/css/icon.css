@@ -598,6 +598,12 @@ span {
 .icon-setting.icon-green {
     background-image: url('../images/app/134.png');
 }
+.icon-medal {
+    background-image: url('../images/app/medal.png');
+}
+.icon-medal.disable {
+    background-image: url('../images/app/medal_1.png');
+}
 
 .math {
     background-image: url('../images/app/function.png');

@@ -23,7 +23,7 @@
 .treeview .folder {
     position: relative;
 }
-.treeview .folder span.hg-icon {
+.treeview .folder span.hg-icon, .treeview .file span.hg-icon {
     width: 23px;
     height: 23px;
     margin-left: 24px;
