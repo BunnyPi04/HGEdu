@@ -62,43 +62,46 @@
             <div class="library-side-bar">
                 <!-- Start header area -->
                 <div class="mn-main-header">
-                    <div class="mn-tab text-right float-right library-side-bar__main-tab" style="visibility: visible; animation-name: fadeInUp;">
-                        <ul class="nav nav-tabs border-0 d-inline-block" role="tablist">
-                            <li class="nav-item d-inline-block border-0 active">
-                                <a class="tab-blue nav-link active" data-toggle="tab" href="#list1" role="tab" aria-selected="false">
-                                    <span></span>
-                                </a>
-                            </li>
-                            <li class="nav-item d-inline-block border-0">
-                                <a class="tab-red nav-link" data-toggle="tab" href="#list2" role="tab" aria-selected="true">
-                                    <span></span>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
                 </div>
                 <!-- End header area -->
 
                 <!-- Start content area -->
                 <div class="mn-content">
                     <div class="tab-pane fade active show in" id="list1" role="tabpanel"> <!-- Tab 1 -->
-                        <div class="library-side-bar__tab-header blue-tab">
+                        <div class="library-side-bar__tab-header with-select-box blue-tab">
                             <h4 class="px-4">Thư viện cá nhân</h4>
-                            <div class="library-tab-small pl-4 pr-3">
-                                <div class="float-left">
-                                    <span class="hg-icon"></span>
+                            <div class="library-tab-small px-4">
+                                <div class="select-box">
+                                    <div class="select-box__current" tabindex="1">
+                                        <div class="select-box__value">
+                                            <input class="select-box__input" type="radio" id="q1" value="1" name="question2" checked="checked"/>
+                                            <p class="select-box__input-text">Câu hỏi đơn</p>
+                                        </div>
+                                        <div class="select-box__value">
+                                            <input class="select-box__input" type="radio" id="q2" value="2" name="question2"/>
+                                            <p class="select-box__input-text">Câu hỏi nhóm</p>
+                                        </div>
+                                        <span class="hg-icon icon-dropdown select-box__icon"></span>
+                                    </div>
+                                    <ul class="select-box__list">
+                                        <li>
+                                            <label class="select-box__option" for="q1" aria-hidden="aria-hidden">Câu hỏi đơn</label>
+                                        </li>
+                                        <li>
+                                            <label class="select-box__option" for="q2" aria-hidden="aria-hidden">Câu hỏi nhóm</label>
+                                        </li>
+                                    </ul>
                                 </div>
-                                <div class="float-right"></div>
                             </div>
                             <div class="mn-tab library-side-bar__sub-tab" style="visibility: visible; animation-name: fadeInUp;">
                                 <ul class="nav nav-tabs border-0 w-100" role="tablist">
                                     <li class="nav-item d-inline-block border-0 active">
-                                        <a class="tab-blue nav-link active" data-toggle="tab" href="#list-question1" role="tab" aria-selected="false">
+                                        <a class="tab-blue nav-link active" data-toggle="tab" href="#list-question" role="tab" aria-selected="false">
                                             Câu hỏi
                                         </a>
                                     </li>
                                     <li class="nav-item d-inline-block border-0">
-                                        <a class="tab-red nav-link" data-toggle="tab" href="#list-exam1" role="tab" aria-selected="true">
+                                        <a class="tab-red nav-link" data-toggle="tab" href="#list-exam" role="tab" aria-selected="true">
                                             Đề thi
                                         </a>
                                     </li>
@@ -402,336 +405,6 @@
                                             </li>
                                         </ul>
                                     </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-
-
-
-                    <div class="tab-pane fade" id="list2" role="tabpanel"> <!-- Tab 2 -->
-                        <div class="library-side-bar__tab-header with-select-box">
-                            <h4 class="text-red px-4">Thư viện chung</h4>
-                            <div class="library-tab-small px-4">
-                                <div class="select-box">
-                                    <div class="select-box__current" tabindex="1">
-                                        <div class="select-box__value">
-                                            <input class="select-box__input" type="radio" id="q1" value="1" name="question2" checked="checked"/>
-                                            <p class="select-box__input-text">Câu hỏi đơn</p>
-                                        </div>
-                                        <div class="select-box__value">
-                                            <input class="select-box__input" type="radio" id="q2" value="2" name="question2"/>
-                                            <p class="select-box__input-text">Câu hỏi nhóm</p>
-                                        </div>
-                                        <span class="hg-icon icon-dropdown select-box__icon"></span>
-                                    </div>
-                                    <ul class="select-box__list">
-                                        <li>
-                                            <label class="select-box__option" for="q1" aria-hidden="aria-hidden">Câu hỏi đơn</label>
-                                        </li>
-                                        <li>
-                                            <label class="select-box__option" for="q2" aria-hidden="aria-hidden">Câu hỏi nhóm</label>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="mn-tab library-side-bar__sub-tab" style="visibility: visible; animation-name: fadeInUp;">
-                                <ul class="nav nav-tabs border-0 w-100" role="tablist">
-                                    <li class="nav-item d-inline-block border-0 active">
-                                        <a class="tab-blue nav-link active" data-toggle="tab" href="#list-question" role="tab" aria-selected="false">
-                                            Câu hỏi
-                                        </a>
-                                    </li>
-                                    <li class="nav-item d-inline-block border-0">
-                                        <a class="tab-red nav-link" data-toggle="tab" href="#list-exam" role="tab" aria-selected="true">
-                                            Đề thi
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="tab-pane fade active show in" id="list-question" role="tabpanel"> <!-- Tab 2 -->
-                                <div class="library-side-bar__tab-header border-0">
-                                    <!-- Treeview Start -->
-                                    <ul class="treeview">
-                                        <li class="extend">
-                                        <!-- Main Folder Start -->
-                                                                <li class="file">
-                                                                    <a class="text-red" href="#">
-                                                                        <span class="hg-icon icon-file icon-red"></span>
-                                                                        <span class="tree-view__folder-title">Este</span>
-                                                                    </a>
-                                                                </li>
-                                                                <li class="file">
-                                                                    <a href="#">
-                                                                        <span class="hg-icon icon-file"></span>
-                                                                        <span class="tree-view__folder-title">Kim loại</span>
-                                                                    </a>
-                                                                </li>
-                                            <label class="folder">
-                                                <input type="checkbox" name="extend">
-                                                <span class="hg-icon icon-folder"></span>
-                                                <span class="tree-view__folder-title">Lớp 10</span>
-                                                <ul>
-                                                    <li class="file">
-                                                        <a href="#">
-                                                            <span class="hg-icon icon-file"></span>
-                                                            <span class="tree-view__folder-title">Địa</span>
-                                                        </a>
-                                                    </li>
-                                                    <li class="file">
-                                                        <a href="#">
-                                                            <span class="hg-icon icon-file"></span>
-                                                            <span class="tree-view__folder-title">Sử</span>
-                                                        </a>
-                                                    </li>
-                                                </ul>
-                                            </label>
-                                        </li>
-
-                                        <li class="extend">
-                                            <label class="folder">
-                                                <input type="checkbox" name="extend">
-                                                <span class="hg-icon icon-folder"></span>
-                                                <span class="tree-view__folder-title">Lớp 11</span>
-                                                <ul>
-                                                    <li class="file">
-                                                        <a href="#">
-                                                            <span class="hg-icon icon-file"></span>
-                                                            <span class="tree-view__folder-title">Văn</span>
-                                                        </a>
-                                                    </li>
-                                                    <li class="file">
-                                                        <a href="#">
-                                                            <span class="hg-icon icon-file"></span>
-                                                            <span class="tree-view__folder-title">GDCD</span>
-                                                        </a>
-                                                    </li>
-                                                </ul>
-                                            </label>
-                                        </li>
-
-                                        <!-- Main Folder Start -->
-                                        <li class="extend">
-                                            <label class="folder">
-                                                <input type="checkbox" name="extend" checked>
-                                                <span class="hg-icon icon-folder"></span>
-                                                <span class="tree-view__folder-title">Lớp 12</span>
-                                                <ul>
-                                                    <li class="extend">
-                                                        <label class="folder">
-                                                            <input type="checkbox" name="extend">
-                                                            <span class="hg-icon icon-folder"></span>
-                                                            <span class="tree-view__folder-title">Toán</span>
-                                                            <ul>
-                                                                <li class="file">
-                                                                    <a href="#">
-                                                                        <span class="hg-icon icon-file"></span>
-                                                                        <span class="tree-view__folder-title">Phương trình bậc 2</span>
-                                                                    </a>
-                                                                </li>
-                                                                <!-- Core Module Folder Start -->
-                                                                <li class="extend">
-                                                                    <label class="folder">
-                                                                        <input type="checkbox" name="extend">
-                                                                        <span class="hg-icon icon-folder"></span>
-                                                                        <span class="tree-view__folder-title">Hình học</span>
-                                                                        <ul>
-                                                                            <li class="file">
-                                                                                <a href="#">
-                                                                                    <span class="hg-icon icon-file"></span>
-                                                                                    <span class="tree-view__folder-title">Hình học không gian</span>
-                                                                                </a>
-                                                                            </li>
-                                                                            <li class="file">
-                                                                                <a href="#">
-                                                                                    <span class="hg-icon icon-file"></span>
-                                                                                    <span class="tree-view__folder-title">Hình học phẳng</span>
-                                                                                </a>
-                                                                            </li>
-                                                                        </ul>
-                                                                    </label>
-                                                                </li>
-                                                                <!-- Core Module Folder End -->
-                                                                <li class="file">
-                                                                    <a href="#">
-                                                                        <span class="hg-icon icon-file"></span>
-                                                                        <span class="tree-view__folder-title">Bất đẳng thức</span>
-                                                                    </a>
-                                                                </li>
-                                                            </ul>
-                                                        </label>
-                                                    </li>
-
-                                                    <li class="file">
-                                                        <a href="#">
-                                                            <span class="hg-icon icon-file"></span>
-                                                            <span class="tree-view__folder-title">Địa</span>
-                                                        </a>
-                                                    </li>
-
-                                                    <li class="extend" checked>
-                                                        <label class="folder">
-                                                            <input type="checkbox" name="extend" checked>
-                                                            <span class="hg-icon icon-folder"></span><span class="tree-view__folder-title">Hóa</span>
-                                                            <ul>
-                                                                <li class="file">
-                                                                    <a class="text-red" href="#">
-                                                                        <span class="hg-icon icon-file icon-red"></span>
-                                                                        <span class="tree-view__folder-title">Este</span>
-                                                                    </a>
-                                                                </li>
-                                                                <li class="file">
-                                                                    <a href="#">
-                                                                        <span class="hg-icon icon-file"></span>
-                                                                        <span class="tree-view__folder-title">Kim loại</span>
-                                                                    </a>
-                                                                </li>
-                                                                <!-- Core Module Folder End -->
-                                                            </ul>
-                                                        </label>
-                                                    </li>
-                                                </ul>
-                                            </label>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="tab-pane fade" id="list-exam" role="tabpanel"> <!-- Tab 1 -->
-                                <div class="library-side-bar__tab-header border-0">
-                                    <!-- Treeview Start -->
-                                    <ul class="treeview">
-                                        <!-- Main Folder Start -->
-                                        <li class="extend">
-                                            <label class="folder">
-                                                <input type="checkbox" name="extend">
-                                                <span class="hg-icon icon-folder"></span>
-                                                <span class="tree-view__folder-title">Lớp 10</span>
-                                                <ul>
-                                                    <li class="file">
-                                                        <a href="#">
-                                                            <span class="hg-icon icon-file"></span>
-                                                            <span class="tree-view__folder-title">Địa</span>
-                                                        </a>
-                                                    </li>
-                                                    <li class="file">
-                                                        <a href="#">
-                                                            <span class="hg-icon icon-file"></span>
-                                                            <span class="tree-view__folder-title">Sử</span>
-                                                        </a>
-                                                    </li>
-                                                </ul>
-                                            </label>
-                                        </li>
-
-                                        <li class="extend">
-                                            <label class="folder">
-                                                <input type="checkbox" name="extend">
-                                                <span class="hg-icon icon-folder"></span>
-                                                <span class="tree-view__folder-title">Lớp 11</span>
-                                                <ul>
-                                                    <li class="file">
-                                                        <a href="#">
-                                                            <span class="hg-icon icon-file"></span>
-                                                            <span class="tree-view__folder-title">Văn</span>
-                                                        </a>
-                                                    </li>
-                                                    <li class="file">
-                                                        <a href="#">
-                                                            <span class="hg-icon icon-file"></span>
-                                                            <span class="tree-view__folder-title">GDCD</span>
-                                                        </a>
-                                                    </li>
-                                                </ul>
-                                            </label>
-                                        </li>
-
-                                        <!-- Main Folder Start -->
-                                        <li class="extend">
-                                            <label class="folder">
-                                                <input type="checkbox" name="extend" checked>
-                                                <span class="hg-icon icon-folder"></span>
-                                                <span class="tree-view__folder-title">Lớp 12</span>
-                                                <ul>
-                                                    <li class="extend">
-                                                        <label class="folder">
-                                                            <input type="checkbox" name="extend">
-                                                            <span class="hg-icon icon-folder"></span>
-                                                            <span class="tree-view__folder-title">Toán</span>
-                                                            <ul>
-                                                                <li class="file">
-                                                                    <a href="#">
-                                                                        <span class="hg-icon icon-file"></span>
-                                                                        <span class="tree-view__folder-title">Phương trình bậc 2</span>
-                                                                    </a>
-                                                                </li>
-                                                                <!-- Core Module Folder Start -->
-                                                                <li class="extend">
-                                                                    <label class="folder">
-                                                                        <input type="checkbox" name="extend">
-                                                                        <span class="hg-icon icon-folder"></span>
-                                                                        <span class="tree-view__folder-title">Hình học</span>
-                                                                        <ul>
-                                                                            <li class="file">
-                                                                                <a href="#">
-                                                                                    <span class="hg-icon icon-file"></span>
-                                                                                    <span class="tree-view__folder-title">Hình học không gian</span>
-                                                                                </a>
-                                                                            </li>
-                                                                            <li class="file">
-                                                                                <a href="#">
-                                                                                    <span class="hg-icon icon-file"></span>
-                                                                                    <span class="tree-view__folder-title">Hình học phẳng</span>
-                                                                                </a>
-                                                                            </li>
-                                                                        </ul>
-                                                                    </label>
-                                                                </li>
-                                                                <!-- Core Module Folder End -->
-                                                                <li class="file">
-                                                                    <a href="#">
-                                                                        <span class="hg-icon icon-file"></span>
-                                                                        <span class="tree-view__folder-title">Bất đẳng thức</span>
-                                                                    </a>
-                                                                </li>
-                                                            </ul>
-                                                        </label>
-                                                    </li>
-
-                                                    <li class="file">
-                                                        <a href="#">
-                                                            <span class="hg-icon icon-file"></span>
-                                                            <span class="tree-view__folder-title">Địa</span>
-                                                        </a>
-                                                    </li>
-
-                                                    <li class="extend" checked>
-                                                        <label class="folder">
-                                                            <input type="checkbox" name="extend" checked>
-                                                            <span class="hg-icon icon-folder"></span><span class="tree-view__folder-title">Hóa</span>
-                                                            <ul>
-                                                                <li class="file">
-                                                                    <a class="text-red" href="#">
-                                                                        <span class="hg-icon icon-file icon-red"></span>
-                                                                        <span class="tree-view__folder-title">Este</span>
-                                                                    </a>
-                                                                </li>
-                                                                <li class="file">
-                                                                    <a href="#">
-                                                                        <span class="hg-icon icon-file"></span>
-                                                                        <span class="tree-view__folder-title">Kim loại</span>
-                                                                    </a>
-                                                                </li>
-                                                                <!-- Core Module Folder End -->
-                                                            </ul>
-                                                        </label>
-                                                    </li>
-                                                </ul>
-                                            </label>
-                                        </li>
-                                    </ul>
                                 </div>
                             </div>
                         </div>
