@@ -604,6 +604,12 @@ span {
 .icon-medal.disable {
     background-image: url('../images/app/medal_1.png');
 }
+.icon-youtube.disable {
+    background-image: url('../images/app/youtube_2.png');
+}
+.icon-youtube.active {
+    background-image: url('../images/app/youtube_1.png');
+}
 
 .math {
     background-image: url('../images/app/function.png');

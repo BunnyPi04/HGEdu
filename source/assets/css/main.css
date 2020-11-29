@@ -726,6 +726,12 @@ span {
 .icon-medal.disable {
     background-image: url('../images/app/medal_1.png');
 }
+.icon-youtube.disable {
+    background-image: url('../images/app/youtube_2.png');
+}
+.icon-youtube.active {
+    background-image: url('../images/app/youtube_1.png');
+}
 
 .math {
     background-image: url('../images/app/function.png');
@@ -2518,6 +2524,14 @@ textarea:focus, input:focus {
 }
 .mn-tab .nav-link.active .hg-icon.icon-card-tab, .mn-tab .nav-link:hover .hg-icon.icon-card-tab {
     background-image: url(../images/app/106.png);
+}
+.mn-tab .nav-link.active .hg-icon.icon-medal, .mn-tab .nav-link:hover .hg-icon.icon-medal {
+    background-image: url(../images/app/medal.png);
+}
+.mn-tab .nav-link.active .hg-icon.icon-youtube, .mn-tab .nav-link:hover .hg-icon.icon-youtube {
+    background-image: url(../images/app/youtube_1.png);
+    background-position-y: 4px;
+    background-size: 105%;
 }
 .modal__popup__input-container {
     display: grid;
@@ -7125,6 +7139,56 @@ button.btn.btn-primary.fixed-send-announcement-icon:active {
 .upload-video .modal-body>div:not(:first-child) .modal-label {
     margin-top: 10px;
     margin-bottom: 10px;
+}
+.dragable-list.video-list {
+    padding: 16px 42px 16px 23px;
+}
+.video-list .video-item {
+    display: grid;
+    grid-template-columns: 22px 175px auto 50px;
+    box-shadow: 0 0px 6px var(--shadow);
+    border-radius: 8px;
+    padding: 5px 0px;
+    margin-bottom: 20px;
+    background-color: white;
+}
+.video-list .video-item div {
+    display: flex;
+    align-items: center;
+}
+.video-list .video-item__drag-icon {
+    border-right: 1px solid var(--light-grey);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    cursor: pointer;
+}
+.video-list .video-item__video {
+    padding: 15px 19px;
+}
+.video-list .video-item__video .video-thumb {
+    width: 135px;
+    height: 76px;
+    border-radius: 5px;
+    border: 1px solid var(--black);
+}
+.video-list .video-item__title {
+    display: flex;
+    align-items: center;
+    padding: 0 15px 0 5px;
+    font-size: 25px;
+    color: var(--black);
+}
+.video-list .video-item__action {
+    display: flex;
+    align-items: center;
+    padding-right: 26px;
+}
+.video-list .video-item__action .hg-icon {
+    width: 21px;
+    height: 21px;
 }
 
 @-webkit-keyframes HideList {
