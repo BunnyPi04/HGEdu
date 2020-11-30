@@ -610,6 +610,9 @@ span {
 .icon-youtube.active {
     background-image: url('../images/app/youtube_1.png');
 }
+.icon-upload-bg {
+    background-image: url('../images/app/131.png');
+}
 
 .math {
     background-image: url('../images/app/function.png');

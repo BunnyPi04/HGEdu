@@ -732,6 +732,9 @@ span {
 .icon-youtube.active {
     background-image: url('../images/app/youtube_1.png');
 }
+.icon-upload-bg {
+    background-image: url('../images/app/131.png');
+}
 
 .math {
     background-image: url('../images/app/function.png');
@@ -1547,6 +1550,7 @@ span {
     --bg-dark-grey: #f2f2f2;
     --border-light-grey: #eeeeef;
     --border-grey: #f3f3f3;
+    --upload-progress: #e1e1e1;
     --pink: #f93da5;
     --aqua: #2db2e6;
     --yellow: #efe120;
@@ -7173,6 +7177,27 @@ button.btn.btn-primary.fixed-send-announcement-icon:active {
     height: 76px;
     border-radius: 5px;
     border: 1px solid var(--black);
+    position: relative;
+}
+.video-list .video-thumb .upload-progress-bg {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    border-radius: 5px;
+    background-color: var(--upload-progress);
+}
+.video-list .video-thumb .upload-progress-percent {
+    position: absolute;
+    color: var(--blue);
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    display: block;
+    font-size: 28px;
 }
 .video-list .video-item__title {
     display: flex;
