@@ -1358,6 +1358,7 @@ textarea:focus, input:focus {
 .class-mn .list-item .hg-icon {
     width: 20px;
     height: 20px;
+    vertical-align: middle;
     /*margin-top: 5px;*/
 }
 .pop-up-add-student-to-class .modal-header {
@@ -1498,7 +1499,7 @@ textarea:focus, input:focus {
 .select-time .date-input {
     border: none;
     background-color: transparent;
-    width: 1.2em;
+    width: 1.4em;
 }
 .mn-content-time-table-header {
     display: grid;
@@ -5311,6 +5312,7 @@ textarea {
     padding-right: 10px;
     padding-left: 10px;
     padding-top: 10px;
+    font-family: Effra
 }
 .update-add-student-scroll-list .modal-list__item.modal-pick-student {
     margin: 5px 0;
@@ -5679,6 +5681,44 @@ button.btn.btn-primary.fixed-send-announcement-icon:active {
 .video-list .video-item__action .hg-icon {
     width: 21px;
     height: 21px;
+}
+.modal-role .modal-body .role-icon-container>div {
+    float: left;
+    padding: 20px;
+}
+.modal-role .modal-body .role-icon-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.modal-role .modal-body .role-icon-container>div .hg-icon {
+    width: 70px;
+    height: 70px;
+    cursor: pointer;
+}
+.modal-role .icon-qr:hover {
+    background-image: url('../images/app/166.png');
+}
+.modal-role .icon-library:hover {
+    background-image: url('../images/app/167.png');
+}
+.modal-role .icon-chat-bubble:hover {
+    background-image: url('../images/app/159.png');
+}
+.modal-role .icon-guide:hover {
+    background-image: url('../images/app/163.png');
+}
+.modal-role .modal-header {
+    display: grid;
+    grid-template-columns: 100px auto 100px;
+}
+.modal-role .modal-header>div:nth-child(2) .modal-title {
+    font-size: 26px;
+    color: var(--black);
+}
+.modal-role .modal-header>div:last-child {
+    text-align: right;
+    font-size: 18px;
 }
 
 @-webkit-keyframes HideList {

@@ -107,23 +107,35 @@ span {
 .icon-qr {
     background-image: url('../images/app/165.png');
 }
+.icon-qr.disable {
+    background-image: url('../images/app/188.png');
+}
 .icon-qr.icon-active {
     background-image: url('../images/app/166.png');
 }
 .icon-library {
     background-image: url('../images/app/168.png');
 }
+.icon-library.disable {
+    background-image: url('../images/app/189.png');
+}
 .icon-library.icon-active {
     background-image: url('../images/app/167.png');
 }
 .icon-chat-bubble {
-    background-image: url('../images/app/168.png');
+    background-image: url('../images/app/160.png');
+}
+.icon-chat-bubble.disable {
+    background-image: url('../images/app/185.png');
 }
 .icon-chat-bubble.icon-active {
-    background-image: url('../images/app/167.png');
+    background-image: url('../images/app/159.png');
 }
 .icon-guide {
     background-image: url('../images/app/164.png');
+}
+.icon-guide.disable {
+    background-image: url('../images/app/187.png');
 }
 .icon-guide.icon-active {
     background-image: url('../images/app/163.png');
