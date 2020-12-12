@@ -817,135 +817,219 @@ span {
     background-position-x: -535px;
 }
 .math.squareroot2 {
-    background-position-x: -5px;
+    background-image: url('../images/app/function/1/1sqrt.svg');
+    background-size: 65% auto;
+    background-position: center center;
+
     width: 40px;
     height: 50px;
-    background-size: auto 90%;
+    /*background-size: auto 90%;*/
+    /*background-position-x: -5px;*/
 }
 .math.squareroot3 {
-    background-position-x: -41px;
+    background-image: url('../images/app/function/1/2nth-root.svg');
+    background-size: 65% auto;
+    background-position: center center;
+
     width: 40px;
     height: 50px;
-    background-size: auto 90%;
+/*    background-size: auto 90%;
+    background-position-x: -41px;*/
 }
 .math.square1 {
-    background-position-x: -74px;
+    background-image: url('../images/app/function/1/3^.svg');
+    background-size: 48% auto;
+    background-position: center center;
+
     width: 36px;
     height: 50px;
+/*    background-position-x: -74px;
     background-size: auto 86%;
-    background-position-y: center;
+    background-position-y: center;*/
 }
 .math.square2 {
-    background-position-x: -109px;
+    background-image: url('../images/app/function/1/5^_.svg');
+    background-size: 48% auto;
+    background-position: center 54%;
+
     width: 36px;
     height: 50px;
-    background-size: auto 86%;
+/*    background-size: auto 86%;
     background-position-y: center;
+    background-position-x: -109px;*/
 }
 .math.square3 {
-    background-position-x: -144px;
+    background-image: url('../images/app/function/1/7_-.svg');
+    background-size: 30% auto;
+    background-position: center 75%;
+
     width: 36px;
     height: 50px;
-    background-size: auto 86%;
+/*    background-size: auto 86%;
     background-position-y: center;
+    background-position-x: -144px;*/
 }
 .math.square4 {
-    background-position-x: -213px;
+    background-image: url('../images/app/function/1/4_.svg');
+    background-size: 48% auto;
+    background-position: center 60%;
+
     width: 36px;
     height: 50px;
-    background-size: auto 86%;
+/*    background-size: auto 86%;
     background-position-y: center;
+    background-position-x: -213px;*/
 }
 .math.square5 {
-    background-position-x: -178px;
+    background-image: url('../images/app/function/1/6^-.svg');
+    background-size: 29% auto;
+    background-position: center 39%;
+
     width: 36px;
     height: 50px;
-    background-size: auto 86%;
-    background-position-y: center;
+/*    background-size: auto 86%;
+    background-position-x: -178px;
+    background-position-y: center;*/
 }
 .math.square6 {
-    background-position-x: -331px;
-    background-position-y: center;
+    background-image: url('../images/app/function/1/8^_-.svg');
+    background-size: 30% auto;
+    background-position: center 61%;
+
     width: 36px;
     height: 50px;
-    background-size: auto 113%;
+/*    background-size: auto 113%;
+    background-position-x: -331px;
+    background-position-y: center;*/
 }
 .math.square7 {
-    background-position-x: -328px;
+    background-image: url('../images/app/function/1/9a-b.svg');
+    background-size: 47% auto;
+    background-position: center center;
+
     width: 40px;
     height: 50px;
+    /*background-position-x: -328px;*/
 }
 .math.integral1 {
-    background-position-x: -367px;
+    background-image: url('../images/app/function/1/10∫.svg');
+    background-size: 42% auto;
+    background-position: center 59%;
+
     width: 40px;
     height: 50px;
+    /*background-position-x: -367px;*/
 }
 .math.lim {
-    background-position-x: -453px;
+    background-image: url('../images/app/function/1/11lim.svg');
+    background-size: 62% auto;
+    background-position: center 68%;
+
     width: 36px;
     height: 50px;
+    /*background-position-x: -453px;*/
 }
 .math.log {
-    background-position-x: -411px;
+    background-image: url('../images/app/function/1/12log.svg');
+    background-size: 77% auto;
+    background-position: center center;
+
     width: 36px;
     height: 50px;
+    /*background-position-x: -411px;*/
 }
 .math.sum1 {
-    background-position-x: -492px;
+    background-image: url('../images/app/function/1/13∑^_.svg');
+    background-size: 32% auto;
+    background-position: center center;
+
     width: 36px;
     height: 50px;
+    /*background-position-x: -492px;*/
 }
 .math.sum2 {
-    background-position-x: -492px;
+    background-image: url('../images/app/function/1/14∑_.svg');
+    background-size: 32% auto;
+    background-position: center center;
+
     width: 36px;
     height: 50px;
+    /*background-position-x: -492px;*/
 }
 .math.abs {
-    background-position-x: -533px;
+    background-image: url('../images/app/function/1/15abs.svg');
+    background-size: 57% auto;
+    background-position: center center;
+
     width: 36px;
     height: 50px;
+    /*background-position-x: -533px;*/
 }
 .math.integral2 {
-    background-position-x: -484px;
+    background-image: url('../images/app/function/1/16∫.svg');
+    background-size: 23% auto;
+    background-position: center 35%;
+
     width: 36px;
     height: 50px;
-    background-size: auto 86%;
+/*    background-size: auto 86%;
     background-position-y: center;
+    background-position-x: -484px;*/
 }
 .math.integral3 {
-    background-position-x: -525px;
+    background-image: url('../images/app/function/1/18∫∫.svg');
+    background-size: 37% auto;
+    background-position: center 35%;
+
     width: 36px;
     height: 50px;
-    background-size: auto 86%;
+/*    background-size: auto 86%;
     background-position-y: center;
+    background-position-x: -525px;*/
 }
 .math.integral4 {
-    background-position-x: -559px;
+    background-image: url('../images/app/function/1/20∫∫∫.svg');
+    background-size: 50% auto;
+    background-position: center 35%;
+
     width: 36px;
     height: 50px;
-    background-size: auto 86%;
+/*    background-size: auto 86%;
     background-position-y: center;
+    background-position-x: -559px;*/
 }
 .math.integral5 {
-    background-position-x: -664px;
+    background-image: url('../images/app/function/1/17∫ o.svg');
+    background-size: 23% auto;
+    background-position: center 35%;
+
     width: 36px;
     height: 50px;
-    background-size: auto 86%;
+/*    background-size: auto 86%;
     background-position-y: center;
+    background-position-x: -664px;*/
 }
 .math.integral6 {
-    background-position-x: -629px;
+    background-image: url('../images/app/function/1/19∫∫ o.svg');
+    background-size: 37% auto;
+    background-position: center 35%;
+
     width: 36px;
     height: 50px;
-    background-size: auto 86%;
+/*    background-size: auto 86%;
     background-position-y: center;
+    background-position-x: -629px;*/
 }
 .math.integral7 {
-    background-position-x: -594px;
+    background-image: url('../images/app/function/1/21∫∫∫ o.svg');
+    background-size: 50% auto;
+    background-position: center 35%;
+
     width: 36px;
     height: 50px;
-    background-size: auto 86%;
-    background-position-y: center;
+/*    background-size: auto 86%;
+    background-position-x: -594px;
+    background-position-y: center;*/
 }
 .math.integral8 {
     background-position-x: -1894px;
@@ -953,85 +1037,137 @@ span {
     height: 50px;
 }
 .math.matrix1 {
-    background-position-x: -856px;
+    background-image: url('../images/app/function/2/1.svg');
+    background-size: 70% auto;
+    background-position: center center;
+
     width: 36px;
     height: 50px;
+    /*background-position-x: -856px;*/
 }
 .math.matrix2 {
-    background-position-x: -897px;
+    background-image: url('../images/app/function/2/2().svg');
+    background-size: 92% auto;
+    background-position: center center;
+
     width: 36px;
     height: 50px;
+    /*background-position-x: -897px;*/
 }
 .math.matrix3 {
-    background-position-x: -936px;
+    background-image: url('../images/app/function/2/3[].svg');
+    background-size: 88% auto;
+    background-position: center center;
+
+    /*background-position-x: -936px;*/
     width: 36px;
     height: 50px;
 }
 .math.matrix4 {
-    background-position-x: -815px;
+    background-image: url('../images/app/function/2/4{}.svg');
+    background-size: 88% auto;
+    background-position: center center;
+
+    /*background-position-x: -815px;*/
     width: 36px;
     height: 50px;
 }
 .math.matrix5 {
-    background-position-x: -978px;
+    background-image: url('../images/app/function/2/5{.svg');
+    background-size: 88% auto;
+    background-position: center center;
+
+    /*background-position-x: -978px;*/
     width: 36px;
     height: 50px;
 }
 .math.equal1 {
-    background-position-x: -707px;
-    background-position-y: center;
+    background-image: url('../images/app/function/3/1=.svg');
+    background-size: 32% auto;
+    background-position: center center;
+
     width: 36px;
     height: 50px;
-    background-size: auto 70%;
+/*    background-size: auto 70%;
+    background-position-x: -707px;
+    background-position-y: center;*/
 }
 .math.equal2 {
-    background-position-x: -1187px;
-    background-position-y: center;
+    background-image: url('../images/app/function/3/3Long =.svg');
+    background-size: 50% auto;
+    background-position: center 25%;
+
     width: 36px;
     height: 50px;
-    background-size: auto 70%;
+/*    background-size: auto 70%;
+    background-position-x: -1187px;
+    background-position-y: center;*/
 }
 .math.equal3 {
-    background-position-x: -1159px;
-    background-position-y: center;
+    background-image: url('../images/app/function/3/5≡.svg');
+    background-size: 33% auto;
+    background-position: center center;
+
     width: 36px;
     height: 50px;
-    background-size: auto 70%;
+/*    background-position-x: -1159px;
+    background-position-y: center;
+    background-size: auto 70%;*/
 }
 .math.equal4 {
-    background-position-x: -1131px;
-    background-position-y: center;
+    background-image: url('../images/app/function/3/7≤.svg');
+    background-size: 25% auto;
+    background-position: center center;
+
     width: 36px;
     height: 50px;
-    background-size: auto 70%;
+/*    background-size: auto 70%;
+    background-position-x: -1131px;
+    background-position-y: center;*/
 }
 .math.equal5 {
-    background-position-x: -1102px;
-    background-position-y: center;
+    background-image: url('../images/app/function/3/2≈.svg');
+    background-size: 25% auto;
+    background-position: center center;
+
     width: 36px;
     height: 50px;
-    background-size: auto 70%;
+/*    background-size: auto 70%;
+    background-position-x: -1102px;
+    background-position-y: center;*/
 }
 .math.equal6 {
-    background-position-x: -1074px;
-    background-position-y: center;
+    background-image: url('../images/app/function/3/4≠.svg');
+    background-size: 25% auto;
+    background-position: center center;
+
     width: 36px;
     height: 50px;
-    background-size: auto 70%;
+/*    background-size: auto 70%;
+    background-position-x: -1074px;
+    background-position-y: center;*/
 }
 .math.equal7 {
-    background-position-x: -1046px;
-    background-position-y: center;
+    background-image: url('../images/app/function/3/6≥.svg');
+    background-size: 25% auto;
+    background-position: center center;
+
     width: 36px;
     height: 50px;
-    background-size: auto 70%;
+/*    background-size: auto 70%;
+    background-position-x: -1046px;
+    background-position-y: center;*/
 }
 .math.equal8 {
-    background-position-x: -1018px;
-    background-position-y: center;
+    background-image: url('../images/app/function/3/8±.svg');
+    background-size: 25% auto;
+    background-position: center center;
+
     width: 36px;
     height: 50px;
-    background-size: auto 70%;
+/*    background-size: auto 70%;
+    background-position-x: -1018px;
+    background-position-y: center;*/
 }
 .math.special1 {
     background-position-x: -751px;
@@ -3613,7 +3749,7 @@ textarea:focus, input:focus {
     height: 25px;
 }
 .library-search-bar .mn-content-time-table-header.class-time-table-container {
-    grid-template-columns: 65px 135px 130px 130px 130px 160px auto;
+    grid-template-columns: 65px 135px 130px 130px 130px auto auto;
 }
 .library-search-bar .mn-content-time-table-header.class-time-table-container .select-box__current .select2-container {
     width: 100%;
@@ -3631,6 +3767,9 @@ textarea:focus, input:focus {
 .library-search-bar .mn-content-time-table-header.class-time-table-container .select-box__current .select2-container .select2-selection--multiple span {
     height: auto;
     width: auto;
+}
+.select2-dropdown {
+    border: 1px solid var(--light-grey);
 }
 .select2-dropdown--below .select2-results {
     width: 100%;
@@ -4687,6 +4826,8 @@ a[data-toggle="collapse"][aria-expanded="true"] span {
 }
 .function-popup__body--item {
     background-color: var(--bg-light-blue);
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 .function-popup__body--item li {
     padding: 0 4px;
@@ -7266,6 +7407,9 @@ button.btn.btn-primary.fixed-send-announcement-icon:active {
 .modal-role .modal-header>div:last-child {
     text-align: right;
     font-size: 18px;
+}
+span.select2-container, span.select2-dropdown, span.select2-results {
+    height: unset;
 }
 
 @-webkit-keyframes HideList {

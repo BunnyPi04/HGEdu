@@ -2066,7 +2066,7 @@ textarea:focus, input:focus {
     height: 25px;
 }
 .library-search-bar .mn-content-time-table-header.class-time-table-container {
-    grid-template-columns: 65px 135px 130px 130px 130px 160px auto;
+    grid-template-columns: 65px 135px 130px 130px 130px auto auto;
 }
 .library-search-bar .mn-content-time-table-header.class-time-table-container .select-box__current .select2-container {
     width: 100%;
@@ -2084,6 +2084,9 @@ textarea:focus, input:focus {
 .library-search-bar .mn-content-time-table-header.class-time-table-container .select-box__current .select2-container .select2-selection--multiple span {
     height: auto;
     width: auto;
+}
+.select2-dropdown {
+    border: 1px solid var(--light-grey);
 }
 .select2-dropdown--below .select2-results {
     width: 100%;
@@ -3140,6 +3143,8 @@ a[data-toggle="collapse"][aria-expanded="true"] span {
 }
 .function-popup__body--item {
     background-color: var(--bg-light-blue);
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 .function-popup__body--item li {
     padding: 0 4px;
@@ -5719,6 +5724,9 @@ button.btn.btn-primary.fixed-send-announcement-icon:active {
 .modal-role .modal-header>div:last-child {
     text-align: right;
     font-size: 18px;
+}
+span.select2-container, span.select2-dropdown, span.select2-results {
+    height: unset;
 }
 
 @-webkit-keyframes HideList {
