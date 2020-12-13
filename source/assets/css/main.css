@@ -444,8 +444,14 @@ span {
 .active .icon-card-tab {
     background-image: url('../images/app/106.png');
 }
+.active .icon-door {
+    background-image: url('../images/app/icon-door-active.png');
+}
 .icon-door {
     background-image: url('../images/app/101.png');
+}
+.icon-door.icon-active {
+    background-image: url('../images/app/icon-door-active.png');
 }
 .icon-calendar {
     background-image: url('../images/app/98.png');
@@ -1170,515 +1176,860 @@ span {
     background-position-y: center;*/
 }
 .math.special1 {
-    background-position-x: -751px;
-    background-position-y: center;
+    background-image: url('../images/app/function/3/9ϵ.svg');
+    background-size: 25% auto;
+    background-position: center center;
+
     width: 36px;
     height: 50px;
-    background-size: auto 55%;
+/*    background-size: auto 55%;
+    background-position-x: -751px;
+    background-position-y: center;*/
 }
 .math.special2 {
-    background-position-x: -773px;
-    background-position-y: center;
+    background-image: url('../images/app/function/3/11϶.svg');
+    background-size: 25% auto;
+    background-position: center center;
+
     width: 36px;
     height: 50px;
-    background-size: auto 55%;
+/*    background-size: auto 55%;
+    background-position-x: -773px;
+    background-position-y: center;*/
 }
 .math.special3 {
-    background-position-x: -729px;
-    background-position-y: center;
+    background-image: url('../images/app/function/3/13ꓱ.svg');
+    background-size: 25% auto;
+    background-position: center center;
+
     width: 36px;
     height: 50px;
-    background-size: auto 55%;
+/*    background-size: auto 55%;
+    background-position-x: -729px;
+    background-position-y: center;*/
 }
 .math.special4 {
-    background-position-x: -708px;
-    background-position-y: center;
+    background-image: url('../images/app/function/3/15ᴜ down.svg');
+    background-size: 30% auto;
+    background-position: center center;
+
     width: 34px;
     height: 50px;
-    background-size: auto 55%;
+/*    background-size: auto 55%;
+    background-position-x: -708px;
+    background-position-y: center;*/
 }
 .math.special5 {
-    background-position-x: -684px;
-    background-position-y: center;
+    background-image: url('../images/app/function/3/17ᴜ left.svg');
+    background-size: 55% auto;
+    background-position: 64% center;
+
     width: 36px;
     height: 50px;
-    background-size: auto 55%;
+/*    background-size: auto 55%;
+    background-position-x: -684px;
+    background-position-y: center;*/
 }
 .math.special6 { /*missing*/
-    background-position-x: -2361px;
-    background-position-y: center;
+    background-image: url('../images/app/function/3/19Ø.svg');
+    background-size: 45% auto;
+    background-position: center center;
+
     width: 32px;
     height: 50px;
-    background-size: auto 68%;
+/*    background-size: auto 68%;
+    background-position-x: -2361px;
+    background-position-y: center;*/
 }
 .math.special7 {
-    background-position-x: -662px;
-    background-position-y: center;
+    background-image: url('../images/app/function/3/10ϵ no.svg');
+    background-size: 25% auto;
+    background-position: center center;
+
     width: 36px;
     height: 50px;
-    background-size: auto 55%;
+/*    background-size: auto 55%;
+    background-position-x: -662px;
+    background-position-y: center;*/
 }
 .math.special8 {
-    background-position-x: -640px;
-    background-position-y: center;
+    background-image: url('../images/app/function/3/12ϵ no.svg');
+    background-size: 25% auto;
+    background-position: center center;
+
     width: 36px;
     height: 50px;
-    background-size: auto 55%;
+/*    background-size: auto 55%;
+    background-position-x: -640px;
+    background-position-y: center;*/
 }
 .math.special9 {
-    background-position-x: -618px;
-    background-position-y: center;
+    background-image: url('../images/app/function/3/14ꓱ no.svg');
+    background-size: 25% auto;
+    background-position: center center;
+
     width: 36px;
     height: 50px;
-    background-size: auto 55%;
+/*    background-size: auto 55%;
+    background-position-x: -618px;
+    background-position-y: center;*/
 }
 .math.special10 {
-    background-position-x: -597px;
-    background-position-y: center;
+    background-image: url('../images/app/function/3/16ᴜ up.svg');
+    background-size: 30% auto;
+    background-position: center center;
+
     width: 36px;
     height: 50px;
-    background-size: auto 55%;
+/*    background-size: auto 55%;
+    background-position-x: -597px;
+    background-position-y: center;*/
 }
 .math.special11 {
-    background-position-x: -573px;
-    background-position-y: center;
+    background-image: url('../images/app/function/3/18u right.svg');
+    background-size: 55% auto;
+    background-position: center center;
+
     width: 36px;
     height: 50px;
-    background-size: auto 55%;
+    /*background-size: auto 55%;*/
 }
-.math.arrow1 {
-    background-position-x: -1546px;
-    background-position-y: center;
+.math.specialN {
+    background-image: url('../images/app/function/3/20N.svg');
+    background-size: 35% auto;
+    background-position: center center;
+
     width: 36px;
     height: 50px;
-    background-size: auto 65%;
+}
+.math.specialQ {
+    background-image: url('../images/app/function/3/22Q.svg');
+    background-size: 35% auto;
+    background-position: center center;
+
+    width: 36px;
+    height: 50px;
+}
+.math.specialC {
+    background-image: url('../images/app/function/3/24ℂ.svg');
+    background-size: 30% auto;
+    background-position: center center;
+
+    width: 36px;
+    height: 50px;
+}
+.math.specialZ {
+    background-image: url('../images/app/function/3/21Z.svg');
+    background-size: 30% auto;
+    background-position: center center;
+
+    width: 36px;
+    height: 50px;
+}
+.math.specialR {
+    background-image: url('../images/app/function/3/23R.svg');
+    background-size: 30% auto;
+    background-position: center center;
+
+    width: 36px;
+    height: 50px;
+}
+
+.math.arrow1 {
+    background-image: url('../images/app/function/4/1→.svg');
+    background-size: 65% auto;
+    background-position: center center;
+
+    width: 36px;
+    height: 50px;
+/*    background-size: auto 65%;
+    background-position-x: -1546px;
+    background-position-y: center;*/
 }
 .math.arrow2 {
-    background-position-x: -1468px;
-    background-position-y: center;
+    background-image: url('../images/app/function/4/3↑.svg');
+    background-size: 37% auto;
+    background-position: center 43%;
+
     width: 36px;
     height: 50px;
-    background-size: auto 65%;
+/*    background-size: auto 65%;
+    background-position-x: -1468px;
+    background-position-y: center;*/
 }
 .math.arrow3 { /*missing*/
-    background-position-x: -1336px;
-    background-position-y: center;
+    background-image: url('../images/app/function/4/5⇒.svg');
+    background-size: 50% auto;
+    background-position: center center;
+
     width: 36px;
     height: 50px;
-    background-size: auto 65%;
+/*    background-size: auto 65%;
+    background-position-x: -1336px;
+    background-position-y: center;*/
 }
 .math.arrow4 {
-    background-position-x: -1362px;
-    background-position-y: center;
+    background-image: url('../images/app/function/4/7⇒ up.svg');
+    background-size: 63% auto;
+    background-position: center center;
+
     width: 36px;
     height: 50px;
-    background-size: auto 65%;
+/*    background-size: auto 65%;
+    background-position-x: -1362px;
+    background-position-y: center;*/
 }
 .math.arrow5 {
-    background-position-x: -1520px;
-    background-position-y: center;
+    background-image: url('../images/app/function/4/2←.svg');
+    background-size: 65% auto;
+    background-position: center center;
+
     width: 36px;
     height: 50px;
-    background-size: auto 65%;
+/*    background-size: auto 65%;
+    background-position-x: -1520px;
+    background-position-y: center;*/
 }
 .math.arrow6 {
-    background-position-x: -1494px;
-    background-position-y: center;
+    background-image: url('../images/app/function/4/4↓.svg');
+    background-size: 37% auto;
+    background-position: center 43%;
+
     width: 36px;
     height: 50px;
-    background-size: auto 65%;
+/*    background-size: auto 65%;
+    background-position-x: -1494px;
+    background-position-y: center;*/
 }
 .math.arrow7 {
-    background-position-x: -1415px;
-    background-position-y: center;
+    background-image: url('../images/app/function/4/6⇒ left.svg');
+    background-size: 50% auto;
+    background-position: center center;
+
     width: 36px;
     height: 50px;
-    background-size: auto 65%;
+/*    background-size: auto 65%;
+    background-position-x: -1415px;
+    background-position-y: center;*/
 }
 .math.arrow8 {
-    background-position-x: -1441px;
-    background-position-y: center;
+    background-image: url('../images/app/function/4/8⇒ down.svg');
+    background-size: 63% auto;
+    background-position: center center;
+
     width: 36px;
     height: 50px;
-    background-size: auto 65%;
+/*    background-size: auto 65%;
+    background-position-x: -1441px;
+    background-position-y: center;*/
 }
 .math.arrow9 {
-    background-position-x: -1310px;
-    background-position-y: center;
+    background-image: url('../images/app/function/4/10=.svg');
+    background-size: 58% auto;
+    background-position: center center;
+
     width: 36px;
     height: 50px;
-    background-size: auto 65%;
+/*    background-size: auto 65%;
+    background-position-x: -1310px;
+    background-position-y: center;*/
 }
 .math.arrow10 {
-    background-position-x: -1285px;
-    background-position-y: center;
+    background-image: url('../images/app/function/4/11→ con.svg');
+    background-size: 58% auto;
+    background-position: center 65%;
+
     width: 36px;
     height: 50px;
-    background-size: auto 65%;
+/*    background-size: auto 65%;
+    background-position-x: -1285px;
+    background-position-y: center;*/
 }
 .math.arrow11 {
-    background-position-x: -1258px;
-    background-position-y: center;
+    background-image: url('../images/app/function/4/13⇒ con.svg');
+    background-size: 58% auto;
+    background-position: center 65%;
+
     width: 36px;
     height: 50px;
-    background-size: auto 65%;
+/*    background-size: auto 65%;
+    background-position-x: -1258px;
+    background-position-y: center;*/
 }
 .math.arrow12 {
-    background-position-x: -1232px;
-    background-position-y: center;
+    background-image: url('../images/app/function/4/15→← con.svg');
+    background-size: 58% auto;
+    background-position: center 65%;
+
     width: 36px;
     height: 50px;
-    background-size: auto 65%;
+/*    background-size: auto 65%;
+    background-position-x: -1232px;
+    background-position-y: center;*/
 }
 .math.arrow13 {
+    background-image: url('../images/app/function/4/17- con.svg');
+    background-size: 58% auto;
+    background-position: center 65%;
+
+    width: 36px;
+    height: 50px;
+/*    background-size: auto 65%;
     background-position-x: -1205px;
-    background-position-y: center;
-    width: 36px;
-    height: 50px;
-    background-size: auto 65%;
+    background-position-y: center;*/
 }
-.math.arrow14 { /*missing*/
-    background-position-x: -1179px;
-    background-position-y: center;
+.math.arrow14 {
+    background-image: url('../images/app/function/4/12← con.svg');
+    background-size: 58% auto;
+    background-position: center 65%;
+
     width: 36px;
     height: 50px;
-    background-size: auto 65%;
+/*    background-size: auto 65%;
+    background-position-x: -1179px;
+    background-position-y: center;*/
 }
 .math.arrow15 {
-    background-position-x: -1258px;
-    background-position-y: center;
+    background-image: url('../images/app/function/4/14⇒ left con.svg');
+    background-size: 58% auto;
+    background-position: center 65%;
+
     width: 36px;
     height: 50px;
-    background-size: auto 65%;
+/*    background-size: auto 65%;
+    background-position-x: -1258px;
+    background-position-y: center;*/
 }
 .math.arrow16 {
-    background-position-x: -1389px;
-    background-position-y: center;
+    background-image: url('../images/app/function/4/8⇒ down.svg');
+    background-size: 63% auto;
+    background-position: center center;
     width: 36px;
     height: 50px;
-    background-size: auto 65%;
+/*    background-size: auto 65%;
+    background-position-x: -1389px;
+    background-position-y: center;*/
 }
 .math.arrow17 {
-    background-position-x: -1311px;
-    background-position-y: center;
+    background-image: url('../images/app/function/4/9↔.svg');
+    background-size: 63% auto;
+    background-position: center center;
+
     width: 36px;
     height: 50px;
-    background-size: auto 65%;
+/*    background-size: auto 65%;
+    background-position-x: -1311px;
+    background-position-y: center;*/
 }
 .math.alpha1 {
-    background-position-x: -1331px;
-    background-position-y: center;
+    background-image: url('../images/app/function/5/1∀.svg');
+    background-size: 45% auto;
+    background-position: center center;
+
     width: 30px;
     height: 50px;
-    background-size: auto 55%;
+/*    background-size: auto 55%;
+    background-position-x: -1331px;
+    background-position-y: center;*/
 }
 .math.alpha2 {
-    background-position-x: -1641px;
-    background-position-y: center;
+    background-image: url('../images/app/function/5/3√.svg');
+    background-size: 40% auto;
+    background-position: center center;
+
     width: 32px;
     height: 50px;
-    background-size: auto 55%;
+/*    background-size: auto 55%;
+    background-position-x: -1641px;
+    background-position-y: center;*/
 }
 .math.alpha3 {
-    background-position-x: -1619px;
-    background-position-y: center;
+    background-image: url('../images/app/function/5/2∞.svg');
+    background-size: 40% auto;
+    background-position: center center;
+
     width: 32px;
     height: 50px;
-    background-size: auto 55%;
+/*    background-size: auto 55%;
+    background-position-x: -1619px;
+    background-position-y: center;*/
+}
+.math.alpha3A {
+    background-image: url('../images/app/function/5/4Δ.svg');
+    background-size: 40% auto;
+    background-position: center center;
+
+    width: 32px;
+    height: 50px;
+/*    background-size: auto 55%;
+    background-position-x: -1619px;
+    background-position-y: center;*/
 }
 .math.alpha4 {
-    background-position-x: -1575px;
-    background-position-y: center;
+    background-image: url('../images/app/function/5/Α.svg');
+    background-size: 47% auto;
+    background-position: center center;
+
     width: 30px;
     height: 50px;
-    background-size: auto 55%;
+/*    background-size: auto 55%;
+    background-position-x: -1575px;
+    background-position-y: center;*/
 }
 .math.alpha5 {
-    background-position-x: -1553px;
-    background-position-y: center;
+    background-image: url('../images/app/function/5/Β.svg');
+    background-size: 40% auto;
+    background-position: center center;
+
     width: 30px;
     height: 50px;
-    background-size: auto 55%;
+/*    background-size: auto 55%;
+    background-position-x: -1553px;
+    background-position-y: center;*/
 }
 .math.alpha6 {
-    background-position-x: -1530px;
-    background-position-y: center;
+    background-image: url('../images/app/function/5/Γ.svg');
+    background-size: 40% auto;
+    background-position: center center;
+
     width: 30px;
     height: 50px;
-    background-size: auto 55%;
+/*    background-size: auto 55%;
+    background-position-x: -1530px;
+    background-position-y: center;*/
 }
 .math.alpha7 {
-    background-position-x: -1529px;
-    background-position-y: center;
+    background-image: url('../images/app/function/5/Δ.svg');
+    background-size: 40% auto;
+    background-position: center center;
+
     width: 32px;
     height: 50px;
-    background-size: auto 55%;
+/*    background-size: auto 55%;
+    background-position-x: -1529px;
+    background-position-y: center;*/
 }
 .math.alpha8 {
-    background-position-x: -1508px;
-    background-position-y: center;
+    background-image: url('../images/app/function/5/Δ.svg');
+    background-size: 40% auto;
+    background-position: center center;
+
     width: 32px;
     height: 50px;
-    background-size: auto 55%;
+/*    background-position-x: -1508px;
+    background-position-y: center;
+    background-size: auto 55%;*/
 }
 .math.alpha9 {
-    background-position-x: -1485px;
-    background-position-y: center;
+    background-image: url('../images/app/function/5/Ε.svg');
+    background-size: 40% auto;
+    background-position: center center;
+
     width: 32px;
     height: 50px;
-    background-size: auto 55%;
+/*    background-size: auto 55%;
+    background-position-x: -1485px;
+    background-position-y: center;*/
 }
 .math.alpha10 {
-    background-position-x: -1352px;
-    background-position-y: center;
+    background-image: url('../images/app/function/5/Λ.svg');
+    background-size: 48% auto;
+    background-position: center center;
+
     width: 32px;
     height: 50px;
-    background-size: auto 55%;
+/*    background-size: auto 55%;
+    background-position-x: -1352px;
+    background-position-y: center;*/
 }
 .math.alpha11 {
-    background-position-x: -2306px;
-    background-position-y: center;
+    background-image: url('../images/app/function/5/Μ.svg');
+    background-size: 48% auto;
+    background-position: center center;
+
     width: 32px;
     height: 50px;
-    background-size: auto 55%;
+/*    background-size: auto 55%;
+    background-position-x: -2306px;
+    background-position-y: center;*/
 }
 .math.alpha12 {
-    background-position-x: -2284px;
-    background-position-y: center;
+    background-image: url('../images/app/function/5/Ξ.svg');
+    background-size: 42% auto;
+    background-position: center center;
+
     width: 30px;
     height: 50px;
-    background-size: auto 55%;
+/*    background-size: auto 55%;
+    background-position-x: -2284px;
+    background-position-y: center;*/
 }
 .math.alpha13 {
-    background-position-x: -2262px;
-    background-position-y: center;
+    background-image: url('../images/app/function/5/Π.svg');
+    background-size: 42% auto;
+    background-position: center center;
+
     width: 32px;
     height: 50px;
-    background-size: auto 55%;
+/*    background-size: auto 55%;
+    background-position-x: -2262px;
+    background-position-y: center;*/
 }
 .math.alpha14 {
-    background-position-x: -2240px;
-    background-position-y: center;
+    background-image: url('../images/app/function/5/Σ.svg');
+    background-size: 42% auto;
+    background-position: center center;
+
     width: 32px;
     height: 50px;
-    background-size: auto 55%;
+/*    background-size: auto 55%;
+    background-position-x: -2240px;
+    background-position-y: center;*/
 }
 .math.alpha15 {
-    background-position-x: -2218px;
-    background-position-y: center;
+    background-image: url('../images/app/function/5/Φ.svg');
+    background-size: 42% auto;
+    background-position: center center;
+
     width: 32px;
     height: 50px;
-    background-size: auto 55%;
+/*    background-size: auto 55%;
+    background-position-x: -2218px;
+    background-position-y: center;*/
 }
 .math.alpha16 {
-    background-position-x: -2195px;
-    background-position-y: center;
+    background-image: url('../images/app/function/5/φ-1.svg');
+    background-size: 42% auto;
+    background-position: center 40%;
+
     width: 32px;
     height: 50px;
-    background-size: auto 55%;
+/*    background-size: auto 55%;
+    background-position-x: -2195px;
+    background-position-y: center;*/
 }
 .math.alpha17 {
-    background-position-x: -2018px;
-    background-position-y: center;
+    background-image: url('../images/app/function/5/Χ.svg');
+    background-size: 42% auto;
+    background-position: center center;
+
     width: 32px;
     height: 50px;
-    background-size: auto 55%;
+/*    background-size: auto 55%;
+    background-position-x: -2018px;
+    background-position-y: center;*/
 }
 .math.alpha18 {
-    background-position-x: -1996px;
-    background-position-y: center;
+    background-image: url('../images/app/function/5/Ψ.svg');
+    background-size: 42% auto;
+    background-position: center center;
+
     width: 32px;
     height: 50px;
-    background-size: auto 55%;
+/*    background-size: auto 55%;
+    background-position-x: -1996px;
+    background-position-y: center;*/
 }
 .math.alpha19 {
-    background-position-x: -1974px;
-    background-position-y: center;
+    background-image: url('../images/app/function/5/Ω.svg');
+    background-size: 42% auto;
+    background-position: center center;
+
     width: 32px;
     height: 50px;
-    background-size: auto 55%;
+/*    background-size: auto 55%;
+    background-position-x: -1974px;
+    background-position-y: center;*/
 }
 .math.alpha20 {
-    background-position-x: -1974px;
-    background-position-y: center;
+    background-image: url('../images/app/function/5/Ω.svg');
+    background-size: 42% auto;
+    background-position: center center;
+
     width: 32px;
     height: 50px;
-    background-size: auto 55%;
+    /*background-size: auto 55%;*/
 }
 .math.alpha21 {
-    background-position-x: -1375px;
-    background-position-y: center;
+    background-image: url('../images/app/function/5/α-1.svg');
+    background-size: 35% auto;
+    background-position: center center;
+
     width: 30px;
     height: 50px;
-    background-size: auto 55%;
+/*    background-size: auto 55%;
+    background-position-x: -1375px;
+    background-position-y: center;*/
 }
 .math.alpha22 {
-    background-position-x: -1464px;
-    background-position-y: center;
+    background-image: url('../images/app/function/5/β-1.svg');
+    background-size: 30% auto;
+    background-position: center center;
+
     width: 32px;
     height: 50px;
-    background-size: auto 55%;
+/*    background-size: auto 55%;
+    background-position-x: -1464px;
+    background-position-y: center;*/
 }
 .math.alpha23 {
-    background-position-x: -1441px;
-    background-position-y: center;
+    background-image: url('../images/app/function/5/γ-1.svg');
+    background-size: 35% auto;
+    background-position: center 42%;
+
     width: 32px;
     height: 50px;
-    background-size: auto 55%;
+/*    background-size: auto 55%;
+    background-position-x: -1441px;
+    background-position-y: center;*/
 }
 .math.alpha24 {
-    background-position-x: -1419px;
-    background-position-y: center;
+    background-image: url('../images/app/function/5/δ-1.svg');
+    background-size: 35% auto;
+    background-position: center center;
+
     width: 32px;
     height: 50px;
-    background-size: auto 55%;
+/*    background-position-x: -1419px;
+    background-position-y: center;
+    background-size: auto 55%;*/
 }
 .math.alpha25 {
-    background-position-x: -1397px;
-    background-position-y: center;
+    background-image: url('../images/app/function/5/ε-1.svg');
+    background-size: 35% auto;
+    background-position: center 40%;
+
     width: 32px;
     height: 50px;
-    background-size: auto 55%;
+/*    background-size: auto 55%;
+    background-position-x: -1397px;
+    background-position-y: center;*/
 }
 .math.alpha26 {
-    background-position-x: -2175px;
-    background-position-y: center;
+    background-image: url('../images/app/function/5/λ-1.svg');
+    background-size: 35% auto;
+    background-position: center center;
+
     width: 32px;
     height: 50px;
-    background-size: auto 55%;
+/*    background-size: auto 55%;
+    background-position-x: -2175px;
+    background-position-y: center;*/
 }
 .math.alpha27 {
-    background-position-x: -2151px;
-    background-position-y: center;
+    background-image: url('../images/app/function/5/μ-1.svg');
+    background-size: 35% auto;
+    background-position: center center;
+
     width: 32px;
     height: 50px;
-    background-size: auto 55%;
+/*    background-size: auto 55%;
+    background-position-x: -2151px;
+    background-position-y: center;*/
 }
 .math.alpha28 {
-    background-position-x: -2129px;
-    background-position-y: center;
+    background-image: url('../images/app/function/5/ξ-1.svg');
+    background-size: 35% auto;
+    background-position: center center;
+
     width: 30px;
     height: 50px;
-    background-size: auto 55%;
+/*    background-size: auto 55%;
+    background-position-x: -2129px;
+    background-position-y: center;*/
 }
 .math.alpha29 {
-    background-position-x: -2106px;
-    background-position-y: center;
+    background-image: url('../images/app/function/5/π-1.svg');
+    background-size: 35% auto;
+    background-position: center center;
+
     width: 32px;
     height: 50px;
-    background-size: auto 55%;
+/*    background-size: auto 55%;
+    background-position-x: -2106px;
+    background-position-y: center;*/
 }
 .math.alpha30 {
-    background-position-x: -2085px;
-    background-position-y: center;
+    background-image: url('../images/app/function/5/ϭ.svg');
+    background-size: 27% auto;
+    background-position: center 54%;
+
     width: 32px;
     height: 50px;
-    background-size: auto 55%;
+/*    background-size: auto 55%;
+    background-position-x: -2085px;
+    background-position-y: center;*/
 }
 .math.alpha31 {
-    background-position-x: -2062px;
-    background-position-y: center;
+    background-image: url('../images/app/function/5/ϕ.svg');
+    background-size: 28% auto;
+    background-position: center center;
+
     width: 32px;
     height: 50px;
-    background-size: auto 55%;
+/*    background-size: auto 55%;
+    background-position-x: -2062px;
+    background-position-y: center;*/
 }
 .math.alpha32 {
-    background-position-x: -2040px;
-    background-position-y: center;
+    background-image: url('../images/app/function/5/χ-1.svg');
+    background-size: 28% auto;
+    background-position: center 44%;
+
     width: 32px;
     height: 50px;
-    background-size: auto 55%;
+/*    background-size: auto 55%;
+    background-position-x: -2040px;
+    background-position-y: center;*/
 }
 .math.alpha33 {
-    background-position-x: -2018px;
-    background-position-y: center;
+    background-image: url('../images/app/function/5/ψ-1.svg');
+    background-size: 28% auto;
+    background-position: center 43%;
+
     width: 32px;
     height: 50px;
-    background-size: auto 55%;
+/*    background-size: auto 55%;
+    background-position-x: -2018px;
+    background-position-y: center;*/
 }
 .math.alpha34 {
-    background-position-x: -1929px;
-    background-position-y: center;
+    background-image: url('../images/app/function/5/ω-1.svg');
+    background-size: 38% auto;
+    background-position: center center;
+
     width: 32px;
     height: 50px;
-    background-size: auto 55%;
+/*    background-size: auto 55%;
+    background-position-x: -1929px;
+    background-position-y: center;*/
 }
 .math.square8 {
-    background-position-x: -2715px;
-    background-position-y: center;
+    background-image: url('../images/app/function/6/1⁀.svg');
+    background-size: 45% auto;
+    background-position: center center;
+
     width: 32px;
     height: 50px;
-    background-size: auto 79%;
+/*    background-size: auto 79%;
+    background-position-x: -2715px;
+    background-position-y: center;*/
 }
 .math.square9 {
-    background-position-x: -2523px;
-    background-position-y: center;
+    background-image: url('../images/app/function/6/7^.svg');
+    background-size: 25% auto;
+    background-position: center 39%;
+
     width: 32px;
     height: 50px;
-    background-size: auto 79%;
+/*    background-size: auto 79%;
+    background-position-x: -2523px;
+    background-position-y: center;*/
 }
 .math.square10 {
+    background-image: url('../images/app/function/6/3⸺.svg');
+    background-size: 37% auto;
+    background-position: center center;
+
+    width: 32px;
+    height: 50px;
+/*    background-size: auto 79%;
     background-position-x: -2651px;
-    background-position-y: center;
-    width: 32px;
-    height: 50px;
-    background-size: auto 79%;
+    background-position-y: center;*/
 }
-.math.square11 { /*missing*/
-    background-position-x: -2715px;
-    background-position-y: center;
+.math.square11 {
+    background-image: url('../images/app/function/6/2⁀ down.svg');
+    background-size: 42% auto;
+    background-position: center center;
+
     width: 32px;
     height: 50px;
-    background-size: auto 79%;
+/*    background-size: auto 79%;
+    background-position-x: -2715px;
+    background-position-y: center;*/
 }
 .math.square12 {
-    background-position-x: -2619px;
-    background-position-y: center;
+    background-image: url('../images/app/function/6/4⸺ down.svg');
+    background-size: 37% auto;
+    background-position: center center;
+
     width: 32px;
     height: 50px;
-    background-size: auto 79%;
+/*    background-size: auto 79%;
+    background-position-x: -2619px;
+    background-position-y: center;*/
 }
 .math.square13 {
-    background-position-x: -2428px;
-    background-position-y: center;
+    background-image: url('../images/app/function/6/11{ up.svg');
+    background-size: 57% auto;
+    background-position: center 73%;
+
     width: 32px;
     height: 50px;
-    background-size: auto 79%;
+/*    background-size: auto 79%;
+    background-position-x: -2428px;
+    background-position-y: center;*/
 }
 .math.square14 {
-    background-position-x: -2492px;
-    background-position-y: center;
+    background-image: url('../images/app/function/6/8○.svg');
+    background-size: 26% auto;
+    background-position: center 33%;
+
     width: 32px;
     height: 50px;
-    background-size: auto 79%;
+/*    background-size: auto 79%;
+    background-position-x: -2492px;
+    background-position-y: center;*/
 }
 .math.square15 {
-    background-position-x: -2492px;
-    background-position-y: center;
+    background-image: url('../images/app/function/6/5→.svg');
+    background-size: 37% auto;
+    background-position: center 36%;
+
     width: 32px;
     height: 50px;
-    background-size: auto 79%;
+/*    background-position-x: -2492px;
+    background-position-y: center;
+    background-size: auto 79%;*/
 }
 .math.square16 {
-    background-position-x: -2492px;
-    background-position-y: center;
+    background-image: url('../images/app/function/6/6→ rev.svg');
+    background-size: 37% auto;
+    background-position: 41% 26%;
     width: 32px;
     height: 50px;
-    background-size: auto 79%;
+/*    background-size: auto 79%;
+    background-position-x: -2492px;
+    background-position-y: center;*/
 }
 .math.square17 {
-    background-position-x: -3564px;
-    background-position-y: center;
+    background-image: url('../images/app/function/6/9---.svg');
+    background-size: 46% auto;
+    background-position: center center;
+
     width: 32px;
     height: 50px;
-    background-size: auto 84%;
+/*    background-size: auto 84%;
+    background-position-x: -3564px;
+    background-position-y: center;*/
 }
 .math.square18 {
-    background-position-x: -2836px;
-    background-position-y: center;
+    background-image: url('../images/app/function/6/10x.svg');
+    background-size: 30% auto;
+    background-position: center center;
+
     width: 32px;
     height: 50px;
-    background-size: auto 91%;
+/*    background-size: auto 91%;
+    background-position-x: -2836px;
+    background-position-y: center;*/
+}
+.math.square19 {
+    background-image: url('../images/app/function/6/12{ down.svg');
+    background-size: 61% auto;
+    background-position: 55% 23%;
+    width: 32px;
+    height: 50px;
 }
 
 :root {
