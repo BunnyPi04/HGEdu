@@ -545,7 +545,8 @@ span {
     background-image: url('../images/app/51.png');
 }
 .icon-logout {
-    background-image: url('../images/app/68.png');
+    /*background-image: url('../images/app/68.png');*/
+    background-image: url('../images/app/power_settings_new-24px.svg');
 }
 .icon-logout.icon-red {
     background-image: url('../images/app/69.png');

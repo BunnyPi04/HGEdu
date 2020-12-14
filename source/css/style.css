@@ -5728,6 +5728,34 @@ button.btn.btn-primary.fixed-send-announcement-icon:active {
 span.select2-container, span.select2-dropdown, span.select2-results {
     height: unset;
 }
+.instruc-page .home__instruction--text {
+    font-size: 16px;
+    padding: 15px 25px;
+}
+.instruc-page .home__title {
+    margin-top: 50px;
+}
+.instruc-video__container .card {
+    border-radius: 15px;
+    overflow: hidden;
+}
+.into-home {
+    position: absolute;
+    right: 100px;
+    top: 10px;
+}
+.into-home a {
+    color: var(--blue);
+    text-transform: uppercase;
+    font-size: 24px;
+}
+.user-guide {
+    background-color: #083f9b;
+    padding: 7px;
+}
+.user-guide a {
+    color: white;
+}
 
 @-webkit-keyframes HideList {
     from {
