@@ -824,8 +824,8 @@ span {
     background-position-x: -535px;
 }
 .math.squareroot2 {
-    background-image: url('../images/app/function/1/1sqrt.svg');
-    background-size: 65% auto;
+    background-image: url('../images/app/fx/1/11sqrt.svg');
+    background-size: 85% auto;
     background-position: center center;
 
     width: 40px;
@@ -834,8 +834,8 @@ span {
     /*background-position-x: -5px;*/
 }
 .math.squareroot3 {
-    background-image: url('../images/app/function/1/2nth-root.svg');
-    background-size: 65% auto;
+    background-image: url('../images/app/fx/1/12yrt.svg');
+    background-size: 85% auto;
     background-position: center center;
 
     width: 40px;
@@ -844,74 +844,74 @@ span {
     background-position-x: -41px;*/
 }
 .math.square1 {
-    background-image: url('../images/app/function/1/3^.svg');
-    background-size: 48% auto;
+    background-image: url('../images/app/fx/1/21a^x.svg');
+    background-size: 85% auto;
     background-position: center center;
 
-    width: 36px;
+    width: 40px;
     height: 50px;
 /*    background-position-x: -74px;
     background-size: auto 86%;
     background-position-y: center;*/
 }
 .math.square2 {
-    background-image: url('../images/app/function/1/5^_.svg');
-    background-size: 48% auto;
-    background-position: center 54%;
+    background-image: url('../images/app/fx/1/23a^x_y.svg');
+    background-size: 85% auto;
+    background-position: center center;
 
-    width: 36px;
+    width: 40px;
     height: 50px;
 /*    background-size: auto 86%;
     background-position-y: center;
     background-position-x: -109px;*/
 }
 .math.square3 {
-    background-image: url('../images/app/function/1/7_-.svg');
-    background-size: 30% auto;
-    background-position: center 75%;
+    background-image: url('../images/app/fx/1/25underset.svg');
+    background-size: 85% auto;
+    background-position: center center;
 
-    width: 36px;
+    width: 40px;
     height: 50px;
 /*    background-size: auto 86%;
     background-position-y: center;
     background-position-x: -144px;*/
 }
 .math.square4 {
-    background-image: url('../images/app/function/1/4_.svg');
-    background-size: 48% auto;
-    background-position: center 60%;
+    background-image: url('../images/app/fx/1/22a_x.svg');
+    background-size: 85% auto;
+    background-position: center center;
 
-    width: 36px;
+    width: 40px;
     height: 50px;
 /*    background-size: auto 86%;
     background-position-y: center;
     background-position-x: -213px;*/
 }
 .math.square5 {
-    background-image: url('../images/app/function/1/6^-.svg');
-    background-size: 29% auto;
-    background-position: center 39%;
+    background-image: url('../images/app/fx/1/24overset.svg');
+    background-size: 85% auto;
+    background-position: center center;
 
-    width: 36px;
+    width: 40px;
     height: 50px;
 /*    background-size: auto 86%;
     background-position-x: -178px;
     background-position-y: center;*/
 }
 .math.square6 {
-    background-image: url('../images/app/function/1/8^_-.svg');
-    background-size: 30% auto;
-    background-position: center 61%;
+    background-image: url('../images/app/fx/1/26overunder.svg');
+    background-size: 85% auto;
+    background-position: center center;
 
-    width: 36px;
+    width: 40px;
     height: 50px;
 /*    background-size: auto 113%;
     background-position-x: -331px;
     background-position-y: center;*/
 }
 .math.square7 {
-    background-image: url('../images/app/function/1/9a-b.svg');
-    background-size: 47% auto;
+    background-image: url('../images/app/fx/1/31frac.svg');
+    background-size: 85% auto;
     background-position: center center;
 
     width: 40px;
@@ -919,120 +919,120 @@ span {
     /*background-position-x: -328px;*/
 }
 .math.integral1 {
-    background-image: url('../images/app/function/1/10∫.svg');
-    background-size: 42% auto;
-    background-position: center 59%;
+    background-image: url('../images/app/fx/1/32int.svg');
+    background-size: 85% auto;
+    background-position: center center;
 
     width: 40px;
     height: 50px;
     /*background-position-x: -367px;*/
 }
 .math.lim {
-    background-image: url('../images/app/function/1/11lim.svg');
-    background-size: 62% auto;
-    background-position: center 68%;
+    background-image: url('../images/app/fx/1/41lim.svg');
+    background-size: 85% auto;
+    background-position: center center;
 
-    width: 36px;
+    width: 40px;
     height: 50px;
     /*background-position-x: -453px;*/
 }
 .math.log {
-    background-image: url('../images/app/function/1/12log.svg');
-    background-size: 77% auto;
+    background-image: url('../images/app/fx/1/42log.svg');
+    background-size: 85% auto;
     background-position: center center;
 
-    width: 36px;
+    width: 40px;
     height: 50px;
     /*background-position-x: -411px;*/
 }
 .math.sum1 {
-    background-image: url('../images/app/function/1/13∑^_.svg');
-    background-size: 32% auto;
+    background-image: url('../images/app/fx/1/43sum.svg');
+    background-size: 85% auto;
     background-position: center center;
 
-    width: 36px;
+    width: 40px;
     height: 50px;
     /*background-position-x: -492px;*/
 }
 .math.sum2 {
-    background-image: url('../images/app/function/1/14∑_.svg');
-    background-size: 32% auto;
+    background-image: url('../images/app/fx/1/44sumunder.svg');
+    background-size: 85% auto;
     background-position: center center;
 
-    width: 36px;
+    width: 40px;
     height: 50px;
     /*background-position-x: -492px;*/
 }
 .math.abs {
-    background-image: url('../images/app/function/1/15abs.svg');
-    background-size: 57% auto;
+    background-image: url('../images/app/fx/1/45abs.svg');
+    background-size: 85% auto;
     background-position: center center;
 
-    width: 36px;
+    width: 40px;
     height: 50px;
     /*background-position-x: -533px;*/
 }
 .math.integral2 {
-    background-image: url('../images/app/function/1/16∫.svg');
-    background-size: 23% auto;
-    background-position: center 35%;
+    background-image: url('../images/app/fx/1/51int.svg');
+    background-size: 85% auto;
+    background-position: center center;
 
-    width: 36px;
+    width: 40px;
     height: 50px;
 /*    background-size: auto 86%;
     background-position-y: center;
     background-position-x: -484px;*/
 }
 .math.integral3 {
-    background-image: url('../images/app/function/1/18∫∫.svg');
-    background-size: 37% auto;
-    background-position: center 35%;
+    background-image: url('../images/app/fx/1/53iint.svg');
+    background-size: 85% auto;
+    background-position: center center;
 
-    width: 36px;
+    width: 40px;
     height: 50px;
 /*    background-size: auto 86%;
     background-position-y: center;
     background-position-x: -525px;*/
 }
 .math.integral4 {
-    background-image: url('../images/app/function/1/20∫∫∫.svg');
-    background-size: 50% auto;
-    background-position: center 35%;
+    background-image: url('../images/app/fx/1/55iiint.svg');
+    background-size: 85% auto;
+    background-position: center center;
 
-    width: 36px;
+    width: 40px;
     height: 50px;
 /*    background-size: auto 86%;
     background-position-y: center;
     background-position-x: -559px;*/
 }
 .math.integral5 {
-    background-image: url('../images/app/function/1/17∫ o.svg');
-    background-size: 23% auto;
-    background-position: center 35%;
+    background-image: url('../images/app/fx/1/52oint.svg');
+    background-size: 85% auto;
+    background-position: center center;
 
-    width: 36px;
+    width: 40px;
     height: 50px;
 /*    background-size: auto 86%;
     background-position-y: center;
     background-position-x: -664px;*/
 }
 .math.integral6 {
-    background-image: url('../images/app/function/1/19∫∫ o.svg');
-    background-size: 37% auto;
-    background-position: center 35%;
+    background-image: url('../images/app/fx/1/54oiint.svg');
+    background-size: 85% auto;
+    background-position: center center;
 
-    width: 36px;
+    width: 40px;
     height: 50px;
 /*    background-size: auto 86%;
     background-position-y: center;
     background-position-x: -629px;*/
 }
 .math.integral7 {
-    background-image: url('../images/app/function/1/21∫∫∫ o.svg');
-    background-size: 50% auto;
-    background-position: center 35%;
+    background-image: url('../images/app/fx/1/56oiiint.svg');
+    background-size: 85% auto;
+    background-position: center center;
 
-    width: 36px;
+    width: 40px;
     height: 50px;
 /*    background-size: auto 86%;
     background-position-x: -594px;
@@ -1044,479 +1044,481 @@ span {
     height: 50px;
 }
 .math.matrix1 {
-    background-image: url('../images/app/function/2/1.svg');
-    background-size: 70% auto;
+    background-image: url('../images/app/fx/2/11matrix.svg');
+    background-size: 85% auto;
     background-position: center center;
 
-    width: 36px;
+    width: 40px;
     height: 50px;
     /*background-position-x: -856px;*/
 }
 .math.matrix2 {
-    background-image: url('../images/app/function/2/2().svg');
-    background-size: 92% auto;
+    background-image: url('../images/app/fx/2/13matrixsqbrac.svg');
+    background-size: 85% auto;
     background-position: center center;
 
-    width: 36px;
+    width: 40px;
     height: 50px;
     /*background-position-x: -897px;*/
 }
 .math.matrix3 {
-    background-image: url('../images/app/function/2/3[].svg');
-    background-size: 88% auto;
+    background-image: url('../images/app/fx/2/12matrixbrac.svg');
+    background-size: 85% auto;
     background-position: center center;
 
     /*background-position-x: -936px;*/
-    width: 36px;
+    width: 40px;
     height: 50px;
 }
 .math.matrix4 {
-    background-image: url('../images/app/function/2/4{}.svg');
-    background-size: 88% auto;
+    background-image: url('../images/app/fx/2/14matrixbraclet.svg');
+    background-size: 85% auto;
     background-position: center center;
 
     /*background-position-x: -815px;*/
-    width: 36px;
+    width: 40px;
     height: 50px;
 }
 .math.matrix5 {
-    background-image: url('../images/app/function/2/5{.svg');
-    background-size: 88% auto;
+    background-image: url('../images/app/fx/2/21cases.svg');
+    background-size: 85% auto;
     background-position: center center;
 
     /*background-position-x: -978px;*/
-    width: 36px;
+    width: 40px;
     height: 50px;
 }
 .math.equal1 {
-    background-image: url('../images/app/function/3/1=.svg');
-    background-size: 32% auto;
+    background-image: url('../images/app/fx/3/11eq.svg');
+    background-size: 85% auto;
     background-position: center center;
 
-    width: 36px;
+    width: 40px;
     height: 50px;
 /*    background-size: auto 70%;
     background-position-x: -707px;
     background-position-y: center;*/
 }
 .math.equal2 {
-    background-image: url('../images/app/function/3/3Long =.svg');
-    background-size: 50% auto;
-    background-position: center 25%;
+    background-image: url('../images/app/fx/3/13eqa.svg');
+    background-size: 85% auto;
+    background-position: center center;
 
-    width: 36px;
+    width: 40px;
     height: 50px;
 /*    background-size: auto 70%;
     background-position-x: -1187px;
     background-position-y: center;*/
 }
 .math.equal3 {
-    background-image: url('../images/app/function/3/5≡.svg');
-    background-size: 33% auto;
+    background-image: url('../images/app/fx/3/15equiv.svg');
+    background-size: 85% auto;
     background-position: center center;
 
-    width: 36px;
+    width: 40px;
     height: 50px;
 /*    background-position-x: -1159px;
     background-position-y: center;
     background-size: auto 70%;*/
 }
 .math.equal4 {
-    background-image: url('../images/app/function/3/7≤.svg');
-    background-size: 25% auto;
+    background-image: url('../images/app/fx/3/17le.svg');
+    background-size: 85% auto;
     background-position: center center;
 
-    width: 36px;
+    width: 40px;
     height: 50px;
 /*    background-size: auto 70%;
     background-position-x: -1131px;
     background-position-y: center;*/
 }
 .math.equal5 {
-    background-image: url('../images/app/function/3/2≈.svg');
-    background-size: 25% auto;
+    background-image: url('../images/app/fx/3/12approx.svg');
+    background-size: 85% auto;
     background-position: center center;
 
-    width: 36px;
+    width: 40px;
     height: 50px;
 /*    background-size: auto 70%;
     background-position-x: -1102px;
     background-position-y: center;*/
 }
 .math.equal6 {
-    background-image: url('../images/app/function/3/4≠.svg');
-    background-size: 25% auto;
+    background-image: url('../images/app/fx/3/14ne.svg');
+    background-size: 85% auto;
     background-position: center center;
 
-    width: 36px;
+    width: 40px;
     height: 50px;
 /*    background-size: auto 70%;
     background-position-x: -1074px;
     background-position-y: center;*/
 }
 .math.equal7 {
-    background-image: url('../images/app/function/3/6≥.svg');
-    background-size: 25% auto;
+    background-image: url('../images/app/fx/3/16ge.svg');
+    background-size: 85% auto;
     background-position: center center;
 
-    width: 36px;
+    width: 40px;
     height: 50px;
 /*    background-size: auto 70%;
     background-position-x: -1046px;
     background-position-y: center;*/
 }
 .math.equal8 {
-    background-image: url('../images/app/function/3/8±.svg');
-    background-size: 25% auto;
+    background-image: url('../images/app/fx/3/18pm.svg');
+    background-size: 85% auto;
     background-position: center center;
 
-    width: 36px;
+    width: 40px;
     height: 50px;
 /*    background-size: auto 70%;
     background-position-x: -1018px;
     background-position-y: center;*/
 }
 .math.special1 {
-    background-image: url('../images/app/function/3/9ϵ.svg');
-    background-size: 25% auto;
+    background-image: url('../images/app/fx/3/21in.svg');
+    background-size: 85% auto;
     background-position: center center;
 
-    width: 36px;
+    width: 40px;
     height: 50px;
 /*    background-size: auto 55%;
     background-position-x: -751px;
     background-position-y: center;*/
 }
 .math.special2 {
-    background-image: url('../images/app/function/3/11϶.svg');
-    background-size: 25% auto;
+    background-image: url('../images/app/fx/3/23ni.svg');
+    background-size: 85% auto;
     background-position: center center;
 
-    width: 36px;
+    width: 40px;
     height: 50px;
 /*    background-size: auto 55%;
     background-position-x: -773px;
     background-position-y: center;*/
 }
 .math.special3 {
-    background-image: url('../images/app/function/3/13ꓱ.svg');
-    background-size: 25% auto;
+    background-image: url('../images/app/fx/3/25exist.svg');
+    background-size: 85% auto;
     background-position: center center;
 
-    width: 36px;
+    width: 40px;
     height: 50px;
 /*    background-size: auto 55%;
     background-position-x: -729px;
     background-position-y: center;*/
 }
 .math.special4 {
-    background-image: url('../images/app/function/3/15ᴜ down.svg');
-    background-size: 30% auto;
+    background-image: url('../images/app/fx/3/27cap.svg');
+    background-size: 85% auto;
     background-position: center center;
 
-    width: 34px;
+    width: 40px;
     height: 50px;
 /*    background-size: auto 55%;
     background-position-x: -708px;
     background-position-y: center;*/
 }
 .math.special5 {
-    background-image: url('../images/app/function/3/17ᴜ left.svg');
-    background-size: 55% auto;
-    background-position: 64% center;
+    background-image: url('../images/app/fx/3/29-0subset.svg');
+    background-size: 85% auto;
+    background-position: center center;
 
-    width: 36px;
+    width: 40px;
     height: 50px;
 /*    background-size: auto 55%;
     background-position-x: -684px;
     background-position-y: center;*/
 }
 .math.special6 { /*missing*/
-    background-image: url('../images/app/function/3/19Ø.svg');
-    background-size: 45% auto;
+    background-image: url('../images/app/fx/3/29-2clock.svg');
+    background-size: 85% auto;
     background-position: center center;
 
-    width: 32px;
+    width: 40px;
     height: 50px;
 /*    background-size: auto 68%;
     background-position-x: -2361px;
     background-position-y: center;*/
 }
 .math.special7 {
-    background-image: url('../images/app/function/3/10ϵ no.svg');
-    background-size: 25% auto;
+    background-image: url('../images/app/fx/3/22notin.svg');
+    background-size: 85% auto;
     background-position: center center;
 
-    width: 36px;
+    width: 40px;
     height: 50px;
 /*    background-size: auto 55%;
     background-position-x: -662px;
     background-position-y: center;*/
 }
 .math.special8 {
-    background-image: url('../images/app/function/3/12ϵ no.svg');
-    background-size: 25% auto;
+    background-image: url('../images/app/fx/3/24notni.svg');
+    background-size: 85% auto;
     background-position: center center;
 
-    width: 36px;
+    width: 40px;
     height: 50px;
 /*    background-size: auto 55%;
     background-position-x: -640px;
     background-position-y: center;*/
 }
 .math.special9 {
-    background-image: url('../images/app/function/3/14ꓱ no.svg');
-    background-size: 25% auto;
+    background-image: url('../images/app/fx/3/26nexists.svg');
+    background-size: 85% auto;
     background-position: center center;
 
-    width: 36px;
+    width: 40px;
     height: 50px;
 /*    background-size: auto 55%;
     background-position-x: -618px;
     background-position-y: center;*/
 }
 .math.special10 {
-    background-image: url('../images/app/function/3/16ᴜ up.svg');
-    background-size: 30% auto;
+    background-image: url('../images/app/fx/3/28cup.svg');
+    background-size: 85% auto;
     background-position: center center;
 
-    width: 36px;
+    width: 40px;
     height: 50px;
 /*    background-size: auto 55%;
     background-position-x: -597px;
     background-position-y: center;*/
 }
 .math.special11 {
-    background-image: url('../images/app/function/3/18u right.svg');
-    background-size: 55% auto;
+    background-image: url('../images/app/fx/3/29-1supset.svg');
+    background-size: 85% auto;
     background-position: center center;
 
-    width: 36px;
+    width: 40px;
     height: 50px;
     /*background-size: auto 55%;*/
 }
 .math.specialN {
-    background-image: url('../images/app/function/3/20N.svg');
-    background-size: 35% auto;
+    background-image: url('../images/app/fx/3/31N.svg');
+    background-size: 85% auto;
     background-position: center center;
 
-    width: 36px;
+    width: 40px;
     height: 50px;
 }
 .math.specialQ {
-    background-image: url('../images/app/function/3/22Q.svg');
-    background-size: 35% auto;
+    background-image: url('../images/app/fx/3/33Q.svg');
+    background-size: 85% auto;
     background-position: center center;
 
-    width: 36px;
+    width: 40px;
     height: 50px;
 }
 .math.specialC {
-    background-image: url('../images/app/function/3/24ℂ.svg');
-    background-size: 30% auto;
+    background-image: url('../images/app/fx/3/35C.svg');
+    background-size: 85% auto;
     background-position: center center;
 
-    width: 36px;
+    width: 40px;
     height: 50px;
 }
 .math.specialZ {
-    background-image: url('../images/app/function/3/21Z.svg');
-    background-size: 30% auto;
+    background-image: url('../images/app/fx/3/32Z.svg');
+    background-size: 85% auto;
     background-position: center center;
 
-    width: 36px;
+    width: 40px;
     height: 50px;
 }
 .math.specialR {
-    background-image: url('../images/app/function/3/23R.svg');
-    background-size: 30% auto;
+    background-image: url('../images/app/fx/3/34R.svg');
+    background-size: 85% auto;
     background-position: center center;
 
-    width: 36px;
+    width: 40px;
     height: 50px;
 }
 
 .math.arrow1 {
-    background-image: url('../images/app/function/4/1→.svg');
-    background-size: 65% auto;
+    background-image: url('../images/app/fx/4/11to.svg');
+    background-size: 85% auto;
     background-position: center center;
 
-    width: 36px;
+    width: 40px;
     height: 50px;
 /*    background-size: auto 65%;
     background-position-x: -1546px;
     background-position-y: center;*/
 }
 .math.arrow2 {
-    background-image: url('../images/app/function/4/3↑.svg');
-    background-size: 37% auto;
-    background-position: center 43%;
+    background-image: url('../images/app/fx/4/13uparrow.svg');
+    background-size: 85% auto;
+    background-position: center center;
 
-    width: 36px;
+    width: 40px;
     height: 50px;
 /*    background-size: auto 65%;
     background-position-x: -1468px;
     background-position-y: center;*/
 }
 .math.arrow3 { /*missing*/
-    background-image: url('../images/app/function/4/5⇒.svg');
-    background-size: 50% auto;
+    background-image: url('../images/app/fx/4/15implies.svg');
+    background-size: 85% auto;
     background-position: center center;
 
-    width: 36px;
+    width: 40px;
     height: 50px;
 /*    background-size: auto 65%;
     background-position-x: -1336px;
     background-position-y: center;*/
 }
 .math.arrow4 {
-    background-image: url('../images/app/function/4/7⇒ up.svg');
-    background-size: 63% auto;
+    background-image: url('../images/app/fx/4/17Uparrow.svg');
+    background-size: 85% auto;
     background-position: center center;
 
-    width: 36px;
+    width: 40px;
     height: 50px;
 /*    background-size: auto 65%;
     background-position-x: -1362px;
     background-position-y: center;*/
 }
 .math.arrow5 {
-    background-image: url('../images/app/function/4/2←.svg');
-    background-size: 65% auto;
+    background-image: url('../images/app/fx/4/12gets.svg');
+    background-size: 85% auto;
     background-position: center center;
 
-    width: 36px;
+    width: 40px;
     height: 50px;
 /*    background-size: auto 65%;
     background-position-x: -1520px;
     background-position-y: center;*/
 }
 .math.arrow6 {
-    background-image: url('../images/app/function/4/4↓.svg');
-    background-size: 37% auto;
-    background-position: center 43%;
+    background-image: url('../images/app/fx/4/14downarrow.svg');
+    background-size: 85% auto;
+    background-position: center center;
 
-    width: 36px;
+    width: 40px;
     height: 50px;
 /*    background-size: auto 65%;
     background-position-x: -1494px;
     background-position-y: center;*/
 }
 .math.arrow7 {
-    background-image: url('../images/app/function/4/6⇒ left.svg');
-    background-size: 50% auto;
+    background-image: url('../images/app/fx/4/16impliedby.svg');
+    background-size: 85% auto;
     background-position: center center;
 
-    width: 36px;
+    width: 40px;
     height: 50px;
 /*    background-size: auto 65%;
     background-position-x: -1415px;
     background-position-y: center;*/
 }
 .math.arrow8 {
-    background-image: url('../images/app/function/4/8⇒ down.svg');
-    background-size: 63% auto;
+    background-image: url('../images/app/fx/4/8⇒ down.svg');
+    background-size: 85% auto;
     background-position: center center;
 
-    width: 36px;
+    width: 40px;
     height: 50px;
 /*    background-size: auto 65%;
     background-position-x: -1441px;
     background-position-y: center;*/
 }
 .math.arrow9 {
-    background-image: url('../images/app/function/4/10=.svg');
-    background-size: 58% auto;
+    background-image: url('../images/app/fx/4/22iff.svg');
+    background-size: 85% auto;
     background-position: center center;
 
-    width: 36px;
+    width: 40px;
     height: 50px;
 /*    background-size: auto 65%;
     background-position-x: -1310px;
     background-position-y: center;*/
 }
 .math.arrow10 {
-    background-image: url('../images/app/function/4/11→ con.svg');
-    background-size: 58% auto;
-    background-position: center 65%;
+    background-image: url('../images/app/fx/4/31to.svg');
+    background-size: 85% auto;
+    background-position: center center;
 
-    width: 36px;
+    width: 40px;
     height: 50px;
 /*    background-size: auto 65%;
     background-position-x: -1285px;
     background-position-y: center;*/
 }
 .math.arrow11 {
-    background-image: url('../images/app/function/4/13⇒ con.svg');
-    background-size: 58% auto;
-    background-position: center 65%;
+    background-image: url('../images/app/fx/4/33xRightarrow.svg');
+    background-size: 85% auto;
+    background-position: center center;
 
-    width: 36px;
+    width: 40px;
     height: 50px;
 /*    background-size: auto 65%;
     background-position-x: -1258px;
     background-position-y: center;*/
 }
 .math.arrow12 {
-    background-image: url('../images/app/function/4/15→← con.svg');
-    background-size: 58% auto;
-    background-position: center 65%;
+    background-image: url('../images/app/fx/4/35tofrom.svg');
+    background-size: 85% auto;
+    background-position: center center;
 
-    width: 36px;
+    width: 40px;
     height: 50px;
 /*    background-size: auto 65%;
     background-position-x: -1232px;
     background-position-y: center;*/
 }
 .math.arrow13 {
-    background-image: url('../images/app/function/4/17- con.svg');
-    background-size: 58% auto;
-    background-position: center 65%;
+    background-image: url('../images/app/fx/4/37lefftrigght.svg');
+    background-size: 85% auto;
+    background-position: center center;
 
-    width: 36px;
+    width: 40px;
     height: 50px;
 /*    background-size: auto 65%;
     background-position-x: -1205px;
     background-position-y: center;*/
 }
 .math.arrow14 {
-    background-image: url('../images/app/function/4/12← con.svg');
-    background-size: 58% auto;
-    background-position: center 65%;
+    background-image: url('../images/app/fx/4/32from.svg');
+    background-size: 85% auto;
+    background-position: center center;
 
-    width: 36px;
+    width: 40px;
     height: 50px;
 /*    background-size: auto 65%;
     background-position-x: -1179px;
     background-position-y: center;*/
 }
 .math.arrow15 {
-    background-image: url('../images/app/function/4/14⇒ left con.svg');
-    background-size: 58% auto;
-    background-position: center 65%;
+    background-image: url('../images/app/fx/4/34xLeftarrow.svg');
+    background-size: 85% auto;
+    background-position: center center;
 
-    width: 36px;
+    width: 40px;
+    height: 50px;
     height: 50px;
 /*    background-size: auto 65%;
     background-position-x: -1258px;
     background-position-y: center;*/
 }
 .math.arrow16 {
-    background-image: url('../images/app/function/4/8⇒ down.svg');
-    background-size: 63% auto;
+    background-image: url('../images/app/fx/4/18Downarrow.svg');
+    background-size: 85% auto;
     background-position: center center;
-    width: 36px;
+
+    width: 40px;
     height: 50px;
 /*    background-size: auto 65%;
     background-position-x: -1389px;
     background-position-y: center;*/
 }
 .math.arrow17 {
-    background-image: url('../images/app/function/4/9↔.svg');
-    background-size: 63% auto;
+    background-image: url('../images/app/fx/4/21leftrightarrow.svg');
+    background-size: 85% auto;
     background-position: center center;
 
-    width: 36px;
+    width: 40px;
     height: 50px;
 /*    background-size: auto 65%;
     background-position-x: -1311px;
