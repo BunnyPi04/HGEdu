@@ -581,7 +581,7 @@ textarea:focus, input:focus {
     padding-left: 45px;
     line-height: 2.5rem;
 }
-.mn-tab .nav-tabs .nav-link::after {
+/*.mn-tab .nav-tabs .nav-link::after {
     content: '';
     position: absolute;
     bottom: 0px;
@@ -590,14 +590,14 @@ textarea:focus, input:focus {
     background-color: var(--blue);
     transition: 0.3s all;
     left: -100%;
-}
+}*/
 .mn-tab .nav-tabs .nav-link:hover {
     color: var(--blue);
 }
-.mn-tab .nav-tabs .nav-link:hover::after {
+/*.mn-tab .nav-tabs .nav-link:hover::after {
     left: 0;
     transform: translateX(0%);
-}
+}*/
 .mn-tab .nav-tabs .nav-link .hg-icon {
     height: 2rem;
     width: 2rem;

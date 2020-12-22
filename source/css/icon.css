@@ -652,6 +652,10 @@ span {
     background-position-x: -17px;
 }
 .math.matrix {
+/*    background-image: url('../images/app/fx/2/12matrixbrac.svg');
+    background-size: 85% auto;
+    background-position: center center;*/
+
     background-image: url('../images/app/math.png');
     background-position-x: -230px;
     width: 60px;
@@ -660,6 +664,12 @@ span {
 .math.matrix.active, .active>.math.matrix {
     background-image: url('../images/app/math.png');
     background-position-x: -157px;
+/*    background-color: var(--blue);
+    background-image: unset;
+    -webkit-mask: url(../images/app/fx/2/12matrixbrac.svg) no-repeat;
+    mask-image: url(../images/app/fx/2/12matrixbrac.svg);
+    -webkit-mask-size: 85% auto;
+    -webkit-mask-position: center center;*/
 }
 .math.float {
     background-image: url('../images/app/math.png');
@@ -1403,19 +1413,19 @@ span {
     background-position-y: center;*/
 }
 .math.alpha1 {
-    background-image: url('../images/app/function/5/1∀.svg');
-    background-size: 45% auto;
+    background-image: url('../images/app/fx/5/11forall.svg');
+    background-size: 85% auto;
     background-position: center center;
 
-    width: 30px;
+    width: 32px;
     height: 50px;
 /*    background-size: auto 55%;
     background-position-x: -1331px;
     background-position-y: center;*/
 }
 .math.alpha2 {
-    background-image: url('../images/app/function/5/3√.svg');
-    background-size: 40% auto;
+    background-image: url('../images/app/fx/5/13check.svg');
+    background-size: 85% auto;
     background-position: center center;
 
     width: 32px;
@@ -1425,8 +1435,8 @@ span {
     background-position-y: center;*/
 }
 .math.alpha3 {
-    background-image: url('../images/app/function/5/2∞.svg');
-    background-size: 40% auto;
+    background-image: url('../images/app/fx/5/12infin.svg');
+    background-size: 85% auto;
     background-position: center center;
 
     width: 32px;
@@ -1437,7 +1447,7 @@ span {
 }
 .math.alpha3A {
     background-image: url('../images/app/function/5/4Δ.svg');
-    background-size: 40% auto;
+    background-size: 85% auto;
     background-position: center center;
 
     width: 32px;
@@ -1447,33 +1457,33 @@ span {
     background-position-y: center;*/
 }
 .math.alpha4 {
-    background-image: url('../images/app/function/5/Α.svg');
-    background-size: 47% auto;
+    background-image: url('../images/app/fx/5/21a.svg');
+    background-size: 85% auto;
     background-position: center center;
 
-    width: 30px;
+    width: 32px;
     height: 50px;
 /*    background-size: auto 55%;
     background-position-x: -1575px;
     background-position-y: center;*/
 }
 .math.alpha5 {
-    background-image: url('../images/app/function/5/Β.svg');
-    background-size: 40% auto;
+    background-image: url('../images/app/fx/5/23b.svg');
+    background-size: 85% auto;
     background-position: center center;
 
-    width: 30px;
+    width: 32px;
     height: 50px;
 /*    background-size: auto 55%;
     background-position-x: -1553px;
     background-position-y: center;*/
 }
 .math.alpha6 {
-    background-image: url('../images/app/function/5/Γ.svg');
-    background-size: 40% auto;
+    background-image: url('../images/app/fx/5/25g.svg');
+    background-size: 85% auto;
     background-position: center center;
 
-    width: 30px;
+    width: 32px;
     height: 50px;
 /*    background-size: auto 55%;
     background-position-x: -1530px;
@@ -1491,8 +1501,8 @@ span {
     background-position-y: center;*/
 }
 .math.alpha8 {
-    background-image: url('../images/app/function/5/Δ.svg');
-    background-size: 40% auto;
+    background-image: url('../images/app/fx/5/27d.svg');
+    background-size: 85% auto;
     background-position: center center;
 
     width: 32px;
@@ -1502,8 +1512,8 @@ span {
     background-size: auto 55%;*/
 }
 .math.alpha9 {
-    background-image: url('../images/app/function/5/Ε.svg');
-    background-size: 40% auto;
+    background-image: url('../images/app/fx/5/29-0v.svg');
+    background-size: 85% auto;
     background-position: center center;
 
     width: 32px;
@@ -1513,8 +1523,8 @@ span {
     background-position-y: center;*/
 }
 .math.alpha10 {
-    background-image: url('../images/app/function/5/Λ.svg');
-    background-size: 48% auto;
+    background-image: url('../images/app/fx/5/29-2l.svg');
+    background-size: 85% auto;
     background-position: center center;
 
     width: 32px;
@@ -1524,8 +1534,8 @@ span {
     background-position-y: center;*/
 }
 .math.alpha11 {
-    background-image: url('../images/app/function/5/Μ.svg');
-    background-size: 48% auto;
+    background-image: url('../images/app/fx/5/29-4m.svg');
+    background-size: 85% auto;
     background-position: center center;
 
     width: 32px;
@@ -1535,19 +1545,19 @@ span {
     background-position-y: center;*/
 }
 .math.alpha12 {
-    background-image: url('../images/app/function/5/Ξ.svg');
-    background-size: 42% auto;
+    background-image: url('../images/app/fx/5/29-6x.svg');
+    background-size: 85% auto;
     background-position: center center;
 
-    width: 30px;
+    width: 32px;
     height: 50px;
 /*    background-size: auto 55%;
     background-position-x: -2284px;
     background-position-y: center;*/
 }
 .math.alpha13 {
-    background-image: url('../images/app/function/5/Π.svg');
-    background-size: 42% auto;
+    background-image: url('../images/app/fx/5/29-8p.svg');
+    background-size: 85% auto;
     background-position: center center;
 
     width: 32px;
@@ -1557,8 +1567,8 @@ span {
     background-position-y: center;*/
 }
 .math.alpha14 {
-    background-image: url('../images/app/function/5/Σ.svg');
-    background-size: 42% auto;
+    background-image: url('../images/app/fx/5/29-10s.svg');
+    background-size: 85% auto;
     background-position: center center;
 
     width: 32px;
@@ -1568,8 +1578,8 @@ span {
     background-position-y: center;*/
 }
 .math.alpha15 {
-    background-image: url('../images/app/function/5/Φ.svg');
-    background-size: 42% auto;
+    background-image: url('../images/app/fx/5/29-12p.svg');
+    background-size: 85% auto;
     background-position: center center;
 
     width: 32px;
@@ -1579,9 +1589,9 @@ span {
     background-position-y: center;*/
 }
 .math.alpha16 {
-    background-image: url('../images/app/function/5/φ-1.svg');
-    background-size: 42% auto;
-    background-position: center 40%;
+    background-image: url('../images/app/fx/5/29-14c.svg');
+    background-size: 85% auto;
+    background-position: center center;
 
     width: 32px;
     height: 50px;
@@ -1590,8 +1600,8 @@ span {
     background-position-y: center;*/
 }
 .math.alpha17 {
-    background-image: url('../images/app/function/5/Χ.svg');
-    background-size: 42% auto;
+    background-image: url('../images/app/fx/5/29-16ps.svg');
+    background-size: 85% auto;
     background-position: center center;
 
     width: 32px;
@@ -1601,8 +1611,8 @@ span {
     background-position-y: center;*/
 }
 .math.alpha18 {
-    background-image: url('../images/app/function/5/Ψ.svg');
-    background-size: 42% auto;
+    background-image: url('../images/app/fx/5/29-18o.svg');
+    background-size: 85% auto;
     background-position: center center;
 
     width: 32px;
@@ -1623,8 +1633,8 @@ span {
     background-position-y: center;*/
 }
 .math.alpha20 {
-    background-image: url('../images/app/function/5/Ω.svg');
-    background-size: 42% auto;
+    background-image: url('../images/app/fx/5/29-20phi.svg');
+    background-size: 85% auto;
     background-position: center center;
 
     width: 32px;
@@ -1632,19 +1642,19 @@ span {
     /*background-size: auto 55%;*/
 }
 .math.alpha21 {
-    background-image: url('../images/app/function/5/α-1.svg');
-    background-size: 35% auto;
+    background-image: url('../images/app/fx/5/22A.svg');
+    background-size: 85% auto;
     background-position: center center;
 
-    width: 30px;
+    width: 32px;
     height: 50px;
 /*    background-size: auto 55%;
     background-position-x: -1375px;
     background-position-y: center;*/
 }
 .math.alpha22 {
-    background-image: url('../images/app/function/5/β-1.svg');
-    background-size: 30% auto;
+    background-image: url('../images/app/fx/5/24B.svg');
+    background-size: 85% auto;
     background-position: center center;
 
     width: 32px;
@@ -1654,9 +1664,9 @@ span {
     background-position-y: center;*/
 }
 .math.alpha23 {
-    background-image: url('../images/app/function/5/γ-1.svg');
-    background-size: 35% auto;
-    background-position: center 42%;
+    background-image: url('../images/app/fx/5/26G.svg');
+    background-size: 85% auto;
+    background-position: center center;
 
     width: 32px;
     height: 50px;
@@ -1665,8 +1675,8 @@ span {
     background-position-y: center;*/
 }
 .math.alpha24 {
-    background-image: url('../images/app/function/5/δ-1.svg');
-    background-size: 35% auto;
+    background-image: url('../images/app/fx/5/28D.svg');
+    background-size: 85% auto;
     background-position: center center;
 
     width: 32px;
@@ -1676,9 +1686,9 @@ span {
     background-size: auto 55%;*/
 }
 .math.alpha25 {
-    background-image: url('../images/app/function/5/ε-1.svg');
-    background-size: 35% auto;
-    background-position: center 40%;
+    background-image: url('../images/app/fx/5/29-1E.svg');
+    background-size: 85% auto;
+    background-position: center center;
 
     width: 32px;
     height: 50px;
@@ -1687,8 +1697,8 @@ span {
     background-position-y: center;*/
 }
 .math.alpha26 {
-    background-image: url('../images/app/function/5/λ-1.svg');
-    background-size: 35% auto;
+    background-image: url('../images/app/fx/5/29-3L.svg');
+    background-size: 85% auto;
     background-position: center center;
 
     width: 32px;
@@ -1698,8 +1708,8 @@ span {
     background-position-y: center;*/
 }
 .math.alpha27 {
-    background-image: url('../images/app/function/5/μ-1.svg');
-    background-size: 35% auto;
+    background-image: url('../images/app/fx/5/29-5M.svg');
+    background-size: 85% auto;
     background-position: center center;
 
     width: 32px;
@@ -1709,19 +1719,19 @@ span {
     background-position-y: center;*/
 }
 .math.alpha28 {
-    background-image: url('../images/app/function/5/ξ-1.svg');
-    background-size: 35% auto;
+    background-image: url('../images/app/fx/5/29-7X.svg');
+    background-size: 85% auto;
     background-position: center center;
 
-    width: 30px;
+    width: 32px;
     height: 50px;
 /*    background-size: auto 55%;
     background-position-x: -2129px;
     background-position-y: center;*/
 }
 .math.alpha29 {
-    background-image: url('../images/app/function/5/π-1.svg');
-    background-size: 35% auto;
+    background-image: url('../images/app/fx/5/29-9P.svg');
+    background-size: 85% auto;
     background-position: center center;
 
     width: 32px;
@@ -1731,9 +1741,9 @@ span {
     background-position-y: center;*/
 }
 .math.alpha30 {
-    background-image: url('../images/app/function/5/ϭ.svg');
-    background-size: 27% auto;
-    background-position: center 54%;
+    background-image: url('../images/app/fx/5/29-11S.svg');
+    background-size: 85% auto;
+    background-position: center center;
 
     width: 32px;
     height: 50px;
@@ -1742,8 +1752,8 @@ span {
     background-position-y: center;*/
 }
 .math.alpha31 {
-    background-image: url('../images/app/function/5/ϕ.svg');
-    background-size: 28% auto;
+    background-image: url('../images/app/fx/5/29-13P.svg');
+    background-size: 85% auto;
     background-position: center center;
 
     width: 32px;
@@ -1753,9 +1763,9 @@ span {
     background-position-y: center;*/
 }
 .math.alpha32 {
-    background-image: url('../images/app/function/5/χ-1.svg');
-    background-size: 28% auto;
-    background-position: center 44%;
+    background-image: url('../images/app/fx/5/29-15C.svg');
+    background-size: 85% auto;
+    background-position: center center;
 
     width: 32px;
     height: 50px;
@@ -1764,9 +1774,9 @@ span {
     background-position-y: center;*/
 }
 .math.alpha33 {
-    background-image: url('../images/app/function/5/ψ-1.svg');
-    background-size: 28% auto;
-    background-position: center 43%;
+    background-image: url('../images/app/fx/5/29-17Ps.svg');
+    background-size: 85% auto;
+    background-position: center center;
 
     width: 32px;
     height: 50px;
@@ -1775,8 +1785,8 @@ span {
     background-position-y: center;*/
 }
 .math.alpha34 {
-    background-image: url('../images/app/function/5/ω-1.svg');
-    background-size: 38% auto;
+    background-image: url('../images/app/fx/5/29-19O.svg');
+    background-size: 85% auto;
     background-position: center center;
 
     width: 32px;
@@ -1786,8 +1796,8 @@ span {
     background-position-y: center;*/
 }
 .math.square8 {
-    background-image: url('../images/app/function/6/1⁀.svg');
-    background-size: 45% auto;
+    background-image: url('../images/app/fx/6/11overfrown.svg');
+    background-size: 85% auto;
     background-position: center center;
 
     width: 32px;
@@ -1797,9 +1807,9 @@ span {
     background-position-y: center;*/
 }
 .math.square9 {
-    background-image: url('../images/app/function/6/7^.svg');
-    background-size: 25% auto;
-    background-position: center 39%;
+    background-image: url('../images/app/fx/6/17widehat.svg');
+    background-size: 85% auto;
+    background-position: center center;
 
     width: 32px;
     height: 50px;
@@ -1808,8 +1818,8 @@ span {
     background-position-y: center;*/
 }
 .math.square10 {
-    background-image: url('../images/app/function/6/3⸺.svg');
-    background-size: 37% auto;
+    background-image: url('../images/app/fx/6/13overline.svg');
+    background-size: 85% auto;
     background-position: center center;
 
     width: 32px;
@@ -1819,8 +1829,8 @@ span {
     background-position-y: center;*/
 }
 .math.square11 {
-    background-image: url('../images/app/function/6/2⁀ down.svg');
-    background-size: 42% auto;
+    background-image: url('../images/app/fx/6/12undersmiley.svg');
+    background-size: 85% auto;
     background-position: center center;
 
     width: 32px;
@@ -1830,8 +1840,8 @@ span {
     background-position-y: center;*/
 }
 .math.square12 {
-    background-image: url('../images/app/function/6/4⸺ down.svg');
-    background-size: 37% auto;
+    background-image: url('../images/app/fx/6/14underline.svg');
+    background-size: 85% auto;
     background-position: center center;
 
     width: 32px;
@@ -1841,9 +1851,9 @@ span {
     background-position-y: center;*/
 }
 .math.square13 {
-    background-image: url('../images/app/function/6/11{ up.svg');
-    background-size: 57% auto;
-    background-position: center 73%;
+    background-image: url('../images/app/fx/6/23underbrace.svg');
+    background-size: 85% auto;
+    background-position: center center;
 
     width: 32px;
     height: 50px;
@@ -1852,9 +1862,9 @@ span {
     background-position-y: center;*/
 }
 .math.square14 {
-    background-image: url('../images/app/function/6/8○.svg');
-    background-size: 26% auto;
-    background-position: center 33%;
+    background-image: url('../images/app/fx/6/18mathring.svg');
+    background-size: 85% auto;
+    background-position: center center;
 
     width: 32px;
     height: 50px;
@@ -1863,9 +1873,9 @@ span {
     background-position-y: center;*/
 }
 .math.square15 {
-    background-image: url('../images/app/function/6/5→.svg');
-    background-size: 37% auto;
-    background-position: center 36%;
+    background-image: url('../images/app/fx/6/15overrightarrow.svg');
+    background-size: 85% auto;
+    background-position: center center;
 
     width: 32px;
     height: 50px;
@@ -1874,9 +1884,10 @@ span {
     background-size: auto 79%;*/
 }
 .math.square16 {
-    background-image: url('../images/app/function/6/6→ rev.svg');
-    background-size: 37% auto;
-    background-position: 41% 26%;
+    background-image: url('../images/app/fx/6/16overleftarrow.svg');
+    background-size: 85% auto;
+    background-position: center center;
+
     width: 32px;
     height: 50px;
 /*    background-size: auto 79%;
@@ -1884,8 +1895,8 @@ span {
     background-position-y: center;*/
 }
 .math.square17 {
-    background-image: url('../images/app/function/6/9---.svg');
-    background-size: 46% auto;
+    background-image: url('../images/app/fx/6/21strikethrough.svg');
+    background-size: 85% auto;
     background-position: center center;
 
     width: 32px;
@@ -1895,8 +1906,8 @@ span {
     background-position-y: center;*/
 }
 .math.square18 {
-    background-image: url('../images/app/function/6/10x.svg');
-    background-size: 30% auto;
+    background-image: url('../images/app/fx/6/22cancel.svg');
+    background-size: 85% auto;
     background-position: center center;
 
     width: 32px;
@@ -1906,9 +1917,10 @@ span {
     background-position-y: center;*/
 }
 .math.square19 {
-    background-image: url('../images/app/function/6/12{ down.svg');
-    background-size: 61% auto;
-    background-position: 55% 23%;
+    background-image: url('../images/app/fx/6/24overbrace.svg');
+    background-size: 85% auto;
+    background-position: center center;
+
     width: 32px;
     height: 50px;
 }
