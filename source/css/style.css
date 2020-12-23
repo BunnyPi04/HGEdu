@@ -5737,7 +5737,13 @@ span.select2-container, span.select2-dropdown, span.select2-results {
 }
 .instruc-video__container .card {
     border-radius: 15px;
+    display: block;
     overflow: hidden;
+}
+.instruc-video__container .card img {
+        height: 250px;
+    width: 100%;
+    object-fit: cover;
 }
 .into-home {
     position: absolute;
@@ -5755,6 +5761,10 @@ span.select2-container, span.select2-dropdown, span.select2-results {
 }
 .user-guide a {
     color: white;
+}
+.card-body {
+    padding: 15px;
+    text-align: center;
 }
 
 @-webkit-keyframes HideList {
