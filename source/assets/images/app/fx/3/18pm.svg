@@ -1,1 +1,10 @@
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="87" height="104"><defs><clipPath id="orHBOmfnfvyT"><path fill="none" stroke="none" d=" M 0 0 L 87 0 L 87 104 L 0 104 L 0 0 Z"/></clipPath></defs><g transform="scale(1,1)" clip-path="url(#orHBOmfnfvyT)"><g transform="translate(-136,-56)"><g transform="scale(67,67)"><g transform="translate(2.3134328358208953,1.8367313432835821)"><path fill="rgb(0,0,0)" stroke="none" paint-order="stroke fill markers" d=" M 0.40900000000000003 -0.313 L 0.40900000000000003 -0.04 L 0.6880000000000001 -0.04 Q 0.72 -0.04 0.721 -0.02 Q 0.721 0 0.6880000000000001 0 L 0.089 0 Q 0.057 0 0.056 -0.02 Q 0.056 -0.04 0.089 -0.04 L 0.369 -0.04 L 0.369 -0.313 L 0.089 -0.313 Q 0.057 -0.313 0.056 -0.333 Q 0.056 -0.353 0.089 -0.353 L 0.369 -0.353 L 0.369 -0.634 Q 0.369 -0.664 0.389 -0.666 Q 0.40900000000000003 -0.666 0.40900000000000003 -0.63 L 0.40900000000000003 -0.353 L 0.6880000000000001 -0.353 Q 0.72 -0.353 0.721 -0.333 Q 0.721 -0.313 0.6880000000000001 -0.313 L 0.40900000000000003 -0.313 Z"/></g></g></g></g></svg>
+<svg id="_18pm" data-name="18pm" xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120">
+  <path id="Path_71" data-name="Path 71" d="M120,0H0V120H120Z" fill="none"/>
+  <g id="Group_972" data-name="Group 972" transform="translate(-115.258 -35.134)">
+    <g id="Group_922" data-name="Group 922" transform="translate(158.752 78.439)">
+      <g id="Group_921" data-name="Group 921" transform="translate(0)">
+        <path id="Path_626" data-name="Path 626" d="M21.739-26.635v13.911H35.955q1.631,0,1.682,1.019,0,1.019-1.682,1.019H5.434q-1.631,0-1.682-1.019,0-1.019,1.682-1.019H19.7V-26.635H5.434q-1.631,0-1.682-1.019,0-1.019,1.682-1.019H19.7V-42.991q0-1.529,1.019-1.631,1.019,0,1.019,1.834v14.114H35.955q1.631,0,1.682,1.019,0,1.019-1.682,1.019Z" transform="translate(-3.752 44.622)"/>
+      </g>
+    </g>
+  </g>
+</svg>

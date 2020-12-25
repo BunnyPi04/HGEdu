@@ -838,7 +838,7 @@ span {
     background-size: 85% auto;
     background-position: center center;
 
-    width: 40px;
+    width: 32px;
     height: 50px;
     /*background-size: auto 90%;*/
     /*background-position-x: -5px;*/
@@ -848,7 +848,7 @@ span {
     background-size: 85% auto;
     background-position: center center;
 
-    width: 40px;
+    width: 32px;
     height: 50px;
 /*    background-size: auto 90%;
     background-position-x: -41px;*/
@@ -858,7 +858,7 @@ span {
     background-size: 85% auto;
     background-position: center center;
 
-    width: 40px;
+    width: 32px;
     height: 50px;
 /*    background-position-x: -74px;
     background-size: auto 86%;
@@ -869,7 +869,7 @@ span {
     background-size: 85% auto;
     background-position: center center;
 
-    width: 40px;
+    width: 32px;
     height: 50px;
 /*    background-size: auto 86%;
     background-position-y: center;
@@ -880,7 +880,7 @@ span {
     background-size: 85% auto;
     background-position: center center;
 
-    width: 40px;
+    width: 32px;
     height: 50px;
 /*    background-size: auto 86%;
     background-position-y: center;
@@ -891,7 +891,7 @@ span {
     background-size: 85% auto;
     background-position: center center;
 
-    width: 40px;
+    width: 32px;
     height: 50px;
 /*    background-size: auto 86%;
     background-position-y: center;
@@ -902,7 +902,7 @@ span {
     background-size: 85% auto;
     background-position: center center;
 
-    width: 40px;
+    width: 32px;
     height: 50px;
 /*    background-size: auto 86%;
     background-position-x: -178px;
@@ -913,7 +913,7 @@ span {
     background-size: 85% auto;
     background-position: center center;
 
-    width: 40px;
+    width: 32px;
     height: 50px;
 /*    background-size: auto 113%;
     background-position-x: -331px;
@@ -924,7 +924,7 @@ span {
     background-size: 85% auto;
     background-position: center center;
 
-    width: 40px;
+    width: 32px;
     height: 50px;
     /*background-position-x: -328px;*/
 }
@@ -933,7 +933,7 @@ span {
     background-size: 85% auto;
     background-position: center center;
 
-    width: 40px;
+    width: 32px;
     height: 50px;
     /*background-position-x: -367px;*/
 }
@@ -942,7 +942,7 @@ span {
     background-size: 85% auto;
     background-position: center center;
 
-    width: 40px;
+    width: 32px;
     height: 50px;
     /*background-position-x: -453px;*/
 }
@@ -951,7 +951,7 @@ span {
     background-size: 85% auto;
     background-position: center center;
 
-    width: 40px;
+    width: 32px;
     height: 50px;
     /*background-position-x: -411px;*/
 }
@@ -960,7 +960,7 @@ span {
     background-size: 85% auto;
     background-position: center center;
 
-    width: 40px;
+    width: 32px;
     height: 50px;
     /*background-position-x: -492px;*/
 }
@@ -969,7 +969,7 @@ span {
     background-size: 85% auto;
     background-position: center center;
 
-    width: 40px;
+    width: 32px;
     height: 50px;
     /*background-position-x: -492px;*/
 }
@@ -978,7 +978,7 @@ span {
     background-size: 85% auto;
     background-position: center center;
 
-    width: 40px;
+    width: 32px;
     height: 50px;
     /*background-position-x: -533px;*/
 }
@@ -987,7 +987,7 @@ span {
     background-size: 85% auto;
     background-position: center center;
 
-    width: 40px;
+    width: 32px;
     height: 50px;
 /*    background-size: auto 86%;
     background-position-y: center;
@@ -998,7 +998,7 @@ span {
     background-size: 85% auto;
     background-position: center center;
 
-    width: 40px;
+    width: 32px;
     height: 50px;
 /*    background-size: auto 86%;
     background-position-y: center;
@@ -1009,7 +1009,7 @@ span {
     background-size: 85% auto;
     background-position: center center;
 
-    width: 40px;
+    width: 32px;
     height: 50px;
 /*    background-size: auto 86%;
     background-position-y: center;
@@ -1020,7 +1020,7 @@ span {
     background-size: 85% auto;
     background-position: center center;
 
-    width: 40px;
+    width: 32px;
     height: 50px;
 /*    background-size: auto 86%;
     background-position-y: center;
@@ -1031,7 +1031,7 @@ span {
     background-size: 85% auto;
     background-position: center center;
 
-    width: 40px;
+    width: 32px;
     height: 50px;
 /*    background-size: auto 86%;
     background-position-y: center;
@@ -1042,7 +1042,7 @@ span {
     background-size: 85% auto;
     background-position: center center;
 
-    width: 40px;
+    width: 32px;
     height: 50px;
 /*    background-size: auto 86%;
     background-position-x: -594px;
@@ -2041,6 +2041,71 @@ span {
 .math.square19 {
     background-image: url('../images/app/fx/6/24overbrace.svg');
     background-size: 85% auto;
+    background-position: center center;
+
+    width: 32px;
+    height: 50px;
+}
+
+.math.sin {
+    background-image: url('../images/app/fx/1/61sin.svg');
+    background-size: 100% auto;
+    background-position: center center;
+
+    width: 32px;
+    height: 50px;
+}
+.math.cos {
+    background-image: url('../images/app/fx/1/62cos.svg');
+    background-size: 100% auto;
+    background-position: center center;
+
+    width: 32px;
+    height: 50px;
+}
+.math.tan {
+    background-image: url('../images/app/fx/1/63tan.svg');
+    background-size: 100% auto;
+    background-position: center center;
+
+    width: 32px;
+    height: 50px;
+}
+.math.cot {
+    background-image: url('../images/app/fx/1/64cot.svg');
+    background-size: 100% auto;
+    background-position: center center;
+
+    width: 32px;
+    height: 50px;
+}
+.math.arcsin {
+    background-image: url('../images/app/fx/1/65arcsin.svg');
+    background-size: 100% auto;
+    background-position: center center;
+
+    width: 32px;
+    height: 50px;
+}
+.math.arccos {
+    background-image: url('../images/app/fx/1/66arccos.svg');
+    background-size: 100% auto;
+    background-position: center center;
+
+    width: 32px;
+    height: 50px;
+}
+.math.arctan {
+    background-image: url('../images/app/fx/1/67arctan.svg');
+    background-size: 100% auto;
+    background-position: center center;
+
+    width: 32px;
+    height: 50px;
+}
+.math.arccot {
+    background-image: url('../images/app/fx/1/68arccot.svg');
+    background-size: 100% auto;
     background-position: center center;
 
     width: 32px;
@@ -7814,6 +7879,54 @@ span.select2-container, span.select2-dropdown, span.select2-results {
 .card-body {
     padding: 15px;
     text-align: center;
+}
+.sub-item__convert span {
+    width: unset;
+    height: unset;
+}
+.katex-display>.katex {
+    text-align: left;
+}
+.filter-bar {
+    grid-template-columns: 65px auto !important;
+}
+.filter-bar-item {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, auto));
+    grid-auto-columns: max-content; grid-gap: 20px;
+}
+.filter-bar-item>div:nth-child(1) {
+    z-index: 10;
+}
+.filter-bar-item>div:nth-child(2) {
+    z-index: 9;
+}
+.filter-bar-item>div:nth-child(3) {
+    z-index: 8;
+}
+.filter-bar-item>div:nth-child(4) {
+    z-index: 7;
+}
+.filter-bar-item>div:nth-child(5) {
+    z-index: 6;
+}
+.filter-bar-item>div:nth-child(6) {
+    z-index: 5;
+}
+.filter-bar-item>div:nth-child(7) {
+    z-index: 4;
+}
+.filter-bar-item>div:nth-child(8) {
+    z-index: 3;
+}
+.filter-bar-item>div:nth-child(9) {
+    z-index: 2;
+}
+.filter-bar-item>div:nth-child(10) {
+    z-index: 1;
+}
+.filter-bar-item>div:last-of-type {
+    min-width: 180px;
 }
 
 @-webkit-keyframes HideList {

@@ -1,1 +1,12 @@
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="79" height="104"><defs><clipPath id="mNzDOZZSqUnZ"><path fill="none" stroke="none" d=" M 0 0 L 79 0 L 79 104 L 0 104 L 0 0 Z"/></clipPath></defs><g transform="scale(1,1)" clip-path="url(#mNzDOZZSqUnZ)"><g transform="translate(-136,-56)"><g transform="scale(67,67)"><g transform="translate(2.3134328358208953,1.8694328358208956)"><path fill="rgb(0,0,0)" stroke="none" paint-order="stroke fill markers" d=" M 0.61 -0.381 L 0.61 -0.011 Q 0.61 0.021 0.59 0.022 Q 0.5700000000000001 0.022 0.5700000000000001 -0.011 L 0.5700000000000001 -0.378 Q 0.5700000000000001 -0.486 0.456 -0.534 Q 0.399 -0.558 0.333 -0.558 Q 0.231 -0.558 0.162 -0.507 Q 0.096 -0.458 0.096 -0.378 L 0.096 -0.011 Q 0.096 0.021 0.076 0.022 Q 0.056 0.022 0.056 -0.011 L 0.056 -0.381 Q 0.056 -0.495 0.165 -0.556 Q 0.24 -0.598 0.333 -0.598 Q 0.453 -0.598 0.533 -0.535 Q 0.61 -0.47500000000000003 0.61 -0.381 Z"/></g></g></g></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120">
+  <g id="_27cap" data-name="27cap" transform="translate(-10.741 7.82)">
+    <path id="Path_71" data-name="Path 71" d="M0,0H120V120H0Z" transform="translate(10.741 -7.82)" fill="none"/>
+    <g id="Group_973" data-name="Group 973" transform="translate(-102.135 -48.736)">
+      <g id="Group_938" data-name="Group 938" transform="translate(158.752 85.186)">
+        <g id="Group_937" data-name="Group 937" transform="translate(0 0)">
+          <path id="Path_637" data-name="Path 637" d="M32.106-28.96v18.937q0,1.638-1.024,1.689-1.024,0-1.024-1.689V-28.806q0-5.527-5.835-7.984a16.055,16.055,0,0,0-6.3-1.228,14.318,14.318,0,0,0-8.752,2.61,7.839,7.839,0,0,0-3.378,6.6v18.783q0,1.638-1.024,1.689-1.024,0-1.024-1.689V-28.96q0-5.835,5.579-8.957a17.292,17.292,0,0,1,8.6-2.15,16.035,16.035,0,0,1,10.236,3.224A9.56,9.56,0,0,1,32.106-28.96Z" transform="translate(-3.752 40.066)"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

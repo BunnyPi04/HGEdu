@@ -1,13 +1,9 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="79" height="104" viewBox="0 0 79 104">
-  <defs>
-    <clipPath id="clip-path">
-      <path id="Path_121" data-name="Path 121" d="M0,0H79V104H0Z" fill="none"/>
-    </clipPath>
-  </defs>
-  <g id="_24notni" data-name="24notni" clip-path="url(#clip-path)">
-    <g id="Group_165" data-name="Group 165" transform="translate(24.561 30.933)">
+<svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120">
+  <g id="_24notni" data-name="24notni" transform="translate(0.001 0)">
+    <path id="Path_71" data-name="Path 71" d="M0,0H120V120H0Z" transform="translate(-0.001 0)" fill="none"/>
+    <g id="Group_165" data-name="Group 165" transform="translate(43.303 40.113)">
       <g id="Group_164" data-name="Group 164">
-        <g id="Group_163" data-name="Group 163" transform="translate(0)">
+        <g id="Group_163" data-name="Group 163">
           <path id="Path_120" data-name="Path 120" d="M7.772-15.41H36.314A15.784,15.784,0,0,1,29.48-3.484,18.21,18.21,0,0,1,18.425,0H7.772Q5.628,0,5.561,1.34q0,1.34,2.211,1.34H18.626A20.23,20.23,0,0,0,33.031-2.948a18.285,18.285,0,0,0,6.03-13.8,18.194,18.194,0,0,0-6.432-14.2A20.482,20.482,0,0,0,18.693-36.18H7.772q-2.144,0-2.211,1.34,0,1.34,2.211,1.34h10.72a17.726,17.726,0,0,1,13.065,5.226A16.008,16.008,0,0,1,36.314-18.09H7.772q-2.144,0-2.211,1.34Q5.561-15.41,7.772-15.41Z" transform="translate(-5.561 36.18)"/>
           <line id="Line_1" data-name="Line 1" x1="31" y2="60" transform="translate(4.939 -10.433)" fill="none" stroke="#000" stroke-linecap="round" stroke-width="2.5"/>
         </g>

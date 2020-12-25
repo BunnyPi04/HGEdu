@@ -1,1 +1,15 @@
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="87" height="104"><defs><clipPath id="FlGoBOUTfUpS"><path fill="none" stroke="none" d=" M 0 0 L 87 0 L 87 104 L 0 104 L 0 0 Z"/></clipPath></defs><g transform="scale(1,1)" clip-path="url(#FlGoBOUTfUpS)"><g transform="translate(-136,-56)"><g transform="scale(67,67)"><g transform="translate(2.3134328358208953,1.8432537313432835)"><path fill="rgb(0,0,0)" stroke="none" paint-order="stroke fill markers" d=" M 0.631 -0.678 L 0.181 0.198 Q 0.17200000000000001 0.216 0.159 0.216 Q 0.14300000000000002 0.216 0.139 0.196 Q 0.139 0.192 0.146 0.178 L 0.596 -0.6980000000000001 Q 0.605 -0.716 0.618 -0.716 Q 0.634 -0.716 0.638 -0.6960000000000001 Q 0.638 -0.6920000000000001 0.631 -0.678 Z"/></g><g transform="translate(2.3134328358208953,1.8432537313432835)"><path fill="rgb(0,0,0)" stroke="none" paint-order="stroke fill markers" d=" M 0.687 -0.327 L 0.09 -0.327 Q 0.058 -0.327 0.056 -0.34700000000000003 Q 0.056 -0.367 0.089 -0.367 L 0.6880000000000001 -0.367 Q 0.72 -0.367 0.721 -0.34700000000000003 Q 0.721 -0.327 0.687 -0.327 M 0.6880000000000001 -0.133 L 0.089 -0.133 Q 0.057 -0.133 0.056 -0.153 Q 0.056 -0.17300000000000001 0.09 -0.17300000000000001 L 0.687 -0.17300000000000001 Q 0.719 -0.17300000000000001 0.721 -0.153 Q 0.721 -0.133 0.6880000000000001 -0.133 Z"/></g></g></g></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120">
+  <g id="_14ne" data-name="14ne" transform="translate(-10.741 7.82)">
+    <path id="Path_71" data-name="Path 71" d="M0,0H120V120H0Z" transform="translate(10.741 -7.82)" fill="none"/>
+    <g id="Group_969" data-name="Group 969" transform="translate(-110.518 -54.64)">
+      <g id="Group_910" data-name="Group 910">
+        <g id="Group_908" data-name="Group 908" transform="translate(155 123.498)">
+          <path id="Path_617" data-name="Path 617" d="M42.277-45.426,12.127,13.266q-.6,1.206-1.474,1.206-1.072,0-1.34-1.34a3.933,3.933,0,0,1,.469-1.206l30.15-58.692q.6-1.206,1.474-1.206,1.072,0,1.34,1.34A3.933,3.933,0,0,1,42.277-45.426Z"/>
+        </g>
+        <g id="Group_909" data-name="Group 909" transform="translate(155 123.498)">
+          <path id="Path_618" data-name="Path 618" d="M46.029-21.909h-40q-2.144,0-2.278-1.34,0-1.34,2.211-1.34H46.1q2.144,0,2.211,1.34,0,1.34-2.278,1.34m.067,13H5.963q-2.144,0-2.211-1.34,0-1.34,2.278-1.34h40q2.144,0,2.278,1.34Q48.307-8.911,46.1-8.911Z"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

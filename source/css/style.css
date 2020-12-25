@@ -5766,6 +5766,54 @@ span.select2-container, span.select2-dropdown, span.select2-results {
     padding: 15px;
     text-align: center;
 }
+.sub-item__convert span {
+    width: unset;
+    height: unset;
+}
+.katex-display>.katex {
+    text-align: left;
+}
+.filter-bar {
+    grid-template-columns: 65px auto !important;
+}
+.filter-bar-item {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, auto));
+    grid-auto-columns: max-content; grid-gap: 20px;
+}
+.filter-bar-item>div:nth-child(1) {
+    z-index: 10;
+}
+.filter-bar-item>div:nth-child(2) {
+    z-index: 9;
+}
+.filter-bar-item>div:nth-child(3) {
+    z-index: 8;
+}
+.filter-bar-item>div:nth-child(4) {
+    z-index: 7;
+}
+.filter-bar-item>div:nth-child(5) {
+    z-index: 6;
+}
+.filter-bar-item>div:nth-child(6) {
+    z-index: 5;
+}
+.filter-bar-item>div:nth-child(7) {
+    z-index: 4;
+}
+.filter-bar-item>div:nth-child(8) {
+    z-index: 3;
+}
+.filter-bar-item>div:nth-child(9) {
+    z-index: 2;
+}
+.filter-bar-item>div:nth-child(10) {
+    z-index: 1;
+}
+.filter-bar-item>div:last-of-type {
+    min-width: 180px;
+}
 
 @-webkit-keyframes HideList {
     from {
