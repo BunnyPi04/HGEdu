@@ -5773,8 +5773,13 @@ span.select2-container, span.select2-dropdown, span.select2-results {
 .katex-display>.katex {
     text-align: left;
 }
+.katex span {
+    width: unset;
+    height: unset;
+}
 .filter-bar {
     grid-template-columns: 65px auto !important;
+    height: 
 }
 .filter-bar-item {
     display: grid;

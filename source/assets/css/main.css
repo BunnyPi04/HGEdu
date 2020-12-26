@@ -170,28 +170,38 @@ span {
     background-image: url('../images/app/35-1.png');
 }
 .icon-folder {
-    background-image: url('../images/app/49.png');
+    /*background-image: url('../images/app/49.png');*/
+    background-color: var(--black);
+    -webkit-mask: url('../images/app/menu/library/folder.svg') no-repeat;
+    -webkit-mask-size: 100% 100%;
+    mask-image: url('../images/app/menu/library/folder.svg');
 }
 .icon-folder.icon-active {
-    background-image: url('../images/app/48.png');
+    background-color: var(--blue);
+    /*background-image: url('../images/app/48.png');*/
 }
 .icon-folder.green, .icon-folder.icon-green {
-    background-image: url('../images/app/47.png');
+    /*background-image: url('../images/app/47.png');*/
+    background-color: var(--green);
 }
 .icon-file {
-    background-image: url('../images/app/16.png');
+    /*background-image: url('../images/app/16.png');*/
+    background-color: var(--black);
+    -webkit-mask: url('../images/app/menu/library/file.svg') no-repeat;
+    -webkit-mask-size: 100% 100%;
+    mask-image: url('../images/app/menu/library/file.svg');
 }
 .icon-file.disable {
-    background-image: url('../images/app/137.png');
+    /*background-image: url('../images/app/137.png');*/
+    background-color: var(--grey);
 }
 .icon-file.icon-active {
-    background-image: url('../images/app/15.png');
+    background-color: var(--blue);
+    /*background-image: url('../images/app/15.png');*/
 }
 .icon-file.red, .icon-file.icon-red {
-    background-image: url('../images/app/17.png');
-}
-.icon-file.disable {
-    background-image: url('../images/app/137.png');
+    background-color: var(--red);
+    /*background-image: url('../images/app/17.png');*/
 }
 .icon-nav {
     background-image: url('../images/app/67.png');
@@ -200,19 +210,29 @@ span {
     background-image: url('../images/app/66.png');
 }
 .icon-user {
-    background-image: url('../images/app/112.png');
+    /*background-image: url('../images/app/112.png');*/
+    background-color: var(--black);
+    -webkit-mask: url('../images/app/menu/19-1-account.svg') no-repeat;
+    -webkit-mask-size: 100% 100%;
+    mask-image: url('../images/app/menu/19-1-account.svg');
 }
 .icon-user.icon-active {
-    background-image: url('../images/app/113.png');
+    /*background-image: url('../images/app/113.png');*/
+    background-color: var(--blue);
 }
 .icon-user.disable {
-    background-image: url('../images/app/111.png');
+    /*background-image: url('../images/app/111.png');*/
+    background-color: var(--grey);
 }
 .icon-home {
-    background-image: url('../images/app/5.png');
+    background-color: var(--black);
+    -webkit-mask: url('../images/app/menu/11-home.svg') no-repeat;
+    -webkit-mask-size: 100% 100%;
+    mask-image: url('../images/app/menu/11-home.svg');
 }
 .icon-home.icon-active, .sidebar .active>.icon-home {
-    background-image: url('../images/app/6.png');
+    background-color: var(--blue);
+    /*background-image: url('../images/app/6.png');*/
 }
 .icon-contact {
     background-image: url('../images/app/161.png');
@@ -306,16 +326,24 @@ span {
     background-position: center;
 }
 .icon-mail {
-    background-image: url('../images/app/25.png');
+    /*background-image: url('../images/app/25.png');*/
+    background-color: var(--black);
+    -webkit-mask: url('../images/app/menu/12-mail.svg') no-repeat;
+    -webkit-mask-size: 100% 100%;
+    mask-image: url('../images/app/menu/12-mail.svg');
+
 }
 .icon-mail.icon-green {
-    background-image: url('../images/app/176.png');
+    /*background-image: url('../images/app/176.png');*/
+    background-color: var(--green);
 }
 .icon-mail.disable {
-    background-image: url('../images/app/23.png');
+    /*background-image: url('../images/app/23.png');*/
+    background-color: var(--grey);
 }
 .icon-mail.icon-active, .active>.icon-mail {
-    background-image: url('../images/app/24.png');
+    /*background-image: url('../images/app/24.png');*/
+    background-color: var(--blue);
 }
 .icon-paper-4 {
     background-image: url('../images/app/13.png');
@@ -327,10 +355,15 @@ span {
     background-image: url('../images/app/12.png');
 }
 .icon-contact-book {
-    background-image: url('../images/app/19.png');
+    /*background-image: url('../images/app/19.png');*/
+    background-color: var(--black);
+    -webkit-mask: url('../images/app/menu/13-contact.svg') no-repeat;
+    -webkit-mask-size: 100% 100%;
+    mask-image: url('../images/app/menu/13-contact.svg');
 }
 .icon-contact-book.icon-active {
-    background-image: url('../images/app/18.png');
+    /*background-image: url('../images/app/18.png');*/
+    background-color: var(--blue);
 }
 .icon-plane {
     background-image: url('../images/app/59.png');
@@ -339,19 +372,30 @@ span {
     background-image: url('../images/app/58.png');
 }
 .icon-group {
-    background-image: url('../images/app/54.png');
+    /*background-image: url('../images/app/54.png');*/
+    background-color: var(--black);
+    -webkit-mask: url('../images/app/menu/17-group.svg') no-repeat;
+    -webkit-mask-size: 100% 100%;
+    mask-image: url('../images/app/menu/17-group.svg');
 }
 .icon-group.icon-active, .sidebar .active>.icon-group {
-    background-image: url('../images/app/53.png');
+    /*background-image: url('../images/app/53.png');*/
+    background-color: var(--blue);
 }
 .icon-edit {
-    background-image: url('../images/app/82.png');
+    background-color: var(--black);
+    -webkit-mask: url('../images/app/menu/18-abbreviation.svg') no-repeat;
+    -webkit-mask-size: 100% 100%;
+    mask-image: url('../images/app/menu/18-abbreviation.svg');
+    /*background-image: url('../images/app/82.png');*/
 }
 .icon-edit.icon-green {
-    background-image: url('../images/app/175.png');
+    /*background-image: url('../images/app/175.png');*/
+    background-color: var(--green);
 }
 .icon-edit.icon-active, .sidebar .active>.icon-edit {
-    background-image: url('../images/app/81.png');
+    /*background-image: url('../images/app/81.png');*/
+    background-color: var(--blue);
 }
 .icon-bell {
     background-image: url('../images/app/96.png');
@@ -445,13 +489,19 @@ span {
     background-image: url('../images/app/106.png');
 }
 .active .icon-door {
-    background-image: url('../images/app/icon-door-active.png');
+    /*background-image: url('../images/app/icon-door-active.png');*/
+    background-color: var(--blue);
 }
 .icon-door {
-    background-image: url('../images/app/101.png');
+    /*background-image: url('../images/app/101.png');*/
+    background-color: var(--black);
+    -webkit-mask: url('../images/app/menu/16-class.svg') no-repeat;
+    -webkit-mask-size: 100% 100%;
+    mask-image: url('../images/app/menu/16-class.svg');
 }
 .icon-door.icon-active {
-    background-image: url('../images/app/icon-door-active.png');
+    /*background-image: url('../images/app/icon-door-active.png');*/
+    background-color: var(--blue);
 }
 .icon-calendar {
     background-image: url('../images/app/98.png');
@@ -513,6 +563,24 @@ span {
 .icon-time-clock {
     background-image: url('../images/app/70.png');
 }
+.icon-library-menu {
+    background-color: var(--black);
+    -webkit-mask: url('../images/app/menu/14-library.svg') no-repeat;
+    -webkit-mask-size: 100% 100%;
+    mask-image: url('../images/app/menu/14-library.svg');
+}
+.icon-library-menu.icon-active, .sidebar .active>.icon-library-menu {
+    background-color: var(--blue);
+}
+.icon-test-menu {
+    background-color: var(--black);
+    -webkit-mask: url('../images/app/menu/15-test.svg') no-repeat;
+    -webkit-mask-size: 100% 100%;
+    mask-image: url('../images/app/menu/15-test.svg');
+}
+.icon-test-menu.icon-active, .sidebar .active>.icon-test-menu {
+    background-color: var(--blue);
+}
 .icon-paper {
     background-image: url('../images/app/171.png');
 }
@@ -565,13 +633,19 @@ span {
     background-image: url('../images/app/73.png');
 }
 .icon-add-folder {
-    background-image: url('../images/app/9.png');
+    /*background-image: url('../images/app/9.png');*/
+    background-color: var(--black);
+    -webkit-mask: url('../images/app/menu/library/add-folder.svg') no-repeat;
+    -webkit-mask-size: 100% 100%;
+    mask-image: url('../images/app/menu/library/add-folder.svg');
 }
 .icon-add-folder.disable {
-    background-image: url('../images/app/8.png');
+    /*background-image: url('../images/app/8.png');*/
+    background-color: var(--grey);
 }
 .icon-add-folder.icon-active {
-    background-image: url('../images/app/10.png');
+    background-color: var(--blue);
+    /*background-image: url('../images/app/10.png');*/
 }
 .icon-add-file {
     background-image: url('../images/app/21.png');
@@ -7887,8 +7961,13 @@ span.select2-container, span.select2-dropdown, span.select2-results {
 .katex-display>.katex {
     text-align: left;
 }
+.katex span {
+    width: unset;
+    height: unset;
+}
 .filter-bar {
     grid-template-columns: 65px auto !important;
+    height: 
 }
 .filter-bar-item {
     display: grid;
