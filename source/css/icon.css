@@ -244,10 +244,15 @@ span {
     background-color: var(--blue);
 }
 .icon-plane {
-    background-image: url('../images/app/59.png');
+    /*background-image: url('../images/app/59.png');*/
+    background-color: var(--black);
+    -webkit-mask: url('../images/app/menu/19-help.svg') no-repeat;
+    -webkit-mask-size: 100% 100%;
+    mask-image: url('../images/app/menu/19-help.svg');
 }
 .icon-plane.icon-active, .sidebar .active>.icon-plane {
-    background-image: url('../images/app/58.png');
+    /*background-image: url('../images/app/58.png');*/
+    background-color: var(--blue);
 }
 .icon-group {
     /*background-image: url('../images/app/54.png');*/
@@ -276,10 +281,15 @@ span {
     background-color: var(--blue);
 }
 .icon-bell {
-    background-image: url('../images/app/96.png');
+    /*background-image: url('../images/app/96.png');*/
+    background-color: var(--black);
+    -webkit-mask: url('../images/app/menu/bell.svg') no-repeat;
+    -webkit-mask-size: 100% 100%;
+    mask-image: url('../images/app/menu/bell.svg');
 }
 .icon-bell.icon-active, .sidebar .active>.icon-bell {
-    background-image: url('../images/app/97.png');
+    /*background-image: url('../images/app/97.png');*/
+    background-color: var(--blue);
 }
 .icon-plan {
     background-image: url('../images/app/40.png');
