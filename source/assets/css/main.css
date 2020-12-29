@@ -193,7 +193,7 @@ span {
 }
 .icon-file.disable {
     /*background-image: url('../images/app/137.png');*/
-    background-color: var(--grey);
+    background-color: var(--light-grey);
 }
 .icon-file.icon-active {
     background-color: var(--blue);
@@ -222,7 +222,7 @@ span {
 }
 .icon-user.disable {
     /*background-image: url('../images/app/111.png');*/
-    background-color: var(--grey);
+    background-color: var(--light-grey);
 }
 .icon-home {
     background-color: var(--black);
@@ -339,7 +339,7 @@ span {
 }
 .icon-mail.disable {
     /*background-image: url('../images/app/23.png');*/
-    background-color: var(--grey);
+    background-color: var(--light-grey);
 }
 .icon-mail.icon-active, .active>.icon-mail {
     /*background-image: url('../images/app/24.png');*/
@@ -651,7 +651,7 @@ span {
 }
 .icon-add-folder.disable {
     /*background-image: url('../images/app/8.png');*/
-    background-color: var(--grey);
+    background-color: var(--light-grey);
 }
 .icon-add-folder.icon-active {
     background-color: var(--blue);
@@ -1182,6 +1182,33 @@ span {
     width: 40px;
     height: 50px;
 }
+.math.matrix6 {
+    background-image: url('../images/app/fx/2/22ptr2.svg');
+    background-size: 85% auto;
+    background-position: center center;
+
+    /*background-position-x: -978px;*/
+    width: 40px;
+    height: 50px;
+}
+.math.matrix7 {
+    background-image: url('../images/app/fx/2/23ptr3.svg');
+    background-size: 85% auto;
+    background-position: center center;
+
+    /*background-position-x: -978px;*/
+    width: 40px;
+    height: 50px;
+}
+.math.matrix8 {
+    background-image: url('../images/app/fx/2/24ptr4.svg');
+    background-size: 85% auto;
+    background-position: center center;
+
+    /*background-position-x: -978px;*/
+    width: 40px;
+    height: 50px;
+}
 .math.equal1 {
     background-image: url('../images/app/fx/3/11eq.svg');
     background-size: 85% auto;
@@ -1382,6 +1409,33 @@ span {
 }
 .math.special11 {
     background-image: url('../images/app/fx/3/29-1supset.svg');
+    background-size: 85% auto;
+    background-position: center center;
+
+    width: 40px;
+    height: 50px;
+    /*background-size: auto 55%;*/
+}
+.math.special12 {
+    background-image: url('../images/app/fx/3/29-2divisble.svg');
+    background-size: 85% auto;
+    background-position: center center;
+
+    width: 40px;
+    height: 50px;
+    /*background-size: auto 55%;*/
+}
+.math.special13 {
+    background-image: url('../images/app/fx/3/29-3ndivisble.svg');
+    background-size: 85% auto;
+    background-position: center center;
+
+    width: 40px;
+    height: 50px;
+    /*background-size: auto 55%;*/
+}
+.math.special14 {
+    background-image: url('../images/app/fx/3/29-4clock.svg');
     background-size: 85% auto;
     background-position: center center;
 
@@ -5352,6 +5406,10 @@ a[data-toggle="collapse"][aria-expanded="true"] span {
     grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto;
 }
 
+.grid-7 {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto;
+}
 .grid-6 {
     display: grid;
     grid-template-columns: auto auto auto auto auto auto;
@@ -8016,6 +8074,15 @@ span.select2-container, span.select2-dropdown, span.select2-results {
 }
 .filter-bar-item>div:last-of-type {
     min-width: 180px;
+}
+.student-get-out h1 {
+    margin-bottom: 22px;
+}
+.student-get-out {
+    padding-bottom: 20px;
+}
+.student-get-out .logout {
+    top: 52px;
 }
 
 @-webkit-keyframes HideList {

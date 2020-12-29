@@ -3154,6 +3154,10 @@ a[data-toggle="collapse"][aria-expanded="true"] span {
     grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto;
 }
 
+.grid-7 {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto;
+}
 .grid-6 {
     display: grid;
     grid-template-columns: auto auto auto auto auto auto;
@@ -5818,6 +5822,15 @@ span.select2-container, span.select2-dropdown, span.select2-results {
 }
 .filter-bar-item>div:last-of-type {
     min-width: 180px;
+}
+.student-get-out h1 {
+    margin-bottom: 22px;
+}
+.student-get-out {
+    padding-bottom: 20px;
+}
+.student-get-out .logout {
+    top: 52px;
 }
 
 @-webkit-keyframes HideList {
