@@ -8084,6 +8084,47 @@ span.select2-container, span.select2-dropdown, span.select2-results {
 .student-get-out .logout {
     top: 52px;
 }
+.select-box-to-user {
+        min-width: unset;
+    width: 250px;
+}
+.flex-2-option {
+    display: flex;
+}
+.flex-2-option .select-box {
+    min-width: unset;
+    font-family: Effra;
+}
+.flex-2-option .select-box.child-1 {
+    width: 200px;
+    margin-right: 15px;
+}
+.flex-2-option .select-box.child-2 {
+    width: 180px;
+}
+.flex-2-option .select-box__list {
+    /*min-width: unset;*/
+    max-height: 170px;
+    overflow-y: auto;
+}
+.flex-2-option .select-box__list li {
+    position: relative;
+}
+.flex-2-option .select-box__list li:not(:last-child):after {
+    content: '';
+    position: absolute;
+    width: 95%;
+    height: 1px;
+    background-color: var(--light-grey);
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+.flex-2-option .modal-text-area__head--right-option--option-name {
+    vertical-align: middle;
+    line-height: 29px;
+}
 
 @-webkit-keyframes HideList {
     from {
