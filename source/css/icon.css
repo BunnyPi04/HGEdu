@@ -66,8 +66,10 @@ span {
     /*background-image: url('../images/app/16.png');*/
     background-color: var(--black);
     -webkit-mask: url('../images/app/menu/library/file.svg') no-repeat;
-    -webkit-mask-size: 100% 100%;
     mask-image: url('../images/app/menu/library/file.svg');
+    -webkit-mask-size: 100% 100%;
+/*    -webkit-mask: url('../images/app/icon-file.svg') no-repeat;
+    mask-image: url('../images/app/icon-file.svg');*/
 }
 .icon-file.disable {
     /*background-image: url('../images/app/137.png');*/
@@ -239,7 +241,7 @@ span {
     -webkit-mask-size: 100% 100%;
     mask-image: url('../images/app/menu/13-contact.svg');
 }
-.icon-contact-book.icon-active {
+.icon-contact-book.icon-active, .sidebar .active>.icon-contact-book {
     /*background-image: url('../images/app/18.png');*/
     background-color: var(--blue);
 }
@@ -376,7 +378,7 @@ span {
 .active .icon-card-tab {
     background-image: url('../images/app/106.png');
 }
-.active .icon-door {
+.sidebar .active>.icon-door {
     /*background-image: url('../images/app/icon-door-active.png');*/
     background-color: var(--blue);
 }
@@ -536,13 +538,19 @@ span {
     /*background-image: url('../images/app/10.png');*/
 }
 .icon-add-file {
-    background-image: url('../images/app/21.png');
+    /*background-image: url('../images/app/icon-file.svg');*/
+    background-color: var(--black);
+    -webkit-mask: url('../images/app/icon-file.svg') no-repeat;
+    mask-image: url('../images/app/icon-file.svg');
+    -webkit-mask-size: 100% 100%;
 }
 .icon-add-file.disable {
-    background-image: url('../images/app/22.png');
+    /*background-image: url('../images/app/icon-file.svg');*/
+    background-color: var(--grey);
 }
 .icon-add-file.icon-active {
-    background-image: url('../images/app/20.png');
+    /*background-image: url('../images/app/20.png');*/
+    background-color: var(--blue);
 }
 .icon-trash {
     background-image: url('../images/app/55.png');
@@ -800,7 +808,7 @@ span {
     background-size: 85% auto;
     background-position: center center;
 
-    width: 32px;
+    width: 44px;
     height: 50px;
     /*background-size: auto 90%;*/
     /*background-position-x: -5px;*/
@@ -810,7 +818,7 @@ span {
     background-size: 85% auto;
     background-position: center center;
 
-    width: 32px;
+    width: 44px;
     height: 50px;
 /*    background-size: auto 90%;
     background-position-x: -41px;*/
@@ -820,7 +828,7 @@ span {
     background-size: 85% auto;
     background-position: center center;
 
-    width: 32px;
+    width: 44px;
     height: 50px;
 /*    background-position-x: -74px;
     background-size: auto 86%;
@@ -831,7 +839,7 @@ span {
     background-size: 85% auto;
     background-position: center center;
 
-    width: 32px;
+    width: 44px;
     height: 50px;
 /*    background-size: auto 86%;
     background-position-y: center;
@@ -842,7 +850,7 @@ span {
     background-size: 85% auto;
     background-position: center center;
 
-    width: 32px;
+    width: 44px;
     height: 50px;
 /*    background-size: auto 86%;
     background-position-y: center;
@@ -853,7 +861,7 @@ span {
     background-size: 85% auto;
     background-position: center center;
 
-    width: 32px;
+    width: 44px;
     height: 50px;
 /*    background-size: auto 86%;
     background-position-y: center;
@@ -864,7 +872,7 @@ span {
     background-size: 85% auto;
     background-position: center center;
 
-    width: 32px;
+    width: 44px;
     height: 50px;
 /*    background-size: auto 86%;
     background-position-x: -178px;
@@ -875,7 +883,7 @@ span {
     background-size: 85% auto;
     background-position: center center;
 
-    width: 32px;
+    width: 44px;
     height: 50px;
 /*    background-size: auto 113%;
     background-position-x: -331px;
@@ -886,7 +894,7 @@ span {
     background-size: 85% auto;
     background-position: center center;
 
-    width: 32px;
+    width: 44px;
     height: 50px;
     /*background-position-x: -328px;*/
 }
@@ -895,7 +903,7 @@ span {
     background-size: 85% auto;
     background-position: center center;
 
-    width: 32px;
+    width: 44px;
     height: 50px;
     /*background-position-x: -367px;*/
 }
@@ -904,7 +912,7 @@ span {
     background-size: 85% auto;
     background-position: center center;
 
-    width: 32px;
+    width: 44px;
     height: 50px;
     /*background-position-x: -453px;*/
 }
@@ -913,7 +921,7 @@ span {
     background-size: 85% auto;
     background-position: center center;
 
-    width: 32px;
+    width: 44px;
     height: 50px;
     /*background-position-x: -411px;*/
 }
@@ -922,7 +930,7 @@ span {
     background-size: 85% auto;
     background-position: center center;
 
-    width: 32px;
+    width: 44px;
     height: 50px;
     /*background-position-x: -492px;*/
 }
@@ -931,7 +939,7 @@ span {
     background-size: 85% auto;
     background-position: center center;
 
-    width: 32px;
+    width: 44px;
     height: 50px;
     /*background-position-x: -492px;*/
 }
@@ -940,7 +948,7 @@ span {
     background-size: 85% auto;
     background-position: center center;
 
-    width: 32px;
+    width: 44px;
     height: 50px;
     /*background-position-x: -533px;*/
 }
@@ -949,7 +957,7 @@ span {
     background-size: 85% auto;
     background-position: center center;
 
-    width: 32px;
+    width: 44px;
     height: 50px;
 /*    background-size: auto 86%;
     background-position-y: center;
@@ -960,7 +968,7 @@ span {
     background-size: 85% auto;
     background-position: center center;
 
-    width: 32px;
+    width: 44px;
     height: 50px;
 /*    background-size: auto 86%;
     background-position-y: center;
@@ -971,7 +979,7 @@ span {
     background-size: 85% auto;
     background-position: center center;
 
-    width: 32px;
+    width: 44px;
     height: 50px;
 /*    background-size: auto 86%;
     background-position-y: center;
@@ -982,7 +990,7 @@ span {
     background-size: 85% auto;
     background-position: center center;
 
-    width: 32px;
+    width: 44px;
     height: 50px;
 /*    background-size: auto 86%;
     background-position-y: center;
@@ -993,7 +1001,7 @@ span {
     background-size: 85% auto;
     background-position: center center;
 
-    width: 32px;
+    width: 44px;
     height: 50px;
 /*    background-size: auto 86%;
     background-position-y: center;
@@ -1004,7 +1012,7 @@ span {
     background-size: 85% auto;
     background-position: center center;
 
-    width: 32px;
+    width: 44px;
     height: 50px;
 /*    background-size: auto 86%;
     background-position-x: -594px;
@@ -1012,79 +1020,79 @@ span {
 }
 .math.integral8 {
     background-position-x: -1894px;
-    width: 40px;
+    width: 44px;
     height: 50px;
 }
 .math.matrix1 {
     background-image: url('../images/app/fx/2/11matrix.svg');
-    background-size: 85% auto;
+    background-size: 100% auto;
     background-position: center center;
 
-    width: 40px;
+    width: 44px;
     height: 50px;
     /*background-position-x: -856px;*/
 }
 .math.matrix2 {
     background-image: url('../images/app/fx/2/13matrixsqbrac.svg');
-    background-size: 85% auto;
+    background-size: 100% auto;
     background-position: center center;
 
-    width: 40px;
+    width: 44px;
     height: 50px;
     /*background-position-x: -897px;*/
 }
 .math.matrix3 {
     background-image: url('../images/app/fx/2/12matrixbrac.svg');
-    background-size: 85% auto;
+    background-size: 100% auto;
     background-position: center center;
 
     /*background-position-x: -936px;*/
-    width: 40px;
+    width: 44px;
     height: 50px;
 }
 .math.matrix4 {
     background-image: url('../images/app/fx/2/14matrixbraclet.svg');
-    background-size: 85% auto;
+    background-size: 100% auto;
     background-position: center center;
 
     /*background-position-x: -815px;*/
-    width: 40px;
+    width: 44px;
     height: 50px;
 }
 .math.matrix5 {
     background-image: url('../images/app/fx/2/21cases.svg');
-    background-size: 85% auto;
+    background-size: 100% auto;
     background-position: center center;
 
     /*background-position-x: -978px;*/
-    width: 40px;
+    width: 44px;
     height: 50px;
 }
 .math.matrix6 {
     background-image: url('../images/app/fx/2/22ptr2.svg');
-    background-size: 85% auto;
+    background-size: 100% auto;
     background-position: center center;
 
     /*background-position-x: -978px;*/
-    width: 40px;
+    width: 44px;
     height: 50px;
 }
 .math.matrix7 {
     background-image: url('../images/app/fx/2/23ptr3.svg');
-    background-size: 85% auto;
+    background-size: 100% auto;
     background-position: center center;
 
     /*background-position-x: -978px;*/
-    width: 40px;
+    width: 44px;
     height: 50px;
 }
 .math.matrix8 {
     background-image: url('../images/app/fx/2/24ptr4.svg');
-    background-size: 85% auto;
+    background-size: 100% auto;
     background-position: center center;
 
     /*background-position-x: -978px;*/
-    width: 40px;
+    width: 44px;
     height: 50px;
 }
 .math.equal1 {
@@ -1092,7 +1100,7 @@ span {
     background-size: 85% auto;
     background-position: center center;
 
-    width: 40px;
+    width: 44px;
     height: 50px;
 /*    background-size: auto 70%;
     background-position-x: -707px;
@@ -1103,7 +1111,7 @@ span {
     background-size: 85% auto;
     background-position: center center;
 
-    width: 40px;
+    width: 44px;
     height: 50px;
 /*    background-size: auto 70%;
     background-position-x: -1187px;
@@ -1114,7 +1122,7 @@ span {
     background-size: 85% auto;
     background-position: center center;
 
-    width: 40px;
+    width: 44px;
     height: 50px;
 /*    background-position-x: -1159px;
     background-position-y: center;
@@ -1125,7 +1133,7 @@ span {
     background-size: 85% auto;
     background-position: center center;
 
-    width: 40px;
+    width: 44px;
     height: 50px;
 /*    background-size: auto 70%;
     background-position-x: -1131px;
@@ -1136,7 +1144,7 @@ span {
     background-size: 85% auto;
     background-position: center center;
 
-    width: 40px;
+    width: 44px;
     height: 50px;
 /*    background-size: auto 70%;
     background-position-x: -1102px;
@@ -1147,7 +1155,7 @@ span {
     background-size: 85% auto;
     background-position: center center;
 
-    width: 40px;
+    width: 44px;
     height: 50px;
 /*    background-size: auto 70%;
     background-position-x: -1074px;
@@ -1158,7 +1166,7 @@ span {
     background-size: 85% auto;
     background-position: center center;
 
-    width: 40px;
+    width: 44px;
     height: 50px;
 /*    background-size: auto 70%;
     background-position-x: -1046px;
@@ -1169,7 +1177,7 @@ span {
     background-size: 85% auto;
     background-position: center center;
 
-    width: 40px;
+    width: 44px;
     height: 50px;
 /*    background-size: auto 70%;
     background-position-x: -1018px;
@@ -1180,7 +1188,7 @@ span {
     background-size: 85% auto;
     background-position: center center;
 
-    width: 40px;
+    width: 44px;
     height: 50px;
 /*    background-size: auto 55%;
     background-position-x: -751px;
@@ -1191,7 +1199,7 @@ span {
     background-size: 85% auto;
     background-position: center center;
 
-    width: 40px;
+    width: 44px;
     height: 50px;
 /*    background-size: auto 55%;
     background-position-x: -773px;
@@ -1202,7 +1210,7 @@ span {
     background-size: 85% auto;
     background-position: center center;
 
-    width: 40px;
+    width: 44px;
     height: 50px;
 /*    background-size: auto 55%;
     background-position-x: -729px;
@@ -1213,7 +1221,7 @@ span {
     background-size: 85% auto;
     background-position: center center;
 
-    width: 40px;
+    width: 44px;
     height: 50px;
 /*    background-size: auto 55%;
     background-position-x: -708px;
@@ -1224,7 +1232,7 @@ span {
     background-size: 85% auto;
     background-position: center center;
 
-    width: 40px;
+    width: 44px;
     height: 50px;
 /*    background-size: auto 55%;
     background-position-x: -684px;
@@ -1235,7 +1243,7 @@ span {
     background-size: 85% auto;
     background-position: center center;
 
-    width: 40px;
+    width: 44px;
     height: 50px;
 /*    background-size: auto 68%;
     background-position-x: -2361px;
@@ -1246,7 +1254,7 @@ span {
     background-size: 85% auto;
     background-position: center center;
 
-    width: 40px;
+    width: 44px;
     height: 50px;
 /*    background-size: auto 55%;
     background-position-x: -662px;
@@ -1257,7 +1265,7 @@ span {
     background-size: 85% auto;
     background-position: center center;
 
-    width: 40px;
+    width: 44px;
     height: 50px;
 /*    background-size: auto 55%;
     background-position-x: -640px;
@@ -1268,7 +1276,7 @@ span {
     background-size: 85% auto;
     background-position: center center;
 
-    width: 40px;
+    width: 44px;
     height: 50px;
 /*    background-size: auto 55%;
     background-position-x: -618px;
@@ -1279,7 +1287,7 @@ span {
     background-size: 85% auto;
     background-position: center center;
 
-    width: 40px;
+    width: 44px;
     height: 50px;
 /*    background-size: auto 55%;
     background-position-x: -597px;
@@ -1290,7 +1298,7 @@ span {
     background-size: 85% auto;
     background-position: center center;
 
-    width: 40px;
+    width: 44px;
     height: 50px;
     /*background-size: auto 55%;*/
 }
@@ -1299,7 +1307,7 @@ span {
     background-size: 85% auto;
     background-position: center center;
 
-    width: 40px;
+    width: 44px;
     height: 50px;
     /*background-size: auto 55%;*/
 }
@@ -1308,7 +1316,7 @@ span {
     background-size: 85% auto;
     background-position: center center;
 
-    width: 40px;
+    width: 44px;
     height: 50px;
     /*background-size: auto 55%;*/
 }
@@ -1317,7 +1325,7 @@ span {
     background-size: 85% auto;
     background-position: center center;
 
-    width: 40px;
+    width: 44px;
     height: 50px;
     /*background-size: auto 55%;*/
 }
@@ -1326,7 +1334,7 @@ span {
     background-size: 85% auto;
     background-position: center center;
 
-    width: 40px;
+    width: 44px;
     height: 50px;
 }
 .math.specialQ {
@@ -1334,7 +1342,7 @@ span {
     background-size: 85% auto;
     background-position: center center;
 
-    width: 40px;
+    width: 44px;
     height: 50px;
 }
 .math.specialC {
@@ -1342,7 +1350,7 @@ span {
     background-size: 85% auto;
     background-position: center center;
 
-    width: 40px;
+    width: 44px;
     height: 50px;
 }
 .math.specialZ {
@@ -1350,7 +1358,7 @@ span {
     background-size: 85% auto;
     background-position: center center;
 
-    width: 40px;
+    width: 44px;
     height: 50px;
 }
 .math.specialR {
@@ -1358,7 +1366,7 @@ span {
     background-size: 85% auto;
     background-position: center center;
 
-    width: 40px;
+    width: 44px;
     height: 50px;
 }
 
@@ -1367,7 +1375,7 @@ span {
     background-size: 85% auto;
     background-position: center center;
 
-    width: 40px;
+    width: 44px;
     height: 50px;
 /*    background-size: auto 65%;
     background-position-x: -1546px;
@@ -1378,7 +1386,7 @@ span {
     background-size: 85% auto;
     background-position: center center;
 
-    width: 40px;
+    width: 44px;
     height: 50px;
 /*    background-size: auto 65%;
     background-position-x: -1468px;
@@ -1389,7 +1397,7 @@ span {
     background-size: 85% auto;
     background-position: center center;
 
-    width: 40px;
+    width: 44px;
     height: 50px;
 /*    background-size: auto 65%;
     background-position-x: -1336px;
@@ -1400,7 +1408,7 @@ span {
     background-size: 85% auto;
     background-position: center center;
 
-    width: 40px;
+    width: 44px;
     height: 50px;
 /*    background-size: auto 65%;
     background-position-x: -1362px;
@@ -1411,7 +1419,7 @@ span {
     background-size: 85% auto;
     background-position: center center;
 
-    width: 40px;
+    width: 44px;
     height: 50px;
 /*    background-size: auto 65%;
     background-position-x: -1520px;
@@ -1422,7 +1430,7 @@ span {
     background-size: 85% auto;
     background-position: center center;
 
-    width: 40px;
+    width: 44px;
     height: 50px;
 /*    background-size: auto 65%;
     background-position-x: -1494px;
@@ -1433,7 +1441,7 @@ span {
     background-size: 85% auto;
     background-position: center center;
 
-    width: 40px;
+    width: 44px;
     height: 50px;
 /*    background-size: auto 65%;
     background-position-x: -1415px;
@@ -1444,7 +1452,7 @@ span {
     background-size: 85% auto;
     background-position: center center;
 
-    width: 40px;
+    width: 44px;
     height: 50px;
 /*    background-size: auto 65%;
     background-position-x: -1441px;
@@ -1455,7 +1463,7 @@ span {
     background-size: 85% auto;
     background-position: center center;
 
-    width: 40px;
+    width: 44px;
     height: 50px;
 /*    background-size: auto 65%;
     background-position-x: -1310px;
@@ -1466,7 +1474,7 @@ span {
     background-size: 85% auto;
     background-position: center center;
 
-    width: 40px;
+    width: 44px;
     height: 50px;
 /*    background-size: auto 65%;
     background-position-x: -1285px;
@@ -1477,7 +1485,7 @@ span {
     background-size: 85% auto;
     background-position: center center;
 
-    width: 40px;
+    width: 44px;
     height: 50px;
 /*    background-size: auto 65%;
     background-position-x: -1258px;
@@ -1488,29 +1496,41 @@ span {
     background-size: 85% auto;
     background-position: center center;
 
-    width: 40px;
+    width: 44px;
     height: 50px;
 /*    background-size: auto 65%;
     background-position-x: -1232px;
     background-position-y: center;*/
 }
 .math.arrow13 {
-    background-image: url('../images/app/fx/4/37lefftrigght.svg');
+    background-image: url('../images/app/fx/4/36leftright.svg');
     background-size: 85% auto;
     background-position: center center;
 
-    width: 40px;
+    width: 44px;
     height: 50px;
 /*    background-size: auto 65%;
     background-position-x: -1205px;
     background-position-y: center;*/
 }
+.math.arrow13b {
+    background-image: url('../images/app/fx/4/37lefftrigght.svg');
+    background-size: 85% auto;
+    background-position: center center;
+
+    width: 44px;
+    height: 50px;
+/*    background-size: auto 65%;
+    background-position-x: -1205px;
+    background-position-y: center;*/
+}
+
 .math.arrow14 {
     background-image: url('../images/app/fx/4/32from.svg');
     background-size: 85% auto;
     background-position: center center;
 
-    width: 40px;
+    width: 44px;
     height: 50px;
 /*    background-size: auto 65%;
     background-position-x: -1179px;
@@ -1521,7 +1541,7 @@ span {
     background-size: 85% auto;
     background-position: center center;
 
-    width: 40px;
+    width: 44px;
     height: 50px;
     height: 50px;
 /*    background-size: auto 65%;
@@ -1533,7 +1553,7 @@ span {
     background-size: 85% auto;
     background-position: center center;
 
-    width: 40px;
+    width: 44px;
     height: 50px;
 /*    background-size: auto 65%;
     background-position-x: -1389px;
@@ -1544,7 +1564,7 @@ span {
     background-size: 85% auto;
     background-position: center center;
 
-    width: 40px;
+    width: 44px;
     height: 50px;
 /*    background-size: auto 65%;
     background-position-x: -1311px;
@@ -1555,7 +1575,7 @@ span {
     background-size: 85% auto;
     background-position: center center;
 
-    width: 32px;
+    width: 44px;
     height: 50px;
 /*    background-size: auto 55%;
     background-position-x: -1331px;
@@ -1566,7 +1586,7 @@ span {
     background-size: 85% auto;
     background-position: center center;
 
-    width: 32px;
+    width: 44px;
     height: 50px;
 /*    background-size: auto 55%;
     background-position-x: -1641px;
@@ -1577,7 +1597,7 @@ span {
     background-size: 85% auto;
     background-position: center center;
 
-    width: 32px;
+    width: 44px;
     height: 50px;
 /*    background-size: auto 55%;
     background-position-x: -1619px;
@@ -1588,7 +1608,7 @@ span {
     background-size: 85% auto;
     background-position: center center;
 
-    width: 32px;
+    width: 44px;
     height: 50px;
 /*    background-size: auto 55%;
     background-position-x: -1619px;
@@ -1599,7 +1619,7 @@ span {
     background-size: 85% auto;
     background-position: center center;
 
-    width: 32px;
+    width: 44px;
     height: 50px;
 /*    background-size: auto 55%;
     background-position-x: -1575px;
@@ -1610,7 +1630,7 @@ span {
     background-size: 85% auto;
     background-position: center center;
 
-    width: 32px;
+    width: 44px;
     height: 50px;
 /*    background-size: auto 55%;
     background-position-x: -1553px;
@@ -1621,7 +1641,7 @@ span {
     background-size: 85% auto;
     background-position: center center;
 
-    width: 32px;
+    width: 44px;
     height: 50px;
 /*    background-size: auto 55%;
     background-position-x: -1530px;
@@ -1632,7 +1652,7 @@ span {
     background-size: 40% auto;
     background-position: center center;
 
-    width: 32px;
+    width: 44px;
     height: 50px;
 /*    background-size: auto 55%;
     background-position-x: -1529px;
@@ -1643,7 +1663,7 @@ span {
     background-size: 85% auto;
     background-position: center center;
 
-    width: 32px;
+    width: 44px;
     height: 50px;
 /*    background-position-x: -1508px;
     background-position-y: center;
@@ -1654,7 +1674,7 @@ span {
     background-size: 85% auto;
     background-position: center center;
 
-    width: 32px;
+    width: 44px;
     height: 50px;
 /*    background-size: auto 55%;
     background-position-x: -1485px;
@@ -1665,7 +1685,7 @@ span {
     background-size: 85% auto;
     background-position: center center;
 
-    width: 32px;
+    width: 44px;
     height: 50px;
 /*    background-size: auto 55%;
     background-position-x: -1352px;
@@ -1676,7 +1696,7 @@ span {
     background-size: 85% auto;
     background-position: center center;
 
-    width: 32px;
+    width: 44px;
     height: 50px;
 /*    background-size: auto 55%;
     background-position-x: -2306px;
@@ -1687,7 +1707,7 @@ span {
     background-size: 85% auto;
     background-position: center center;
 
-    width: 32px;
+    width: 44px;
     height: 50px;
 /*    background-size: auto 55%;
     background-position-x: -2284px;
@@ -1698,7 +1718,7 @@ span {
     background-size: 85% auto;
     background-position: center center;
 
-    width: 32px;
+    width: 44px;
     height: 50px;
 /*    background-size: auto 55%;
     background-position-x: -2262px;
@@ -1709,7 +1729,7 @@ span {
     background-size: 85% auto;
     background-position: center center;
 
-    width: 32px;
+    width: 44px;
     height: 50px;
 /*    background-size: auto 55%;
     background-position-x: -2240px;
@@ -1720,7 +1740,7 @@ span {
     background-size: 85% auto;
     background-position: center center;
 
-    width: 32px;
+    width: 44px;
     height: 50px;
 /*    background-size: auto 55%;
     background-position-x: -2218px;
@@ -1731,7 +1751,7 @@ span {
     background-size: 85% auto;
     background-position: center center;
 
-    width: 32px;
+    width: 44px;
     height: 50px;
 /*    background-size: auto 55%;
     background-position-x: -2195px;
@@ -1742,7 +1762,7 @@ span {
     background-size: 85% auto;
     background-position: center center;
 
-    width: 32px;
+    width: 44px;
     height: 50px;
 /*    background-size: auto 55%;
     background-position-x: -2018px;
@@ -1753,7 +1773,7 @@ span {
     background-size: 85% auto;
     background-position: center center;
 
-    width: 32px;
+    width: 44px;
     height: 50px;
 /*    background-size: auto 55%;
     background-position-x: -1996px;
@@ -1764,7 +1784,7 @@ span {
     background-size: 42% auto;
     background-position: center center;
 
-    width: 32px;
+    width: 44px;
     height: 50px;
 /*    background-size: auto 55%;
     background-position-x: -1974px;
@@ -1775,7 +1795,7 @@ span {
     background-size: 85% auto;
     background-position: center center;
 
-    width: 32px;
+    width: 44px;
     height: 50px;
     /*background-size: auto 55%;*/
 }
@@ -1784,7 +1804,7 @@ span {
     background-size: 85% auto;
     background-position: center center;
 
-    width: 32px;
+    width: 44px;
     height: 50px;
 /*    background-size: auto 55%;
     background-position-x: -1375px;
@@ -1795,7 +1815,7 @@ span {
     background-size: 85% auto;
     background-position: center center;
 
-    width: 32px;
+    width: 44px;
     height: 50px;
 /*    background-size: auto 55%;
     background-position-x: -1464px;
@@ -1806,7 +1826,7 @@ span {
     background-size: 85% auto;
     background-position: center center;
 
-    width: 32px;
+    width: 44px;
     height: 50px;
 /*    background-size: auto 55%;
     background-position-x: -1441px;
@@ -1817,7 +1837,7 @@ span {
     background-size: 85% auto;
     background-position: center center;
 
-    width: 32px;
+    width: 44px;
     height: 50px;
 /*    background-position-x: -1419px;
     background-position-y: center;
@@ -1828,7 +1848,7 @@ span {
     background-size: 85% auto;
     background-position: center center;
 
-    width: 32px;
+    width: 44px;
     height: 50px;
 /*    background-size: auto 55%;
     background-position-x: -1397px;
@@ -1839,7 +1859,7 @@ span {
     background-size: 85% auto;
     background-position: center center;
 
-    width: 32px;
+    width: 44px;
     height: 50px;
 /*    background-size: auto 55%;
     background-position-x: -2175px;
@@ -1850,7 +1870,7 @@ span {
     background-size: 85% auto;
     background-position: center center;
 
-    width: 32px;
+    width: 44px;
     height: 50px;
 /*    background-size: auto 55%;
     background-position-x: -2151px;
@@ -1861,7 +1881,7 @@ span {
     background-size: 85% auto;
     background-position: center center;
 
-    width: 32px;
+    width: 44px;
     height: 50px;
 /*    background-size: auto 55%;
     background-position-x: -2129px;
@@ -1872,7 +1892,7 @@ span {
     background-size: 85% auto;
     background-position: center center;
 
-    width: 32px;
+    width: 44px;
     height: 50px;
 /*    background-size: auto 55%;
     background-position-x: -2106px;
@@ -1883,7 +1903,7 @@ span {
     background-size: 85% auto;
     background-position: center center;
 
-    width: 32px;
+    width: 44px44px44px;
     height: 50px;
 /*    background-size: auto 55%;
     background-position-x: -2085px;
@@ -1894,7 +1914,7 @@ span {
     background-size: 85% auto;
     background-position: center center;
 
-    width: 32px;
+    width: 44px44px;
     height: 50px;
 /*    background-size: auto 55%;
     background-position-x: -2062px;
@@ -1905,7 +1925,7 @@ span {
     background-size: 85% auto;
     background-position: center center;
 
-    width: 32px;
+    width: 44px44px;
     height: 50px;
 /*    background-size: auto 55%;
     background-position-x: -2040px;
@@ -1916,7 +1936,7 @@ span {
     background-size: 85% auto;
     background-position: center center;
 
-    width: 32px;
+    width: 44px44px;
     height: 50px;
 /*    background-size: auto 55%;
     background-position-x: -2018px;
@@ -1927,7 +1947,7 @@ span {
     background-size: 85% auto;
     background-position: center center;
 
-    width: 32px;
+    width: 44px44px;
     height: 50px;
 /*    background-size: auto 55%;
     background-position-x: -1929px;
@@ -1938,7 +1958,7 @@ span {
     background-size: 85% auto;
     background-position: center center;
 
-    width: 32px;
+    width: 44px44px;
     height: 50px;
 /*    background-size: auto 79%;
     background-position-x: -2715px;
@@ -1949,7 +1969,7 @@ span {
     background-size: 85% auto;
     background-position: center center;
 
-    width: 32px;
+    width: 44px44px;
     height: 50px;
 /*    background-size: auto 79%;
     background-position-x: -2523px;
@@ -1960,7 +1980,7 @@ span {
     background-size: 85% auto;
     background-position: center center;
 
-    width: 32px;
+    width: 44px;
     height: 50px;
 /*    background-size: auto 79%;
     background-position-x: -2651px;
@@ -1971,7 +1991,7 @@ span {
     background-size: 85% auto;
     background-position: center center;
 
-    width: 32px;
+    width: 44px;
     height: 50px;
 /*    background-size: auto 79%;
     background-position-x: -2715px;
@@ -1982,7 +2002,7 @@ span {
     background-size: 85% auto;
     background-position: center center;
 
-    width: 32px;
+    width: 44px;
     height: 50px;
 /*    background-size: auto 79%;
     background-position-x: -2619px;
@@ -1993,7 +2013,7 @@ span {
     background-size: 85% auto;
     background-position: center center;
 
-    width: 32px;
+    width: 44px;
     height: 50px;
 /*    background-size: auto 79%;
     background-position-x: -2428px;
@@ -2004,7 +2024,7 @@ span {
     background-size: 85% auto;
     background-position: center center;
 
-    width: 32px;
+    width: 44px;
     height: 50px;
 /*    background-size: auto 79%;
     background-position-x: -2492px;
@@ -2015,7 +2035,7 @@ span {
     background-size: 85% auto;
     background-position: center center;
 
-    width: 32px;
+    width: 44px;
     height: 50px;
 /*    background-position-x: -2492px;
     background-position-y: center;
@@ -2026,7 +2046,7 @@ span {
     background-size: 85% auto;
     background-position: center center;
 
-    width: 32px;
+    width: 44px;
     height: 50px;
 /*    background-size: auto 79%;
     background-position-x: -2492px;
@@ -2037,7 +2057,7 @@ span {
     background-size: 85% auto;
     background-position: center center;
 
-    width: 32px;
+    width: 44px;
     height: 50px;
 /*    background-size: auto 84%;
     background-position-x: -3564px;
@@ -2048,7 +2068,7 @@ span {
     background-size: 85% auto;
     background-position: center center;
 
-    width: 32px;
+    width: 44px44px;
     height: 50px;
 /*    background-size: auto 91%;
     background-position-x: -2836px;
@@ -2059,7 +2079,7 @@ span {
     background-size: 85% auto;
     background-position: center center;
 
-    width: 32px;
+    width: 44px44px;
     height: 50px;
 }
 
@@ -2068,7 +2088,7 @@ span {
     background-size: 100% auto;
     background-position: center center;
 
-    width: 32px;
+    width: 44px44px;
     height: 50px;
 }
 .math.cos {
@@ -2076,7 +2096,7 @@ span {
     background-size: 100% auto;
     background-position: center center;
 
-    width: 32px;
+    width: 44px44px;
     height: 50px;
 }
 .math.tan {
@@ -2084,7 +2104,7 @@ span {
     background-size: 100% auto;
     background-position: center center;
 
-    width: 32px;
+    width: 44px44px;
     height: 50px;
 }
 .math.cot {
@@ -2092,7 +2112,7 @@ span {
     background-size: 100% auto;
     background-position: center center;
 
-    width: 32px;
+    width: 44px;
     height: 50px;
 }
 .math.arcsin {
@@ -2100,7 +2120,7 @@ span {
     background-size: 100% auto;
     background-position: center center;
 
-    width: 32px;
+    width: 44px;
     height: 50px;
 }
 .math.arccos {
@@ -2108,7 +2128,7 @@ span {
     background-size: 100% auto;
     background-position: center center;
 
-    width: 32px;
+    width: 44px;
     height: 50px;
 }
 .math.arctan {
@@ -2116,7 +2136,7 @@ span {
     background-size: 100% auto;
     background-position: center center;
 
-    width: 32px;
+    width: 44px;
     height: 50px;
 }
 .math.arccot {
@@ -2124,6 +2144,6 @@ span {
     background-size: 100% auto;
     background-position: center center;
 
-    width: 32px;
+    width: 44px;
     height: 50px;
 }
