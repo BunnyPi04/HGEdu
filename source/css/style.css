@@ -410,6 +410,10 @@ textarea:focus, input:focus {
     border: 1px solid var(--black);
     border-radius: 50%;
 }
+.answer .checkmark {
+    height: 20px;
+    width: 20px;
+}
 .full-fill-radio-input input:checked ~ .checkmark {
     background-color: var(--blue);
     border: 1px solid var(--blue);
@@ -5522,10 +5526,12 @@ textarea {
     color: white !important;
     width: 23px;
     text-align: center;
-    font-size: 15px !important;
+    font-size: 12px !important;
     font-family: Effra !important;
     line-height: 23px;
     font-weight: normal !important;
+    border-radius: 50% !important;
+    border: none !important;
 }
 .round-span-input::placeholder {
     color: white;
@@ -5537,6 +5543,18 @@ textarea {
 
 .round-span-input::-ms-input-placeholder { /* Microsoft Edge */
     color: white;
+}
+.matrix-span-round .green-round, .matrix-chart .green-round {
+    background-color: var(--easy);
+}
+.matrix-span-round .orange-round, .matrix-chart .orange-round {
+    background-color: var(--normal);
+}
+.matrix-span-round .purple-round, .matrix-chart .purple-round {
+    background-color: var(--hard);
+}
+.matrix-span-round .red-round, .matrix-chart .red-round {
+    background-color: var(--very-hard);
 }
 .bootstrap-datetimepicker-widget table th.picker-switch {
     text-transform: capitalize;
