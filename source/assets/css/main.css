@@ -5421,6 +5421,8 @@ a[data-toggle="collapse"][aria-expanded="true"] span {
     background-color: var(--bg-light-blue);
     padding-top: 5px;
     padding-bottom: 5px;
+    max-height: 110px;
+    overflow: auto;
 }
 .function-popup__body--item li {
     padding: 0 4px;
