@@ -969,7 +969,8 @@ textarea:focus, input:focus {
     background-image: url('../images/app/113.png');
 }
 .mn-tab .nav-link.active .hg-icon.icon-geography, .mn-tab .nav-link:hover .hg-icon.icon-geography {
-    background-image: url('../images/app/146.png');
+    /*background-image: url('../images/app/146.png');*/
+    background-color: var(--blue);
 }
 .mn-tab .nav-link.active .hg-icon.icon-teacher, .mn-tab .nav-link:hover .hg-icon.icon-teacher {
     background-image: url('../images/app/45.png');

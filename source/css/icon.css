@@ -645,7 +645,7 @@ span {
 }
 .icon-geography.disable {
     /*background-image: url('../images/app/146-2.png');*/
-    background-color: var(--grey);
+    background-color: var(--light-grey);
 }
 .icon-dropdown {
     background-image: url('../images/app/181.png');

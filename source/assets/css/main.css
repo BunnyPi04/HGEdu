@@ -124,7 +124,6 @@ span {
     width: 50px;
     height: 50px;
 }
-
 .hg-icon {
     background-size: 100%;
     overflow: hidden;
@@ -768,7 +767,7 @@ span {
 }
 .icon-geography.disable {
     /*background-image: url('../images/app/146-2.png');*/
-    background-color: var(--grey);
+    background-color: var(--light-grey);
 }
 .icon-dropdown {
     background-image: url('../images/app/181.png');
@@ -3286,7 +3285,8 @@ textarea:focus, input:focus {
     background-image: url('../images/app/113.png');
 }
 .mn-tab .nav-link.active .hg-icon.icon-geography, .mn-tab .nav-link:hover .hg-icon.icon-geography {
-    background-image: url('../images/app/146.png');
+    /*background-image: url('../images/app/146.png');*/
+    background-color: var(--blue);
 }
 .mn-tab .nav-link.active .hg-icon.icon-teacher, .mn-tab .nav-link:hover .hg-icon.icon-teacher {
     background-image: url('../images/app/45.png');
