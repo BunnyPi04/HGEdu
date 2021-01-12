@@ -5893,6 +5893,10 @@ span.select2-container, span.select2-dropdown, span.select2-results {
     vertical-align: middle;
     line-height: 29px;
 }
+.unset-span span {
+    width: unset;
+    height: unset;
+}
 
 @-webkit-keyframes HideList {
     from {

@@ -124,6 +124,7 @@ span {
     width: 50px;
     height: 50px;
 }
+
 .hg-icon {
     background-size: 100%;
     overflow: hidden;
@@ -696,34 +697,78 @@ span {
     background-image: url('../images/app/14.png');
 }
 .icon-physical {
-    background-image: url('../images/app/141.png');
+    background-color: var(--blue);
+    -webkit-mask: url('../images/app/li.svg') no-repeat;
+    -webkit-mask-size: 100% 100%;
+    mask-image: url('../images/app/li.svg');
+    /*background-image: url('../images/app/141.png');*/
+}
+.icon-physical.disable, .icon-math.disable, .icon-language.disable, .icon-chemistry.disable, .icon-biology.disable, .icon-history.disable, .icon-other-subject.disable {
+    background-color: var(--grey);
 }
 .icon-math {
-    background-image: url('../images/app/142.png');
+    /*background-image: url('../images/app/142.png');*/
+    background-color: var(--blue);
+    -webkit-mask: url('../images/app/toan.svg') no-repeat;
+    -webkit-mask-size: 100% 100%;
+    mask-image: url('../images/app/toan.svg');
 }
 .icon-chemistry {
-    background-image: url('../images/app/143.png');
+    /*background-image: url('../images/app/143.png');*/
+    background-color: var(--blue);
+    -webkit-mask: url('../images/app/hoa.svg') no-repeat;
+    -webkit-mask-size: 100% 100%;
+    mask-image: url('../images/app/hoa.svg');
 }
 .icon-history {
-    background-image: url('../images/app/144.png');
+    /*background-image: url('../images/app/144.png');*/
+    background-color: var(--blue);
+    -webkit-mask: url('../images/app/su.svg') no-repeat;
+    -webkit-mask-size: 100% 100%;
+    mask-image: url('../images/app/su.svg');
 }
 .icon-language {
-    background-image: url('../images/app/139.png');
+    /*background-image: url('../images/app/139.png');*/
+    background-color: var(--blue);
+    -webkit-mask: url('../images/app/ngoai-ngu.svg') no-repeat;
+    -webkit-mask-size: 100% 100%;
+    mask-image: url('../images/app/ngoai-ngu.svg');
 }
 .icon-biology {
-    background-image: url('../images/app/140.png');
+    /*background-image: url('../images/app/140.png');*/
+    background-color: var(--blue);
+    -webkit-mask: url('../images/app/sinh.svg') no-repeat;
+    -webkit-mask-size: 100% 100%;
+    mask-image: url('../images/app/sinh.svg');
 }
 .icon-civic-education {
-    background-image: url('../images/app/145.png');
+    background-color: var(--blue);
+    -webkit-mask: url('../images/app/gdcd.svg') no-repeat;
+    -webkit-mask-size: 100% 100%;
+    mask-image: url('../images/app/gdcd.svg');
+    /*background-image: url('../images/app/145.png');*/
+}
+.icon-civic-education .disable {
+    background-color: var(--grey);
 }
 .icon-other-subject {
-    background-image: url('../images/app/147.png');
+    /*background-image: url('../images/app/147.png');*/
+    background-color: var(--blue);
+    -webkit-mask: url('../images/app/khac.svg') no-repeat;
+    -webkit-mask-size: 100% 100%;
+    mask-image: url('../images/app/khac.svg');
 }
 .icon-geography {
-    background-image: url('../images/app/146.png');
+    background-color: var(--blue);
+    -webkit-mask: url('../images/app/dia.svg') no-repeat;
+    -webkit-mask-size: 100% 100%;
+    mask-image: url('../images/app/dia.svg');
+
+    /*background-image: url('../images/app/146.png');*/
 }
 .icon-geography.disable {
-    background-image: url('../images/app/146-2.png');
+    /*background-image: url('../images/app/146-2.png');*/
+    background-color: var(--grey);
 }
 .icon-dropdown {
     background-image: url('../images/app/181.png');
@@ -8164,6 +8209,10 @@ span.select2-container, span.select2-dropdown, span.select2-results {
 .flex-2-option .modal-text-area__head--right-option--option-name {
     vertical-align: middle;
     line-height: 29px;
+}
+.unset-span span {
+    width: unset;
+    height: unset;
 }
 
 @-webkit-keyframes HideList {

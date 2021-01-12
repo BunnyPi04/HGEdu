@@ -430,7 +430,6 @@ $(document).ready(function () {
         $('.mn-content>.mn-content-main-content').css('height', '100%');
 
         $('.mn-content>.mn-content-main-content .tab-pane').each(function(index) {
-            console.log('n');
             $(this).css('height', '100%');
             $(this).css('overflow', 'auto');
         });
