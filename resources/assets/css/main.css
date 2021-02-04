@@ -569,7 +569,7 @@ span {
 .icon-plus.icon-white {
     background-image: url('../images/app/88.png');
 }
-.icon-plus.disable {
+.icon-plus .disable {
     background-image: url('../images/app/172.png');
 }
 .icon-time-clock {
@@ -889,25 +889,6 @@ span {
 }
 .icon-upload-bg {
     background-image: url('../images/app/131.png');
-}
-.icon-pad {
-    background-image: url('../images/app/153.png');
-}
-.active>.icon-pad {
-    background-image: url('../images/app/154.png');
-}
-
-.icon-pad.disable{
-    background-image: url('../images/app/153.png');
-}
-.icon-pad-search {
-    background-image: url('../images/app/153.png');
-}
-.active>.icon-pad-search {
-    background-image: url('../images/app/155.png');
-}
-.icon-pad-search.disable {
-    background-image: url('../images/app/153.png');
 }
 
 .math {
@@ -8255,45 +8236,6 @@ span.select2-container, span.select2-dropdown, span.select2-results {
     width: 23px;
     height: 23px;
     vertical-align: middle;
-}
-.datepicker-days .today {
-    color: var(--blue);
-    font-weight: bold;
-}
-.datepicker-days .today:before {
-    display: none !important;
-}
-.bootstrap-datetimepicker-widget table td.active:not(.today) {
-    position: relative;
-    color: white !important;
-    z-index: 1;
-}
-.datepicker-days .active:before {
-    content: '';
-    position: absolute;
-    width: 30px;
-    height: 30px;
-    background-color: var(--blue);
-    z-index: -1;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-    border-radius: 50%;
-    top: 50%;
-    transform: translateY(-50%);
-}
-.mark-event-day {
-    position: relative;
-}
-.mark-event-day:after {
-    content: '';
-    position: absolute;
-    width: 5px;
-    height: 5px;
-    border-radius: 50%;
-    background-color: var(--blue);
-    top: 0;
-    right: 10px;
 }
 
 @-webkit-keyframes HideList {

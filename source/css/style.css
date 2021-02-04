@@ -2078,8 +2078,11 @@ textarea:focus, input:focus {
     grid-template-columns: 65px 135px 130px 130px 130px auto auto;
 }
 .library-search-bar .mn-content-time-table-header.class-time-table-container .select-box__current .select2-container {
-    width: 100%;
+    width: 100% !important;
     height: auto;
+}
+.library-search-bar .mn-content-time-table-header.class-time-table-container .select-box__current .select2-container .select2-search--inline {
+    width: 100%;
 }
 .library-search-bar .mn-content-time-table-header.class-time-table-container .select-box__current .select2-container .select2-selection--multiple {
     border: none;
@@ -2117,10 +2120,21 @@ textarea:focus, input:focus {
 }
 .library__question-table tbody tr td:nth-child(1) {
     font-size: 22px;
+    min-width: 130px;
 }
+.library__question-table tbody tr td:nth-child(3) {
+    min-width: 130px;
+}
+.library__question-table tbody tr td:nth-child(4) {
+    min-width: 130px;
+}
+.library__question-table tbody tr td:last-child {
+    min-width: 60px;
+}
+
 .library__question-table th {
     color: var(--light-blue);
-    font-size: 18px;
+    font-size: 15px;
     font-weight: normal;
 }
 .filter-text {
@@ -5901,6 +5915,50 @@ span.select2-container, span.select2-dropdown, span.select2-results {
 .unset-span span {
     width: unset;
     height: unset;
+}
+.pick-test-subject .hg-icon {
+    width: 23px;
+    height: 23px;
+    vertical-align: middle;
+}
+.datepicker-days .today {
+    color: var(--blue);
+    font-weight: bold;
+}
+.datepicker-days .today:before {
+    display: none !important;
+}
+.bootstrap-datetimepicker-widget table td.active:not(.today) {
+    position: relative;
+    color: white !important;
+    z-index: 1;
+}
+.datepicker-days .active:before {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: var(--blue);
+    z-index: -1;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.mark-event-day {
+    position: relative;
+}
+.mark-event-day:after {
+    content: '';
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: var(--blue);
+    top: 0;
+    right: 10px;
 }
 
 @-webkit-keyframes HideList {
