@@ -418,11 +418,12 @@ span {
     background-image: url('../images/app/77.png');
 }
 .icon-schedule.disable {
-    background-image: url('../images/app/29.png');
+    /*background-image: url('../images/app/29.png');*/
+    background-color: var(--light-grey);
 }
-.icon-schedule, .active .icon-schedule, .icon-schedule.icon-active {
+/*.icon-schedule, .active .icon-schedule, .icon-schedule.icon-active {
     background-image: url('../images/app/30.png');
-}
+}*/
 .icon-board.disable {
     background-image: url('../images/app/110.png');
 }
@@ -462,14 +463,14 @@ span {
 .icon-library-menu.icon-active, .sidebar .active>.icon-library-menu {
     background-color: var(--blue);
 }
-.icon-test-menu {
+.icon-test-menu, .icon-schedule {
     background-color: var(--black);
     -webkit-mask: url('../images/app/menu/15-test.svg') no-repeat;
     -webkit-mask-size: 100% 100%;
     mask-image: url('../images/app/menu/15-test.svg');
 }
-.icon-test-menu.icon-active, .sidebar .active>.icon-test-menu {
-    background-color: var(--blue);
+.icon-test-menu.icon-active, .sidebar .active>.icon-test-menu, .mn-tab .nav-link.active .hg-icon.icon-schedule, .mn-tab .nav-link:hover .hg-icon.icon-schedule {
+    background-color: var(--blue) !important;
 }
 .icon-paper {
     background-image: url('../images/app/171.png');
