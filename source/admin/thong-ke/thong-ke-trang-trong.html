@@ -58,7 +58,7 @@
         <!-- End sidebar -->
 
         <!-- Start Main content -->
-        <div class="main-container contact-list admin">
+        <div class="main-container statistic admin">
             <!-- Start header area -->
             <div class="mn-main-header pb-3 unset-height">
                 <!-- <div class="back-icon"><a href=""><span class="hg-icon icon-back-blue"></span></a></div> -->
@@ -71,7 +71,7 @@
                                 <span class="exam-tab">Thống kê tổng thể</span>
                             </a>
                         </li>
-                        <li class="nav-item d-inline-block border-0">
+                        <li class="nav-item d-inline-block border-0 ml-3">
                             <a class="nav-link" data-toggle="tab" href="#list2" role="tab" aria-selected="true">
                                 <span class="hg-icon icon-pad-search"></span>
                                 <span class="exam-tab">Thống kê chi tiết</span>
@@ -83,7 +83,433 @@
             <!-- End header area -->
 
             <!-- Start content area -->
-            <div class="mn-content">
+            <div class="mn-content class-tab">
+                <div class="mn-content-main-content">
+                    <div class="tab-pane fade active show in" id="list1" role="tabpanel">
+                        <div class="statistic-list">
+                            <div class="statistic-list-table">
+                                <div class="statistic-list-item bigger">
+                                    <div class="statistic-list-item__title">Tài khoản trên hệ thống</div>
+                                    <div class="statistic-list-item__count">0</div>
+                                </div>
+                                <div class="statistic-list-item bigger">
+                                    <div class="statistic-list-item__title">Tài khoản sử dụng chức năng <b>Giáo viên</b></div>
+                                    <div class="statistic-list-item__count">0</div>
+                                </div>
+                                <div class="statistic-list-item bigger">
+                                    <div class="statistic-list-item__title">Tài khoản sử dụng chức năng <b>Học sinh</b></div>
+                                    <div class="statistic-list-item__count">0</div>
+                                </div>
+                                <div class="statistic-list-item bigger">
+                                    <div class="statistic-list-item__title">Tài khoản sử dụng chức năng <b>Phụ huynh</b></div>
+                                    <div class="statistic-list-item__count">0</div>
+                                </div>
+                                <div class="statistic-list-item">
+                                    <div class="statistic-list-item__title">Tài khoản <b>2</b> chức năng</div>
+                                    <div class="statistic-list-item__count">0</div>
+                                </div>
+                                <div class="statistic-list-item">
+                                    <div class="statistic-list-item__title">Tài khoản <b>3</b> chức năng</div>
+                                    <div class="statistic-list-item__count">0</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade active show in" id="list2" role="tabpanel">
+                        <div class="mn-content-search w-100 px-5">
+                            <span class="hg-icon icon-search mr-3"></span>
+                            <input class="mn-content-search-input font-effra w-100" type="text" name="search-key-word" placeholder="Tìm kiếm">
+                        </div>
+                        <div class="list-filter float-right">
+                            <div class="list-filter-label px-3 ">Liệt kê theo chức năng</div>
+                            <div class="select-box">
+                                <div class="select-box__current" tabindex="1">
+                                    <div class="select-box__value">
+                                        <input class="select-box__input" type="radio" id="0" value="1" name="function" checked="checked"/>
+                                        <p class="select-box__input-text">Lựa chọn</p>
+                                    </div>
+                                    <div class="select-box__value">
+                                        <input class="select-box__input" type="radio" id="1" value="2" name="function"/>
+                                        <p class="select-box__input-text">TK sử dụng chức năng giáo viên</p>
+                                    </div>
+                                    <div class="select-box__value">
+                                        <input class="select-box__input" type="radio" id="2" value="3" name="function"/>
+                                        <p class="select-box__input-text">TK sử dụng chức năng học sinh</p>
+                                    </div>
+                                    <div class="select-box__value">
+                                        <input class="select-box__input" type="radio" id="3" value="4" name="function"/>
+                                        <p class="select-box__input-text">TK sử dụng 2 chức năng</p>
+                                    </div>
+                                    <div class="select-box__value">
+                                        <input class="select-box__input" type="radio" id="4" value="5" name="function"/>
+                                        <p class="select-box__input-text">TK sử dụng 3 chức năng</p>
+                                    </div>
+                                    <span class="hg-icon icon-dropdown select-box__icon"></span>
+                                </div>
+                                <ul class="select-box__list">
+                                    <li>
+                                        <label class="select-box__option" for="0" aria-hidden="aria-hidden"><span class="hg-icon option-icon mr-2"></span> Lựa chọn</label>
+                                    </li>
+                                    <li>
+                                        <label class="select-box__option" for="1" aria-hidden="aria-hidden">TK sử dụng chức năng giáo viên</label>
+                                    </li>
+                                    <li>
+                                        <label class="select-box__option" for="2" aria-hidden="aria-hidden">TK sử dụng chức năng học sinh</label>
+                                    </li>
+                                    <li>
+                                        <label class="select-box__option" for="3" aria-hidden="aria-hidden">TK sử dụng 2 chức năng</label>
+                                    </li>
+                                    <li>
+                                        <label class="select-box__option" for="4" aria-hidden="aria-hidden">TK sử dụng 3 chức năng</label>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="statistic-content">
+                            <div class="user-item">
+                                <div class="user__info">
+                                    <div class="user__info__ava">
+                                        <img class="list-avatar" src="../../assets/images/user/avatar-default.jpg">
+                                    </div>
+                                    <div class="user__info__name">
+                                        Phan Đức Hữu
+                                    </div>
+                                    <div class="user__info__phone">
+                                        0345525977
+                                    </div>
+                                </div>
+                                <div class="user__function">
+                                    <div class="function-name">
+                                        <span class="hg-icon icon-teacher"></span>
+                                        Giáo viên
+                                    </div>
+                                    <div class="function-statistic">
+                                        <div class="function-item">
+                                            <div class="text-red item-title">Câu hỏi tự tạo:</div>
+                                            <div class="">1060</div>
+                                        </div>
+                                        <div class="function-item">
+                                            <div class="text-red item-title">Đề tự tạo:</div>
+                                            <div class="">60</div>
+                                        </div>
+                                        <div class="function-item">
+                                            <div class="item-title">Số học sinh:</div>
+                                            <div class="">1060</div>
+                                        </div>
+                                        <div class="function-item">
+                                            <div class="item-title">File Scan:</div>
+                                            <div class="">45</div>
+                                        </div>
+                                        <div class="function-item">
+                                            <div class="text-blue item-title">Online KGS:</div>
+                                            <div class="">7</div>
+                                        </div>
+                                        <div class="function-item">
+                                            <div class="text-blue item-title">Online GS:</div>
+                                            <div class="">14</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="user__function">
+                                    <div class="function-name">
+                                        <span class="hg-icon icon-student"></span>
+                                        Học sinh
+                                    </div>
+                                    <div class="function-statistic">
+                                        <div class="function-item">
+                                            <div class="text-red item-title">Câu hỏi tự tạo:</div>
+                                            <div class="">1060</div>
+                                        </div>
+                                        <div class="function-item">
+                                            <div class="text-red item-title">Đề tự tạo:</div>
+                                            <div class="">60</div>
+                                        </div>
+                                        <div class="function-item">
+                                            <div class="text-blue item-title">Online KGS:</div>
+                                            <div class="">7</div>
+                                        </div>
+                                        <div class="function-item">
+                                            <div class="text-blue item-title">Online GS:</div>
+                                            <div class="">14</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="user__function">
+                                    <div class="function-name">
+                                        <span class="hg-icon icon-parent"></span>
+                                        Phụ huynh
+                                    </div>
+                                    <div class="function-statistic">
+                                        <div class="function-item">
+                                            <div class="text-red item-title">Danh sách con:</div>
+                                            <div class="">2</div>
+                                        </div>
+                                        <div class="function-item">
+                                            <div class="text-red item-title">Cập nhật TT:</div>
+                                            <div class="">15</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="user-item">
+                                <div class="user__info">
+                                    <div class="user__info__ava">
+                                        <img class="list-avatar" src="../../assets/images/user/avatar-default.jpg">
+                                    </div>
+                                    <div class="user__info__name">
+                                        Phan Đức Hữu
+                                    </div>
+                                    <div class="user__info__phone">
+                                        0345525977
+                                    </div>
+                                </div>
+                                <div class="user__function">
+                                    <div class="function-name">
+                                        <span class="hg-icon icon-teacher"></span>
+                                        Giáo viên
+                                    </div>
+                                    <div class="function-statistic">
+                                        <div class="function-item">
+                                            <div class="text-red item-title">Câu hỏi tự tạo:</div>
+                                            <div class="">1060</div>
+                                        </div>
+                                        <div class="function-item">
+                                            <div class="text-red item-title">Đề tự tạo:</div>
+                                            <div class="">60</div>
+                                        </div>
+                                        <div class="function-item">
+                                            <div class="item-title">Số học sinh:</div>
+                                            <div class="">1060</div>
+                                        </div>
+                                        <div class="function-item">
+                                            <div class="item-title">File Scan:</div>
+                                            <div class="">45</div>
+                                        </div>
+                                        <div class="function-item">
+                                            <div class="text-blue item-title">Online KGS:</div>
+                                            <div class="">7</div>
+                                        </div>
+                                        <div class="function-item">
+                                            <div class="text-blue item-title">Online GS:</div>
+                                            <div class="">14</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="user__function">
+                                    <div class="function-name">
+                                        <span class="hg-icon icon-student"></span>
+                                        Học sinh
+                                    </div>
+                                    <div class="function-statistic">
+                                        <div class="function-item">
+                                            <div class="text-red item-title">Câu hỏi tự tạo:</div>
+                                            <div class="">1060</div>
+                                        </div>
+                                        <div class="function-item">
+                                            <div class="text-red item-title">Đề tự tạo:</div>
+                                            <div class="">60</div>
+                                        </div>
+                                        <div class="function-item">
+                                            <div class="text-blue item-title">Online KGS:</div>
+                                            <div class="">7</div>
+                                        </div>
+                                        <div class="function-item">
+                                            <div class="text-blue item-title">Online GS:</div>
+                                            <div class="">14</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="user__function">
+                                    <div class="function-name">
+                                        <span class="hg-icon icon-parent"></span>
+                                        Phụ huynh
+                                    </div>
+                                    <div class="function-statistic">
+                                        <div class="function-item">
+                                            <div class="text-red item-title">Danh sách con:</div>
+                                            <div class="">2</div>
+                                        </div>
+                                        <div class="function-item">
+                                            <div class="text-red item-title">Cập nhật TT:</div>
+                                            <div class="">15</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="user-item">
+                                <div class="user__info">
+                                    <div class="user__info__ava">
+                                        <img class="list-avatar" src="../../assets/images/user/avatar-default.jpg">
+                                    </div>
+                                    <div class="user__info__name">
+                                        Phan Đức Hữu
+                                    </div>
+                                    <div class="user__info__phone">
+                                        0345525977
+                                    </div>
+                                </div>
+                                <div class="user__function">
+                                    <div class="function-name">
+                                        <span class="hg-icon icon-teacher"></span>
+                                        Giáo viên
+                                    </div>
+                                    <div class="function-statistic">
+                                        <div class="function-item">
+                                            <div class="text-red item-title">Câu hỏi tự tạo:</div>
+                                            <div class="">1060</div>
+                                        </div>
+                                        <div class="function-item">
+                                            <div class="text-red item-title">Đề tự tạo:</div>
+                                            <div class="">60</div>
+                                        </div>
+                                        <div class="function-item">
+                                            <div class="item-title">Số học sinh:</div>
+                                            <div class="">1060</div>
+                                        </div>
+                                        <div class="function-item">
+                                            <div class="item-title">File Scan:</div>
+                                            <div class="">45</div>
+                                        </div>
+                                        <div class="function-item">
+                                            <div class="text-blue item-title">Online KGS:</div>
+                                            <div class="">7</div>
+                                        </div>
+                                        <div class="function-item">
+                                            <div class="text-blue item-title">Online GS:</div>
+                                            <div class="">14</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="user__function">
+                                    <div class="function-name">
+                                        <span class="hg-icon icon-student"></span>
+                                        Học sinh
+                                    </div>
+                                    <div class="function-statistic">
+                                        <div class="function-item">
+                                            <div class="text-red item-title">Câu hỏi tự tạo:</div>
+                                            <div class="">1060</div>
+                                        </div>
+                                        <div class="function-item">
+                                            <div class="text-red item-title">Đề tự tạo:</div>
+                                            <div class="">60</div>
+                                        </div>
+                                        <div class="function-item">
+                                            <div class="text-blue item-title">Online KGS:</div>
+                                            <div class="">7</div>
+                                        </div>
+                                        <div class="function-item">
+                                            <div class="text-blue item-title">Online GS:</div>
+                                            <div class="">14</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="user__function">
+                                    <div class="function-name">
+                                        <span class="hg-icon icon-parent"></span>
+                                        Phụ huynh
+                                    </div>
+                                    <div class="function-statistic">
+                                        <div class="function-item">
+                                            <div class="text-red item-title">Danh sách con:</div>
+                                            <div class="">2</div>
+                                        </div>
+                                        <div class="function-item">
+                                            <div class="text-red item-title">Cập nhật TT:</div>
+                                            <div class="">15</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="user-item">
+                                <div class="user__info">
+                                    <div class="user__info__ava">
+                                        <img class="list-avatar" src="../../assets/images/user/avatar-default.jpg">
+                                    </div>
+                                    <div class="user__info__name">
+                                        Phan Đức Hữu
+                                    </div>
+                                    <div class="user__info__phone">
+                                        0345525977
+                                    </div>
+                                </div>
+                                <div class="user__function">
+                                    <div class="function-name">
+                                        <span class="hg-icon icon-teacher"></span>
+                                        Giáo viên
+                                    </div>
+                                    <div class="function-statistic">
+                                        <div class="function-item">
+                                            <div class="text-red item-title">Câu hỏi tự tạo:</div>
+                                            <div class="">1060</div>
+                                        </div>
+                                        <div class="function-item">
+                                            <div class="text-red item-title">Đề tự tạo:</div>
+                                            <div class="">60</div>
+                                        </div>
+                                        <div class="function-item">
+                                            <div class="item-title">Số học sinh:</div>
+                                            <div class="">1060</div>
+                                        </div>
+                                        <div class="function-item">
+                                            <div class="item-title">File Scan:</div>
+                                            <div class="">45</div>
+                                        </div>
+                                        <div class="function-item">
+                                            <div class="text-blue item-title">Online KGS:</div>
+                                            <div class="">7</div>
+                                        </div>
+                                        <div class="function-item">
+                                            <div class="text-blue item-title">Online GS:</div>
+                                            <div class="">14</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="user__function">
+                                    <div class="function-name">
+                                        <span class="hg-icon icon-student"></span>
+                                        Học sinh
+                                    </div>
+                                    <div class="function-statistic">
+                                        <div class="function-item">
+                                            <div class="text-red item-title">Câu hỏi tự tạo:</div>
+                                            <div class="">1060</div>
+                                        </div>
+                                        <div class="function-item">
+                                            <div class="text-red item-title">Đề tự tạo:</div>
+                                            <div class="">60</div>
+                                        </div>
+                                        <div class="function-item">
+                                            <div class="text-blue item-title">Online KGS:</div>
+                                            <div class="">7</div>
+                                        </div>
+                                        <div class="function-item">
+                                            <div class="text-blue item-title">Online GS:</div>
+                                            <div class="">14</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="user__function">
+                                    <div class="function-name">
+                                        <span class="hg-icon icon-parent"></span>
+                                        Phụ huynh
+                                    </div>
+                                    <div class="function-statistic">
+                                        <div class="function-item">
+                                            <div class="text-red item-title">Danh sách con:</div>
+                                            <div class="">2</div>
+                                        </div>
+                                        <div class="function-item">
+                                            <div class="text-red item-title">Cập nhật TT:</div>
+                                            <div class="">15</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
             </div>
             <!-- End main content area -->
         </div>

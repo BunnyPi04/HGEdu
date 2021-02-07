@@ -222,12 +222,14 @@ textarea:focus, input:focus {
 }
 .show-tooltip {
     position: absolute;
-    bottom: -100%;
+    bottom: 0;
     left: 0;
     background-color: #e5e5e5;
     display: none;
     border-radius: 5px;
     padding: 0 10px;
+    transform: translateY(100%);
+    white-space: nowrap;
 }
 .custom-tooltip:hover + .show-tooltip {
     display: inline-table;
@@ -1930,6 +1932,7 @@ textarea:focus, input:focus {
     left: 0;
     right: 0;
     padding: 10px 20px;
+    background-color: white;
 }
 .library__group-modal .fx .hg-icon {
     cursor: pointer;
@@ -5482,6 +5485,8 @@ textarea {
 .admin .account-list.function-account .list-item:not(.header) {
     grid-template-columns: 95px auto 150px 250px 350px;
     padding-right: 0;
+    min-height: 60px;
+    height: auto;
 }
 .admin .account-list.function-account .list-item:not(.header) div:last-child {
     text-align: right;
@@ -5959,6 +5964,106 @@ span.select2-container, span.select2-dropdown, span.select2-results {
     background-color: var(--blue);
     top: 0;
     right: 10px;
+}
+.nav-item:hover .icon-pad {
+    background-image: url('../images/app/154.png');
+}
+.nav-item:hover .icon-pad-search {
+    background-image: url('../images/app/155.png');
+}
+.statistic-list-table {
+    color: var(--blue);
+    padding: 50px;
+}
+.statistic-list-item {
+    display: grid;
+    grid-template-columns: 300px auto;
+    grid-column-gap: 10px;
+    margin-bottom: 24px;
+    font-size: 20px;
+    align-items: center;
+}
+.statistic-list-item.bigger {
+    font-size: 22px;
+}
+.statistic-list-item__count {
+    font-weight: bold;
+    font-size: 30px;
+}
+.statistic-list-item.bigger .statistic-list-item__count {
+    font-size: 50px;
+}
+.statistic .select-box__value {
+    width: 320px;
+}
+.statistic .list-filter {
+    margin-top: 10px;
+    margin-right: 20px;
+}
+.statistic-content {
+    padding: 10px 20px;
+    margin-top: 50px;
+}
+.statistic-content .user-item {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 100%;
+    background-color: white;
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0px 6px var(--shadow);
+    margin-bottom: 20px;
+}
+.statistic-content .user-item>div {
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 22px;
+    line-height: 1.7;
+    font-size: 16px;
+}
+.statistic-content .user-item>div:not(:last-of-type):after {
+    content: '';
+    height: 90%;
+    width: 1px;
+    background-color: var(--light-grey);
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.statistic-content .user__info {
+    justify-content: center;
+}
+.statistic-content .user__info__ava img {
+    width: 120px;
+    border-radius: 50%
+}
+.function-statistic .function-item {
+    display: grid;
+    grid-template-columns: 150px auto;
+    text-align: left;
+}
+.statistic-content .user__function .function-name {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+.statistic-content .user__function .function-name .hg-icon {
+    width: 28px;
+    height: 28px;
+    margin-right: 15px;
+}
+.statistic-content .user__info__name {
+    color: var(--blue);
+    font-weight: bold;
+    font-size: 20px;
+}
+b {
+    font-weight: bold;
 }
 
 @-webkit-keyframes HideList {
