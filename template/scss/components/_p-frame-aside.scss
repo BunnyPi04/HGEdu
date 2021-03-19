@@ -1,0 +1,88 @@
+.p-frame-aside {
+	position: relative;
+	z-index: 2;
+	width: 22rem;
+	padding: 2rem;
+	background-color: $main-cl;
+
+	@include mid-flex;
+
+	@include min-media(769px) {
+		opacity: 0;
+		transition: $t2 $cubic1;
+		transform: translateY(-100%);
+	}
+	@include min-media(769px) {
+		transform: translateX(-100%);
+	}
+}
+.aside-text {
+	writing-mode: vertical-lr;
+	letter-spacing: 0.2rem;
+	font-weight: bold;
+	color: rgba($color: $t-b-cl, $alpha: 0.2);
+	transform: rotate(180deg);
+	text-transform: uppercase;
+	p {
+		@include lh(135, 100);
+		font-size: 7rem;
+	}
+	@include max-media(1024px) {
+		p {
+			font-size: 6rem;
+		}
+	}
+	@include max-media(600px) {
+		p {
+			font-size: 4rem;
+		}
+	}
+}
+@include max-media(768px) {
+	.p-frame-aside {
+		width: 100%;
+		padding: 1rem 1.5rem;
+	}
+	.aside-text {
+		writing-mode: horizontal-tb;
+		transform: rotate(0);
+	}
+}
+@include max-media(600px) {
+	.p-frame-aside {
+		padding-top: 2.32rem;
+		padding-bottom: 2.32rem;
+	}
+	.p-section-2 {
+		.p-frame-aside {
+			padding-top: 10rem;
+			// margin-top: 10rem;
+		}
+	}
+}
+$pages: 1, 2, 3, 4, 5, 6;
+@each $p in $pages {
+	.fp-viewing-#{$p} .p-section-#{$p + 1} {
+		.p-frame-aside {
+			opacity: 1;
+			@include min-media(769px) {
+				transition-delay: 0.8s;
+			}
+		}
+	}
+
+	@include min-media(769px) {
+		.fp-viewing-#{$p} .p-section-#{$p + 1} {
+			.p-frame-aside {
+				transform: translateY(0);
+			}
+		}
+	}
+	@include min-media(769px) {
+		.fp-viewing-#{$p} .p-section-#{$p + 1} {
+			.p-frame-aside {
+				transform: translateX(0);
+			}
+		}
+	}
+}

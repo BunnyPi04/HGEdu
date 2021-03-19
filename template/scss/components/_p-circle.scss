@@ -1,0 +1,31 @@
+@mixin p-circle($c1, $c2, $c3) {
+	position: absolute;
+	top: 50%;
+	left: 0;
+	z-index: -1;
+	transform: translateY(-50%);
+	width: $c1;
+	height: $c1;
+	border-radius: 50%;
+	border: 1px solid $border-cl;
+	transition: $t2 $cubic1;
+	&:before,
+	&:after {
+		content: '';
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		border-radius: inherit;
+	}
+	&:before {
+		width: $c2;
+		height: $c2;
+		border: 1px solid $border-cl;
+	}
+	&:after {
+		width: $c3;
+		height: $c3;
+		background-color: rgba($color: $main-cl, $alpha: 0.1);
+	}
+}

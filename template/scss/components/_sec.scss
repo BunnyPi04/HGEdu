@@ -1,0 +1,71 @@
+.sec-100 {
+	padding: 10rem 0;
+	&.--pt-0 {
+		padding-top: 0;
+	}
+	&.--pb-0 {
+		padding-bottom: 0;
+	}
+}
+.sec-80 {
+	padding: 8rem 0;
+	&.--pt-0 {
+		padding-top: 0;
+	}
+	&.--pb-0 {
+		padding-bottom: 0;
+	}
+}
+.sec-70 {
+	padding: 7rem 0;
+	&.--pt-0 {
+		padding-top: 0;
+	}
+	&.--pb-0 {
+		padding-bottom: 0;
+	}
+}
+.sec-60 {
+	padding: 6rem 0;
+	&.--pt-0 {
+		padding-top: 0;
+	}
+	&.--pb-0 {
+		padding-bottom: 0;
+	}
+}
+.sec-50 {
+	padding: 5rem 0;
+	&.--pt-0 {
+		padding-top: 0;
+	}
+	&.--pb-0 {
+		padding-bottom: 0;
+	}
+}
+.sec-40 {
+	padding: 4rem 0;
+	&.--pt-0 {
+		padding-top: 0;
+	}
+	&.--pb-0 {
+		padding-bottom: 0;
+	}
+}
+@include max-media(1024px) {
+	.sec-100,
+	.sec-80 {
+		padding: 6rem 0;
+	}
+	.sec-60,
+	.sec-50,
+	.sec-40 {
+		padding: 4rem 0;
+	}
+}
+@include max-media(768px) {
+	.sec-100,
+	.sec-80 {
+		padding: 4rem 0;
+	}
+}

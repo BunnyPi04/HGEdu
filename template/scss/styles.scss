@@ -1,0 +1,39 @@
+@charset "utf-8";
+/* FONTS */
+@import url('../fonts/GoogleSans/stylesheet.css');
+/* LIBRARIES */
+@import url('../js/libs/Font-awesome-4.7.0/css/font-awesome.min.css');
+@import url('../js/libs/aos/aos.css');
+@import url('../js/libs/fullPage.js-master/dist/fullpage.min.css');
+
+/* Core variables and mixins - structure from NghiaTran */
+@import './core/reset';
+@import './core/variables';
+@import './core/mixins';
+@import './core/base';
+@import './core/animation';
+@import './core/mona';
+
+/* Components */
+@import './components/sec';
+@import './components/logo';
+@import './components/header';
+@import './components/spacing';
+@import './components/button';
+@import './components/heading';
+@import './components/scrolldown';
+@import './components/p-frame-aside';
+@import './components/p-frame-content';
+@import './components/p-content';
+@import './components/p-circle';
+
+/* Pages */
+@import './pages/404';
+@import './pages/p-base';
+@import './pages/p1';
+@import './pages/p2';
+@import './pages/p3';
+@import './pages/p4';
+@import './pages/p5';
+@import './pages/p6';
+@import './pages/p7';

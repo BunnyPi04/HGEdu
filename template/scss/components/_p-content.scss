@@ -1,0 +1,24 @@
+$pages: 1, 2, 3, 4, 5, 6;
+@each $p in $pages {
+	.fp-viewing-#{$p} .p-section-#{$p + 1} {
+		.p-content {
+			opacity: 1;
+			transform: translateY(0);
+			@include min-media(769px) {
+				transition-delay: 0.8s;
+			}
+		}
+	}
+}
+.p-content {
+	opacity: 0;
+	transition: $t2 $cubic1 0s;
+	transform: translateY(-1rem);
+	.icon {
+	}
+	.content {
+	}
+	.desc {
+		color: rgba($color: $t-b-cl, $alpha: 0.7);
+	}
+}

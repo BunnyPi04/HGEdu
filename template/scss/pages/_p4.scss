@@ -1,0 +1,95 @@
+.p4 {
+	.left {
+		width: calc(100% / 12 * 4);
+	}
+	.right {
+		width: calc(100% / 12 * 8);
+	}
+}
+.p4-decor {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	transform: scale(0.8);
+	transition: $t2 $cubic1;
+}
+.p4-circle {
+	@include p-circle(87rem, 67rem, 47rem);
+}
+.p4-img {
+	position: absolute;
+}
+.p4-img-1 {
+	top: 50%;
+	left: 56.5%;
+	width: 55.5rem;
+	height: 73.5rem;
+	transition: $t2 $cubic1;
+	transform: translate(-50%, -50%);
+}
+.p4-img-2 {
+	width: 100.8rem;
+	height: 100.8rem;
+	top: -20rem;
+	left: 50%;
+	transform: translateX(-50%);
+	.hand {
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+	img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+}
+@include max-media(1440px) {
+	.p4-img-1 {
+		top: 55%;
+		left: 50%;
+		width: 45.5rem;
+		height: 63.5rem;
+	}
+	.p4-img-2 {
+		top: -2rem;
+		width: 77.8rem;
+		height: 77.8rem;
+	}
+}
+@include max-media(600px) {
+	.p4 {
+		.col {
+			width: 100%;
+		}
+		.left {
+			position: relative;
+			z-index: 2;
+		}
+		.right {
+			min-height: 60rem;
+		}
+	}
+	.p4-img,
+	.p4-circle {
+		pointer-events: none;
+	}
+}
+.fp-viewing-3 {
+	.p4-decor {
+		opacity: 1;
+		transform: scale(1);
+		@include min-media(769px) {
+			transition-delay: 0.8s;
+		}
+	}
+	.p4-img-2 {
+		.hand-1 {
+			animation: hand1 4s forwards, fadeOut 1.5s 5.5s forwards;
+		}
+		.hand-2 {
+			animation: hand2 4s 6s backwards, fadeIn 10s;
+		}
+	}
+}

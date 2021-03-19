@@ -1,0 +1,54 @@
+.p7-contact {
+	.col {
+		opacity: 0;
+		transform: translateY(-1rem);
+		transition: $t2 $cubic1 0s;
+		width: 25%;
+	}
+}
+.p7-contact-item {
+	color: rgba($color: $t-b-cl, $alpha: 0.7);
+}
+.p7-contact-list {
+	@include fz-18;
+	@include lh(40, 18);
+}
+.p7-social {
+	ul {
+		display: flex;
+	}
+	a {
+		display: block;
+		width: 4rem;
+		height: 4rem;
+		padding: 0.5rem;
+		margin-right: 0.5rem;
+		font-size: 2rem;
+		border-radius: 0.5rem;
+		transition: $t1 $cubic1;
+		@include mid-flex;
+		&:hover {
+			background-color: $second-cl;
+			color: $t-w-cl;
+		}
+	}
+	> p {
+		font-size: 1.4rem;
+	}
+}
+@include max-media(600px) {
+	.p7-contact {
+		.col {
+			width: 50%;
+		}
+	}
+}
+.fp-viewing-6 {
+	.p7-contact .col {
+		opacity: 1;
+		transform: translateY(0);
+		@include min-media(769px) {
+			transition-delay: 0.8s;
+		}
+	}
+}

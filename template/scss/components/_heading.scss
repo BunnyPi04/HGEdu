@@ -1,0 +1,80 @@
+.main-title-wrap {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+	.main-title {
+		margin-bottom: 0;
+	}
+}
+.main-title {
+	font-family: $font-title;
+	transition: $t1 $cubic1;
+	line-height: 1.33333;
+	// line-height: 1.5;
+	// &:hover {
+	// color: $second-cl;
+	// }
+}
+.--m-cl {
+	color: $main-cl;
+}
+.--s-cl {
+	color: $second-cl;
+}
+.--w-cl {
+	color: $t-w-cl;
+}
+// 60 50  40 30 14 18
+.tt-60 {
+	@include fz-60;
+}
+.tt-50 {
+	@include fz-50;
+}
+.tt-40 {
+	@include fz-40;
+}
+.tt-30 {
+	@include fz-30;
+}
+.tt-18 {
+	@include fz-18;
+}
+.tt-14 {
+	font-size: 1.4rem;
+}
+
+.t-center {
+	text-align: center;
+}
+.t-left {
+	text-align: left;
+}
+.t-right {
+	text-align: right;
+}
+.t-justify {
+	text-align: justify;
+}
+.t-uppercase {
+	text-transform: uppercase;
+}
+.t-capitalize {
+	text-transform: capitalize;
+}
+.f-bold {
+	font-weight: bold;
+}
+.f-light {
+	font-weight: lighter;
+}
+.f-normal {
+	font-weight: normal;
+}
+.bg-m-cl {
+	background-color: $main-cl;
+}
+.bg-t-cl {
+	background-color: $third-cl;
+}

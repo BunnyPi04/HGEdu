@@ -1,0 +1,159 @@
+.p3 {
+	.cols {
+		justify-content: space-between;
+		align-items: center;
+	}
+	.col {
+		width: 100%;
+	}
+	.left {
+		max-width: 73rem;
+	}
+	.right {
+		max-width: 43rem;
+	}
+}
+
+.p3-list {
+}
+.p3-item {
+	--radius: 1rem;
+	.content {
+		position: relative;
+		z-index: 1;
+		display: inline-block;
+		padding: 3rem;
+		background-color: $main-cl;
+		border-radius: var(--radius);
+		box-shadow: 1rem 1rem 3rem rgba($color: $bg-b-cl, $alpha: 0.16);
+	}
+	.content,
+	.img {
+		opacity: 0;
+		transition: $t2 $cubic1 0s;
+	}
+	img {
+		width: auto;
+		object-fit: cover;
+		display: inline-block;
+	}
+
+	&:first-child {
+		.content,
+		.img {
+			transform: translateY(-1rem);
+		}
+		.img {
+			margin-top: -3.9rem;
+			margin-left: -27.5rem;
+		}
+	}
+	&:nth-child(2) {
+		margin-top: -50rem;
+		text-align: right;
+		.content {
+			background-color: $third-cl;
+			margin-bottom: 12rem;
+		}
+		.img {
+			margin-right: 3rem;
+		}
+	}
+	&:last-child {
+		margin-top: -37rem;
+		margin-left: 10rem;
+		.content {
+			background-color: $third-cl;
+			margin-bottom: 5rem;
+		}
+	}
+	&:nth-child(n + 2) {
+		.content,
+		.img {
+			transform: translateY(1rem);
+		}
+	}
+}
+@include max-media(1440px) {
+	.p3 {
+		.left {
+			max-width: calc(100% / 12 * 6.5);
+		}
+		.right {
+			max-width: calc(100% / 12 * 5.5);
+		}
+	}
+	.p3-item {
+		img {
+			max-width: 80%;
+			max-height: 30rem;
+		}
+		&:first-child {
+			.img {
+				margin-left: -10rem;
+			}
+		}
+		&:nth-child(2) {
+			margin-top: -30rem;
+			.content {
+				margin-bottom: 2rem;
+			}
+		}
+		&:last-child {
+			margin-top: -25rem;
+			.content {
+				margin-bottom: 2rem;
+			}
+		}
+	}
+}
+@include max-media(768px) {
+	.p3-item {
+		&:nth-child(2) {
+			margin-top: -20rem;
+		}
+		&:last-child {
+			margin-left: 0;
+		}
+	}
+}
+@include max-media(600px) {
+	.p3 {
+		.cols {
+			flex-direction: column-reverse;
+		}
+		.col {
+			max-width: 100%;
+		}
+	}
+}
+
+.fp-viewing-2 {
+	.p3-item {
+		.content,
+		.img {
+			opacity: 1;
+			transform: translateY(0);
+
+			@include min-media(769px) {
+				transition-delay: 1s;
+			}
+		}
+		&:nth-child(2) {
+			.content,
+			.img {
+				@include min-media(769px) {
+					transition-delay: 1.3s;
+				}
+			}
+		}
+		&:last-child {
+			.content,
+			.img {
+				@include min-media(769px) {
+					transition-delay: 1.5s;
+				}
+			}
+		}
+	}
+}

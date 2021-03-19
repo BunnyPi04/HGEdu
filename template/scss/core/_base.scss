@@ -1,0 +1,134 @@
+//base scss for project
+* {
+	box-sizing: border-box;
+	font-smoothing: antialiased;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	text-rendering: optimizeLegibility;
+	appearance: none;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+}
+html {
+	font-size: $fz-base;
+	@include max-media(1280px) {
+		font-size: 8px;
+	}
+	// @include max-media(1024px) {
+	// 	font-size: 7px;
+	// }
+}
+body {
+	min-height: 100vh;
+	font-size: $fz-body;
+}
+html,
+body {
+	// position: relative;
+	width: 100%;
+	height: 100%;
+	margin: auto;
+	color: $cl-body;
+	font-family: $font-body;
+	line-height: $lh-body;
+	-webkit-font-smoothing: antialiased;
+	@include custom-scrollbar();
+}
+.wrapper {
+	// max-width: $max-width;
+	max-width: 100%;
+	margin: 0 auto;
+	width: 100%;
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+.container {
+	margin: 0 auto;
+	padding: 0 $padding;
+	width: $container-width;
+	max-width: 100%;
+}
+.cols {
+	position: relative;
+	display: flex;
+	flex-wrap: wrap;
+	margin: (-$padding);
+}
+.col {
+	padding: $padding;
+}
+::selection {
+	background-color: $second-cl;
+	color: $main-cl;
+}
+a {
+	&:hover,
+	&:focus {
+		text-decoration: none;
+		color: $main-cl;
+	}
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: $font-title;
+	a {
+		transition: $t1 $cubic1;
+	}
+}
+.table-responsive {
+	max-width: 100%;
+	overflow: auto;
+}
+.img-w-100 {
+	img {
+		width: 100%;
+		height: auto;
+		object-fit: cover;
+	}
+}
+.img-h-100 {
+	img {
+		width: auto;
+		height: 100%;
+		object-fit: cover;
+	}
+}
+@include max-media(500px) {
+	.wow.animated {
+		animation-delay: unset !important;
+	}
+}
+// KHI ĐĂNG NHẬP VÀO WP ADMIN
+.admin-bar {
+	.header.--fixed {
+		top: 32px;
+	}
+
+	@include max-media(1024px) {
+		.header__list-wrap {
+			top: 32px;
+		}
+	}
+	@include max-media(768px) {
+		.header.--fixed {
+			top: 46px;
+		}
+		.header__list-wrap {
+			top: 46px;
+		}
+	}
+	@include max-media(600px) {
+		.header.--fixed {
+			top: 0;
+
+			.header__list-wrap {
+				top: 0;
+			}
+		}
+	}
+}

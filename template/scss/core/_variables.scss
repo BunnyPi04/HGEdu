@@ -1,0 +1,33 @@
+/*primary colors*/
+$w-cl: #fff;
+$b-cl: #000;
+$gray-cl: #898989;
+/*primary text colors*/
+$t-w-cl: #fff;
+$t-b-cl: #000;
+/*primary bg colors*/
+$bg-w-cl: #fff;
+$bg-b-cl: #000;
+/*main color design*/
+$main-cl: #106bd1;
+$second-cl: #20bcfd;
+$third-cl: #455a64;
+$border-cl: #e1e1e1;
+/*time transition*/
+$t1: 0.3s;
+$t2: 0.6s;
+$t3: 1s;
+$cubic1: cubic-bezier(0.61, 0.22, 0.23, 1);
+$cubic2: cubic-bezier(0.63, -0.02, 0.24, 1.12);
+/*font families*/
+$fz-base: 10px;
+$font-body: 'GoogleSans', sans-serif;
+$fz-body: 1.4rem;
+$lh-body: 1.4;
+$cl-body: #000000;
+$font-title: 'GoogleSans', sans-serif;
+/*width*/
+$w-scroll: 0px;
+$max-width: 192rem;
+$container-width: 120rem;
+$padding: 1.5rem;

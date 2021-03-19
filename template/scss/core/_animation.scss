@@ -1,0 +1,99 @@
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+@keyframes fadeInUp {
+	from {
+		opacity: 0;
+		transform: translate(-50%, 20%);
+	}
+	to {
+		opacity: 1;
+		transform: translate(-50%, 0);
+	}
+}
+@keyframes fadeOut {
+	0% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+@keyframes fadeInRight {
+	from {
+		opacity: 0;
+		transform: translateX(-2rem);
+	}
+	to {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+@keyframes fixedMenu {
+	0% {
+		opacity: 0.7;
+		transform: translateY(-100%);
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+@keyframes showTab {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+@keyframes slideIn {
+	from {
+		filter: blur(15px);
+	}
+	to {
+		filter: blur(0);
+	}
+}
+@keyframes slideOut {
+	from {
+		filter: blur(0);
+	}
+	to {
+		filter: blur(15px);
+	}
+}
+@keyframes waveLoading {
+	0% {
+		transform: scale(0.8);
+		opacity: 0;
+	}
+	50% {
+		opacity: 1;
+	}
+	100% {
+		transform: scale(1);
+		opacity: 0;
+	}
+}
+@keyframes hand1 {
+	0% {
+		transform: perspective(100rem) translateZ(0) scale(1);
+	}
+	100% {
+		transform: perspective(100rem) translateZ(-10rem) scale(0.95);
+	}
+}
+@keyframes hand2 {
+	0% {
+		transform: perspective(100rem) translateZ(-10rem) scale(0.95);
+	}
+	100% {
+		transform: perspective(100rem) translateZ(0) scale(1);
+	}
+}
