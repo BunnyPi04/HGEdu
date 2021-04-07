@@ -12,8 +12,12 @@
   "author": "bunny",
   "license": "ISC",
   "dependencies": {
+    "autocomplete.js": "^0.38.0",
     "bootstrap": "^4.5.2",
-    "jquery": "^3.5.1"
+    "chart.js": "^2.9.3",
+    "jquery": "^3.5.1",
+    "jquery-ui": "^1.12.1",
+    "jquery-ui-dist": "^1.12.1"
   },
   "devDependencies": {
     "gulp": "^4.0.2",

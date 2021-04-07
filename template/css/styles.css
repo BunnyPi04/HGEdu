@@ -3129,3 +3129,6 @@ body:not(.fp-viewing-0) #fp-nav.fp-right {
         transition-delay: 0.8s;
     }
 }
+@media screen and (min-width: 1440px) {
+.p2-list { padding-top : 8.5rem }
+}

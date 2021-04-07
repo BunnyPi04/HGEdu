@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HGEdu</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../../assets/css/main.css">
+    <script src="../../assets/js/script.js"></script>
+</head>
+<body>
+    <div class="main full-width-page">
+        <!-- Start side bar -->
+        <div class="sidebar">
+            <div class="sidebar-logo">
+                <a class="p-0" href="">
+                    <img class="side-hide" src="../../assets/images/app/169.png">
+                    <img class="side-show" src="../../assets/images/app/HGEdu-logo.png">
+                </a>
+            </div>
+            <div class="sidebar-function-icon">
+                <a class="mb-3 nav-toggle"><span class="hg-icon icon-nav icon-active"></span></a>
+                <a href="">
+                    <span class="hg-icon icon-home"></span>
+                    <span class="side-show">Trang chủ</span>
+                </a>
+                <a href="">
+                    <span class="hg-icon icon-mail"></span>
+                    <span class="side-show">Thông báo</span>
+                </a>
+                <a href="">
+                    <span class="hg-icon icon-contact-book"></span>
+                    <span class="side-show">Danh bạ</span>
+                </a>
+                <a href="">
+                    <span class="hg-icon icon-library-menu"></span>
+                    <span class="side-show">Thư viện cá nhân</span>
+                </a>
+                <a href="">
+                    <span class="hg-icon icon-test-menu"></span>
+                    <span class="side-show">Lịch kiểm tra</span>
+                </a>
+                <a href="">
+                    <span class="hg-icon icon-door"></span>
+                    <span class="side-show">Lớp học</span>
+                </a>
+                <a class="active" href="">
+                    <span class="hg-icon icon-group"></span>
+                    <span class="side-show">Nhóm</span>
+                </a>
+                <a href="">
+                    <span class="hg-icon icon-edit"></span>
+                    <span class="side-show">Thư viện viết tắt</span>
+                </a>
+                <a href="">
+                    <span class="hg-icon icon-bell"></span>
+                    <span class="side-show">Tương tác</span>
+                </a>
+            </div>
+            <div class="sidebar-profile">
+                <a href="">
+                    <span class="hg-icon icon-plane"></span>
+                    <span class="side-show">Hỗ trợ</span>
+                </a>
+                <a href="thong-tin-tai-khoan.html">
+                    <span class="hg-icon icon-user icon-active"></span>
+                    <span class="side-show">Tài khoản cá nhân</span>
+                </a>
+            </div>
+        </div>
+        <!-- End sidebar -->
+
+                <!-- Start Main content -->
+        <div class="main-container group-list">
+            <!-- Start header area -->
+            <div class="mn-main-header unset-height pb-3">
+                <h1 class="font-weight-bold">Quản lý nhóm</h1>
+                <div class="mn-tab text-center float-left mt-2" style="visibility: visible; animation-name: fadeInUp;">
+                    <ul class="nav nav-tabs border-0 d-inline-block" role="tablist">
+                        <li class="nav-item d-inline-block mr-3 border-0 active">
+                            <a class="nav-link active" data-toggle="tab" href="#list1" role="tab" aria-selected="false">
+                                <span class="hg-icon icon-mod disable"></span>
+                                <span>Nhóm của tôi</span>
+                            </a>
+                        </li>
+                        <li class="nav-item d-inline-block mr-3 border-0">
+                            <a class="nav-link" data-toggle="tab" href="#list2" role="tab" aria-selected="true">
+                                <span class="hg-icon icon-user disable"></span>
+                                <span>Nhóm tham gia</span>
+                            </a>
+                        </li>
+                        <li class="nav-item d-inline-block mr-3 border-0">
+                            <a class="nav-link" data-toggle="tab" href="#list3" role="tab" aria-selected="true">
+                                <span class="hg-icon icon-geography disable"></span>
+                                <span>Khám phá</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- End header area -->
+            <div class="mn-content-search w-100 px-5">
+                <span class="hg-icon icon-search mr-3"></span>
+                <input class="mn-content-search-input w-100" type="text" name="search-key-word" placeholder="Tìm kiếm">
+            </div>
+
+            <!-- Start content area -->
+            <div class="mn-content">
+                <div class="mn-content-main-content">
+                    <div class="tab-pane fade active show in mygroup" id="list1" role="tabpanel"> <!-- Tab 1 -->
+                        <div class="empty-item-area group-empty">
+                            <img src="../../assets/images/app/35-1.png">
+                            <div class="txt">Danh sách nhóm đang trống</div>
+                        </div>
+                        <div class="fixed-add-icon">
+                            <span class="hg-icon icon-add-round"></span>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="list2" role="tabpanel"> <!-- tab 2 -->
+                        <h5 class="group-joined-title py-3 px-4 mt-3">Nhóm đang tham gia</h5>
+                        <div class="list-container account-list px-4 mr-2">
+                            <div class="list-item disable-item">
+                                <div class="list-item__icon">
+                                    <span class="hg-icon icon-parent"></span>
+                                </div>
+                                <div class="list-item__group-name">
+                                    <a class="text-blue font-weight-bold">Thi tiếng Anh</a>
+                                </div>
+                                <div class="list-item__teacher">
+                                    <span class="hg-icon icon-parent"></span>
+                                    <span class="">Đỗ Nguyên Phát</span>
+                                </div>
+                                <div class="list-item__mem">
+                                    <span class="hg-icon icon-parent"></span>
+                                    <span class="">10 thành viên</span>
+                                </div>
+                            </div>
+                            <div class="list-item">
+                                <div class="list-item__icon">
+                                    <span class="hg-icon icon-parent"></span>
+                                </div>
+                                <div class="list-item__group-name">
+                                    <a class="text-blue font-weight-bold">Thi tiếng Anh</a>
+                                </div>
+                                <div class="list-item__teacher">
+                                    <span class="hg-icon icon-parent"></span>
+                                    <span class="">Đỗ Nguyên Phát</span>
+                                </div>
+                                <div class="list-item__mem">
+                                    <span class="hg-icon icon-parent"></span>
+                                    <span class="">10 thành viên</span>
+                                </div>
+                            </div>
+                            <div class="list-item">
+                                <div class="list-item__icon">
+                                    <span class="hg-icon icon-parent"></span>
+                                </div>
+                                <div class="list-item__group-name">
+                                    <a class="text-blue font-weight-bold">Thi tiếng Anh</a>
+                                </div>
+                                <div class="list-item__teacher">
+                                    <span class="hg-icon icon-parent"></span>
+                                    <span class="">Đỗ Nguyên Phát</span>
+                                </div>
+                                <div class="list-item__mem">
+                                    <span class="hg-icon icon-parent"></span>
+                                    <span class="">10 thành viên</span>
+                                </div>
+                            </div>
+                            <div class="list-item">
+                                <div class="list-item__icon">
+                                    <span class="hg-icon icon-parent"></span>
+                                </div>
+                                <div class="list-item__group-name">
+                                    <a class="text-blue font-weight-bold">Thi tiếng Anh</a>
+                                </div>
+                                <div class="list-item__teacher">
+                                    <span class="hg-icon icon-parent"></span>
+                                    <span class="">Đỗ Nguyên Phát</span>
+                                </div>
+                                <div class="list-item__mem">
+                                    <span class="hg-icon icon-parent"></span>
+                                    <span class="">10 thành viên</span>
+                                </div>
+                            </div>
+                            <div class="list-item">
+                                <div class="list-item__icon">
+                                    <span class="hg-icon icon-parent"></span>
+                                </div>
+                                <div class="list-item__group-name">
+                                    <a class="text-blue font-weight-bold">Thi tiếng Anh</a>
+                                </div>
+                                <div class="list-item__teacher">
+                                    <span class="hg-icon icon-parent"></span>
+                                    <span class="">Đỗ Nguyên Phát</span>
+                                </div>
+                                <div class="list-item__mem">
+                                    <span class="hg-icon icon-parent"></span>
+                                    <span class="">10 thành viên</span>
+                                </div>
+                            </div>
+                            <div class="list-item">
+                                <div class="list-item__icon">
+                                    <span class="hg-icon icon-parent"></span>
+                                </div>
+                                <div class="list-item__group-name">
+                                    <a class="text-blue font-weight-bold">Thi tiếng Anh</a>
+                                </div>
+                                <div class="list-item__teacher">
+                                    <span class="hg-icon icon-parent"></span>
+                                    <span class="">Đỗ Nguyên Phát</span>
+                                </div>
+                                <div class="list-item__mem">
+                                    <span class="hg-icon icon-parent"></span>
+                                    <span class="">10 thành viên</span>
+                                </div>
+                            </div>
+                            <div class="list-item">
+                                <div class="list-item__icon">
+                                    <span class="hg-icon icon-parent"></span>
+                                </div>
+                                <div class="list-item__group-name">
+                                    <a class="text-blue font-weight-bold">Thi tiếng Anh</a>
+                                </div>
+                                <div class="list-item__teacher">
+                                    <span class="hg-icon icon-parent"></span>
+                                    <span class="">Đỗ Nguyên Phát</span>
+                                </div>
+                                <div class="list-item__mem">
+                                    <span class="hg-icon icon-parent"></span>
+                                    <span class="">10 thành viên</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane fade discover" id="list3" role="tabpanel"> <!-- tab 3 -->
+                        <h5 class="group-joined-title py-3 px-4 mt-3">Khám phá</h5>
+                        <div class="list-container account-list px-4 mr-2">
+                            <div class="list-item">
+                                <div class="list-item__icon">
+                                    <span class="hg-icon icon-parent"></span>
+                                </div>
+                                <div class="list-item__group-name">
+                                    <a class="text-blue font-weight-bold">Hóa 2020</a>
+                                </div>
+                                <div class="list-item__teacher">
+                                    <span class="hg-icon icon-parent"></span>
+                                    <span class="">Đỗ Nguyên Phát</span>
+                                </div>
+                                <div class="list-item__mem">
+                                    <span class="hg-icon icon-parent"></span>
+                                    <span class="">10 thành viên</span>
+                                </div>
+                                <div class="list-item__icon text-right">
+                                    <span class="hg-icon icon-reply disable"></span>
+                                </div>
+                            </div>
+                            <div class="list-item">
+                                <div class="list-item__icon">
+                                    <span class="hg-icon icon-parent"></span>
+                                </div>
+                                <div class="list-item__group-name">
+                                    <a class="text-blue font-weight-bold">Luyện thi hóa 2020</a>
+                                </div>
+                                <div class="list-item__teacher">
+                                    <span class="hg-icon icon-parent"></span>
+                                    <span class="">Nguỹen Nguỹen Nguỹen Nguỹen</span>
+                                </div>
+                                <div class="list-item__mem">
+                                    <span class="hg-icon icon-parent"></span>
+                                    <span class="">10 thành viên</span>
+                                </div>
+                                <div class="list-item__icon text-right">
+                                    <span class="hg-icon icon-reply"></span>
+                                </div>
+                            </div>
+                            <div class="list-item">
+                                <div class="list-item__icon">
+                                    <span class="hg-icon icon-parent"></span>
+                                </div>
+                                <div class="list-item__group-name">
+                                    <a class="text-blue font-weight-bold"> Luyện thi quốc gia + Olympic Hóa 2020 abcdef Luyện thi quốc gia + Olympic Hóa 2020 abcdef</a>
+                                </div>
+                                <div class="list-item__teacher">
+                                    <span class="hg-icon icon-parent"></span>
+                                    <span class="">Đỗ Nguyên Phát</span>
+                                </div>
+                                <div class="list-item__mem">
+                                    <span class="hg-icon icon-parent"></span>
+                                    <span class="">10 thành viên</span>
+                                </div>
+                                <div class="list-item__icon text-right">
+                                    <span class="hg-icon icon-reply"></span>
+                                </div>
+                            </div>
+                            <div class="list-item">
+                                <div class="list-item__icon">
+                                    <span class="hg-icon icon-parent"></span>
+                                </div>
+                                <div class="list-item__group-name">
+                                    <a class="text-blue font-weight-bold">Luyện thi hóa 2020</a>
+                                </div>
+                                <div class="list-item__teacher">
+                                    <span class="hg-icon icon-parent"></span>
+                                    <span class="">Nguỹen Nguỹen Nguỹen Nguỹen</span>
+                                </div>
+                                <div class="list-item__mem">
+                                    <span class="hg-icon icon-parent"></span>
+                                    <span class="">10 thành viên</span>
+                                </div>
+                                <div class="list-item__icon text-right">
+                                    <span class="hg-icon icon-reply"></span>
+                                </div>
+                            </div>
+                            <div class="list-item">
+                                <div class="list-item__icon">
+                                    <span class="hg-icon icon-parent"></span>
+                                </div>
+                                <div class="list-item__group-name">
+                                    <a class="text-blue font-weight-bold">Luyện thi hóa 2020</a>
+                                </div>
+                                <div class="list-item__teacher">
+                                    <span class="hg-icon icon-parent"></span>
+                                    <span class="">Nguỹen Nguỹen Nguỹen Nguỹen</span>
+                                </div>
+                                <div class="list-item__mem">
+                                    <span class="hg-icon icon-parent"></span>
+                                    <span class="">10 thành viên</span>
+                                </div>
+                                <div class="list-item__icon text-right">
+                                    <span class="hg-icon icon-reply"></span>
+                                </div>
+                            </div>
+                            <div class="list-item">
+                                <div class="list-item__icon">
+                                    <span class="hg-icon icon-parent"></span>
+                                </div>
+                                <div class="list-item__group-name">
+                                    <a class="text-blue font-weight-bold">Luyện thi hóa 2020</a>
+                                </div>
+                                <div class="list-item__teacher">
+                                    <span class="hg-icon icon-parent"></span>
+                                    <span class="">Nguỹen Nguỹen Nguỹen Nguỹen</span>
+                                </div>
+                                <div class="list-item__mem">
+                                    <span class="hg-icon icon-parent"></span>
+                                    <span class="">10 thành viên</span>
+                                </div>
+                                <div class="list-item__icon text-right">
+                                    <span class="hg-icon icon-reply"></span>
+                                </div>
+                            </div>
+                            <div class="list-item">
+                                <div class="list-item__icon">
+                                    <span class="hg-icon icon-parent"></span>
+                                </div>
+                                <div class="list-item__group-name">
+                                    <a class="text-blue font-weight-bold">Luyện thi hóa 2020</a>
+                                </div>
+                                <div class="list-item__teacher">
+                                    <span class="hg-icon icon-parent"></span>
+                                    <span class="">Nguỹen Nguỹen Nguỹen Nguỹen</span>
+                                </div>
+                                <div class="list-item__mem">
+                                    <span class="hg-icon icon-parent"></span>
+                                    <span class="">10 thành viên</span>
+                                </div>
+                                <div class="list-item__icon text-right">
+                                    <span class="hg-icon icon-reply"></span>
+                                </div>
+                            </div>
+                            <div class="list-item">
+                                <div class="list-item__icon">
+                                    <span class="hg-icon icon-parent"></span>
+                                </div>
+                                <div class="list-item__group-name">
+                                    <a class="text-blue font-weight-bold">Luyện thi hóa 2020</a>
+                                </div>
+                                <div class="list-item__teacher">
+                                    <span class="hg-icon icon-parent"></span>
+                                    <span class="">Nguỹen Nguỹen Nguỹen Nguỹen</span>
+                                </div>
+                                <div class="list-item__mem">
+                                    <span class="hg-icon icon-parent"></span>
+                                    <span class="">10 thành viên</span>
+                                </div>
+                                <div class="list-item__icon text-right">
+                                    <span class="hg-icon icon-reply"></span>
+                                </div>
+                            </div>
+                            <div class="list-item">
+                                <div class="list-item__icon">
+                                    <span class="hg-icon icon-parent"></span>
+                                </div>
+                                <div class="list-item__group-name">
+                                    <a class="text-blue font-weight-bold">Luyện thi hóa 2020</a>
+                                </div>
+                                <div class="list-item__teacher">
+                                    <span class="hg-icon icon-parent"></span>
+                                    <span class="">Nguỹen Nguỹen Nguỹen Nguỹen</span>
+                                </div>
+                                <div class="list-item__mem">
+                                    <span class="hg-icon icon-parent"></span>
+                                    <span class="">10 thành viên</span>
+                                </div>
+                                <div class="list-item__icon text-right">
+                                    <span class="hg-icon icon-reply"></span>
+                                </div>
+                            </div>
+                            <div class="list-item">
+                                <div class="list-item__icon">
+                                    <span class="hg-icon icon-parent"></span>
+                                </div>
+                                <div class="list-item__group-name">
+                                    <a class="text-blue font-weight-bold">Luyện thi hóa 2020</a>
+                                </div>
+                                <div class="list-item__teacher">
+                                    <span class="hg-icon icon-parent"></span>
+                                    <span class="">Nguỹen Nguỹen Nguỹen Nguỹen</span>
+                                </div>
+                                <div class="list-item__mem">
+                                    <span class="hg-icon icon-parent"></span>
+                                    <span class="">10 thành viên</span>
+                                </div>
+                                <div class="list-item__icon text-right">
+                                    <span class="hg-icon icon-reply"></span>
+                                </div>
+                            </div>
+                            <div class="list-item">
+                                <div class="list-item__icon">
+                                    <span class="hg-icon icon-parent"></span>
+                                </div>
+                                <div class="list-item__group-name">
+                                    <a class="text-blue font-weight-bold">Luyện thi hóa 2020</a>
+                                </div>
+                                <div class="list-item__teacher">
+                                    <span class="hg-icon icon-parent"></span>
+                                    <span class="">Nguỹen Nguỹen Nguỹen Nguỹen</span>
+                                </div>
+                                <div class="list-item__mem">
+                                    <span class="hg-icon icon-parent"></span>
+                                    <span class="">10 thành viên</span>
+                                </div>
+                                <div class="list-item__icon text-right">
+                                    <span class="hg-icon icon-reply"></span>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <button class="btn btn-primary fixed-send-announcement-icon">
+                            Đã gửi yêu cầu tham gia
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- End main content area -->
+        </div>
+    </div>
+</body>
+<script src="../../assets/js/modules_script.js"></script>
+</html>

@@ -22,6 +22,7 @@
 }
 .treeview .folder {
     position: relative;
+    padding-right: 10px;
 }
 .treeview .folder span.hg-icon, .treeview .file span.hg-icon {
     width: 23px;
@@ -35,7 +36,7 @@
     float: left;
     margin-right: 6px;
 }
-.treeview .folder:before {
+.treeview:not(.no-pseudo) .folder:before {
     content: '';
     background-image: url('../images/app/7.png');
     position: absolute;
@@ -84,4 +85,16 @@ label:has( > input[type=checkbox]:checked):before {
 .tree-view__folder-title {
     vertical-align: top;
     padding-left: 10px;
+}
+.no-pseudo .dropdown-folder {
+    background-image: url('../images/app/7.png');
+    position: absolute;
+    left: 0;
+    font-size: 17px;
+    width: 15px;
+    height: 15px;
+    background-position: top left;
+    background-size: cover;
+    top: 5px;
+
 }

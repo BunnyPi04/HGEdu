@@ -132,7 +132,7 @@ span {
 .icon-qr.disable {
     background-image: url('../images/app/188.png');
 }
-.icon-qr.icon-active {
+.icon-qr.icon-active, .icon-qr.icon-active, .sidebar .active>.icon-qr {
     background-image: url('../images/app/166.png');
 }
 .icon-library {
@@ -141,7 +141,7 @@ span {
 .icon-library.disable {
     background-image: url('../images/app/189.png');
 }
-.icon-library.icon-active {
+.icon-library.icon-active, .icon-library.icon-active, .sidebar .active>.icon-library {
     background-image: url('../images/app/167.png');
 }
 .icon-chat-bubble {
@@ -159,7 +159,7 @@ span {
 .icon-guide.disable {
     background-image: url('../images/app/187.png');
 }
-.icon-guide.icon-active {
+.icon-guide.icon-active, .icon-guide.icon-active, .sidebar .active>.icon-guide {
     background-image: url('../images/app/163.png');
 }
 .icon-search {
@@ -547,7 +547,7 @@ span {
 }
 .icon-add-file.disable {
     /*background-image: url('../images/app/icon-file.svg');*/
-    background-color: var(--grey);
+    background-color: var(--light-grey);
 }
 .icon-add-file.icon-active {
     /*background-image: url('../images/app/20.png');*/
