@@ -28,6 +28,7 @@
     --normal: #086bd1;
     --hard: #002ad4;
     --very-hard: #001c8f;
+    --purple-gradient: #834FEB;
 }
 body {
     margin: 0 auto;
@@ -83,6 +84,11 @@ a, a:hover {
     src: url(../fonts/Montserrat-BoldItalic.ttf);
     font-weight: bold;
     font-style: italic;
+}
+@font-face {
+    font-family: Montserrat;
+    src: url(../fonts/Montserrat-SemiBold.ttf);
+    font-weight: 400;
 }
 @font-face {
     font-family: Montserrat;
@@ -1490,7 +1496,7 @@ textarea:focus, input:focus {
     padding: 7px 15px;
     border: 1px solid var(--grey);
     border-radius: 5px;
-    padding-right: 40px;
+    /*padding-right: 40px;*/
 }
 .select-time .hg-icon {
     width: 25px;
@@ -1559,6 +1565,7 @@ textarea:focus, input:focus {
     border: none;
     line-height: 48px;
     font-size: 1.1rem;
+    max-width: 100%;
 }
 .time-table-add-button {
     vertical-align: bottom;
@@ -2131,6 +2138,10 @@ textarea:focus, input:focus {
     padding-right: 45px;
     font-size: 18px;
     font-family: Effra;
+    /*width: 230px;*/
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
 }
 .library__question-table tbody {
     font-family: Effra;
@@ -2381,6 +2392,18 @@ label[for="file-input"] {
     font-size: 16px;
     font-family: Effra;
 }
+.answer-select-group-3 .select-box:nth-child(1):after {
+    content: '*';
+    color: red;
+    position: absolute;
+    top: 0;
+    left: 100px;
+    transform: translateY(-50%);
+    background-color: white;
+    z-index: 101;
+    width: 10px;
+}
+
 .answer-select-group-3 .select-box:nth-child(2):before {
     content: 'Mức khó';
     background: white;
@@ -2393,6 +2416,18 @@ label[for="file-input"] {
     font-size: 16px;
     font-family: Effra;
 }
+.answer-select-group-3 .select-box:nth-child(2):after {
+    content: '*';
+    color: red;
+    position: absolute;
+    top: 0;
+    left: 83px;
+    transform: translateY(-50%);
+    background-color: white;
+    z-index: 101;
+    width: 10px;
+}
+
 .answer-select-group-3 .select-box:nth-child(3):before {
     content: 'Trình độ';
     background: white;
@@ -2405,6 +2440,18 @@ label[for="file-input"] {
     font-size: 16px;
     font-family: Effra;
 }
+.answer-select-group-3 .select-box:nth-child(3):after {
+    content: '*';
+    color: red;
+    position: absolute;
+    top: 0;
+    left: 81px;
+    transform: translateY(-50%);
+    background-color: white;
+    z-index: 101;
+    width: 10px;
+}
+
 .answer-select-group-3 .select-box {
     border: 1px solid var(--black);
 }
@@ -3299,6 +3346,7 @@ a[data-toggle="collapse"][aria-expanded="true"] span {
     padding-bottom: 15px;*/
     position: relative;
     width: 100px;
+    margin-right: 0;
 }
 .mn-tab.function-popup__tab .nav-tabs .nav-item:first-child .nav-link {
     /*padding-left: 25px !important;*/
@@ -3723,7 +3771,7 @@ a[data-toggle="collapse"][aria-expanded="true"] span {
     font-size: 18px;
     font-family: Effra;
 }
-.question-group-item .panel-collapse {
+.question-group-item .panel-collapse .panel-body {
     border-top: 1px solid var(--light-grey);
     margin-top: 10px;
     padding-top: 20px;
@@ -3942,6 +3990,9 @@ a[data-toggle="collapse"][aria-expanded="true"] span {
 .create-question-popup_body img {
     max-width: 100%;
 }
+.mygroup {
+    position: relative;
+}
 .mygroup__library .my-group-list {
     padding-bottom: 7px;
 }
@@ -3953,6 +4004,15 @@ a[data-toggle="collapse"][aria-expanded="true"] span {
 .mygroup__library .list-item:last-child {
     margin-bottom: 0;
 }
+.flex-1-empty-class {
+    height: calc(100% - 50px);
+    position: relative;
+}
+/*.class-tab .tab-pane {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+}*/
 .ti-input {
     border-radius: 3px;
 }
@@ -4676,6 +4736,7 @@ a[data-toggle="collapse"][aria-expanded="true"] span {
 }
 .bootstrap-datetimepicker-widget table thead tr:first-child th {
     font-weight: normal;
+    font-size: 22px;
 }
 .bootstrap-datetimepicker-widget table tr:last-child th {
     height: unset;
@@ -4683,6 +4744,13 @@ a[data-toggle="collapse"][aria-expanded="true"] span {
 }
 .bootstrap-datetimepicker-widget table td.day {
     height: 30px !important;
+    font-size: 22px;
+    font-weight: normal;
+}
+.bootstrap-datetimepicker-widget table td.today {
+    border-radius: 50%;
+    color: white;
+    background-color: var(--blue);
 }
 .bootstrap-datetimepicker-widget table td.old, .bootstrap-datetimepicker-widget table td.new {
     color: var(--light-grey) !important;
@@ -5364,6 +5432,7 @@ a[data-toggle="collapse"][aria-expanded="true"] span {
     height: 42px;
     line-height: 30px;
     font-family: Effra;
+    width: 230px;
 }
 .share-library-update .share-library__main-side--main-filter .filter-item {
     padding-top: 17px;
@@ -5377,6 +5446,34 @@ a[data-toggle="collapse"][aria-expanded="true"] span {
     padding-left: 50px;
     padding-top: 5px;
 }
+
+.share-library-update .share-library__row:first-child .select-box:nth-of-type(1) {
+    z-index: 15;
+}
+
+.share-library-update .select-box:nth-of-type(1) {
+    z-index: 10;
+}
+.share-library-update .select-box:nth-of-type(2) {
+    z-index: 9;
+}
+.share-library-update .select-box:nth-of-type(3) {
+    z-index: 8;
+}
+.share-library-update .select-box:nth-of-type(4) {
+    z-index: 7;
+}
+.share-library-update .select-box:nth-of-type(5) {
+    z-index: 6;
+}
+.share-library-update .select-box:nth-of-type(6) {
+    z-index: 5;
+}
+
+.share-library-update .select-box:nth-of-type(7) {
+    z-index: 4;
+}
+
 .available-message {
     color: var(--green);
 }
@@ -6258,6 +6355,34 @@ span.select2-container, span.select2-dropdown, span.select2-results {
 .group-empty img {
     width: 70px;
 }
+
+.free-7-days img {
+    width: 300px;
+    margin-top: 30px;
+}
+.free-7-days button {
+    background-image: linear-gradient(to right, var(--normal), var(--purple-gradient));
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px #834FEB33;
+    padding: 16px 68px;
+    font-weight: bold;
+    font-size: 23px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.free-7-days h4 {
+    color: var(--purple-gradient);
+    font-size: 22px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+.free-7-days p {
+    margin-bottom: 30px;
+    font-family: Effra;
+    font-size: 16px;
+}
+
 b {
     font-weight: bold;
 }

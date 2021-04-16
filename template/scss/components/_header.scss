@@ -27,6 +27,12 @@
 		width: 100%;
 	}
 }
+body.fp-viewing-0.fp-ready {
+	.header {
+		left: 0;
+		width: 100%;
+	}
+}
 body:not(.fp-viewing-0) {
 	.header-btn {
 		.main-btn {
@@ -34,6 +40,26 @@ body:not(.fp-viewing-0) {
 			&:hover {
 				background-color: $second-cl;
 			}
+		}
+	}
+}
+@include max-media(1440px) {
+}
+@media screen and (min-width: 1025px) and (max-width: 1440px) {
+	.fp-ready {
+		.header {
+			left: 17rem;
+			right: 0;
+			width: auto;
+		}
+	}
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+	.fp-ready {
+		.header {
+			left: 9.6rem;
+			right: 0;
+			width: auto;
 		}
 	}
 }

@@ -57,6 +57,7 @@ body {
 }
 .col {
 	padding: $padding;
+	flex-basis: auto;
 }
 ::selection {
 	background-color: $second-cl;

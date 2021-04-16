@@ -38,6 +38,18 @@
 		}
 	}
 }
+
+@include max-media(1440px) {
+	.p-frame-aside {
+		width: 17rem;
+	}
+}
+@include max-media(1024px) {
+	.p-frame-aside {
+		width: 9.6rem;
+		padding: 1rem;
+	}
+}
 @include max-media(768px) {
 	.p-frame-aside {
 		width: 100%;

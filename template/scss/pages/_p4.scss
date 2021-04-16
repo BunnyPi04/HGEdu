@@ -23,14 +23,14 @@
 .p4-img-1 {
 	top: 50%;
 	left: 56.5%;
-	width: 55.5rem;
-	height: 73.5rem;
+	width: 60rem;
+	height: 80rem;
 	transition: $t2 $cubic1;
 	transform: translate(-50%, -50%);
 }
 .p4-img-2 {
-	width: 100.8rem;
-	height: 100.8rem;
+	width: 108.8rem;
+	height: 108.8rem;
 	top: -20rem;
 	left: 50%;
 	transform: translateX(-50%);
@@ -46,6 +46,8 @@
 	}
 }
 @include max-media(1440px) {
+	.p4-circle {
+	}
 	.p4-img-1 {
 		top: 55%;
 		left: 50%;
@@ -86,10 +88,10 @@
 	}
 	.p4-img-2 {
 		.hand-1 {
-			animation: hand1 4s forwards, fadeOut 1.5s 5.5s forwards;
+			animation: hand1 4s forwards, fadeOut 1.5s 4.5s forwards;
 		}
 		.hand-2 {
-			animation: hand2 4s 6s backwards, fadeIn 10s;
+			animation: hand2 4s 5.5s backwards, fadeIn 10s;
 		}
 	}
 }

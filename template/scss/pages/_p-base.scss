@@ -8,8 +8,10 @@
 }
 .p-section-2 {
 	.p-frame-content {
+		--pos-bottom: -2.8rem;
+		--post-right: -5.1rem;
 		background-image: url(../images/p2-bg.png);
-		background-position: bottom -2.8rem right -5.1rem;
+		background-position: bottom var(--pos-bottom) right var(--post-right);
 	}
 }
 .p-section-3 {
@@ -38,8 +40,36 @@
 }
 .p-section-7 {
 	.p-frame-content {
+		--pos-top: -19.5rem;
 		background-image: url(../images/p7-bg.png);
-		background-position: top -19.5rem right -3rem;
+		background-position: top var(--pos-top) right -3rem;
+	}
+}
+// @media screen and (min-width: 1025px) and (max-width: 1440px) {
+// 	.p-section-2 {
+// 		.p-frame-content {
+// 			--pos-bottom: 12rem;
+// 		}
+// 	}
+// }
+@include max-media(1440px) {
+	.p-section-2 {
+		.p-frame-content {
+			--pos-bottom: -20rem;
+			--post-right: -20rem;
+		}
+	}
+	.p-section-7 {
+		.p-frame-content {
+			--pos-top: -22.5rem;
+		}
+	}
+}
+@include max-media(1024px) {
+	.p-section-2 {
+		.p-frame-content {
+			--pos-bottom: -30rem;
+		}
 	}
 }
 @include max-media(768px) {

@@ -163,6 +163,7 @@
 		}
 	}
 }
+
 @include max-media(1280px) {
 	.p6-list {
 		> div {
@@ -172,10 +173,13 @@
 		}
 	}
 }
-@include max-media(768px) {
+@include max-media(992px) {
 	.p6 {
-		.col {
-			width: 50%;
+		.left {
+			width: 40%;
+		}
+		.right {
+			width: 60%;
 		}
 	}
 	.p6-list {
@@ -183,6 +187,13 @@
 			&:nth-child(even) {
 				margin-right: 0;
 			}
+		}
+	}
+}
+@include max-media(768px) {
+	.p6 {
+		.col {
+			width: 50%;
 		}
 	}
 }

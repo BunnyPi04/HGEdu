@@ -23,14 +23,16 @@
 }
 .p5-img-1 {
 	position: relative;
-	z-index: -1;
+	z-index: 0;
 	border-radius: 1rem;
-
 	img {
 		width: auto;
 		height: 100%;
 		border-radius: inherit;
 		box-shadow: 1rem 1rem 3rem rgba($color: $bg-b-cl, $alpha: 0.16);
+	}
+	@include min-media(1025px) {
+		padding-right: 4rem;
 	}
 }
 .p5-img-2 {
