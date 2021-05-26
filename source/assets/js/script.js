@@ -418,6 +418,14 @@ $('.checkbox-row').change(function () {
     } else {
         container.removeClass('picked-row');
     }
+
+    let container2 = $(this).parents('.account-item');
+    if ($(this).is(':checked')) {
+        container2.addClass('picked-row');
+    } else {
+        container2.removeClass('picked-row');
+    }
+
 });
 $('.nav-toggle').click(function () {
     $('.sidebar').toggleClass('active');

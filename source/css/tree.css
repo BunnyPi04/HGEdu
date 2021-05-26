@@ -96,5 +96,17 @@ label:has( > input[type=checkbox]:checked):before {
     background-position: top left;
     background-size: cover;
     top: 5px;
+}
+.treeview .extend input[type=checkbox]:checked ~ .tree-view__folder-title {
+    color: var(--blue) !important;
+}
 
+.treeview .extend input[type=checkbox]:not(:checked) ~ .tree-view__folder-title.text-blue {
+    color: var(--black) !important;
+}
+.treeview .extend input[type=checkbox]:checked ~ .icon-folder {
+    background-color: var(--blue) !important;
+}
+.treeview .extend input[type=checkbox]:not(:checked) ~ .icon-folder {
+    background-color: var(--black) !important;
 }

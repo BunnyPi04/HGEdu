@@ -47,6 +47,30 @@ span {
 .icon-mod.disable {
     background-image: url('../images/app/35-1.png');
 }
+.icon-group-library {
+    background-color: var(--black);
+    -webkit-mask: url('../images/app/thu-vien-nhom.svg') no-repeat;
+    -webkit-mask-size: 100% 100%;
+    mask-image: url('../images/app/thu-vien-nhom.svg');
+}
+.icon-group-library.icon-active {
+    background-color: var(--blue);
+}
+.icon-group-library.disable {
+    background-color: var(--light-grey);
+}
+.icon-qa {
+    background-color: var(--black);
+    -webkit-mask: url('../images/app/hoi-dap.svg') no-repeat;
+    -webkit-mask-size: 100% 100%;
+    mask-image: url('../images/app/hoi-dap.svg');
+}
+.icon-qa.icon-active {
+    background-color: var(--blue);
+}
+.icon-qa.disable {
+    background-color: var(--light-grey);
+}
 .icon-folder {
     /*background-image: url('../images/app/49.png');*/
     background-color: var(--black);
@@ -83,6 +107,15 @@ span {
     background-color: var(--red);
     /*background-image: url('../images/app/17.png');*/
 }
+.icon-file-2 {
+    background-image: url('../images/app/16.png')
+}
+.icon-file-2.icon-active {
+    background-image: url('../images/app/15.png')
+}
+.icon-file-2.icon-red {
+    background-image: url('../images/app/17.png')
+}
 .icon-nav {
     background-image: url('../images/app/67.png');
 }
@@ -96,7 +129,7 @@ span {
     -webkit-mask-size: 100% 100%;
     mask-image: url('../images/app/menu/19-1-account.svg');
 }
-.icon-user.icon-active {
+.icon-user.icon-active, .sidebar .active>.icon-user {
     /*background-image: url('../images/app/113.png');*/
     background-color: var(--blue);
 }
@@ -439,6 +472,14 @@ span {
 .icon-back.icon-active, .icon-back-blue {
     background-image: url('../images/app/128.png');
 }
+.icon-down {
+    transform: rotate(-90deg);
+    background-image: url('../images/app/127.png');
+}
+.icon-down.icon-active, .icon-down-blue {
+    transform: rotate(-90deg);
+    background-image: url('../images/app/128.png');
+}
 .icon-plus {
     background-image: url('../images/app/87.png');
 }
@@ -656,7 +697,14 @@ span {
 }
 .icon-cgs {
     background-image: url('../images/app/seetest1.png');
+/*    background-color: var(--blue);
+    -webkit-mask: url('../images/app/seetest-06.svg') no-repeat;
+    -webkit-mask-size: 100% 100%;
+    mask-image: url('../images/app/seetest-06.svg');*/
 }
+/*.icon-cgs.disable {
+    background-color: var(--light-grey);
+}*/
 .icon-test-1 {
     background-image: url('../images/app/62.png');
 }

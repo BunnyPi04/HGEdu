@@ -1854,6 +1854,8 @@ body:not(.fp-viewing-0) .header-btn .main-btn:hover {
   }
   .p-section-7 .p-frame-content {
     --pos-top: -22.5rem;
+    background-size: auto 140%;
+    background-position: -18vw center;
   }
 }
 
@@ -2488,6 +2490,21 @@ body:not(.fp-viewing-0) #fp-nav.fp-right {
   }
   .p3-item:last-child .content {
     margin-bottom: 2rem;
+  }
+}
+
+@media (min-width: 1000px) and (max-width: 1420px)  {
+  .p3 .left {
+    max-width: calc(100% / 12 * 6.7);
+  }
+  .p3 .right {
+    max-width: calc(100% / 12 * 5.3);
+  }
+  .p3 .left .p3-item:nth-of-type(3) .img img {
+    width: 20%;
+  }
+  .p2-item:last-child {
+    margin-top: -30rem;
   }
 }
 
